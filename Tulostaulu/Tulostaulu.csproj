@@ -63,6 +63,7 @@
     <Compile Include="kokoonpanot.Designer.cs">
       <DependentUpon>kokoonpanot.cs</DependentUpon>
     </Compile>
+    <Compile Include="oletusasetukset.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tulostauluNaytto.cs">
