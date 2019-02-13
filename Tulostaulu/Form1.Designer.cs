@@ -33,11 +33,12 @@ namespace Tulostaulu
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(419, 229);
+            this.button1.Location = new System.Drawing.Point(414, 351);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 34);
             this.button1.TabIndex = 2;
+            this.button1.Text = "Uusi peli";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

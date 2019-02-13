@@ -17,11 +17,37 @@ namespace Tulostaulu
             InitializeComponent();
         }
 
+        string[] lines;
+        string osoite = " ";
+        string osoite2;
+
         private void buttonK1_Click(object sender, EventArgs e)
         {
-            tulostauluNaytto t1 = new tulostauluNaytto();
+            tulostauluNaytto t1 = new tulostauluNaytto(lines, osoite);
             t1.Show();
             Close();
         }
+
+        private void buttonK2_Click(object sender, EventArgs e)
+        {
+            //string teksti = textBoxK1.Text;
+
+            //label4.Text = teksti;
+
+            lines = System.IO.File.ReadAllLines(@"C:\Users\mikae\testi.txt");
+            label1.Text = lines[0];
+            label2.Text = lines[1];
+            label3.Text = lines[2];
+
+        }
+
+        private void buttonK3_Click(object sender, EventArgs e)
+        {
+            // osoite = textBoxK2.Text;
+        }
     }
 }
+
+
+
+ 
