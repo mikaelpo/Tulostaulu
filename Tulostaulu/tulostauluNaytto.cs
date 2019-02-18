@@ -16,6 +16,7 @@ namespace Tulostaulu
         private string[] lista;
         private string koti;
         private string vieras;
+        private int i = 0;
 
         public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva)
         {
@@ -35,7 +36,12 @@ namespace Tulostaulu
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        
+        public void lisaaPiste()
+        {
+      
+            i++;
+            label1testi.Text = i.ToString();
+        }
         
     }
 }

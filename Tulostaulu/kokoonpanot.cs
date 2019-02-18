@@ -23,9 +23,9 @@ namespace Tulostaulu
 
         private void buttonK1_Click(object sender, EventArgs e)
         {
-            tulostauluNaytto t1 = new tulostauluNaytto(lines, kotijoukkueKuva, vierasjoukkueKuva);
-            t1.aloita();
-            t1.Show();
+            
+            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva);
+            t2.Show();
             Close();
         }
 
