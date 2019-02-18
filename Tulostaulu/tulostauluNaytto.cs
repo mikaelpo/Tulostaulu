@@ -28,8 +28,8 @@ namespace Tulostaulu
 
         private void labelT1_Click(object sender, EventArgs e)
         {
-            labelT1.Text = lista[0];
-            label12.Text = this.osoite;
+            //labelT1.Text = lista[0];
+            //label12.Text = this.osoite;
             pictureBox1.Image = new Bitmap(@"C:\Users\mikae\j.png");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
