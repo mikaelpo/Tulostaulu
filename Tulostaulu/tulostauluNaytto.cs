@@ -33,6 +33,10 @@ namespace Tulostaulu
             pictureBox1.Image = new Bitmap(@"C:\Users\mikae\j.png");
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
