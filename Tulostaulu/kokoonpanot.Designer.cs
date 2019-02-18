@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.buttonK3 = new System.Windows.Forms.Button();
             this.textBoxK2 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // buttonK1
@@ -119,6 +120,10 @@
             this.textBoxK2.Size = new System.Drawing.Size(256, 22);
             this.textBoxK2.TabIndex = 8;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // kokoonpanot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -151,5 +156,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonK3;
         private System.Windows.Forms.TextBox textBoxK2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -34,16 +34,25 @@ namespace Tulostaulu
 
             //label4.Text = teksti;
 
-            lines = System.IO.File.ReadAllLines(@"C:\Users\mikae\testi.txt");
-            label1.Text = lines[0];
-            label2.Text = lines[1];
-            label3.Text = lines[2];
+            
+
+            openFileDialog1.Filter = "Tekstitiedosto |*.txt;";
+            DialogResult result = openFileDialog1.ShowDialog();
+            if(result == DialogResult.OK)
+            {
+                textBoxK1.Text = openFileDialog1.FileName;
+
+                lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
+                label1.Text = lines[0];
+                label2.Text = lines[1];
+                label3.Text = lines[2];
+            }
 
         }
 
         private void buttonK3_Click(object sender, EventArgs e)
         {
-            // osoite = textBoxK2.Text;
+              osoite = textBoxK2.Text;
         }
     }
 }
