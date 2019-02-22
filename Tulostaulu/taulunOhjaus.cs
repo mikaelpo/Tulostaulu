@@ -30,19 +30,33 @@ namespace Tulostaulu
             
         }
 
-        
+        public void naytaPelaajatOhjauspaneelissa()
+        {
+            label1.Text = lista[0];
+            label2.Text = lista[1];
+            label3.Text = lista[2];
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             t1 = new tulostauluNaytto(lista, koti, vieras);
             t1.aloita();
+            t1.naytaPelaajat();
             t1.Show();
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            t1.lisaaPiste();
+            t1.lisaaPiste1();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste2();
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste3();
         }
     }
 }
