@@ -12,6 +12,7 @@ namespace Tulostaulu
 {
     public partial class asetukset : Form
     {
+
         public asetukset()
         {
             InitializeComponent();
