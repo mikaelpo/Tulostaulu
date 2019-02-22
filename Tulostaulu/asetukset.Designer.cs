@@ -100,9 +100,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(64, 145);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(389, 17);
+            this.label5.Size = new System.Drawing.Size(394, 17);
             this.label5.TabIndex = 4;
-            this.label5.Text = "lyhyt tauko(1,3,4 neljänneksen jälkeen sekä jatkoajan tauko)";
+            this.label5.Text = "Lyhyt tauko(1,3,4 neljänneksen jälkeen sekä jatkoajan tauko)";
             // 
             // label6
             // 
