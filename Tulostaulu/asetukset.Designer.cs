@@ -46,7 +46,6 @@
             this.buttonA1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,9 +100,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(64, 145);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(389, 17);
+            this.label5.Size = new System.Drawing.Size(394, 17);
             this.label5.TabIndex = 4;
-            this.label5.Text = "lyhyt tauko(1,3,4 neljänneksen jälkeen sekä jatkoajan tauko)";
+            this.label5.Text = "Lyhyt tauko(1,3,4 neljänneksen jälkeen sekä jatkoajan tauko)";
             // 
             // label6
             // 
@@ -216,13 +216,6 @@
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 18;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(226, 113);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 19;
-            // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(459, 145);
@@ -288,19 +281,28 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(595, 324);
+            this.button1.Location = new System.Drawing.Point(226, 110);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 29;
-            this.button1.Text = "button1";
+            this.button1.Text = "ALAS";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(307, 110);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 30;
+            this.button3.Text = "YLÖS";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // asetukset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 522);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
@@ -311,7 +313,6 @@
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonA1);
@@ -357,7 +358,6 @@
         private System.Windows.Forms.Button buttonA1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
@@ -368,5 +368,6 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }
