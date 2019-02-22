@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,15 +18,17 @@ namespace Tulostaulu
         private string koti;
         private string vieras;
         private tulostauluNaytto t1;
+        private ArrayList a3 = new ArrayList();
         
 
-        public taulunOhjaus(string[] lista, string kotiKuva, string vierasKuva)
+        public taulunOhjaus(string[] lista, string kotiKuva, string vierasKuva, ArrayList asetukset)
         {
             InitializeComponent();
 
             this.lista = lista;
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
+            a3 = asetukset;
 
             
         }
@@ -35,6 +38,8 @@ namespace Tulostaulu
             label1.Text = lista[0];
             label2.Text = lista[1];
             label3.Text = lista[2];
+
+            label4.Text = (string)a3[0].ToString(); ;
         }
 
         private void button1_Click(object sender, EventArgs e)
