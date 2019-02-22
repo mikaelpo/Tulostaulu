@@ -38,5 +38,10 @@ namespace Tulostaulu
         {
 
         }
+
+        private void tulostauluNaytto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
