@@ -23,5 +23,7 @@ namespace Tulostaulu
             k1.Show();
             Close();
         }
+
+       
     }
 }

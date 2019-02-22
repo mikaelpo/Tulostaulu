@@ -41,7 +41,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.buttonA1 = new System.Windows.Forms.Button();
@@ -57,7 +56,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -83,108 +81,99 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(64, 83);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.Size = new System.Drawing.Size(111, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Jatkoajan pituus";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(64, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.Size = new System.Drawing.Size(135, 17);
             this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.label4.Text = "Kellonkäynti suunta ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(64, 145);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(389, 17);
             this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.label5.Text = "lyhyt tauko(1,3,4 neljänneksen jälkeen sekä jatkoajan tauko)";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(64, 177);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.Size = new System.Drawing.Size(241, 17);
             this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.label6.Text = "Pitkä tauko (2. neljänneksen jälkeen)";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(64, 208);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.Size = new System.Drawing.Size(56, 17);
             this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.label7.Text = "Aikalisä";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(64, 241);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 17);
+            this.label8.Size = new System.Drawing.Size(137, 17);
             this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.label8.Text = "Aikalisien lukumäärä";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(64, 273);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 17);
+            this.label9.Size = new System.Drawing.Size(132, 17);
             this.label9.TabIndex = 8;
-            this.label9.Text = "label9";
+            this.label9.Text = "Hyökkäysaika (24s)";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(64, 307);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 17);
+            this.label10.Size = new System.Drawing.Size(132, 17);
             this.label10.TabIndex = 9;
-            this.label10.Text = "label10";
+            this.label10.Text = "Hyökkäysaika (14s)";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(64, 341);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 17);
+            this.label11.Size = new System.Drawing.Size(104, 17);
             this.label11.TabIndex = 10;
-            this.label11.Text = "label11";
+            this.label11.Text = "Virheet (5 max)";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(64, 377);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 17);
+            this.label12.Size = new System.Drawing.Size(192, 17);
             this.label12.TabIndex = 11;
-            this.label12.Text = "label12";
+            this.label12.Text = "Pelikellon summeri (kesto 2s)";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(64, 411);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 17);
+            this.label13.Size = new System.Drawing.Size(206, 17);
             this.label13.TabIndex = 12;
-            this.label13.Text = "label13";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(64, 449);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(54, 17);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "label14";
+            this.label13.Text = "Heittokellon summeri (kesto 2s)";
             // 
             // textBox1
             // 
@@ -235,7 +224,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(226, 145);
+            this.textBox5.Location = new System.Drawing.Point(459, 145);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 22);
             this.textBox5.TabIndex = 20;
@@ -249,7 +238,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(226, 177);
+            this.textBox7.Location = new System.Drawing.Point(311, 177);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 22);
             this.textBox7.TabIndex = 22;
@@ -284,31 +273,23 @@
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(226, 408);
+            this.textBox12.Location = new System.Drawing.Point(276, 408);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 22);
             this.textBox12.TabIndex = 27;
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(226, 374);
+            this.textBox13.Location = new System.Drawing.Point(262, 374);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 22);
             this.textBox13.TabIndex = 28;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(226, 444);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 22);
-            this.textBox14.TabIndex = 29;
             // 
             // asetukset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 522);
-            this.Controls.Add(this.textBox14);
+            this.ClientSize = new System.Drawing.Size(770, 522);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
@@ -324,7 +305,6 @@
             this.Controls.Add(this.buttonA1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -360,7 +340,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button buttonA1;
@@ -376,6 +355,5 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
     }
 }
