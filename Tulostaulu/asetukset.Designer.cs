@@ -190,21 +190,21 @@
             // 
             // buttonA1
             // 
-            this.buttonA1.Location = new System.Drawing.Point(491, 487);
+            this.buttonA1.Location = new System.Drawing.Point(400, 487);
             this.buttonA1.Name = "buttonA1";
-            this.buttonA1.Size = new System.Drawing.Size(75, 23);
+            this.buttonA1.Size = new System.Drawing.Size(166, 23);
             this.buttonA1.TabIndex = 16;
-            this.buttonA1.Text = "button1";
+            this.buttonA1.Text = "Seuraava";
             this.buttonA1.UseVisualStyleBackColor = true;
             this.buttonA1.Click += new System.EventHandler(this.buttonA1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(491, 449);
+            this.button2.Location = new System.Drawing.Point(400, 449);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(166, 23);
             this.button2.TabIndex = 17;
-            this.button2.Text = "button2";
+            this.button2.Text = "Oletus asetukset";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // asetukset

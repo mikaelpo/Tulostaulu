@@ -18,24 +18,20 @@ namespace Tulostaulu
         }
 
         string[] lines;
-        string osoite = " ";
-        string osoite2;
+        string kotijoukkueKuva = " ";
+        string vierasjoukkueKuva = " ";
 
         private void buttonK1_Click(object sender, EventArgs e)
         {
-            tulostauluNaytto t1 = new tulostauluNaytto(lines, osoite);
-            t1.Show();
+            
+            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva);
+            t2.Show();
             Close();
         }
 
         private void buttonK2_Click(object sender, EventArgs e)
         {
-            //string teksti = textBoxK1.Text;
-
-            //label4.Text = teksti;
-
-            
-
+            //Avataan file-haku ja lisätään tekstitiedoston pelaajat listaan
             openFileDialog1.Filter = "Tekstitiedosto |*.txt;";
             DialogResult result = openFileDialog1.ShowDialog();
             if(result == DialogResult.OK)
@@ -51,9 +47,28 @@ namespace Tulostaulu
         }
 
         private void buttonK3_Click(object sender, EventArgs e)
-        {
-              osoite = textBoxK2.Text;
+        {   //Haetaan kotijoukkueen kuvatiedosto
+            openFileDialog1.Filter = "Kuvatiedosto |*.jpg;*.jpeg;*.png;";
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                textBoxK2.Text = openFileDialog1.FileName;
+                kotijoukkueKuva = openFileDialog1.FileName;
+            }
         }
+
+        private void buttonK4_Click(object sender, EventArgs e)
+        {   // Haetaan vierasjoukkueen kuva
+            openFileDialog1.Filter = "Kuvatiedosto |*.jpg;*.jpeg;*.png;";
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                textBoxK3.Text = openFileDialog1.FileName;
+                vierasjoukkueKuva = openFileDialog1.FileName;
+            }
+        }
+
+  
     }
 }
 

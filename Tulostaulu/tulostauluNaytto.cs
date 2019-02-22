@@ -14,34 +14,34 @@ namespace Tulostaulu
     {
 
         private string[] lista;
-        private string osoite;
-        private string osoite2;
+        private string koti;
+        private string vieras;
+        private int i = 0;
 
-        public tulostauluNaytto(string [] lista, string osoite)
+        public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva)
         {
             InitializeComponent();
             this.lista = lista;
-            this.osoite = osoite;
-            //this.osoite2 = osoite2;
+            this.koti = kotiKuva;
+            this.vieras = vierasKuva;
 
         }
 
-        private void labelT1_Click(object sender, EventArgs e)
+        public void aloita()
         {
-            //labelT1.Text = lista[0];
-            //label12.Text = this.osoite;
-            pictureBox1.Image = new Bitmap(@"C:\Users\mikae\j.png");
+            pictureBox1.Image = new Bitmap(@koti);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox2.Image = new Bitmap(@vieras);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void lisaaPiste()
         {
-
+      
+            i++;
+            label1testi.Text = i.ToString();
         }
-
-        private void tulostauluNaytto_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
