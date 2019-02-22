@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Tulostaulu
 {
     public partial class asetukset : Form
     {
+        private oletusasetukset a1 = new oletusasetukset(0);
         public asetukset()
         {
             InitializeComponent();
@@ -19,11 +21,18 @@ namespace Tulostaulu
 
         private void buttonA1_Click(object sender, EventArgs e)
         {
-            kokoonpanot k1 = new kokoonpanot();
+            ArrayList a = new ArrayList();
+            int i = a1.getNeljanneksienmaara();
+            a.Add(i);
+            kokoonpanot k1 = new kokoonpanot(a);
             k1.Show();
             Close();
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            a1.setNeljanneksienmaara(Convert.ToInt32(textBox2.Text));
+        }
     }
 }

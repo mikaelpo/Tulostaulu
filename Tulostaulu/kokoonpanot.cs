@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Tulostaulu
 {
     public partial class kokoonpanot : Form
     {
-        public kokoonpanot()
+        private ArrayList a = new ArrayList();
+        public kokoonpanot(ArrayList asetukset)
         {
             InitializeComponent();
+            a = asetukset;
         }
 
         string[] lines;
@@ -24,7 +27,7 @@ namespace Tulostaulu
         private void buttonK1_Click(object sender, EventArgs e)
         {
             
-            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva);
+            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, a);
             t2.Show();
             t2.naytaPelaajatOhjauspaneelissa();
             Close();
