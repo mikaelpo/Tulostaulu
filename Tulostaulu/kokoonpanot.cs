@@ -26,6 +26,7 @@ namespace Tulostaulu
             
             taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva);
             t2.Show();
+            t2.naytaPelaajatOhjauspaneelissa();
             Close();
         }
 
