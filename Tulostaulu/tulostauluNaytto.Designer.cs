@@ -74,11 +74,11 @@
             // label1testi
             // 
             this.label1testi.AutoSize = true;
-            this.label1testi.Location = new System.Drawing.Point(60, 126);
+            this.label1testi.Location = new System.Drawing.Point(50, 127);
             this.label1testi.Name = "label1testi";
-            this.label1testi.Size = new System.Drawing.Size(109, 17);
+            this.label1testi.Size = new System.Drawing.Size(73, 17);
             this.label1testi.TabIndex = 5;
-            this.label1testi.Text = "Testi label mikel";
+            this.label1testi.Text = "Testi piste";
             // 
             // tulostauluNaytto
             // 
