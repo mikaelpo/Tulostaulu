@@ -18,17 +18,18 @@ namespace Tulostaulu
         private string koti;
         private string vieras;
         private tulostauluNaytto t1;
-        private ArrayList a3 = new ArrayList();
+        private oletusasetukset asetukset2 = new oletusasetukset();
+        
         
 
-        public taulunOhjaus(string[] lista, string kotiKuva, string vierasKuva, ArrayList asetukset)
+        public taulunOhjaus(string[] lista, string kotiKuva, string vierasKuva, oletusasetukset asetukset)
         {
             InitializeComponent();
 
             this.lista = lista;
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
-            a3 = asetukset;
+            asetukset2 = asetukset;
 
             
         }
@@ -39,7 +40,7 @@ namespace Tulostaulu
             label2.Text = lista[1];
             label3.Text = lista[2];
 
-            label4.Text = (string)a3[0].ToString(); ;
+            label4.Text = asetukset2.getNeljanneksienmaara().ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -13,11 +13,13 @@ namespace Tulostaulu
 {
     public partial class kokoonpanot : Form
     {
-        private ArrayList a = new ArrayList();
-        public kokoonpanot(ArrayList asetukset)
+        private oletusasetukset asetukset = new oletusasetukset();
+        
+        public kokoonpanot(oletusasetukset asetukset)
         {
             InitializeComponent();
-            a = asetukset;
+            
+            this.asetukset = asetukset;
         }
 
         string[] lines;
@@ -27,10 +29,11 @@ namespace Tulostaulu
         private void buttonK1_Click(object sender, EventArgs e)
         {
             
-            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, a);
+            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
             t2.Show();
             t2.naytaPelaajatOhjauspaneelissa();
             Close();
+       
         }
 
         private void buttonK2_Click(object sender, EventArgs e)

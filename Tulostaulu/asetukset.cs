@@ -21,10 +21,8 @@ namespace Tulostaulu
 
         private void buttonA1_Click(object sender, EventArgs e)
         {
-            ArrayList a = new ArrayList();
-            int i = a1.getNeljanneksienmaara();
-            a.Add(i);
-            kokoonpanot k1 = new kokoonpanot(a);
+           
+            kokoonpanot k1 = new kokoonpanot(a1);
             k1.Show();
             Close();
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tulostaulu
 {
-    class oletusasetukset
+    public class oletusasetukset
     {
         private int neljanneksenPituus = 10;
         private int neljanneksienMaara = 4;
@@ -39,6 +39,10 @@ namespace Tulostaulu
             this.hyokkaysaika2 = hyokkaysaika2;
             this.pelikellonSummeri = pelikellonSummeri;
             this.heittokellonSummeri = heittokellonSummeri;  */
+
+        }
+        public oletusasetukset()
+        {
 
         }
 
