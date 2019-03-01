@@ -65,5 +65,16 @@ namespace Tulostaulu
             textBox12.Text = 2.ToString();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            a1.setKellonkayntisuuntaalaspain(true);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            a1.setKellonkayntisuuntaalaspain(false);
+                
+        }
     }
 }
