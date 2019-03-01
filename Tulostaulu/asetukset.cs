@@ -13,7 +13,7 @@ namespace Tulostaulu
 {
     public partial class asetukset : Form
     {
-        private oletusasetukset a1 = new oletusasetukset(0);
+        private oletusasetukset a1 = new oletusasetukset(4,10, 5, true, 2, 15, 2, 1, 3, 1, 1, 5, 1, 1 );
         public asetukset()
         {
             InitializeComponent();
