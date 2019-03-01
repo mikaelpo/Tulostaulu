@@ -336,6 +336,7 @@
             this.Controls.Add(this.label1);
             this.Name = "asetukset";
             this.Text = "Kokoonpanot";
+            this.Load += new System.EventHandler(this.asetukset_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
