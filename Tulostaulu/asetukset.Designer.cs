@@ -344,7 +344,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "asetukset";
-            this.Text = "asetukset";
+            this.Text = "Kokoonpanot";
             this.ResumeLayout(false);
             this.PerformLayout();
 
