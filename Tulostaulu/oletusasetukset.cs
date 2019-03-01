@@ -24,11 +24,11 @@ namespace Tulostaulu
         private int heittokellonSummeri = 0;
 
 
-        public oletusasetukset(int neljanneksienMaara /*,int neljanneksenPituus, , int jatkoajanPituus, Boolean kellonKayntisuuntaAlaspain, int lyhytTauko, int pitkaTauko, int tauko, int aikalisa, int aikalisienLukumaara, int hyokkaysaika1, int hyokkaysaika2, int virheet, int pelikellonSummeri, int heittokellonSummeri*/)
+        public oletusasetukset(int neljanneksienMaara ,int neljanneksenPituus,  int jatkoajanPituus, Boolean kellonKayntisuuntaAlaspain, int lyhytTauko, int pitkaTauko, int tauko, int aikalisa, int aikalisienLukumaara, int hyokkaysaika1, int hyokkaysaika2, int virheet, int pelikellonSummeri, int heittokellonSummeri)
         {
-           // this.neljanneksenPituus = neljanneksenPituus;
+            this.neljanneksenPituus = neljanneksenPituus;
             this.neljanneksienMaara = neljanneksienMaara;
-            /*this.jatkoajanPituus = jatkoajanPituus;
+            this.jatkoajanPituus = jatkoajanPituus;
             this.kellonKayntisuuntaAlaspain = kellonKayntisuuntaAlaspain;
             this.lyhytTauko = lyhytTauko;
             this.pitkaTauko = pitkaTauko;
@@ -38,7 +38,7 @@ namespace Tulostaulu
             this.hyokkaysaika1 = hyokkaysaika1;
             this.hyokkaysaika2 = hyokkaysaika2;
             this.pelikellonSummeri = pelikellonSummeri;
-            this.heittokellonSummeri = heittokellonSummeri;  */
+            this.heittokellonSummeri = heittokellonSummeri;  
 
         }
         public oletusasetukset()
