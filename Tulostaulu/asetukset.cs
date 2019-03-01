@@ -21,6 +21,20 @@ namespace Tulostaulu
 
         private void buttonA1_Click(object sender, EventArgs e)
         {
+
+            a1.setNeljanneksenpituus(Convert.ToInt32(textBox1));
+            a1.setNeljanneksienmaara(Convert.ToInt32(textBox2));
+            a1.setJatkoajanpituus(Convert.Toint32(textBox3));
+            a1.setLyhyttauko(convert.Toint32(textBox1));
+            a1. neljanneksenPituus(convert.Toint32(textBox1));
+            a1. neljanneksenPituus(convert.Toint32(textBox1));
+            a1. neljanneksenPituus(convert.Toint32(textBox1));
+            a1. neljanneksenPituus(convert.Toint32(textBox1));
+            a1. neljanneksenPituus(convert.Toint32(textBox1));
+            a1. neljanneksenPituus(convert.Toint32(textBox1));
+            a1. neljanneksenPituus(convert.Toint32(textBox1));
+            
+           
            
             kokoonpanot k1 = new kokoonpanot(a1);
             k1.Show();
