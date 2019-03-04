@@ -17,6 +17,13 @@ namespace Tulostaulu
         private string koti;
         private string vieras;
         private int i,x,c = 0;
+        private oletusasetukset at;
+
+        //ajastimen muuttujat
+        int timeMs;
+        int timeSs;
+        int timeMm;
+        bool isActive;
 
         public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva)
         {
@@ -25,6 +32,12 @@ namespace Tulostaulu
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
 
+        }
+
+        private void tulostauluNaytto_Load(object sender, EventArgs e)
+        {
+            resetTime();
+            isActive = false;
         }
 
         public void aloita()
@@ -60,6 +73,15 @@ namespace Tulostaulu
             label2.Text = lista[1];
             label3.Text = lista[2];
         }
-        
+
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Up)
+            {
+                
+            }
+        }
+
     }
 }
