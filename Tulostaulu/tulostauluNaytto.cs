@@ -25,12 +25,13 @@ namespace Tulostaulu
         int timeMm;
         bool isActive;
 
-        public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva)
+        public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva, oletusasetukset at)
         {
             InitializeComponent();
             this.lista = lista;
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
+            this.at = at;
 
         }
 
@@ -56,6 +57,9 @@ namespace Tulostaulu
             label1.Text = lista[0];
             label2.Text = lista[1];
             label3.Text = lista[2];
+            label6.Text = lista[3];
+            label8.Text = lista[4];
+            label10.Text = lista[5];
         }
 
         //Pisteiden lisäystä ohjaustaulun kautta
@@ -100,7 +104,7 @@ namespace Tulostaulu
         {
             timeMs = 0;
             timeSs = 0;
-            timeMm = 55;
+            timeMm = at.getNeljanneksenpituus();
         }
         //Timer toiminta
         private void timer1_Tick(object sender, EventArgs e)
