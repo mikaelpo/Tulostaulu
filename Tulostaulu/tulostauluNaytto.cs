@@ -75,12 +75,59 @@ namespace Tulostaulu
         }
 
 
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        private void tulostauluNaytto_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Up)
+            if (e.KeyCode == Keys.Up)
             {
+                isActive = true;
                 
             }
+            if (e.KeyCode == Keys.Down)
+            {
+                isActive = false;
+            }
+            if (e.KeyCode == Keys.Left)
+            {
+                isActive = false;
+                resetTime();
+            }
+        }
+
+        private void resetTime()
+        {
+            timeMs = 0;
+            timeSs = 0;
+            timeMm = 55;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (isActive)
+            {
+
+                timeMs--;
+
+                if (timeMs <= 0)
+                {
+                    timeSs--;
+                    timeMs = 100;
+
+                    if (timeSs <= 0)
+                    {
+                        timeMm--;
+                        timeSs = 59;
+                    }
+                }
+            }
+
+            drawTime();
+        }
+
+        private void drawTime()
+        {
+            labelMs.Text = String.Format("{0:00}", timeMs);
+            labelSs.Text = String.Format("{0:00}", timeSs);
+            labelMm.Text = String.Format("{0:00}", timeMm);
         }
 
     }
