@@ -16,9 +16,16 @@ namespace Tulostaulu
         private string[] lista;
         private string koti;
         private string vieras;
-        private int i, x, c = 0;
+        private int i,x,c = 0;
+        private oletusasetukset at;
 
-        public tulostauluNaytto(string[] lista, string kotiKuva, string vierasKuva)
+        //ajastimen muuttujat
+        int timeMs;
+        int timeSs;
+        int timeMm;
+        bool isActive;
+
+        public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva)
         {
             InitializeComponent();
             this.lista = lista;
@@ -27,9 +34,15 @@ namespace Tulostaulu
 
         }
 
+        private void tulostauluNaytto_Load(object sender, EventArgs e)
+        {
+            resetTime();
+            isActive = false;
+        }
+
         public void aloita()
         {
-
+            
             pictureBox1.Image = new Bitmap(@koti);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -52,18 +65,23 @@ namespace Tulostaulu
             x++;
             label5.Text = x.ToString();
         }
-
+        
 
         public void naytaPelaajat()
         {
             label1.Text = lista[0];
             label2.Text = lista[1];
             label3.Text = lista[2];
-            label6.Text = lista[3];
-            label7.Text = lista[4];
-            label8.Text = lista[5];
-
-
         }
+
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Up)
+            {
+                
+            }
+        }
+
     }
 }
