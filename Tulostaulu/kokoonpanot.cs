@@ -49,6 +49,7 @@ namespace Tulostaulu
                 label1.Text = lines[0];
                 label2.Text = lines[1];
                 label3.Text = lines[2];
+                
             }
 
         }
