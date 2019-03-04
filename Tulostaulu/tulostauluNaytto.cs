@@ -40,9 +40,9 @@ namespace Tulostaulu
             isActive = false;
         }
 
-        public void aloita()
+        //Lisätään kuvat 
+        public void lisaaKuvat()
         {
-            
             pictureBox1.Image = new Bitmap(@koti);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -50,6 +50,15 @@ namespace Tulostaulu
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        //Lisätään pelaajat
+        public void lisaaPelaajat()
+        {
+            label1.Text = lista[0];
+            label2.Text = lista[1];
+            label3.Text = lista[2];
+        }
+
+        //Pisteiden lisäystä ohjaustaulun kautta
         public void lisaaPiste1()
         {
             i++;
@@ -67,14 +76,8 @@ namespace Tulostaulu
         }
         
 
-        public void naytaPelaajat()
-        {
-            label1.Text = lista[0];
-            label2.Text = lista[1];
-            label3.Text = lista[2];
-        }
 
-
+        //Kellon toiminta nuolten kautta -> Ylänuoli = Start, Alanuoli = Pause, Vasen nuoli = Reset
         private void tulostauluNaytto_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
@@ -92,14 +95,14 @@ namespace Tulostaulu
                 resetTime();
             }
         }
-
+        //Kellon resetointi
         private void resetTime()
         {
             timeMs = 0;
             timeSs = 0;
             timeMm = 55;
         }
-
+        //Timer toiminta
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isActive)
@@ -122,7 +125,7 @@ namespace Tulostaulu
 
             drawTime();
         }
-
+        //Ajan piirtäminen labeleihin
         private void drawTime()
         {
             labelMs.Text = String.Format("{0:00}", timeMs);
