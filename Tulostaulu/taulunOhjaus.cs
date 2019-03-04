@@ -45,7 +45,7 @@ namespace Tulostaulu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            t1 = new tulostauluNaytto(lista, koti, vieras);
+            t1 = new tulostauluNaytto(lista, koti, vieras, asetukset2);
             t1.lisaaKuvat();
             t1.lisaaPelaajat();
             t1.Show();
