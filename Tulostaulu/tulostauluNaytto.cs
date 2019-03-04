@@ -16,9 +16,9 @@ namespace Tulostaulu
         private string[] lista;
         private string koti;
         private string vieras;
-        private int i,x,c = 0;
+        private int i, x, c = 0;
 
-        public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva)
+        public tulostauluNaytto(string[] lista, string kotiKuva, string vierasKuva)
         {
             InitializeComponent();
             this.lista = lista;
@@ -29,7 +29,7 @@ namespace Tulostaulu
 
         public void aloita()
         {
-            
+
             pictureBox1.Image = new Bitmap(@koti);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -52,14 +52,18 @@ namespace Tulostaulu
             x++;
             label5.Text = x.ToString();
         }
-        
+
 
         public void naytaPelaajat()
         {
             label1.Text = lista[0];
             label2.Text = lista[1];
             label3.Text = lista[2];
+            label6.Text = lista[3];
+            label7.Text = lista[4];
+            label8.Text = lista[5];
+
+
         }
-        
     }
 }
