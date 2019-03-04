@@ -62,8 +62,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -352,15 +354,6 @@
             this.label18.TabIndex = 35;
             this.label18.Text = "min";
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(332, 55);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(30, 17);
-            this.label19.TabIndex = 36;
-            this.label19.Text = "min";
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -370,13 +363,42 @@
             this.label20.TabIndex = 37;
             this.label20.Text = "s";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(332, 88);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(30, 17);
+            this.label19.TabIndex = 38;
+            this.label19.Text = "min";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(565, 150);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(30, 17);
+            this.label21.TabIndex = 39;
+            this.label21.Text = "min";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(417, 182);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(30, 17);
+            this.label22.TabIndex = 40;
+            this.label22.Text = "min";
+            // 
             // asetukset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 522);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -455,7 +477,9 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
     }
 }
