@@ -54,16 +54,16 @@
             // 
             // textBoxK1
             // 
-            this.textBoxK1.Location = new System.Drawing.Point(12, 39);
+            this.textBoxK1.Location = new System.Drawing.Point(11, 51);
             this.textBoxK1.Name = "textBoxK1";
             this.textBoxK1.Size = new System.Drawing.Size(257, 22);
             this.textBoxK1.TabIndex = 1;
             // 
             // buttonK2
             // 
-            this.buttonK2.Location = new System.Drawing.Point(13, 67);
+            this.buttonK2.Location = new System.Drawing.Point(11, 22);
             this.buttonK2.Name = "buttonK2";
-            this.buttonK2.Size = new System.Drawing.Size(140, 23);
+            this.buttonK2.Size = new System.Drawing.Size(215, 23);
             this.buttonK2.TabIndex = 2;
             this.buttonK2.Text = "Hae pelaajat";
             this.buttonK2.UseVisualStyleBackColor = true;
@@ -107,9 +107,9 @@
             // 
             // buttonK3
             // 
-            this.buttonK3.Location = new System.Drawing.Point(12, 130);
+            this.buttonK3.Location = new System.Drawing.Point(11, 93);
             this.buttonK3.Name = "buttonK3";
-            this.buttonK3.Size = new System.Drawing.Size(141, 23);
+            this.buttonK3.Size = new System.Drawing.Size(216, 23);
             this.buttonK3.TabIndex = 7;
             this.buttonK3.Text = "Kotijoukkueen kuva";
             this.buttonK3.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             // 
             // textBoxK2
             // 
-            this.textBoxK2.Location = new System.Drawing.Point(13, 102);
+            this.textBoxK2.Location = new System.Drawing.Point(12, 122);
             this.textBoxK2.Name = "textBoxK2";
             this.textBoxK2.Size = new System.Drawing.Size(256, 22);
             this.textBoxK2.TabIndex = 8;
@@ -128,16 +128,16 @@
             // 
             // textBoxK3
             // 
-            this.textBoxK3.Location = new System.Drawing.Point(13, 160);
+            this.textBoxK3.Location = new System.Drawing.Point(12, 190);
             this.textBoxK3.Name = "textBoxK3";
             this.textBoxK3.Size = new System.Drawing.Size(256, 22);
             this.textBoxK3.TabIndex = 9;
             // 
             // buttonK4
             // 
-            this.buttonK4.Location = new System.Drawing.Point(13, 189);
+            this.buttonK4.Location = new System.Drawing.Point(12, 161);
             this.buttonK4.Name = "buttonK4";
-            this.buttonK4.Size = new System.Drawing.Size(156, 23);
+            this.buttonK4.Size = new System.Drawing.Size(215, 23);
             this.buttonK4.TabIndex = 10;
             this.buttonK4.Text = "Vierasjoukkueen kuva";
             this.buttonK4.UseVisualStyleBackColor = true;

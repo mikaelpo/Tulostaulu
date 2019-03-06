@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace Tulostaulu
 {
     public partial class kokoonpanot : Form
     {
-        public kokoonpanot()
+        private oletusasetukset asetukset = new oletusasetukset();
+        
+        public kokoonpanot(oletusasetukset asetukset)
         {
             InitializeComponent();
+            
+            this.asetukset = asetukset;
         }
 
         string[] lines;
@@ -23,10 +28,12 @@ namespace Tulostaulu
 
         private void buttonK1_Click(object sender, EventArgs e)
         {
-            tulostauluNaytto t1 = new tulostauluNaytto(lines, kotijoukkueKuva, vierasjoukkueKuva);
-            t1.aloita();
-            t1.Show();
+            
+            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
+            t2.Show();
+            t2.naytaPelaajatOhjauspaneelissa();
             Close();
+       
         }
 
         private void buttonK2_Click(object sender, EventArgs e)
@@ -42,6 +49,7 @@ namespace Tulostaulu
                 label1.Text = lines[0];
                 label2.Text = lines[1];
                 label3.Text = lines[2];
+                
             }
 
         }
