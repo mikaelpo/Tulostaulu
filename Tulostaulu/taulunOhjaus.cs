@@ -45,6 +45,7 @@ namespace Tulostaulu
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             t1 = new tulostauluNaytto(lista, koti, vieras, asetukset2);
             t1.lisaaKuvat();
             t1.lisaaPelaajat();
@@ -63,6 +64,13 @@ namespace Tulostaulu
         private void button4_Click(object sender, EventArgs e)
         {
             t1.lisaaPiste3();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int i;
+            i = Convert.ToInt32(textBox1.Text);
+            t1.setTime(i);
         }
     }
 }

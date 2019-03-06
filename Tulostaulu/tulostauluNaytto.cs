@@ -107,7 +107,10 @@ namespace Tulostaulu
             timeMm = at.getNeljanneksenpituus();
         }
 
-        
+        public void setTime(int aika)
+        {
+            timeMm = aika;
+        }
 
         //Timer toiminta
         private void timer1_Tick(object sender, EventArgs e)
