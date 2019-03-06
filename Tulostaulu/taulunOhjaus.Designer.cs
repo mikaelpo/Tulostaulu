@@ -324,7 +324,7 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(107, 23);
             this.button14.TabIndex = 26;
-            this.button14.Text = "button14";
+            this.button14.Text = "poista piste";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // button15
@@ -333,7 +333,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(107, 23);
             this.button15.TabIndex = 27;
-            this.button15.Text = "button15";
+            this.button15.Text = "poista piste";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button16
@@ -342,88 +342,88 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(107, 23);
             this.button16.TabIndex = 28;
-            this.button16.Text = "button16";
+            this.button16.Text = "poista piste";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(302, 154);
+            this.button17.Location = new System.Drawing.Point(237, 154);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 23);
+            this.button17.Size = new System.Drawing.Size(107, 23);
             this.button17.TabIndex = 29;
-            this.button17.Text = "button17";
+            this.button17.Text = "poista piste";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(301, 184);
+            this.button18.Location = new System.Drawing.Point(237, 196);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.Size = new System.Drawing.Size(107, 23);
             this.button18.TabIndex = 30;
-            this.button18.Text = "button18";
+            this.button18.Text = "poista piste";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(300, 214);
+            this.button19.Location = new System.Drawing.Point(237, 239);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
+            this.button19.Size = new System.Drawing.Size(107, 23);
             this.button19.TabIndex = 31;
-            this.button19.Text = "button19";
+            this.button19.Text = "poista piste";
             this.button19.UseVisualStyleBackColor = true;
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(343, 255);
+            this.button20.Location = new System.Drawing.Point(237, 280);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 23);
+            this.button20.Size = new System.Drawing.Size(107, 23);
             this.button20.TabIndex = 32;
-            this.button20.Text = "button20";
+            this.button20.Text = "poista piste";
             this.button20.UseVisualStyleBackColor = true;
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(299, 295);
+            this.button21.Location = new System.Drawing.Point(237, 320);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.Size = new System.Drawing.Size(107, 23);
             this.button21.TabIndex = 33;
-            this.button21.Text = "button21";
+            this.button21.Text = "poista piste";
             this.button21.UseVisualStyleBackColor = true;
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(298, 336);
+            this.button22.Location = new System.Drawing.Point(237, 359);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.Size = new System.Drawing.Size(107, 23);
             this.button22.TabIndex = 34;
-            this.button22.Text = "button22";
+            this.button22.Text = "poista piste";
             this.button22.UseVisualStyleBackColor = true;
             // 
             // button23
             // 
-            this.button23.Location = new System.Drawing.Point(334, 375);
+            this.button23.Location = new System.Drawing.Point(237, 399);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.Size = new System.Drawing.Size(107, 23);
             this.button23.TabIndex = 35;
-            this.button23.Text = "button23";
+            this.button23.Text = "poista piste";
             this.button23.UseVisualStyleBackColor = true;
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(333, 419);
+            this.button24.Location = new System.Drawing.Point(237, 444);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.Size = new System.Drawing.Size(107, 23);
             this.button24.TabIndex = 36;
-            this.button24.Text = "button24";
+            this.button24.Text = "poista piste";
             this.button24.UseVisualStyleBackColor = true;
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(376, 467);
+            this.button25.Location = new System.Drawing.Point(237, 487);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 23);
+            this.button25.Size = new System.Drawing.Size(107, 23);
             this.button25.TabIndex = 37;
-            this.button25.Text = "button25";
+            this.button25.Text = "poista piste";
             this.button25.UseVisualStyleBackColor = true;
             // 
             // taulunOhjaus
