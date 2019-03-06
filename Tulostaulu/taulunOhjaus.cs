@@ -66,11 +66,6 @@ namespace Tulostaulu
             t1.lisaaPiste3();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            int i;
-            i = Convert.ToInt32(textBox1.Text);
-            t1.setTime(i);
-        }
+        
     }
 }
