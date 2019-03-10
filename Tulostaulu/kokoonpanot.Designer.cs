@@ -31,10 +31,6 @@
             this.buttonK1 = new System.Windows.Forms.Button();
             this.textBoxK1 = new System.Windows.Forms.TextBox();
             this.buttonK2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.buttonK3 = new System.Windows.Forms.Button();
             this.textBoxK2 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -68,42 +64,6 @@
             this.buttonK2.Text = "Hae pelaajat";
             this.buttonK2.UseVisualStyleBackColor = true;
             this.buttonK2.Click += new System.EventHandler(this.buttonK2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 288);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 305);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(90, 348);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
             // 
             // buttonK3
             // 
@@ -152,10 +112,6 @@
             this.Controls.Add(this.textBoxK3);
             this.Controls.Add(this.textBoxK2);
             this.Controls.Add(this.buttonK3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonK2);
             this.Controls.Add(this.textBoxK1);
             this.Controls.Add(this.buttonK1);
@@ -171,10 +127,6 @@
         private System.Windows.Forms.Button buttonK1;
         private System.Windows.Forms.TextBox textBoxK1;
         private System.Windows.Forms.Button buttonK2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonK3;
         private System.Windows.Forms.TextBox textBoxK2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;

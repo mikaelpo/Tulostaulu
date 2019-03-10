@@ -39,21 +39,13 @@ namespace Tulostaulu
         {
             resetTime();
             isActive = false;
-        }
-
-        //Lisätään kuvat 
-        public void lisaaKuvat()
-        {
+            //Kotijoukkueen kuva
             pictureBox1.Image = new Bitmap(@koti);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            //Vierasjoukkueen kuva
             pictureBox2.Image = new Bitmap(@vieras);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
-
-        //Lisätään pelaajat
-        public void lisaaPelaajat()
-        {
+            //Pelaajat
             label1.Text = lista[0];
             label2.Text = lista[1];
             label3.Text = lista[2];
@@ -61,6 +53,7 @@ namespace Tulostaulu
             label8.Text = lista[4];
             label10.Text = lista[5];
         }
+
 
         //Pisteiden lisäystä ohjaustaulun kautta
         public void lisaaPiste1()
@@ -82,7 +75,7 @@ namespace Tulostaulu
 
 
         //Kellon toiminta nuolten kautta -> Ylänuoli = Start, Alanuoli = Pause, Vasen nuoli = Reset
-        private void tulostauluNaytto_KeyDown(object sender, KeyEventArgs e)
+        /*private void tulostauluNaytto_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
             {
@@ -98,6 +91,20 @@ namespace Tulostaulu
                 isActive = false;
                 resetTime();
             }
+        }*/
+
+        public void kelloStart()
+        {
+            isActive = true;
+        }
+        public void kelloPause()
+        {
+            isActive = false;
+        }
+        public void kelloReset()
+        {
+            isActive = false;
+            resetTime();
         }
         //Kellon resetointi
         private void resetTime()

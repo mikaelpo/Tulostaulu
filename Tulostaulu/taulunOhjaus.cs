@@ -31,10 +31,9 @@ namespace Tulostaulu
             this.vieras = vierasKuva;
             asetukset2 = asetukset;
 
-            
         }
 
-        public void naytaPelaajatOhjauspaneelissa()
+        private void taulunOhjaus_Load(object sender, EventArgs e)
         {
             label1.Text = lista[0];
             label2.Text = lista[1];
@@ -45,12 +44,8 @@ namespace Tulostaulu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             t1 = new tulostauluNaytto(lista, koti, vieras, asetukset2);
-            t1.lisaaKuvat();
-            t1.lisaaPelaajat();
-            t1.Show();
-            
+            t1.Show();  
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -66,6 +61,23 @@ namespace Tulostaulu
             t1.lisaaPiste3();
         }
 
-        
+        //Kellon ohjaus näppäimistöltä tulostaululla
+        private void taulunOhjaus_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D1)
+            { 
+                t1.kelloStart();
+            }
+            if (e.KeyCode == Keys.D2)
+            {
+                t1.kelloPause();
+            }
+            if (e.KeyCode == Keys.D3)
+            {
+                t1.kelloReset();
+            }
+        }
+
+
     }
 }

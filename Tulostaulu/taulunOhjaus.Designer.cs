@@ -469,8 +469,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.KeyPreview = true;
             this.Name = "taulunOhjaus";
             this.Text = "taulunOhjaus";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.taulunOhjaus_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -238,7 +238,7 @@
             this.Name = "tulostauluNaytto";
             this.Text = "tulostauluNaytto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tulostauluNaytto_KeyDown);
+            this.Load += new System.EventHandler(this.tulostauluNaytto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

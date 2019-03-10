@@ -28,12 +28,9 @@ namespace Tulostaulu
 
         private void buttonK1_Click(object sender, EventArgs e)
         {
-            
             taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
             t2.Show();
-            t2.naytaPelaajatOhjauspaneelissa();
             Close();
-       
         }
 
         private void buttonK2_Click(object sender, EventArgs e)
@@ -44,12 +41,7 @@ namespace Tulostaulu
             if(result == DialogResult.OK)
             {
                 textBoxK1.Text = openFileDialog1.FileName;
-
                 lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
-                label1.Text = lines[0];
-                label2.Text = lines[1];
-                label3.Text = lines[2];
-                
             }
 
         }
