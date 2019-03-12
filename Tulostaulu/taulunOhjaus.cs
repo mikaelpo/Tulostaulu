@@ -38,6 +38,9 @@ namespace Tulostaulu
             label1.Text = lista[0];
             label2.Text = lista[1];
             label3.Text = lista[2];
+            label5.Text = lista[3];
+            label6.Text = lista[4];
+            label7.Text = lista[5];
 
             label4.Text = asetukset2.getNeljanneksienmaara().ToString();
         }

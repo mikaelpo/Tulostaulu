@@ -72,7 +72,7 @@
             // 
             this.label1testi.AutoSize = true;
             this.label1testi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1testi.Location = new System.Drawing.Point(154, 9);
+            this.label1testi.Location = new System.Drawing.Point(209, 9);
             this.label1testi.Name = "label1testi";
             this.label1testi.Size = new System.Drawing.Size(125, 29);
             this.label1testi.TabIndex = 5;
@@ -112,7 +112,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(154, 38);
+            this.label4.Location = new System.Drawing.Point(209, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 29);
             this.label4.TabIndex = 9;
@@ -122,7 +122,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(154, 67);
+            this.label5.Location = new System.Drawing.Point(209, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 29);
             this.label5.TabIndex = 10;
@@ -180,7 +180,6 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label6
@@ -236,7 +235,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "tulostauluNaytto";
-            this.Text = "tulostauluNaytto";
+            this.Text = "Tulostaulu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.tulostauluNaytto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

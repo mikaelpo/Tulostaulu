@@ -130,12 +130,18 @@ namespace Tulostaulu
                 if (timeMs <= 0)
                 {
                     timeSs--;
-                    timeMs = 100;
+                    timeMs = 9;
 
                     if (timeSs <= 0)
                     {
                         timeMm--;
                         timeSs = 59;
+
+                        if (timeMm <= 0 && timeSs <= 0 && timeMs <= 0)
+                        {
+                            isActive = false;
+                            label5.Text = "Peli loppui";
+                        }
                     }
                 }
             }

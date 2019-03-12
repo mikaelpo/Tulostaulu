@@ -102,7 +102,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 17);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Kellonkäynti suunta ";
+            this.label4.Text = "Kellon käyntisuunta ";
             // 
             // label5
             // 
@@ -201,7 +201,7 @@
             // 
             // buttonA1
             // 
-            this.buttonA1.Location = new System.Drawing.Point(400, 487);
+            this.buttonA1.Location = new System.Drawing.Point(687, 502);
             this.buttonA1.Name = "buttonA1";
             this.buttonA1.Size = new System.Drawing.Size(166, 23);
             this.buttonA1.TabIndex = 16;
@@ -211,11 +211,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(400, 449);
+            this.button2.Location = new System.Drawing.Point(687, 462);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(166, 23);
             this.button2.TabIndex = 17;
-            this.button2.Text = "Oletus asetukset";
+            this.button2.Text = "Oletusasetukset";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -394,7 +394,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 537);
+            this.ClientSize = new System.Drawing.Size(865, 537);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
@@ -434,7 +434,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "asetukset";
-            this.Text = "Kokoonpanot";
+            this.Text = "Asetukset";
             this.Load += new System.EventHandler(this.asetukset_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

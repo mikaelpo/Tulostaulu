@@ -42,9 +42,9 @@
             // 
             this.buttonK1.Location = new System.Drawing.Point(640, 394);
             this.buttonK1.Name = "buttonK1";
-            this.buttonK1.Size = new System.Drawing.Size(75, 23);
+            this.buttonK1.Size = new System.Drawing.Size(95, 23);
             this.buttonK1.TabIndex = 0;
-            this.buttonK1.Text = "button1";
+            this.buttonK1.Text = "Seuraava";
             this.buttonK1.UseVisualStyleBackColor = true;
             this.buttonK1.Click += new System.EventHandler(this.buttonK1_Click);
             // 
@@ -116,7 +116,7 @@
             this.Controls.Add(this.textBoxK1);
             this.Controls.Add(this.buttonK1);
             this.Name = "kokoonpanot";
-            this.Text = "kokoonpanot";
+            this.Text = "Kokoonpanot";
             this.ResumeLayout(false);
             this.PerformLayout();
 
