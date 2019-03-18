@@ -16,7 +16,8 @@ namespace Tulostaulu
         private string[] lista;
         private string koti;
         private string vieras;
-        private int i,x,c = 0;
+        private int p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,
+            p21,p22,p23,p24 = 0;
         private oletusasetukset at;
 
         //ajastimen muuttujat
@@ -77,20 +78,139 @@ namespace Tulostaulu
         //Pisteiden lisäystä ohjaustaulun kautta
         public void lisaaPiste1()
         {
-            i++;
-            label1testi.Text = i.ToString();
+            p1++;
+            k1.Text = p1.ToString();
         }
         public void lisaaPiste2()
         {
-            c++;
-            label4.Text = c.ToString();
+            p2++;
+            k2.Text = p2.ToString();
         }
         public void lisaaPiste3()
         {
-            x++;
-            label5.Text = x.ToString();
+            p3++;
+            k3.Text = p3.ToString();
         }
-        
+        public void lisaaPiste4()
+        {
+            p4++;
+            k4.Text = p4.ToString();
+        }
+        public void lisaaPiste5()
+        {
+            p5++;
+            k5.Text = p5.ToString();
+        }
+        public void lisaaPiste6()
+        {
+            p6++;
+            k6.Text = p6.ToString();
+        }
+        public void lisaaPiste7()
+        {
+            p7++;
+            k7.Text = p7.ToString();
+        }
+        public void lisaaPiste8()
+        {
+            p8++;
+            k8.Text = p8.ToString();
+        }
+        public void lisaaPiste9()
+        {
+            p9++;
+            k9.Text = p9.ToString();
+        }
+        public void lisaaPiste10()
+        {
+            p10++;
+            k10.Text = p10.ToString();
+        }
+        public void lisaaPiste11()
+        {
+            p11++;
+            k11.Text = p11.ToString();
+        }
+        public void lisaaPiste12()
+        {
+            p12++;
+            k12.Text = p12.ToString();
+        }
+
+        //Poistot
+        public void poistaPiste1()
+        {
+            p1--;
+            if(p1 <= 0) p1 = 0;
+            k1.Text = p1.ToString();
+        }
+        public void poistaPiste2()
+        {
+            p2--;
+            if (p2 <= 0) p2 = 0;
+            k2.Text = p2.ToString();
+        }
+        public void poistaPiste3()
+        {
+            p3--;
+            if (p3 <= 0) p3 = 0;
+            k3.Text = p3.ToString();
+        }
+        public void poistaPiste4()
+        {
+            p4--;
+            if (p4 <= 0) p4 = 0;
+            k4.Text = p4.ToString();
+        }
+        public void poistaPiste5()
+        {
+            p5--;
+            if (p5 <= 0) p5 = 0;
+            k5.Text = p5.ToString();
+        }
+        public void poistaPiste6()
+        {
+            p6--;
+            if (p6 <= 0) p6 = 0;
+            k6.Text = p6.ToString();
+        }
+        public void poistaPiste7()
+        {
+            p7--;
+            if (p7 <= 0) p7 = 0;
+            k7.Text = p7.ToString();
+        }
+        public void poistaPiste8()
+        {
+            p8--;
+            if (p8 <= 0) p8 = 0;
+            k8.Text = p8.ToString();
+        }
+        public void poistaPiste9()
+        {
+            p9--;
+            if (p9 <= 0) p9 = 0;
+            k9.Text = p9.ToString();
+        }
+        public void poistaPiste10()
+        {
+            p10--;
+            if (p10 <= 0) p10 = 0;
+            k10.Text = p10.ToString();
+        }
+        public void poistaPiste11()
+        {
+            p11--;
+            if (p11 <= 0) p11 = 0;
+            k11.Text = p11.ToString();
+        }
+        public void poistaPiste12()
+        {
+            p12--;
+            if (p12 <= 0) p12 = 0;
+            k12.Text = p12.ToString();
+        }
+
 
 
         //Kellon toiminta nuolten kautta -> Ylänuoli = Start, Alanuoli = Pause, Vasen nuoli = Reset
@@ -159,7 +279,7 @@ namespace Tulostaulu
                         if (timeMm <= 0 && timeSs <= 0 && timeMs <= 0)
                         {
                             isActive = false;
-                            label5.Text = "Peli loppui";
+                            k3.Text = "Peli loppui";
                         }
                     }
                 }

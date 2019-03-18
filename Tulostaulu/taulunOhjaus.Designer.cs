@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -222,15 +221,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(632, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "label4";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -329,6 +319,7 @@
             this.button5.TabIndex = 17;
             this.button5.Text = "lisää piste";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -338,6 +329,7 @@
             this.button6.TabIndex = 18;
             this.button6.Text = "lisää piste";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -347,6 +339,7 @@
             this.button7.TabIndex = 19;
             this.button7.Text = "lisää piste";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -356,6 +349,7 @@
             this.button8.TabIndex = 20;
             this.button8.Text = "lisää piste";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -365,6 +359,7 @@
             this.button9.TabIndex = 21;
             this.button9.Text = "lisää piste";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -374,6 +369,7 @@
             this.button10.TabIndex = 22;
             this.button10.Text = "lisää piste";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -383,6 +379,7 @@
             this.button11.TabIndex = 23;
             this.button11.Text = "lisää piste";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -392,6 +389,7 @@
             this.button12.TabIndex = 24;
             this.button12.Text = "lisää piste";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -401,6 +399,7 @@
             this.button13.TabIndex = 25;
             this.button13.Text = "lisää piste";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -410,6 +409,7 @@
             this.button14.TabIndex = 26;
             this.button14.Text = "poista piste";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -419,6 +419,7 @@
             this.button15.TabIndex = 27;
             this.button15.Text = "poista piste";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -428,6 +429,7 @@
             this.button16.TabIndex = 28;
             this.button16.Text = "poista piste";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -437,6 +439,7 @@
             this.button17.TabIndex = 29;
             this.button17.Text = "poista piste";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -446,6 +449,7 @@
             this.button18.TabIndex = 30;
             this.button18.Text = "poista piste";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -455,6 +459,7 @@
             this.button19.TabIndex = 31;
             this.button19.Text = "poista piste";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button20
             // 
@@ -464,6 +469,7 @@
             this.button20.TabIndex = 32;
             this.button20.Text = "poista piste";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -473,6 +479,7 @@
             this.button21.TabIndex = 33;
             this.button21.Text = "poista piste";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -482,6 +489,7 @@
             this.button22.TabIndex = 34;
             this.button22.Text = "poista piste";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -491,6 +499,7 @@
             this.button23.TabIndex = 35;
             this.button23.Text = "poista piste";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
@@ -500,6 +509,7 @@
             this.button24.TabIndex = 36;
             this.button24.Text = "poista piste";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -509,6 +519,7 @@
             this.button25.TabIndex = 37;
             this.button25.Text = "poista piste";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // label14
             // 
@@ -1385,7 +1396,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
@@ -1412,7 +1422,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

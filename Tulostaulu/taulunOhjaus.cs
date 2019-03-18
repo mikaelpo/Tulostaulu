@@ -41,27 +41,31 @@ namespace Tulostaulu
             label5.Text = lista[3];
             label6.Text = lista[4];
             label7.Text = lista[5];
+            label8.Text = lista[6];
+            label9.Text = lista[7];
+            label10.Text = lista[8];
+            label11.Text = lista[9];
+            label12.Text = lista[10];
+            label13.Text = lista[11];
+            label14.Text = lista[12];
+            label15.Text = lista[13];
+            label16.Text = lista[14];
+            label17.Text = lista[15];
+            label18.Text = lista[16];
+            label19.Text = lista[17];
+            label20.Text = lista[18];
+            label21.Text = lista[19];
+            label22.Text = lista[20];
+            label23.Text = lista[21];
+            label24.Text = lista[22];
+            label25.Text = lista[23];
 
-            label4.Text = asetukset2.getNeljanneksienmaara().ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             t1 = new tulostauluNaytto(lista, koti, vieras, asetukset2);
             t1.Show();  
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            t1.lisaaPiste1();
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            t1.lisaaPiste2();
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            t1.lisaaPiste3();
         }
 
         //Kellon ohjaus näppäimistöltä tulostaululla
@@ -80,7 +84,126 @@ namespace Tulostaulu
                 t1.kelloReset();
             }
         }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste1();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste2();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste3();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste4();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste5();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste6();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste7();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste8();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste9();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste10();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste11();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPiste12();
+        }
+
+        //Poistot
+        private void button14_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste1();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste2();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste3();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste4();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste5();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste6();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste7();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste8();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste9();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste10();
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste11();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            t1.poistaPiste12();
+        }
     }
 }
