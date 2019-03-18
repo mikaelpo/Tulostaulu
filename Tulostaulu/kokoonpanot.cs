@@ -35,6 +35,7 @@ namespace Tulostaulu
 
         private void buttonK2_Click(object sender, EventArgs e)
         {
+           
             //Avataan file-haku ja lisätään tekstitiedoston pelaajat listaan
             openFileDialog1.Filter = "Tekstitiedosto |*.txt;";
             DialogResult result = openFileDialog1.ShowDialog();
@@ -42,6 +43,12 @@ namespace Tulostaulu
             {
                 textBoxK1.Text = openFileDialog1.FileName;
                 lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
+                
+            }
+            if (lines.Length <= 23)
+            {
+                MessageBox.Show("Ei tarpeeksi pelaajia, hae uusi tiedosto");
+                Array.Clear(lines, 0, lines.Length);
             }
 
         }
