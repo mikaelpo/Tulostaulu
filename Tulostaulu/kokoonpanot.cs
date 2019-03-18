@@ -23,14 +23,30 @@ namespace Tulostaulu
         }
 
         string[] lines;
-        string kotijoukkueKuva = " ";
-        string vierasjoukkueKuva = " ";
+        string kotijoukkueKuva;
+        string vierasjoukkueKuva;
 
         private void buttonK1_Click(object sender, EventArgs e)
         {
-            taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
-            t2.Show();
-            Close();
+            if (String.IsNullOrEmpty(textBoxK1.Text)){
+                MessageBox.Show("Valitse pelaajat");
+            }
+            else if (lines.Length < 24)
+            {
+                MessageBox.Show("Ei tarpeeksi pelaajia, hae uusi tiedosto");
+                Array.Clear(lines, 0, lines.Length);
+            }
+            else if (String.IsNullOrEmpty(kotijoukkueKuva) || String.IsNullOrEmpty(vierasjoukkueKuva))
+            {
+                MessageBox.Show("Joukkueen kuva puuttuu");
+            }
+            else
+            {
+                
+                taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
+                t2.Show();
+                Close();
+            }
         }
 
         private void buttonK2_Click(object sender, EventArgs e)
@@ -42,13 +58,7 @@ namespace Tulostaulu
             if(result == DialogResult.OK)
             {
                 textBoxK1.Text = openFileDialog1.FileName;
-                lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
-                
-            }
-            if (lines.Length <= 23)
-            {
-                MessageBox.Show("Ei tarpeeksi pelaajia, hae uusi tiedosto");
-                Array.Clear(lines, 0, lines.Length);
+                lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);  
             }
 
         }
