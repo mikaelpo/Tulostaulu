@@ -52,6 +52,25 @@ namespace Tulostaulu
             label6.Text = lista[3];
             label8.Text = lista[4];
             label10.Text = lista[5];
+            label11.Text = lista[6];
+            label12.Text = lista[7];
+            label13.Text = lista[8];
+            label14.Text = lista[9];
+            label15.Text = lista[10];
+            label16.Text = lista[11];
+            label17.Text = lista[12];
+            label18.Text = lista[13];
+            label19.Text = lista[14];
+            label20.Text = lista[15];
+            label21.Text = lista[16];
+            label22.Text = lista[17];
+            label23.Text = lista[18];
+            label24.Text = lista[19];
+            label25.Text = lista[20];
+            label26.Text = lista[21];
+            label27.Text = lista[22];
+            label28.Text = lista[23];
+
         }
 
 
