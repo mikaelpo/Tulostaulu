@@ -628,6 +628,7 @@
             this.button26.TabIndex = 49;
             this.button26.Text = "lisää piste";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button27
             // 
@@ -637,6 +638,7 @@
             this.button27.TabIndex = 50;
             this.button27.Text = "lisää piste";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -646,6 +648,7 @@
             this.button28.TabIndex = 51;
             this.button28.Text = "lisää piste";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button29
             // 
@@ -655,6 +658,7 @@
             this.button29.TabIndex = 52;
             this.button29.Text = "lisää piste";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button30
             // 
@@ -664,6 +668,7 @@
             this.button30.TabIndex = 53;
             this.button30.Text = "lisää piste";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
@@ -673,6 +678,7 @@
             this.button31.TabIndex = 54;
             this.button31.Text = "lisää piste";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
@@ -682,6 +688,7 @@
             this.button32.TabIndex = 55;
             this.button32.Text = "lisää piste";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button33
             // 
@@ -691,6 +698,7 @@
             this.button33.TabIndex = 56;
             this.button33.Text = "lisää piste";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // button34
             // 
@@ -700,6 +708,7 @@
             this.button34.TabIndex = 57;
             this.button34.Text = "lisää piste";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button35
             // 
@@ -709,6 +718,7 @@
             this.button35.TabIndex = 58;
             this.button35.Text = "lisää piste";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button36
             // 
@@ -718,6 +728,7 @@
             this.button36.TabIndex = 59;
             this.button36.Text = "lisää piste";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button37
             // 
@@ -727,6 +738,7 @@
             this.button37.TabIndex = 60;
             this.button37.Text = "lisää piste";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // label25
             // 
@@ -745,6 +757,7 @@
             this.button38.TabIndex = 62;
             this.button38.Text = "poista piste";
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // button39
             // 
@@ -754,6 +767,7 @@
             this.button39.TabIndex = 63;
             this.button39.Text = "poista piste";
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // button40
             // 
@@ -763,6 +777,7 @@
             this.button40.TabIndex = 64;
             this.button40.Text = "poista piste";
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // button41
             // 
@@ -772,6 +787,7 @@
             this.button41.TabIndex = 65;
             this.button41.Text = "poista piste";
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // button42
             // 
@@ -781,6 +797,7 @@
             this.button42.TabIndex = 66;
             this.button42.Text = "poista piste";
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // button43
             // 
@@ -790,6 +807,7 @@
             this.button43.TabIndex = 67;
             this.button43.Text = "poista piste";
             this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // button44
             // 
@@ -799,6 +817,7 @@
             this.button44.TabIndex = 68;
             this.button44.Text = "poista piste";
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
             // 
             // button45
             // 
@@ -808,6 +827,7 @@
             this.button45.TabIndex = 69;
             this.button45.Text = "poista piste";
             this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
             // 
             // button46
             // 
@@ -817,6 +837,7 @@
             this.button46.TabIndex = 70;
             this.button46.Text = "poista piste";
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // button47
             // 
@@ -826,6 +847,7 @@
             this.button47.TabIndex = 71;
             this.button47.Text = "poista piste";
             this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
             // button48
             // 
@@ -835,6 +857,7 @@
             this.button48.TabIndex = 72;
             this.button48.Text = "poista piste";
             this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
             // 
             // button49
             // 
@@ -844,6 +867,7 @@
             this.button49.TabIndex = 73;
             this.button49.Text = "poista piste";
             this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.button49_Click);
             // 
             // button50
             // 
