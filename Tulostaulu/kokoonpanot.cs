@@ -28,13 +28,13 @@ namespace Tulostaulu
 
         private void buttonK1_Click(object sender, EventArgs e)
         {
-            
-             
+
+
             if (String.IsNullOrEmpty(textBoxK1.Text))
             {
                 MessageBox.Show("Valitse pelaajat");
             }
-            else if (!String.IsNullOrEmpty(textBoxK1.Text))
+            else
             {
                 for (int i = 0; i < lines.Length; i++)
                 {
@@ -43,9 +43,11 @@ namespace Tulostaulu
                         MessageBox.Show("Tekstitiedostossa on tyhjä rivi rivillä: " + i + ". Hae tiedosto, jossa ei ole tyhjiä rivejä");
                         Array.Clear(lines, 0, lines.Length);
                     }
+                    
                 }
+                
             }
-            else if (lines.Length < 24)
+            if (lines.Length < 24)
             {
                 MessageBox.Show("Ei tarpeeksi pelaajia, hae uusi tiedosto");
                 Array.Clear(lines, 0, lines.Length);
