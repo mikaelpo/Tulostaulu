@@ -35,8 +35,8 @@ namespace Tulostaulu
                     MessageBox.Show("Tekstitiedostossa on tyhjä rivi rivillä: " + i + ". Hae tiedosto, jossa ei ole tyhjiä rivejä");
                     Array.Clear(lines, 0, lines.Length);
                 }
-            }
-            
+            } 
+             
             if (String.IsNullOrEmpty(textBoxK1.Text))
             {
                 MessageBox.Show("Valitse pelaajat");
