@@ -41,28 +41,31 @@ namespace Tulostaulu
             label5.Text = lista[3];
             label6.Text = lista[4];
             label7.Text = lista[5];
-            
+            label8.Text = lista[6];
+            label9.Text = lista[7];
+            label10.Text = lista[8];
+            label11.Text = lista[9];
+            label12.Text = lista[10];
+            label13.Text = lista[11];
+            label14.Text = lista[12];
+            label15.Text = lista[13];
+            label16.Text = lista[14];
+            label17.Text = lista[15];
+            label18.Text = lista[16];
+            label19.Text = lista[17];
+            label20.Text = lista[18];
+            label21.Text = lista[19];
+            label22.Text = lista[20];
+            label23.Text = lista[21];
+            label24.Text = lista[22];
+            label25.Text = lista[23];
 
-            label4.Text = asetukset2.getNeljanneksienmaara().ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             t1 = new tulostauluNaytto(lista, koti, vieras, asetukset2);
             t1.Show();  
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            t1.lisaaPiste1();
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            t1.lisaaPiste2();
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            t1.lisaaPiste3();
         }
 
         //Kellon ohjaus näppäimistöltä tulostaululla
@@ -81,7 +84,249 @@ namespace Tulostaulu
                 t1.kelloReset();
             }
         }
+        
+        //Kotijoukkuueen pisteiden lisäys
+        private void button2_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK1();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK2();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK3();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK4();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK5();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK6();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK7();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK8();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK9();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK10();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK11();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteK12();
+        }
+
+        //Kotijoukkueen pisteiden poistot
+        private void button14_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK1();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK2();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK3();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK4();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK5();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK6();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK7();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK8();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK9();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK10();
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK11();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteK12();
+        }
+
+        //Vierasjoukkueen pisteiden lisäys
+        private void button26_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV1();
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV2();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV3();
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV4();
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV5();
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV6();
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV7();
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV8();
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV9();
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV10();
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV11();
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            t1.lisaaPisteV12();
+        }
+       
+        //Vierasjoukkueen pisteiden poisto
+        private void button38_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV1();
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV2();
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV3();
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV4();
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV5();
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV6();
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV7();
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV8();
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV9();
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV10();
+        }
+
+        private void button48_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV11();
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            t1.poistaPisteV12();
+        }
     }
 }
