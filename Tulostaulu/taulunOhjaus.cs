@@ -41,6 +41,7 @@ namespace Tulostaulu
             label5.Text = lista[3];
             label6.Text = lista[4];
             label7.Text = lista[5];
+            
 
             label4.Text = asetukset2.getNeljanneksienmaara().ToString();
         }
