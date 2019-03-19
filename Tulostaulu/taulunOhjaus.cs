@@ -41,25 +41,8 @@ namespace Tulostaulu
             label5.Text = lista[3];
             label6.Text = lista[4];
             label7.Text = lista[5];
-            label8.Text = lista[6];
-            label9.Text = lista[7];
-            label10.Text = lista[8];
-            label11.Text = lista[9];
-            label12.Text = lista[10];
-            label13.Text = lista[11];
-            label14.Text = lista[12];
-            label15.Text = lista[13];
-            label16.Text = lista[14];
-            label17.Text = lista[15];
-            label18.Text = lista[16];
-            label19.Text = lista[17];
-            label20.Text = lista[18];
-            label21.Text = lista[19];
-            label22.Text = lista[20];
-            label23.Text = lista[21];
-            label24.Text = lista[22];
-            label25.Text = lista[23];
 
+            label4.Text = asetukset2.getNeljanneksienmaara().ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
