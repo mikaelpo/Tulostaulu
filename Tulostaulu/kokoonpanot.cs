@@ -47,9 +47,14 @@ namespace Tulostaulu
                 }
                 
             }
-            if (lines.Length < 24)
+            if (lines.Length > 24)
             {
-                MessageBox.Show("Ei tarpeeksi pelaajia, hae uusi tiedosto");
+                MessageBox.Show("Liikaa pelaajia, hae uusi tiedosto");
+                Array.Clear(lines, 0, lines.Length);
+            }
+            else if(lines.Length < 24)
+            {
+                MessageBox.Show("Liian vähän pelaajia, hae uusi tiedosto");
                 Array.Clear(lines, 0, lines.Length);
             }
            
