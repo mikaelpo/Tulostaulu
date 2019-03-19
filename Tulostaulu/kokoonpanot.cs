@@ -13,12 +13,12 @@ namespace Tulostaulu
 {
     public partial class kokoonpanot : Form
     {
+
         private oletusasetukset asetukset = new oletusasetukset();
         
         public kokoonpanot(oletusasetukset asetukset)
         {
             InitializeComponent();
-            
             this.asetukset = asetukset;
         }
 
@@ -112,7 +112,16 @@ namespace Tulostaulu
             }
         }
 
-  
+        private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ohjekirja o = new Ohjekirja();
+            o.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 

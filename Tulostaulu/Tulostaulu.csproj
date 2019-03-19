@@ -63,6 +63,12 @@
     <Compile Include="kokoonpanot.Designer.cs">
       <DependentUpon>kokoonpanot.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ohjekirja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ohjekirja.Designer.cs">
+      <DependentUpon>Ohjekirja.cs</DependentUpon>
+    </Compile>
     <Compile Include="oletusasetukset.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

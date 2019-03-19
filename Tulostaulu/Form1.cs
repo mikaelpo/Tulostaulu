@@ -15,6 +15,8 @@ namespace Tulostaulu
 {
     public partial class Form1 : Form
     {
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -30,9 +32,15 @@ namespace Tulostaulu
         private void button1_Click(object sender, EventArgs e)
         {
             asetukset a1 = new asetukset();
+            
             a1.Show();
+            this.Hide();
         }
 
-        
+        private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ohjekirja o = new Ohjekirja();
+            o.Show();
+        }
     }
 }

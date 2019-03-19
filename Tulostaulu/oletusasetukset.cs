@@ -22,7 +22,7 @@ namespace Tulostaulu
         private int virheet = 5;
         private int pelikellonSummeri = 0;
         private int heittokellonSummeri = 0;
-
+        
 
         public oletusasetukset(int neljanneksienMaara ,int neljanneksenPituus,  int jatkoajanPituus, Boolean kellonKayntisuuntaAlaspain, int lyhytTauko, int pitkaTauko, int tauko, int aikalisa, int aikalisienLukumaara, int hyokkaysaika1, int hyokkaysaika2, int virheet, int pelikellonSummeri, int heittokellonSummeri)
         {

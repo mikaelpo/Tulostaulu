@@ -13,10 +13,14 @@ namespace Tulostaulu
 {
     public partial class asetukset : Form
     {
+
+        
+
         private oletusasetukset a1 = new oletusasetukset(4,10, 5, true, 2, 15, 2, 1, 3, 1, 1, 5, 1, 1 );
         public asetukset()
         {
             InitializeComponent();
+            
         }
 
         private void asetukset_Load(object sender, EventArgs e)
@@ -62,15 +66,14 @@ namespace Tulostaulu
 
 
             kokoonpanot k1 = new kokoonpanot(a1);
+            
             k1.Show();
-            Close();
+            this.Hide();
+            
+            
+            
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-            a1.setNeljanneksienmaara(Convert.ToInt32(textBox2.Text));
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -101,5 +104,15 @@ namespace Tulostaulu
                 
         }
 
+        private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ohjekirja o = new Ohjekirja();
+            o.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

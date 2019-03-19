@@ -66,6 +66,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.työkalutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ohjeetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button4 = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -390,11 +395,48 @@
             this.label22.TabIndex = 40;
             this.label22.Text = "min";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.työkalutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(865, 28);
+            this.menuStrip1.TabIndex = 41;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // työkalutToolStripMenuItem
+            // 
+            this.työkalutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ohjeetToolStripMenuItem});
+            this.työkalutToolStripMenuItem.Name = "työkalutToolStripMenuItem";
+            this.työkalutToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.työkalutToolStripMenuItem.Text = "Työkalut";
+            // 
+            // ohjeetToolStripMenuItem
+            // 
+            this.ohjeetToolStripMenuItem.Name = "ohjeetToolStripMenuItem";
+            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.ohjeetToolStripMenuItem.Text = "Ohjeet";
+            this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(568, 502);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 42;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // asetukset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 537);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
@@ -433,9 +475,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "asetukset";
             this.Text = "Asetukset";
             this.Load += new System.EventHandler(this.asetukset_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,5 +527,9 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem työkalutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem;
+        private System.Windows.Forms.Button button4;
     }
 }
