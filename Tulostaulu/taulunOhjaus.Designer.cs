@@ -149,6 +149,12 @@
             this.button95 = new System.Windows.Forms.Button();
             this.button96 = new System.Windows.Forms.Button();
             this.button97 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ohjeetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -633,7 +639,7 @@
             // 
             // button26
             // 
-            this.button26.BackColor = System.Drawing.SystemColors.Control;
+            this.button26.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button26.ForeColor = System.Drawing.Color.Green;
             this.button26.Location = new System.Drawing.Point(1466, 83);
@@ -646,116 +652,138 @@
             // 
             // button27
             // 
-            this.button27.BackColor = System.Drawing.Color.Green;
+            this.button27.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.ForeColor = System.Drawing.Color.Green;
             this.button27.Location = new System.Drawing.Point(1466, 122);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(107, 35);
             this.button27.TabIndex = 50;
-            this.button27.Text = "lisää piste";
+            this.button27.Text = "+";
             this.button27.UseVisualStyleBackColor = false;
             this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
-            this.button28.BackColor = System.Drawing.Color.Green;
+            this.button28.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.Color.Green;
             this.button28.Location = new System.Drawing.Point(1466, 164);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(107, 35);
             this.button28.TabIndex = 51;
-            this.button28.Text = "lisää piste";
+            this.button28.Text = "+";
             this.button28.UseVisualStyleBackColor = false;
             this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button29
             // 
-            this.button29.BackColor = System.Drawing.Color.Green;
+            this.button29.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.ForeColor = System.Drawing.Color.Green;
             this.button29.Location = new System.Drawing.Point(1466, 205);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(107, 35);
             this.button29.TabIndex = 52;
-            this.button29.Text = "lisää piste";
+            this.button29.Text = "+";
             this.button29.UseVisualStyleBackColor = false;
             this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button30
             // 
-            this.button30.BackColor = System.Drawing.Color.Green;
+            this.button30.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.ForeColor = System.Drawing.Color.Green;
             this.button30.Location = new System.Drawing.Point(1466, 247);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(107, 35);
             this.button30.TabIndex = 53;
-            this.button30.Text = "lisää piste";
+            this.button30.Text = "+";
             this.button30.UseVisualStyleBackColor = false;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
-            this.button31.BackColor = System.Drawing.Color.Green;
+            this.button31.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button31.ForeColor = System.Drawing.Color.Green;
             this.button31.Location = new System.Drawing.Point(1466, 287);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(107, 35);
             this.button31.TabIndex = 54;
-            this.button31.Text = "lisää piste";
+            this.button31.Text = "+";
             this.button31.UseVisualStyleBackColor = false;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
+            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.ForeColor = System.Drawing.Color.Green;
             this.button32.Location = new System.Drawing.Point(1466, 328);
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(107, 35);
             this.button32.TabIndex = 55;
-            this.button32.Text = "lisää piste";
+            this.button32.Text = "+";
             this.button32.UseVisualStyleBackColor = true;
             this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button33
             // 
+            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.ForeColor = System.Drawing.Color.Green;
             this.button33.Location = new System.Drawing.Point(1466, 368);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(107, 35);
             this.button33.TabIndex = 56;
-            this.button33.Text = "lisää piste";
+            this.button33.Text = "+";
             this.button33.UseVisualStyleBackColor = true;
             this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // button34
             // 
+            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button34.ForeColor = System.Drawing.Color.Green;
             this.button34.Location = new System.Drawing.Point(1466, 407);
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(107, 35);
             this.button34.TabIndex = 57;
-            this.button34.Text = "lisää piste";
+            this.button34.Text = "+";
             this.button34.UseVisualStyleBackColor = true;
             this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button35
             // 
+            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.ForeColor = System.Drawing.Color.Green;
             this.button35.Location = new System.Drawing.Point(1466, 447);
             this.button35.Name = "button35";
             this.button35.Size = new System.Drawing.Size(107, 35);
             this.button35.TabIndex = 58;
-            this.button35.Text = "lisää piste";
+            this.button35.Text = "+";
             this.button35.UseVisualStyleBackColor = true;
             this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button36
             // 
+            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.ForeColor = System.Drawing.Color.Green;
             this.button36.Location = new System.Drawing.Point(1466, 492);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(107, 35);
             this.button36.TabIndex = 59;
-            this.button36.Text = "lisää piste";
+            this.button36.Text = "+";
             this.button36.UseVisualStyleBackColor = true;
             this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button37
             // 
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.ForeColor = System.Drawing.Color.Green;
             this.button37.Location = new System.Drawing.Point(1466, 535);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(107, 35);
             this.button37.TabIndex = 60;
-            this.button37.Text = "lisää piste";
+            this.button37.Text = "+";
             this.button37.UseVisualStyleBackColor = true;
             this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
@@ -807,91 +835,109 @@
             // 
             // button41
             // 
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.ForeColor = System.Drawing.Color.Red;
             this.button41.Location = new System.Drawing.Point(1353, 205);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(107, 35);
             this.button41.TabIndex = 65;
-            this.button41.Text = "poista piste";
+            this.button41.Text = "-";
             this.button41.UseVisualStyleBackColor = true;
             this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // button42
             // 
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.ForeColor = System.Drawing.Color.Red;
             this.button42.Location = new System.Drawing.Point(1353, 247);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(107, 35);
             this.button42.TabIndex = 66;
-            this.button42.Text = "poista piste";
+            this.button42.Text = "-";
             this.button42.UseVisualStyleBackColor = true;
             this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // button43
             // 
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.ForeColor = System.Drawing.Color.Red;
             this.button43.Location = new System.Drawing.Point(1353, 287);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(107, 35);
             this.button43.TabIndex = 67;
-            this.button43.Text = "poista piste";
+            this.button43.Text = "-";
             this.button43.UseVisualStyleBackColor = true;
             this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // button44
             // 
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.ForeColor = System.Drawing.Color.Red;
             this.button44.Location = new System.Drawing.Point(1353, 328);
             this.button44.Name = "button44";
             this.button44.Size = new System.Drawing.Size(107, 35);
             this.button44.TabIndex = 68;
-            this.button44.Text = "poista piste";
+            this.button44.Text = "-";
             this.button44.UseVisualStyleBackColor = true;
             this.button44.Click += new System.EventHandler(this.button44_Click);
             // 
             // button45
             // 
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.ForeColor = System.Drawing.Color.Red;
             this.button45.Location = new System.Drawing.Point(1353, 368);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(107, 35);
             this.button45.TabIndex = 69;
-            this.button45.Text = "poista piste";
+            this.button45.Text = "-";
             this.button45.UseVisualStyleBackColor = true;
             this.button45.Click += new System.EventHandler(this.button45_Click);
             // 
             // button46
             // 
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.ForeColor = System.Drawing.Color.Red;
             this.button46.Location = new System.Drawing.Point(1353, 407);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(107, 35);
             this.button46.TabIndex = 70;
-            this.button46.Text = "poista piste";
+            this.button46.Text = "-";
             this.button46.UseVisualStyleBackColor = true;
             this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // button47
             // 
+            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button47.ForeColor = System.Drawing.Color.Red;
             this.button47.Location = new System.Drawing.Point(1353, 447);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(107, 35);
             this.button47.TabIndex = 71;
-            this.button47.Text = "poista piste";
+            this.button47.Text = "-";
             this.button47.UseVisualStyleBackColor = true;
             this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
             // button48
             // 
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button48.ForeColor = System.Drawing.Color.Red;
             this.button48.Location = new System.Drawing.Point(1353, 492);
             this.button48.Name = "button48";
             this.button48.Size = new System.Drawing.Size(107, 35);
             this.button48.TabIndex = 72;
-            this.button48.Text = "poista piste";
+            this.button48.Text = "-";
             this.button48.UseVisualStyleBackColor = true;
             this.button48.Click += new System.EventHandler(this.button48_Click);
             // 
             // button49
             // 
+            this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button49.ForeColor = System.Drawing.Color.Red;
             this.button49.Location = new System.Drawing.Point(1353, 535);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(107, 35);
             this.button49.TabIndex = 73;
-            this.button49.Text = "poista piste";
+            this.button49.Text = "-";
             this.button49.UseVisualStyleBackColor = true;
             this.button49.Click += new System.EventHandler(this.button49_Click);
             // 
@@ -1113,225 +1159,323 @@
             // 
             // button74
             // 
+            this.button74.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button74.ForeColor = System.Drawing.Color.Green;
             this.button74.Location = new System.Drawing.Point(1176, 83);
             this.button74.Name = "button74";
             this.button74.Size = new System.Drawing.Size(107, 35);
             this.button74.TabIndex = 98;
-            this.button74.Text = "lisää virhe";
+            this.button74.Text = "+";
             this.button74.UseVisualStyleBackColor = true;
             // 
             // button75
             // 
+            this.button75.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button75.ForeColor = System.Drawing.Color.Green;
             this.button75.Location = new System.Drawing.Point(1176, 122);
             this.button75.Name = "button75";
             this.button75.Size = new System.Drawing.Size(107, 35);
             this.button75.TabIndex = 99;
-            this.button75.Text = "lisää virhe";
+            this.button75.Text = "+";
             this.button75.UseVisualStyleBackColor = true;
             // 
             // button76
             // 
+            this.button76.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button76.ForeColor = System.Drawing.Color.Green;
             this.button76.Location = new System.Drawing.Point(1176, 164);
             this.button76.Name = "button76";
             this.button76.Size = new System.Drawing.Size(107, 35);
             this.button76.TabIndex = 100;
-            this.button76.Text = "lisää virhe";
+            this.button76.Text = "+";
             this.button76.UseVisualStyleBackColor = true;
             // 
             // button77
             // 
+            this.button77.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button77.ForeColor = System.Drawing.Color.Green;
             this.button77.Location = new System.Drawing.Point(1176, 205);
             this.button77.Name = "button77";
             this.button77.Size = new System.Drawing.Size(107, 35);
             this.button77.TabIndex = 101;
-            this.button77.Text = "lisää virhe";
+            this.button77.Text = "+";
             this.button77.UseVisualStyleBackColor = true;
             // 
             // button78
             // 
+            this.button78.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button78.ForeColor = System.Drawing.Color.Green;
             this.button78.Location = new System.Drawing.Point(1176, 247);
             this.button78.Name = "button78";
             this.button78.Size = new System.Drawing.Size(107, 35);
             this.button78.TabIndex = 102;
-            this.button78.Text = "lisää virhe";
+            this.button78.Text = "+";
             this.button78.UseVisualStyleBackColor = true;
             // 
             // button79
             // 
+            this.button79.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button79.ForeColor = System.Drawing.Color.Green;
             this.button79.Location = new System.Drawing.Point(1176, 287);
             this.button79.Name = "button79";
             this.button79.Size = new System.Drawing.Size(107, 35);
             this.button79.TabIndex = 103;
-            this.button79.Text = "lisää virhe";
+            this.button79.Text = "+";
             this.button79.UseVisualStyleBackColor = true;
             // 
             // button80
             // 
+            this.button80.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button80.ForeColor = System.Drawing.Color.Green;
             this.button80.Location = new System.Drawing.Point(1176, 328);
             this.button80.Name = "button80";
             this.button80.Size = new System.Drawing.Size(107, 35);
             this.button80.TabIndex = 104;
-            this.button80.Text = "lisää virhe";
+            this.button80.Text = "+";
             this.button80.UseVisualStyleBackColor = true;
             // 
             // button81
             // 
+            this.button81.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button81.ForeColor = System.Drawing.Color.Green;
             this.button81.Location = new System.Drawing.Point(1176, 368);
             this.button81.Name = "button81";
             this.button81.Size = new System.Drawing.Size(107, 35);
             this.button81.TabIndex = 105;
-            this.button81.Text = "lisää virhe";
+            this.button81.Text = "+";
             this.button81.UseVisualStyleBackColor = true;
             // 
             // button82
             // 
+            this.button82.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button82.ForeColor = System.Drawing.Color.Green;
             this.button82.Location = new System.Drawing.Point(1176, 407);
             this.button82.Name = "button82";
             this.button82.Size = new System.Drawing.Size(107, 35);
             this.button82.TabIndex = 106;
-            this.button82.Text = "lisää virhe";
+            this.button82.Text = "+";
             this.button82.UseVisualStyleBackColor = true;
             // 
             // button83
             // 
+            this.button83.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button83.ForeColor = System.Drawing.Color.Green;
             this.button83.Location = new System.Drawing.Point(1176, 447);
             this.button83.Name = "button83";
             this.button83.Size = new System.Drawing.Size(107, 35);
             this.button83.TabIndex = 107;
-            this.button83.Text = "lisää virhe";
+            this.button83.Text = "+";
             this.button83.UseVisualStyleBackColor = true;
             // 
             // button84
             // 
+            this.button84.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button84.ForeColor = System.Drawing.Color.Green;
             this.button84.Location = new System.Drawing.Point(1176, 492);
             this.button84.Name = "button84";
             this.button84.Size = new System.Drawing.Size(107, 35);
             this.button84.TabIndex = 108;
-            this.button84.Text = "lisää virhe";
+            this.button84.Text = "+";
             this.button84.UseVisualStyleBackColor = true;
             // 
             // button85
             // 
+            this.button85.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button85.ForeColor = System.Drawing.Color.Green;
             this.button85.Location = new System.Drawing.Point(1176, 535);
             this.button85.Name = "button85";
             this.button85.Size = new System.Drawing.Size(107, 35);
             this.button85.TabIndex = 109;
-            this.button85.Text = "lisää virhe";
+            this.button85.Text = "+";
             this.button85.UseVisualStyleBackColor = true;
             // 
             // button86
             // 
+            this.button86.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button86.ForeColor = System.Drawing.Color.Red;
             this.button86.Location = new System.Drawing.Point(1063, 83);
             this.button86.Name = "button86";
             this.button86.Size = new System.Drawing.Size(107, 35);
             this.button86.TabIndex = 110;
-            this.button86.Text = "poista virhe";
+            this.button86.Text = "-";
             this.button86.UseVisualStyleBackColor = true;
             // 
             // button87
             // 
+            this.button87.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button87.ForeColor = System.Drawing.Color.Red;
             this.button87.Location = new System.Drawing.Point(1063, 122);
             this.button87.Name = "button87";
             this.button87.Size = new System.Drawing.Size(107, 35);
             this.button87.TabIndex = 111;
-            this.button87.Text = "poista virhe";
+            this.button87.Text = "-";
             this.button87.UseVisualStyleBackColor = true;
             // 
             // button88
             // 
+            this.button88.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button88.ForeColor = System.Drawing.Color.Red;
             this.button88.Location = new System.Drawing.Point(1063, 164);
             this.button88.Name = "button88";
             this.button88.Size = new System.Drawing.Size(107, 35);
             this.button88.TabIndex = 112;
-            this.button88.Text = "poista virhe";
+            this.button88.Text = "-";
             this.button88.UseVisualStyleBackColor = true;
             // 
             // button89
             // 
+            this.button89.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button89.ForeColor = System.Drawing.Color.Red;
             this.button89.Location = new System.Drawing.Point(1063, 205);
             this.button89.Name = "button89";
             this.button89.Size = new System.Drawing.Size(107, 35);
             this.button89.TabIndex = 113;
-            this.button89.Text = "poista virhe";
+            this.button89.Text = "-";
             this.button89.UseVisualStyleBackColor = true;
             // 
             // button90
             // 
+            this.button90.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button90.ForeColor = System.Drawing.Color.Red;
             this.button90.Location = new System.Drawing.Point(1063, 247);
             this.button90.Name = "button90";
             this.button90.Size = new System.Drawing.Size(107, 35);
             this.button90.TabIndex = 114;
-            this.button90.Text = "poista virhe";
+            this.button90.Text = "-";
             this.button90.UseVisualStyleBackColor = true;
             // 
             // button91
             // 
+            this.button91.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button91.ForeColor = System.Drawing.Color.Red;
             this.button91.Location = new System.Drawing.Point(1063, 287);
             this.button91.Name = "button91";
             this.button91.Size = new System.Drawing.Size(107, 35);
             this.button91.TabIndex = 115;
-            this.button91.Text = "poista virhe";
+            this.button91.Text = "-";
             this.button91.UseVisualStyleBackColor = true;
             // 
             // button92
             // 
+            this.button92.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button92.ForeColor = System.Drawing.Color.Red;
             this.button92.Location = new System.Drawing.Point(1063, 328);
             this.button92.Name = "button92";
             this.button92.Size = new System.Drawing.Size(107, 35);
             this.button92.TabIndex = 116;
-            this.button92.Text = "poista virhe";
+            this.button92.Text = "-";
             this.button92.UseVisualStyleBackColor = true;
             // 
             // button93
             // 
+            this.button93.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button93.ForeColor = System.Drawing.Color.Red;
             this.button93.Location = new System.Drawing.Point(1063, 368);
             this.button93.Name = "button93";
             this.button93.Size = new System.Drawing.Size(107, 35);
             this.button93.TabIndex = 117;
-            this.button93.Text = "poista virhe";
+            this.button93.Text = "-";
             this.button93.UseVisualStyleBackColor = true;
             // 
             // button94
             // 
+            this.button94.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button94.ForeColor = System.Drawing.Color.Red;
             this.button94.Location = new System.Drawing.Point(1063, 407);
             this.button94.Name = "button94";
             this.button94.Size = new System.Drawing.Size(107, 35);
             this.button94.TabIndex = 118;
-            this.button94.Text = "poista virhe";
+            this.button94.Text = "-";
             this.button94.UseVisualStyleBackColor = true;
             // 
             // button95
             // 
+            this.button95.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button95.ForeColor = System.Drawing.Color.Red;
             this.button95.Location = new System.Drawing.Point(1063, 447);
             this.button95.Name = "button95";
             this.button95.Size = new System.Drawing.Size(107, 35);
             this.button95.TabIndex = 119;
-            this.button95.Text = "poista virhe";
+            this.button95.Text = "-";
             this.button95.UseVisualStyleBackColor = true;
             // 
             // button96
             // 
+            this.button96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button96.ForeColor = System.Drawing.Color.Red;
             this.button96.Location = new System.Drawing.Point(1063, 492);
             this.button96.Name = "button96";
             this.button96.Size = new System.Drawing.Size(107, 35);
             this.button96.TabIndex = 120;
-            this.button96.Text = "poista virhe";
+            this.button96.Text = "-";
             this.button96.UseVisualStyleBackColor = true;
             // 
             // button97
             // 
+            this.button97.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button97.ForeColor = System.Drawing.Color.Red;
             this.button97.Location = new System.Drawing.Point(1063, 535);
             this.button97.Name = "button97";
             this.button97.Size = new System.Drawing.Size(107, 35);
             this.button97.TabIndex = 121;
-            this.button97.Text = "poista virhe";
+            this.button97.Text = "-";
             this.button97.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ohjeetToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1860, 28);
+            this.menuStrip1.TabIndex = 122;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // ohjeetToolStripMenuItem
+            // 
+            this.ohjeetToolStripMenuItem.Name = "ohjeetToolStripMenuItem";
+            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.ohjeetToolStripMenuItem.Text = "Ohjeet";
+            this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.TabIndex = 123;
+            this.label4.Text = "label4";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(1411, 38);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 32);
+            this.label26.TabIndex = 124;
+            this.label26.Text = "Pisteet";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(1125, 38);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(113, 32);
+            this.label28.TabIndex = 126;
+            this.label28.Text = "Virheet";
             // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1860, 700);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button97);
             this.Controls.Add(this.button96);
             this.Controls.Add(this.button95);
@@ -1453,11 +1597,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.KeyPreview = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "taulunOhjaus";
             this.Text = "Taulun_ohjaus";
             this.Load += new System.EventHandler(this.taulunOhjaus_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.taulunOhjaus_KeyDown);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1586,5 +1734,10 @@
         private System.Windows.Forms.Button button95;
         private System.Windows.Forms.Button button96;
         private System.Windows.Forms.Button button97;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label28;
     }
 }

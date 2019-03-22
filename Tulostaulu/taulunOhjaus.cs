@@ -330,5 +330,10 @@ namespace Tulostaulu
         {
             t1.poistaPisteV12();
         }
+
+        private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ohjekirja ohje = new Ohjekirja();
+        }
     }
 }
