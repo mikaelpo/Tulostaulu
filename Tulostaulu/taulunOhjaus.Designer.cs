@@ -151,7 +151,6 @@
             this.button97 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ohjeetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label4 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -1537,15 +1536,6 @@
             this.ohjeetToolStripMenuItem.Text = "Ohjeet";
             this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 123;
-            this.label4.Text = "label4";
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -1595,7 +1585,6 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button97);
             this.Controls.Add(this.button96);
             this.Controls.Add(this.button95);
@@ -1856,7 +1845,6 @@
         private System.Windows.Forms.Button button97;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
