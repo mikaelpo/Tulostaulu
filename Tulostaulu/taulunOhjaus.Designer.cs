@@ -155,12 +155,24 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.button98 = new System.Windows.Forms.Button();
+            this.button99 = new System.Windows.Forms.Button();
+            this.button100 = new System.Windows.Forms.Button();
+            this.button101 = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.button102 = new System.Windows.Forms.Button();
+            this.button103 = new System.Windows.Forms.Button();
+            this.button104 = new System.Windows.Forms.Button();
+            this.button105 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(30, 569);
+            this.button1.Location = new System.Drawing.Point(12, 790);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 66);
             this.button1.TabIndex = 0;
@@ -1540,47 +1552,187 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1411, 38);
+            this.label26.Location = new System.Drawing.Point(1337, 38);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(110, 32);
+            this.label26.Size = new System.Drawing.Size(247, 32);
             this.label26.TabIndex = 124;
-            this.label26.Text = "Pisteet";
+            this.label26.Text = "Pelaajien Pisteet";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(1125, 38);
+            this.label28.Location = new System.Drawing.Point(1047, 38);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(113, 32);
+            this.label28.Size = new System.Drawing.Size(250, 32);
             this.label28.TabIndex = 126;
-            this.label28.Text = "Virheet";
+            this.label28.Text = "Pelaajien Virheet";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(596, 38);
+            this.label27.Location = new System.Drawing.Point(538, 28);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 32);
+            this.label27.Size = new System.Drawing.Size(250, 32);
             this.label27.TabIndex = 127;
-            this.label27.Text = "Virheet";
+            this.label27.Text = "Pelaajien Virheet";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(304, 38);
+            this.label29.Location = new System.Drawing.Point(234, 28);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(110, 32);
+            this.label29.Size = new System.Drawing.Size(247, 32);
             this.label29.TabIndex = 128;
-            this.label29.Text = "Pisteet";
+            this.label29.Text = " PelaajienPisteet";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1062, 619);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(221, 32);
+            this.label4.TabIndex = 129;
+            this.label4.Text = "Joukkuevirheet";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(1353, 619);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(220, 32);
+            this.label30.TabIndex = 130;
+            this.label30.Text = "Joukkuepisteet";
+            // 
+            // button98
+            // 
+            this.button98.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button98.ForeColor = System.Drawing.Color.Red;
+            this.button98.Location = new System.Drawing.Point(1353, 698);
+            this.button98.Name = "button98";
+            this.button98.Size = new System.Drawing.Size(107, 35);
+            this.button98.TabIndex = 132;
+            this.button98.Text = "-";
+            this.button98.UseVisualStyleBackColor = true;
+            // 
+            // button99
+            // 
+            this.button99.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button99.ForeColor = System.Drawing.Color.Green;
+            this.button99.Location = new System.Drawing.Point(1466, 698);
+            this.button99.Name = "button99";
+            this.button99.Size = new System.Drawing.Size(107, 35);
+            this.button99.TabIndex = 131;
+            this.button99.Text = "+";
+            this.button99.UseVisualStyleBackColor = true;
+            // 
+            // button100
+            // 
+            this.button100.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button100.ForeColor = System.Drawing.Color.Red;
+            this.button100.Location = new System.Drawing.Point(1063, 698);
+            this.button100.Name = "button100";
+            this.button100.Size = new System.Drawing.Size(107, 35);
+            this.button100.TabIndex = 134;
+            this.button100.Text = "-";
+            this.button100.UseVisualStyleBackColor = true;
+            // 
+            // button101
+            // 
+            this.button101.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button101.ForeColor = System.Drawing.Color.Green;
+            this.button101.Location = new System.Drawing.Point(1176, 698);
+            this.button101.Name = "button101";
+            this.button101.Size = new System.Drawing.Size(107, 35);
+            this.button101.TabIndex = 133;
+            this.button101.Text = "+";
+            this.button101.UseVisualStyleBackColor = true;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(250, 619);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(220, 32);
+            this.label31.TabIndex = 135;
+            this.label31.Text = "Joukkuepisteet";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(543, 619);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(221, 32);
+            this.label32.TabIndex = 136;
+            this.label32.Text = "Joukkuevirheet";
+            // 
+            // button102
+            // 
+            this.button102.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button102.ForeColor = System.Drawing.Color.Red;
+            this.button102.Location = new System.Drawing.Point(544, 698);
+            this.button102.Name = "button102";
+            this.button102.Size = new System.Drawing.Size(102, 35);
+            this.button102.TabIndex = 138;
+            this.button102.Text = "-";
+            this.button102.UseVisualStyleBackColor = true;
+            // 
+            // button103
+            // 
+            this.button103.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button103.ForeColor = System.Drawing.Color.Green;
+            this.button103.Location = new System.Drawing.Point(657, 698);
+            this.button103.Name = "button103";
+            this.button103.Size = new System.Drawing.Size(102, 35);
+            this.button103.TabIndex = 137;
+            this.button103.Text = "+";
+            this.button103.UseVisualStyleBackColor = true;
+            // 
+            // button104
+            // 
+            this.button104.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button104.ForeColor = System.Drawing.Color.Red;
+            this.button104.Location = new System.Drawing.Point(250, 698);
+            this.button104.Name = "button104";
+            this.button104.Size = new System.Drawing.Size(107, 35);
+            this.button104.TabIndex = 140;
+            this.button104.Text = "-";
+            this.button104.UseVisualStyleBackColor = true;
+            // 
+            // button105
+            // 
+            this.button105.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button105.ForeColor = System.Drawing.Color.Green;
+            this.button105.Location = new System.Drawing.Point(363, 698);
+            this.button105.Name = "button105";
+            this.button105.Size = new System.Drawing.Size(107, 35);
+            this.button105.TabIndex = 139;
+            this.button105.Text = "+";
+            this.button105.UseVisualStyleBackColor = true;
             // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1860, 700);
+            this.ClientSize = new System.Drawing.Size(1860, 878);
+            this.Controls.Add(this.button104);
+            this.Controls.Add(this.button105);
+            this.Controls.Add(this.button102);
+            this.Controls.Add(this.button103);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.button100);
+            this.Controls.Add(this.button101);
+            this.Controls.Add(this.button98);
+            this.Controls.Add(this.button99);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label28);
@@ -1849,5 +2001,17 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button button98;
+        private System.Windows.Forms.Button button99;
+        private System.Windows.Forms.Button button100;
+        private System.Windows.Forms.Button button101;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Button button102;
+        private System.Windows.Forms.Button button103;
+        private System.Windows.Forms.Button button104;
+        private System.Windows.Forms.Button button105;
     }
 }
