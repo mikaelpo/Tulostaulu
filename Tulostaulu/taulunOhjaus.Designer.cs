@@ -169,8 +169,8 @@
             this.button105 = new System.Windows.Forms.Button();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxMin = new System.Windows.Forms.TextBox();
+            this.textBoxSek = new System.Windows.Forms.TextBox();
             this.button106 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -1741,19 +1741,19 @@
             this.label34.TabIndex = 142;
             this.label34.Text = "SEK";
             // 
-            // textBox1
+            // textBoxMin
             // 
-            this.textBox1.Location = new System.Drawing.Point(819, 238);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(81, 22);
-            this.textBox1.TabIndex = 143;
+            this.textBoxMin.Location = new System.Drawing.Point(819, 238);
+            this.textBoxMin.Name = "textBoxMin";
+            this.textBoxMin.Size = new System.Drawing.Size(81, 22);
+            this.textBoxMin.TabIndex = 143;
             // 
-            // textBox2
+            // textBoxSek
             // 
-            this.textBox2.Location = new System.Drawing.Point(925, 238);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(81, 22);
-            this.textBox2.TabIndex = 144;
+            this.textBoxSek.Location = new System.Drawing.Point(925, 238);
+            this.textBoxSek.Name = "textBoxSek";
+            this.textBoxSek.Size = new System.Drawing.Size(81, 22);
+            this.textBoxSek.TabIndex = 144;
             // 
             // button106
             // 
@@ -1763,6 +1763,7 @@
             this.button106.TabIndex = 145;
             this.button106.Text = "Muuta aikaa";
             this.button106.UseVisualStyleBackColor = true;
+            this.button106.Click += new System.EventHandler(this.button106_Click);
             // 
             // taulunOhjaus
             // 
@@ -1770,8 +1771,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1771, 878);
             this.Controls.Add(this.button106);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSek);
+            this.Controls.Add(this.textBoxMin);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.button104);
@@ -2068,8 +2069,8 @@
         private System.Windows.Forms.Button button105;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxMin;
+        private System.Windows.Forms.TextBox textBoxSek;
         private System.Windows.Forms.Button button106;
     }
 }

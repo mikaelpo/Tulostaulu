@@ -62,6 +62,9 @@ namespace Tulostaulu
             label24.Text = lista2[10];
             label25.Text = lista2[11];
 
+            textBoxMin.Text = asetukset2.getNeljanneksenpituus().ToString();
+            textBoxSek.Text = asetukset2.getNeljanneksenpituusSekunnit().ToString();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -334,6 +337,11 @@ namespace Tulostaulu
         private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ohjekirja ohje = new Ohjekirja();
+        }
+
+        private void button106_Click(object sender, EventArgs e)
+        {
+            t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text));
         }
     }
 }

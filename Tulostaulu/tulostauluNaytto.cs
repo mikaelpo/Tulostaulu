@@ -406,23 +406,22 @@ namespace Tulostaulu
 
                 timeMs--;
 
-                if (timeMs <= 0)
+                if (timeMs == -1)
                 {
                     timeSs--;
                     timeMs = 9;
-
-                    if (timeSs <= 0)
-                    {
-                        timeMm--;
-                        timeSs = 59;
-
-                        if (timeMm <= 0 && timeSs <= 0 && timeMs <= 0)
-                        {
-                            isActive = false;
-                            k3.Text = "Peli loppui";
-                        }
-                    }
                 }
+                if (timeSs == -1)
+                {
+                    timeMm--;
+                    timeSs = 59;
+                }
+                if (timeMm == 0 && timeSs == 0 && timeMs == 0)
+                {
+                    isActive = false;
+                    k3.Text = "Peli loppui";
+                }
+                    
             }
 
             drawTime();
@@ -433,6 +432,13 @@ namespace Tulostaulu
             labelMs.Text = String.Format("{0:00}", timeMs);
             labelSs.Text = String.Format("{0:00}", timeSs);
             labelMm.Text = String.Format("{0:00}", timeMm);
+        }
+
+        public void muutaKello(int minuutti, int sekunti)
+        {
+            at.setNeljanneksenpituus(minuutti);
+            at.setNeljanneksenpituusSekunnit(sekunti);
+            resetTime();
         }
 
     }
