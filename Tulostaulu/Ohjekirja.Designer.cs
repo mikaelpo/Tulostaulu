@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(42, 38);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(823, 467);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Tähän ohjeet\r\n\r\nVoi kirjoittaa kun menee tämän textboxin properties osaan.\r\nSielt" +
+    "ä Text kohta, jonka voi laajentaa ja teksti sinne.\r\n";
+            // 
+            // Ohjekirja
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1022, 540);
+            this.Controls.Add(this.textBox1);
+            this.Name = "Ohjekirja";
             this.Text = "Ohjekirja";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

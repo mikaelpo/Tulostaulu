@@ -167,6 +167,11 @@
             this.button103 = new System.Windows.Forms.Button();
             this.button104 = new System.Windows.Forms.Button();
             this.button105 = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button106 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1537,7 +1542,7 @@
             this.ohjeetToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1860, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1771, 28);
             this.menuStrip1.TabIndex = 122;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1716,11 +1721,59 @@
             this.button105.Text = "+";
             this.button105.UseVisualStyleBackColor = true;
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(833, 198);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(51, 25);
+            this.label33.TabIndex = 141;
+            this.label33.Text = "MIN";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(939, 198);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(56, 25);
+            this.label34.TabIndex = 142;
+            this.label34.Text = "SEK";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(819, 238);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(81, 22);
+            this.textBox1.TabIndex = 143;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(925, 238);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(81, 22);
+            this.textBox2.TabIndex = 144;
+            // 
+            // button106
+            // 
+            this.button106.Location = new System.Drawing.Point(848, 287);
+            this.button106.Name = "button106";
+            this.button106.Size = new System.Drawing.Size(133, 34);
+            this.button106.TabIndex = 145;
+            this.button106.Text = "Muuta aikaa";
+            this.button106.UseVisualStyleBackColor = true;
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1860, 878);
+            this.ClientSize = new System.Drawing.Size(1771, 878);
+            this.Controls.Add(this.button106);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.button104);
             this.Controls.Add(this.button105);
             this.Controls.Add(this.button102);
@@ -2013,5 +2066,10 @@
         private System.Windows.Forms.Button button103;
         private System.Windows.Forms.Button button104;
         private System.Windows.Forms.Button button105;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button106;
     }
 }
