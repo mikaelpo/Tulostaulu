@@ -14,9 +14,8 @@ namespace Tulostaulu
     public partial class asetukset : Form
     {
 
-        
 
-        private oletusasetukset a1 = new oletusasetukset(4,0,10, 5, true, 2, 15, 2, 1, 3, 1, 1, 5, 1, 1 );
+        private oletusasetukset a1 = new oletusasetukset(4, 0, 10, 5, 0, true, 2, 0, 15, 0, 2, 1, 3, 1, 1, 5, 1, 1 );
         public asetukset()
         {
             InitializeComponent();
@@ -39,6 +38,9 @@ namespace Tulostaulu
             textBox11.Text = 5.ToString();
             textBox13.Text = 2.ToString();
             textBox12.Text = 2.ToString();
+            textBox14.Text = 0.ToString();
+            textBox15.Text = 0.ToString();
+            textBox16.Text = 0.ToString();
         }
 
         private void buttonA1_Click(object sender, EventArgs e)
@@ -50,8 +52,11 @@ namespace Tulostaulu
                 a1.setNeljanneksenpituusSekunnit(Convert.ToInt32(textBox4.Text));
                 a1.setNeljanneksienmaara(Convert.ToInt32(textBox2.Text));
                 a1.setJatkoajanpituus(Convert.ToInt32(textBox3.Text));
+                a1.setJatkoajanpituusSekunnit(Convert.ToInt32(textBox14.Text));
                 a1.setLyhyttauko(Convert.ToInt32(textBox5.Text));
+                a1.setLyhyttaukoSekunnit(Convert.ToInt32(textBox15.Text));
                 a1.setPitkatauko(Convert.ToInt32(textBox7.Text));
+                a1.setPitkataukoSekunnit(Convert.ToInt32(textBox16.Text));
                 a1.setAikalisa(Convert.ToInt32(textBox6.Text));
                 a1.setAikalisienlukumaara(Convert.ToInt32(textBox8.Text));
                 a1.setHyokkaysaika1(Convert.ToInt32(textBox9.Text));
@@ -93,6 +98,9 @@ namespace Tulostaulu
             textBox11.Text = 5.ToString();
             textBox13.Text = 2.ToString();
             textBox12.Text = 2.ToString();
+            textBox14.Text = 0.ToString();
+            textBox15.Text = 0.ToString();
+            textBox16.Text = 0.ToString();
 
         }
 

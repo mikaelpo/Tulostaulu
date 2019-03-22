@@ -33,11 +33,11 @@ namespace Tulostaulu
 
             if (String.IsNullOrEmpty(textBoxK1.Text))
             {
-                MessageBox.Show("Valitse pelaajat");
+                MessageBox.Show("Valitse kotijoukkueen pelaajat");
             }
             else if (String.IsNullOrEmpty(textBoxK4.Text))
             {
-                MessageBox.Show("Valitse pelaajat");
+                MessageBox.Show("Valitse vierasjoukkueen pelaajat");
             }
             /*else
             {
