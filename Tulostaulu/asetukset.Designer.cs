@@ -70,6 +70,8 @@
             this.työkalutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ohjeetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -417,7 +419,7 @@
             // ohjeetToolStripMenuItem
             // 
             this.ohjeetToolStripMenuItem.Name = "ohjeetToolStripMenuItem";
-            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.ohjeetToolStripMenuItem.Text = "Ohjeet";
             this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
             // 
@@ -431,11 +433,29 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(369, 21);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.TabIndex = 43;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(476, 26);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(15, 17);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "s";
+            // 
             // asetukset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 537);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
@@ -531,5 +551,7 @@
         private System.Windows.Forms.ToolStripMenuItem työkalutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label23;
     }
 }

@@ -34,7 +34,7 @@ namespace Tulostaulu
             asetukset a1 = new asetukset();
             
             a1.Show();
-            this.Hide();
+            
         }
 
         private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)

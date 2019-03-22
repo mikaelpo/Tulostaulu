@@ -16,7 +16,7 @@ namespace Tulostaulu
 
         
 
-        private oletusasetukset a1 = new oletusasetukset(4,10, 5, true, 2, 15, 2, 1, 3, 1, 1, 5, 1, 1 );
+        private oletusasetukset a1 = new oletusasetukset(4,0,10, 5, true, 2, 15, 2, 1, 3, 1, 1, 5, 1, 1 );
         public asetukset()
         {
             InitializeComponent();
@@ -27,6 +27,7 @@ namespace Tulostaulu
         {
             textBox1.Text = 10.ToString();
             textBox2.Text = 4.ToString();
+            textBox4.Text = 0.ToString();
             textBox3.Text = 5.ToString();
             textBox5.Text = 2.ToString();
             textBox7.Text = 15.ToString();
@@ -46,6 +47,7 @@ namespace Tulostaulu
             try
             {
                 a1.setNeljanneksenpituus(Convert.ToInt32(textBox1.Text));
+                a1.setNeljanneksenpituusSekunnit(Convert.ToInt32(textBox4.Text));
                 a1.setNeljanneksienmaara(Convert.ToInt32(textBox2.Text));
                 a1.setJatkoajanpituus(Convert.ToInt32(textBox3.Text));
                 a1.setLyhyttauko(Convert.ToInt32(textBox5.Text));
@@ -80,6 +82,7 @@ namespace Tulostaulu
             textBox1.Text = 10.ToString();
             textBox2.Text = 4.ToString();
             textBox3.Text = 5.ToString();
+            textBox4.Text = 0.ToString();
             textBox5.Text = 2.ToString();
             textBox7.Text = 15.ToString();
             a1.setKellonkayntisuuntaalaspain(true);

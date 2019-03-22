@@ -9,6 +9,9 @@ namespace Tulostaulu
     public class oletusasetukset
     {
         private int neljanneksenPituus = 10;
+
+        private int neljanneksenPituusSekunnit = 0;
+
         private int neljanneksienMaara = 4;
         private int jatkoajanPituus = 5;
         private Boolean kellonKayntisuuntaAlaspain = true;
@@ -24,9 +27,10 @@ namespace Tulostaulu
         private int heittokellonSummeri = 0;
         
 
-        public oletusasetukset(int neljanneksienMaara ,int neljanneksenPituus,  int jatkoajanPituus, Boolean kellonKayntisuuntaAlaspain, int lyhytTauko, int pitkaTauko, int tauko, int aikalisa, int aikalisienLukumaara, int hyokkaysaika1, int hyokkaysaika2, int virheet, int pelikellonSummeri, int heittokellonSummeri)
+        public oletusasetukset(int neljanneksienMaara, int neljanneksenPituusSekunnit, int neljanneksenPituus,  int jatkoajanPituus, Boolean kellonKayntisuuntaAlaspain, int lyhytTauko, int pitkaTauko, int tauko, int aikalisa, int aikalisienLukumaara, int hyokkaysaika1, int hyokkaysaika2, int virheet, int pelikellonSummeri, int heittokellonSummeri)
         {
             this.neljanneksenPituus = neljanneksenPituus;
+            this.neljanneksenPituusSekunnit = neljanneksenPituusSekunnit;
             this.neljanneksienMaara = neljanneksienMaara;
             this.jatkoajanPituus = jatkoajanPituus;
             this.kellonKayntisuuntaAlaspain = kellonKayntisuuntaAlaspain;
@@ -50,8 +54,18 @@ namespace Tulostaulu
             return this.neljanneksenPituus;
         }
 
-        public void setNeljanneksenpituus(int  neljanneksenPituus ){
+        public void setNeljanneksenpituus(int  neljanneksenPituus){
             this.neljanneksenPituus = neljanneksenPituus ;
+        }
+
+        public int getNeljanneksenpituusSekunnit()
+        {
+            return this.neljanneksenPituusSekunnit;
+        }
+
+        public void setNeljanneksenpituusSekunnit(int neljanneksenPituusSekunnit)
+        {
+            this.neljanneksenPituusSekunnit = neljanneksenPituusSekunnit;
         }
 
         public int getNeljanneksienmaara(){
