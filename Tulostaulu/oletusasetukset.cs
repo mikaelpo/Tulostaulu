@@ -9,14 +9,19 @@ namespace Tulostaulu
     public class oletusasetukset
     {
         private int neljanneksenPituus = 10;
-
         private int neljanneksenPituusSekunnit = 0;
-
         private int neljanneksienMaara = 4;
         private int jatkoajanPituus = 5;
+        private int jatkoajanPituusSekunnit = 0;
         private Boolean kellonKayntisuuntaAlaspain = true;
         private int lyhytTauko = 2;
+
+        private int lyhytTaukoSekunnit = 0;
+
         private int pitkaTauko = 15;
+
+        private int pitkaTaukoSekunnit = 0;
+
         private int tauko = 2;
         private int aikalisa = 1;
         private int aikalisienLukumaara = 3;
@@ -27,15 +32,18 @@ namespace Tulostaulu
         private int heittokellonSummeri = 0;
         
 
-        public oletusasetukset(int neljanneksienMaara, int neljanneksenPituusSekunnit, int neljanneksenPituus,  int jatkoajanPituus, Boolean kellonKayntisuuntaAlaspain, int lyhytTauko, int pitkaTauko, int tauko, int aikalisa, int aikalisienLukumaara, int hyokkaysaika1, int hyokkaysaika2, int virheet, int pelikellonSummeri, int heittokellonSummeri)
+        public oletusasetukset(int neljanneksienMaara, int neljanneksenPituusSekunnit, int neljanneksenPituus,  int jatkoajanPituus, int jatkoajanPituusSekunnit, Boolean kellonKayntisuuntaAlaspain, int lyhytTauko, int lyhytTaukoSekunnit, int pitkaTauko, int pitkaTaukoSekunnit, int tauko, int aikalisa, int aikalisienLukumaara, int hyokkaysaika1, int hyokkaysaika2, int virheet, int pelikellonSummeri, int heittokellonSummeri)
         {
             this.neljanneksenPituus = neljanneksenPituus;
             this.neljanneksenPituusSekunnit = neljanneksenPituusSekunnit;
             this.neljanneksienMaara = neljanneksienMaara;
             this.jatkoajanPituus = jatkoajanPituus;
+            this.jatkoajanPituusSekunnit = jatkoajanPituusSekunnit;
             this.kellonKayntisuuntaAlaspain = kellonKayntisuuntaAlaspain;
             this.lyhytTauko = lyhytTauko;
+            this.lyhytTaukoSekunnit = lyhytTaukoSekunnit;
             this.pitkaTauko = pitkaTauko;
+            this.pitkaTaukoSekunnit = pitkaTaukoSekunnit;
             this.tauko = tauko;
             this.aikalisa = aikalisa;
             this.aikalisienLukumaara = aikalisienLukumaara;
@@ -84,6 +92,16 @@ namespace Tulostaulu
             this.jatkoajanPituus = jatkoajanPituus;
         }
 
+        public int getJatkoajanpituusSekunnit()
+        {
+            return this.jatkoajanPituusSekunnit;
+        }
+
+        public void setJatkoajanpituusSekunnit(int jatkoajanPituusSekunnit)
+        {
+            this.jatkoajanPituusSekunnit = jatkoajanPituusSekunnit;
+        }
+
         public Boolean getKellonkayntisuuntaalaspain(){
             return this.kellonKayntisuuntaAlaspain;
         }
@@ -100,12 +118,32 @@ namespace Tulostaulu
             this.lyhytTauko = lyhytTauko;
         }
 
+        public int getLyhyttaukoSekunnit()
+        {
+            return this.lyhytTauko;
+        }
+
+        public void setLyhyttaukoSekunnit(int lyhytTaukoSekunnit)
+        {
+            this.lyhytTaukoSekunnit = lyhytTaukoSekunnit;
+        }
+
         public int gePitkatauko() {
             return this.pitkaTauko;
         }
 
         public void setPitkatauko(int pitkaTauko){
             this.pitkaTauko = pitkaTauko;
+        }
+
+        public int gePitkataukoSekunnit()
+        {
+            return this.pitkaTaukoSekunnit;
+        }
+
+        public void setPitkataukoSekunnit(int pitkaTaukoSekunnit)
+        {
+            this.pitkaTaukoSekunnit = pitkaTaukoSekunnit;
         }
 
         public int getTauko(){
