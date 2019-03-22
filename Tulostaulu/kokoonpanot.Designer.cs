@@ -40,6 +40,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ohjeetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBoxK4 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,25 +131,33 @@
             // ohjeetToolStripMenuItem
             // 
             this.ohjeetToolStripMenuItem.Name = "ohjeetToolStripMenuItem";
-            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.ohjeetToolStripMenuItem.Text = "Ohjeet";
             this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(525, 394);
+            this.button1.Location = new System.Drawing.Point(381, 40);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(188, 23);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Takaisin";
+            this.button1.Text = "Hae vierasjoukkueen pelaajat";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBoxK4
+            // 
+            this.textBoxK4.Location = new System.Drawing.Point(381, 83);
+            this.textBoxK4.Name = "textBoxK4";
+            this.textBoxK4.Size = new System.Drawing.Size(239, 22);
+            this.textBoxK4.TabIndex = 13;
             // 
             // kokoonpanot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxK4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonK4);
             this.Controls.Add(this.textBoxK3);
@@ -182,5 +191,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBoxK4;
     }
 }

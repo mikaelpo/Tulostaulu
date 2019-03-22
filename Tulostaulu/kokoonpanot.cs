@@ -22,7 +22,8 @@ namespace Tulostaulu
             this.asetukset = asetukset;
         }
 
-        string[] lines = new string[23];
+        string[] pelaajatKoti = new string[11];
+        string[] pelaajatVieras = new string[11];
         string kotijoukkueKuva;
         string vierasjoukkueKuva;
 
@@ -34,48 +35,52 @@ namespace Tulostaulu
             {
                 MessageBox.Show("Valitse pelaajat");
             }
-            else
+            else if (String.IsNullOrEmpty(textBoxK4.Text))
             {
-                for (int i = 0; i < lines.Length; i++)
+                MessageBox.Show("Valitse pelaajat");
+            }
+            /*else
+            {
+                for (int i = 0; i < pelaajatKoti.Length; i++)
                 {
-                    if (String.IsNullOrWhiteSpace(lines[i]))
+                    if (String.IsNullOrWhiteSpace(pelaajatKoti[i]))
                     {
                         MessageBox.Show("Tekstitiedostossa on tyhjä rivi rivillä: " + i + ". Hae tiedosto, jossa ei ole tyhjiä rivejä");
-                        Array.Clear(lines, 0, lines.Length);
+                        Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);
                     }
                     
                 }
                 
-            }
-            if (lines.Length > 24)
+            }*/
+
+            if (pelaajatKoti.Length > 11)
             {
-                MessageBox.Show("Liikaa pelaajia, hae uusi tiedosto");
-                Array.Clear(lines, 0, lines.Length);
+                MessageBox.Show("Liikaa pelaajia kotipelaajien tiedostossa, hae uusi tiedosto");
+                Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);
             }
-            else if(lines.Length < 24)
+            else if(pelaajatVieras.Length > 11)
+            {
+                MessageBox.Show("Liikaa pelaajia vieraspelaajien tiedostossa, hae uusi tiedosto");
+                Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);
+            }
+            /*else if(pelaajatKoti.Length < 24)
             {
                 MessageBox.Show("Liian vähän pelaajia, hae uusi tiedosto");
-                Array.Clear(lines, 0, lines.Length);
-            }
-           
+                Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);
+            }*/
+
             else if (String.IsNullOrEmpty(kotijoukkueKuva) || String.IsNullOrEmpty(vierasjoukkueKuva))
             {
                 MessageBox.Show("Joukkueen kuva puuttuu");
             }
             else
             {
-                taulunOhjaus t2 = new taulunOhjaus(lines, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
+                taulunOhjaus t2 = new taulunOhjaus(pelaajatKoti, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
                 t2.Show();
                 Close();
             }
         }
 
-
-        private void tarkastaVirheet()
-        {
-            
-            
-        }
 
         private void buttonK2_Click(object sender, EventArgs e)
         {
@@ -86,7 +91,7 @@ namespace Tulostaulu
             if(result == DialogResult.OK)
             {
                 textBoxK1.Text = openFileDialog1.FileName;
-                lines = System.IO.File.ReadAllLines(@openFileDialog1.FileName);  
+                pelaajatKoti = System.IO.File.ReadAllLines(@openFileDialog1.FileName);  
             }
         }
 
@@ -120,7 +125,14 @@ namespace Tulostaulu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            //Avataan file-haku ja lisätään tekstitiedoston pelaajat listaan
+            openFileDialog1.Filter = "Tekstitiedosto |*.txt;";
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                textBoxK4.Text = openFileDialog1.FileName;
+                pelaajatVieras = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
+            }
         }
     }
 }
