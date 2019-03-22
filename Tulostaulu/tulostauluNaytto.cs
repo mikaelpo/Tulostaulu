@@ -389,7 +389,7 @@ namespace Tulostaulu
         private void resetTime()
         {
             timeMs = 0;
-            timeSs = 0;
+            timeSs = at.getNeljanneksenpituusSekunnit();
             timeMm = at.getNeljanneksenpituus();
         }
 
