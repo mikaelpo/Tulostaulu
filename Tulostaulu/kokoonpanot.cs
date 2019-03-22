@@ -53,12 +53,12 @@ namespace Tulostaulu
                 
             }*/
 
-            if (pelaajatKoti.Length > 11)
+            if (pelaajatKoti.Length > 12)
             {
                 MessageBox.Show("Liikaa pelaajia kotipelaajien tiedostossa, hae uusi tiedosto");
                 Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);
             }
-            else if(pelaajatVieras.Length > 11)
+            else if(pelaajatVieras.Length > 12)
             {
                 MessageBox.Show("Liikaa pelaajia vieraspelaajien tiedostossa, hae uusi tiedosto");
                 Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);

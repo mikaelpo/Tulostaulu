@@ -30,8 +30,8 @@ namespace Tulostaulu
         public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at)
         {
             InitializeComponent();
-            this.lista2 = lista2;
-            this.lista = lista;
+            this.lista2 = listaVieras;
+            this.lista = listaKoti;
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
             this.at = at;
