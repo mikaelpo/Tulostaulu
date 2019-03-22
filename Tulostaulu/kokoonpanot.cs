@@ -75,7 +75,7 @@ namespace Tulostaulu
             }
             else
             {
-                taulunOhjaus t2 = new taulunOhjaus(pelaajatKoti, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
+                taulunOhjaus t2 = new taulunOhjaus(pelaajatKoti, pelaajatVieras, kotijoukkueKuva, vierasjoukkueKuva, asetukset);
                 t2.Show();
                 Close();
             }

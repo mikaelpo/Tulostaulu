@@ -14,10 +14,11 @@ namespace Tulostaulu
     {
 
         private string[] lista;
+        private string[] lista2;
         private string koti;
         private string vieras;
-        private int p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,
-            p21,p22,p23,p24 = 0;
+        private int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
+            p21, p22, p23, p24 = 0;
         private oletusasetukset at;
 
         //ajastimen muuttujat
@@ -26,9 +27,10 @@ namespace Tulostaulu
         int timeMm;
         bool isActive;
 
-        public tulostauluNaytto(string [] lista, string kotiKuva, string vierasKuva, oletusasetukset at)
+        public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at)
         {
             InitializeComponent();
+            this.lista2 = lista2;
             this.lista = lista;
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
@@ -59,18 +61,18 @@ namespace Tulostaulu
             label14.Text = lista[9];
             label15.Text = lista[10];
             label16.Text = lista[11];
-            label17.Text = lista[12];
-            label18.Text = lista[13];
-            label19.Text = lista[14];
-            label20.Text = lista[15];
-            label21.Text = lista[16];
-            label22.Text = lista[17];
-            label23.Text = lista[18];
-            label24.Text = lista[19];
-            label25.Text = lista[20];
-            label26.Text = lista[21];
-            label27.Text = lista[22];
-            label28.Text = lista[23];
+            label17.Text = lista2[0];
+            label18.Text = lista2[1];
+            label19.Text = lista2[2];
+            label20.Text = lista2[3];
+            label21.Text = lista2[4];
+            label22.Text = lista2[5];
+            label23.Text = lista2[6];
+            label24.Text = lista2[7];
+            label25.Text = lista2[8];
+            label26.Text = lista2[9];
+            label27.Text = lista2[10];
+            label28.Text = lista2[11];
 
         }
 

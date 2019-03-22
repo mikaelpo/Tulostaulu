@@ -15,18 +15,20 @@ namespace Tulostaulu
     {
 
         private string[] lista;
+        private string[] lista2;
         private string koti;
         private string vieras;
         private tulostauluNaytto t1;
         private oletusasetukset asetukset2 = new oletusasetukset();
-        
-        
 
-        public taulunOhjaus(string[] lista, string kotiKuva, string vierasKuva, oletusasetukset asetukset)
+
+
+        public taulunOhjaus(string[] lista, string[] lista2, string kotiKuva, string vierasKuva, oletusasetukset asetukset)
         {
             InitializeComponent();
 
             this.lista = lista;
+            this.lista2 = lista2;
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
             asetukset2 = asetukset;
@@ -47,24 +49,24 @@ namespace Tulostaulu
             label11.Text = lista[9];
             label12.Text = lista[10];
             label13.Text = lista[11];
-            label14.Text = lista[12];
-            label15.Text = lista[13];
-            label16.Text = lista[14];
-            label17.Text = lista[15];
-            label18.Text = lista[16];
-            label19.Text = lista[17];
-            label20.Text = lista[18];
-            label21.Text = lista[19];
-            label22.Text = lista[20];
-            label23.Text = lista[21];
-            label24.Text = lista[22];
-            label25.Text = lista[23];
+            label14.Text = lista2[0];
+            label15.Text = lista2[1];
+            label16.Text = lista2[2];
+            label17.Text = lista2[3];
+            label18.Text = lista2[4];
+            label19.Text = lista2[5];
+            label20.Text = lista2[6];
+            label21.Text = lista2[7];
+            label22.Text = lista2[8];
+            label23.Text = lista2[9];
+            label24.Text = lista2[10];
+            label25.Text = lista2[11];
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            t1 = new tulostauluNaytto(lista, koti, vieras, asetukset2);
+            t1 = new tulostauluNaytto(lista, lista2, koti, vieras, asetukset2);
             t1.Show();  
         }
 
