@@ -85,9 +85,9 @@
             this.v10 = new System.Windows.Forms.Label();
             this.v11 = new System.Windows.Forms.Label();
             this.v12 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.labelPisteKoti = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
+            this.labelPisteVieras = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
@@ -127,7 +127,7 @@
             this.k1.ForeColor = System.Drawing.Color.Orange;
             this.k1.Location = new System.Drawing.Point(524, 63);
             this.k1.Name = "k1";
-            this.k1.Size = new System.Drawing.Size(47, 52);
+            this.k1.Size = new System.Drawing.Size(46, 51);
             this.k1.TabIndex = 5;
             this.k1.Text = "0";
             // 
@@ -171,7 +171,7 @@
             this.k2.ForeColor = System.Drawing.Color.Orange;
             this.k2.Location = new System.Drawing.Point(524, 152);
             this.k2.Name = "k2";
-            this.k2.Size = new System.Drawing.Size(47, 52);
+            this.k2.Size = new System.Drawing.Size(46, 51);
             this.k2.TabIndex = 9;
             this.k2.Text = "0";
             // 
@@ -182,7 +182,7 @@
             this.k3.ForeColor = System.Drawing.Color.Orange;
             this.k3.Location = new System.Drawing.Point(524, 241);
             this.k3.Name = "k3";
-            this.k3.Size = new System.Drawing.Size(47, 52);
+            this.k3.Size = new System.Drawing.Size(46, 51);
             this.k3.TabIndex = 10;
             this.k3.Text = "0";
             // 
@@ -484,7 +484,7 @@
             this.k4.ForeColor = System.Drawing.Color.Orange;
             this.k4.Location = new System.Drawing.Point(524, 319);
             this.k4.Name = "k4";
-            this.k4.Size = new System.Drawing.Size(47, 52);
+            this.k4.Size = new System.Drawing.Size(46, 51);
             this.k4.TabIndex = 37;
             this.k4.Text = "0";
             // 
@@ -495,7 +495,7 @@
             this.k5.ForeColor = System.Drawing.Color.Orange;
             this.k5.Location = new System.Drawing.Point(524, 390);
             this.k5.Name = "k5";
-            this.k5.Size = new System.Drawing.Size(47, 52);
+            this.k5.Size = new System.Drawing.Size(46, 51);
             this.k5.TabIndex = 38;
             this.k5.Text = "0";
             // 
@@ -506,7 +506,7 @@
             this.k6.ForeColor = System.Drawing.Color.Orange;
             this.k6.Location = new System.Drawing.Point(524, 465);
             this.k6.Name = "k6";
-            this.k6.Size = new System.Drawing.Size(47, 52);
+            this.k6.Size = new System.Drawing.Size(46, 51);
             this.k6.TabIndex = 39;
             this.k6.Text = "0";
             // 
@@ -517,7 +517,7 @@
             this.k7.ForeColor = System.Drawing.Color.Orange;
             this.k7.Location = new System.Drawing.Point(524, 537);
             this.k7.Name = "k7";
-            this.k7.Size = new System.Drawing.Size(47, 52);
+            this.k7.Size = new System.Drawing.Size(46, 51);
             this.k7.TabIndex = 40;
             this.k7.Text = "0";
             // 
@@ -528,7 +528,7 @@
             this.k8.ForeColor = System.Drawing.Color.Orange;
             this.k8.Location = new System.Drawing.Point(524, 610);
             this.k8.Name = "k8";
-            this.k8.Size = new System.Drawing.Size(47, 52);
+            this.k8.Size = new System.Drawing.Size(46, 51);
             this.k8.TabIndex = 41;
             this.k8.Text = "0";
             // 
@@ -539,7 +539,7 @@
             this.k9.ForeColor = System.Drawing.Color.Orange;
             this.k9.Location = new System.Drawing.Point(524, 684);
             this.k9.Name = "k9";
-            this.k9.Size = new System.Drawing.Size(47, 52);
+            this.k9.Size = new System.Drawing.Size(46, 51);
             this.k9.TabIndex = 42;
             this.k9.Text = "0";
             // 
@@ -550,7 +550,7 @@
             this.k10.ForeColor = System.Drawing.Color.Orange;
             this.k10.Location = new System.Drawing.Point(524, 756);
             this.k10.Name = "k10";
-            this.k10.Size = new System.Drawing.Size(47, 52);
+            this.k10.Size = new System.Drawing.Size(46, 51);
             this.k10.TabIndex = 43;
             this.k10.Text = "0";
             // 
@@ -561,7 +561,7 @@
             this.k11.ForeColor = System.Drawing.Color.Orange;
             this.k11.Location = new System.Drawing.Point(524, 829);
             this.k11.Name = "k11";
-            this.k11.Size = new System.Drawing.Size(47, 52);
+            this.k11.Size = new System.Drawing.Size(46, 51);
             this.k11.TabIndex = 44;
             this.k11.Text = "0";
             // 
@@ -572,7 +572,7 @@
             this.k12.ForeColor = System.Drawing.Color.Orange;
             this.k12.Location = new System.Drawing.Point(524, 901);
             this.k12.Name = "k12";
-            this.k12.Size = new System.Drawing.Size(47, 52);
+            this.k12.Size = new System.Drawing.Size(46, 51);
             this.k12.TabIndex = 45;
             this.k12.Text = "0";
             // 
@@ -583,7 +583,7 @@
             this.v1.ForeColor = System.Drawing.Color.Orange;
             this.v1.Location = new System.Drawing.Point(1760, 63);
             this.v1.Name = "v1";
-            this.v1.Size = new System.Drawing.Size(47, 52);
+            this.v1.Size = new System.Drawing.Size(46, 51);
             this.v1.TabIndex = 46;
             this.v1.Text = "0";
             // 
@@ -594,7 +594,7 @@
             this.v2.ForeColor = System.Drawing.Color.Orange;
             this.v2.Location = new System.Drawing.Point(1760, 152);
             this.v2.Name = "v2";
-            this.v2.Size = new System.Drawing.Size(47, 52);
+            this.v2.Size = new System.Drawing.Size(46, 51);
             this.v2.TabIndex = 47;
             this.v2.Text = "0";
             // 
@@ -605,7 +605,7 @@
             this.v3.ForeColor = System.Drawing.Color.Orange;
             this.v3.Location = new System.Drawing.Point(1760, 236);
             this.v3.Name = "v3";
-            this.v3.Size = new System.Drawing.Size(47, 52);
+            this.v3.Size = new System.Drawing.Size(46, 51);
             this.v3.TabIndex = 48;
             this.v3.Text = "0";
             // 
@@ -616,7 +616,7 @@
             this.v4.ForeColor = System.Drawing.Color.Orange;
             this.v4.Location = new System.Drawing.Point(1760, 334);
             this.v4.Name = "v4";
-            this.v4.Size = new System.Drawing.Size(47, 52);
+            this.v4.Size = new System.Drawing.Size(46, 51);
             this.v4.TabIndex = 49;
             this.v4.Text = "0";
             // 
@@ -627,7 +627,7 @@
             this.v5.ForeColor = System.Drawing.Color.Orange;
             this.v5.Location = new System.Drawing.Point(1760, 405);
             this.v5.Name = "v5";
-            this.v5.Size = new System.Drawing.Size(47, 52);
+            this.v5.Size = new System.Drawing.Size(46, 51);
             this.v5.TabIndex = 50;
             this.v5.Text = "0";
             // 
@@ -638,7 +638,7 @@
             this.v6.ForeColor = System.Drawing.Color.Orange;
             this.v6.Location = new System.Drawing.Point(1760, 480);
             this.v6.Name = "v6";
-            this.v6.Size = new System.Drawing.Size(47, 52);
+            this.v6.Size = new System.Drawing.Size(46, 51);
             this.v6.TabIndex = 51;
             this.v6.Text = "0";
             // 
@@ -649,7 +649,7 @@
             this.v7.ForeColor = System.Drawing.Color.Orange;
             this.v7.Location = new System.Drawing.Point(1760, 552);
             this.v7.Name = "v7";
-            this.v7.Size = new System.Drawing.Size(47, 52);
+            this.v7.Size = new System.Drawing.Size(46, 51);
             this.v7.TabIndex = 52;
             this.v7.Text = "0";
             // 
@@ -660,7 +660,7 @@
             this.v8.ForeColor = System.Drawing.Color.Orange;
             this.v8.Location = new System.Drawing.Point(1760, 625);
             this.v8.Name = "v8";
-            this.v8.Size = new System.Drawing.Size(47, 52);
+            this.v8.Size = new System.Drawing.Size(46, 51);
             this.v8.TabIndex = 53;
             this.v8.Text = "0";
             // 
@@ -671,7 +671,7 @@
             this.v9.ForeColor = System.Drawing.Color.Orange;
             this.v9.Location = new System.Drawing.Point(1760, 690);
             this.v9.Name = "v9";
-            this.v9.Size = new System.Drawing.Size(47, 52);
+            this.v9.Size = new System.Drawing.Size(46, 51);
             this.v9.TabIndex = 54;
             this.v9.Text = "0";
             // 
@@ -682,7 +682,7 @@
             this.v10.ForeColor = System.Drawing.Color.Orange;
             this.v10.Location = new System.Drawing.Point(1760, 758);
             this.v10.Name = "v10";
-            this.v10.Size = new System.Drawing.Size(47, 52);
+            this.v10.Size = new System.Drawing.Size(46, 51);
             this.v10.TabIndex = 55;
             this.v10.Text = "0";
             // 
@@ -693,7 +693,7 @@
             this.v11.ForeColor = System.Drawing.Color.Orange;
             this.v11.Location = new System.Drawing.Point(1760, 822);
             this.v11.Name = "v11";
-            this.v11.Size = new System.Drawing.Size(47, 52);
+            this.v11.Size = new System.Drawing.Size(46, 51);
             this.v11.TabIndex = 56;
             this.v11.Text = "0";
             // 
@@ -704,42 +704,42 @@
             this.v12.ForeColor = System.Drawing.Color.Orange;
             this.v12.Location = new System.Drawing.Point(1760, 901);
             this.v12.Name = "v12";
-            this.v12.Size = new System.Drawing.Size(47, 52);
+            this.v12.Size = new System.Drawing.Size(46, 51);
             this.v12.TabIndex = 57;
             this.v12.Text = "0";
             // 
-            // label50
+            // labelPisteKoti
             // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Orange;
-            this.label50.Location = new System.Drawing.Point(761, 256);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(109, 32);
-            this.label50.TabIndex = 58;
-            this.label50.Text = "label50";
+            this.labelPisteKoti.AutoSize = true;
+            this.labelPisteKoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPisteKoti.ForeColor = System.Drawing.Color.Orange;
+            this.labelPisteKoti.Location = new System.Drawing.Point(876, 260);
+            this.labelPisteKoti.Name = "labelPisteKoti";
+            this.labelPisteKoti.Size = new System.Drawing.Size(31, 32);
+            this.labelPisteKoti.TabIndex = 58;
+            this.labelPisteKoti.Text = "0";
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.ForeColor = System.Drawing.Color.Orange;
-            this.label51.Location = new System.Drawing.Point(875, 256);
+            this.label51.Location = new System.Drawing.Point(909, 245);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(109, 32);
+            this.label51.Size = new System.Drawing.Size(42, 58);
             this.label51.TabIndex = 59;
-            this.label51.Text = "label51";
+            this.label51.Text = "-";
             // 
-            // label52
+            // labelPisteVieras
             // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.Orange;
-            this.label52.Location = new System.Drawing.Point(990, 256);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(109, 32);
-            this.label52.TabIndex = 60;
-            this.label52.Text = "label52";
+            this.labelPisteVieras.AutoSize = true;
+            this.labelPisteVieras.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPisteVieras.ForeColor = System.Drawing.Color.Orange;
+            this.labelPisteVieras.Location = new System.Drawing.Point(954, 260);
+            this.labelPisteVieras.Name = "labelPisteVieras";
+            this.labelPisteVieras.Size = new System.Drawing.Size(31, 32);
+            this.labelPisteVieras.TabIndex = 60;
+            this.labelPisteVieras.Text = "0";
             // 
             // label53
             // 
@@ -862,9 +862,9 @@
             this.Controls.Add(this.label55);
             this.Controls.Add(this.label54);
             this.Controls.Add(this.label53);
-            this.Controls.Add(this.label52);
+            this.Controls.Add(this.labelPisteVieras);
             this.Controls.Add(this.label51);
-            this.Controls.Add(this.label50);
+            this.Controls.Add(this.labelPisteKoti);
             this.Controls.Add(this.v12);
             this.Controls.Add(this.v11);
             this.Controls.Add(this.v10);
@@ -989,9 +989,9 @@
         private System.Windows.Forms.Label v10;
         private System.Windows.Forms.Label v11;
         private System.Windows.Forms.Label v12;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label labelPisteKoti;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label labelPisteVieras;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;

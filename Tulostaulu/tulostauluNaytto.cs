@@ -17,6 +17,8 @@ namespace Tulostaulu
         private string[] lista2;
         private string koti;
         private string vieras;
+        private int pisteetKoti = 0;
+        private int pisteetVieras = 0;
         private int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
             p21, p22, p23, p24 = 0;
         private oletusasetukset at;
@@ -78,7 +80,37 @@ namespace Tulostaulu
 
 
         //Pisteiden lisäystä/poistoa ohjaustaulun kautta
-        //Kotijoukkue
+        //Kotijoukkueen pisteiden lisäys ja vähennys
+        public void lisaaPisteKotijoukkue()
+        {
+            pisteetKoti++;
+            labelPisteKoti.Text = pisteetKoti.ToString();
+        }
+        public void vahennaPisteKotijoukkue()
+        {
+            pisteetKoti--;
+            if(pisteetKoti < 0)
+            {
+                pisteetKoti = 0;
+            }
+            labelPisteKoti.Text = pisteetKoti.ToString();
+        }
+        //Vierasjoukkueen pisteiden lisäys ja vähennys
+        public void lisaaPisteVierasjoukkue()
+        {
+            pisteetVieras++;
+            labelPisteVieras.Text = pisteetVieras.ToString();
+        }
+        public void vahennaPisteVierasjoukkue()
+        {
+            pisteetVieras--;
+            if (pisteetVieras < 0)
+            {
+                pisteetVieras = 0;
+            }
+            labelPisteVieras.Text = pisteetVieras.ToString();
+        }
+        //Kotijoukkueen pelaajat
         public void lisaaPisteK1()
         {
             p1++;
@@ -262,6 +294,7 @@ namespace Tulostaulu
             p21++;
             v9.Text = p21.ToString();
         }
+
         public void lisaaPisteV10()
         {
             p22++;

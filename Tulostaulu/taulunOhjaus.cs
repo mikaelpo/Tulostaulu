@@ -70,14 +70,14 @@ namespace Tulostaulu
         private void button1_Click(object sender, EventArgs e)
         {
             t1 = new tulostauluNaytto(lista, lista2, koti, vieras, asetukset2);
-            t1.Show();  
+            t1.Show();
         }
 
         //Kellon ohjaus näppäimistöltä tulostaululla
         private void taulunOhjaus_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.D1)
-            { 
+            {
                 t1.kelloStart();
             }
             if (e.KeyCode == Keys.D2)
@@ -89,249 +89,476 @@ namespace Tulostaulu
                 t1.kelloReset();
             }
         }
-        
+
         //Kotijoukkuueen pisteiden lisäys
         private void button2_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK1();
+            try
+            {
+                t1.lisaaPisteK1();
+            }catch(Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK2();
+            try
+            {
+                t1.lisaaPisteK2();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK3();
+            try
+            {
+                t1.lisaaPisteK3();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
-
+        
         private void button5_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK4();
+            try
+            {
+                t1.lisaaPisteK4();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
-
+        
         private void button6_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK5();
+            try
+            {
+                t1.lisaaPisteK5();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK6();
+            try
+            {
+                t1.lisaaPisteK6();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK7();
+            try
+            {
+                t1.lisaaPisteK7();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK8();
+            try
+            {
+                t1.lisaaPisteK8();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK9();
+            try
+            {
+                t1.lisaaPisteK9();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK10();
+            try
+            {
+                t1.lisaaPisteK10();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK11();
+            try
+            {
+                t1.lisaaPisteK11();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteK12();
+            try
+            {
+                t1.lisaaPisteK12();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
+            }
         }
 
-        //Kotijoukkueen pisteiden poistot
+        //Kotijoukkueen pisteiden vähennykset
         private void button14_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK1();
+            try
+            {
+                t1.poistaPisteK1();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK2();
+            try
+            {
+                t1.poistaPisteK2();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK3();
+            try
+            {
+                t1.poistaPisteK3();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK4();
+            try
+            {
+                t1.poistaPisteK4();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK5();
+            try
+            {
+                t1.poistaPisteK5();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK6();
+            try
+            {
+                t1.poistaPisteK6();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK7();
+            try
+            {
+                t1.poistaPisteK7();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK8();
+            try
+            {
+                t1.poistaPisteK8();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK9();
+            try
+            {
+                t1.poistaPisteK9();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK10();
+            try
+            {
+                t1.poistaPisteK10();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK11();
+            try
+            {
+                t1.poistaPisteK11();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteK12();
+            try
+            {
+                t1.poistaPisteK12();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         //Vierasjoukkueen pisteiden lisäys
         private void button26_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV1();
+            try
+            {
+                t1.lisaaPisteV1();
+            }
+            catch (Exception){MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button27_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV2();
+            try
+            {
+                t1.lisaaPisteV2();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button28_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV3();
+            try
+            {
+                t1.lisaaPisteV3();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button29_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV4();
+            try
+            {
+                t1.lisaaPisteV4();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button30_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV5();
+            try
+            {
+                t1.lisaaPisteV5();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV6();
+            try
+            {
+                t1.lisaaPisteV6();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button32_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV7();
+            try
+            {
+                t1.lisaaPisteV7();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button33_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV8();
+            try
+            {
+                t1.lisaaPisteV8();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button34_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV9();
+            try
+            {
+                t1.lisaaPisteV9();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button35_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV10();
+            try
+            {
+                t1.lisaaPisteV10();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button36_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV11();
+            try
+            {
+                t1.lisaaPisteV11();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
 
         private void button37_Click(object sender, EventArgs e)
         {
-            t1.lisaaPisteV12();
+            try
+            {
+                t1.lisaaPisteV12();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
        
         //Vierasjoukkueen pisteiden poisto
         private void button38_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV1();
+            try
+            {
+                t1.poistaPisteV1();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button39_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV2();
+            try
+            {
+                t1.poistaPisteV2();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button40_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV3();
+            try
+            {
+                t1.poistaPisteV3();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button41_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV4();
+            try
+            {
+                t1.poistaPisteV4();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button42_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV5();
+            try
+            {
+                t1.poistaPisteV5();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button43_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV6();
+            try
+            {
+                t1.poistaPisteV6();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button44_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV7();
+            try
+            {
+                t1.poistaPisteV7();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button45_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV8();
+            try
+            {
+                t1.poistaPisteV8();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button46_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV9();
+            try
+            {
+                t1.poistaPisteV9();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button47_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV10();
+            try
+            {
+                t1.poistaPisteV10();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button48_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV11();
+            try
+            {
+                t1.poistaPisteV11();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void button49_Click(object sender, EventArgs e)
         {
-            t1.poistaPisteV12();
+            try
+            {
+                t1.poistaPisteV12();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
 
         private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -339,9 +566,52 @@ namespace Tulostaulu
             Ohjekirja ohje = new Ohjekirja();
         }
 
+        //Kellon muuttaminen
         private void button106_Click(object sender, EventArgs e)
         {
-            t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text));
+            try
+            {
+                t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text));
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen ajan muuttamista"); }
+        }
+
+        //Joukkueiden pisteiden lisäys ja vähennys
+        //Koti
+        private void button105_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaPisteKotijoukkue();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
+        }
+
+        private void button104_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaPisteKotijoukkue();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
+        }
+        //Vieras
+        private void button99_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaPisteVierasjoukkue();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
+        }
+
+        private void button98_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaPisteVierasjoukkue();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
     }
 }
