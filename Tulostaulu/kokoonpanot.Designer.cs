@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kokoonpanot));
             this.buttonK1 = new System.Windows.Forms.Button();
             this.textBoxK1 = new System.Windows.Forms.TextBox();
             this.buttonK2 = new System.Windows.Forms.Button();
@@ -46,9 +47,9 @@
             // 
             // buttonK1
             // 
-            this.buttonK1.Location = new System.Drawing.Point(640, 394);
+            this.buttonK1.Location = new System.Drawing.Point(652, 390);
             this.buttonK1.Name = "buttonK1";
-            this.buttonK1.Size = new System.Drawing.Size(95, 23);
+            this.buttonK1.Size = new System.Drawing.Size(95, 32);
             this.buttonK1.TabIndex = 0;
             this.buttonK1.Text = "Seuraava";
             this.buttonK1.UseVisualStyleBackColor = true;
@@ -156,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBoxK4);
             this.Controls.Add(this.button1);
