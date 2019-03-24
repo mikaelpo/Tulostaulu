@@ -88,15 +88,15 @@
             this.labelPisteKoti = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.labelPisteVieras = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
+            this.labelVirheetKoti = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
+            this.labelVirheetVieras = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.vk1 = new System.Windows.Forms.Label();
+            this.vk2 = new System.Windows.Forms.Label();
+            this.vk3 = new System.Windows.Forms.Label();
+            this.vk4 = new System.Windows.Forms.Label();
+            this.vk5 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -741,16 +741,16 @@
             this.labelPisteVieras.TabIndex = 60;
             this.labelPisteVieras.Text = "0";
             // 
-            // label53
+            // labelVirheetKoti
             // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.Orange;
-            this.label53.Location = new System.Drawing.Point(761, 469);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(109, 32);
-            this.label53.TabIndex = 61;
-            this.label53.Text = "label53";
+            this.labelVirheetKoti.AutoSize = true;
+            this.labelVirheetKoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVirheetKoti.ForeColor = System.Drawing.Color.Orange;
+            this.labelVirheetKoti.Location = new System.Drawing.Point(761, 469);
+            this.labelVirheetKoti.Name = "labelVirheetKoti";
+            this.labelVirheetKoti.Size = new System.Drawing.Size(109, 32);
+            this.labelVirheetKoti.TabIndex = 61;
+            this.labelVirheetKoti.Text = "label53";
             // 
             // label54
             // 
@@ -763,16 +763,16 @@
             this.label54.TabIndex = 62;
             this.label54.Text = "label54";
             // 
-            // label55
+            // labelVirheetVieras
             // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.Orange;
-            this.label55.Location = new System.Drawing.Point(990, 469);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(109, 32);
-            this.label55.TabIndex = 63;
-            this.label55.Text = "label55";
+            this.labelVirheetVieras.AutoSize = true;
+            this.labelVirheetVieras.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVirheetVieras.ForeColor = System.Drawing.Color.Orange;
+            this.labelVirheetVieras.Location = new System.Drawing.Point(990, 469);
+            this.labelVirheetVieras.Name = "labelVirheetVieras";
+            this.labelVirheetVieras.Size = new System.Drawing.Size(109, 32);
+            this.labelVirheetVieras.TabIndex = 63;
+            this.labelVirheetVieras.Text = "label55";
             // 
             // label4
             // 
@@ -785,55 +785,55 @@
             this.label4.TabIndex = 64;
             this.label4.Text = "No.";
             // 
-            // label5
+            // vk1
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(332, 80);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 17);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "●";
+            this.vk1.AutoSize = true;
+            this.vk1.ForeColor = System.Drawing.Color.Red;
+            this.vk1.Location = new System.Drawing.Point(332, 80);
+            this.vk1.Name = "vk1";
+            this.vk1.Size = new System.Drawing.Size(16, 17);
+            this.vk1.TabIndex = 65;
+            this.vk1.Text = "●";
             // 
-            // label29
+            // vk2
             // 
-            this.label29.AutoSize = true;
-            this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(355, 80);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(16, 17);
-            this.label29.TabIndex = 66;
-            this.label29.Text = "●";
+            this.vk2.AutoSize = true;
+            this.vk2.ForeColor = System.Drawing.Color.Red;
+            this.vk2.Location = new System.Drawing.Point(355, 80);
+            this.vk2.Name = "vk2";
+            this.vk2.Size = new System.Drawing.Size(16, 17);
+            this.vk2.TabIndex = 66;
+            this.vk2.Text = "●";
             // 
-            // label30
+            // vk3
             // 
-            this.label30.AutoSize = true;
-            this.label30.ForeColor = System.Drawing.Color.Red;
-            this.label30.Location = new System.Drawing.Point(378, 80);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(16, 17);
-            this.label30.TabIndex = 67;
-            this.label30.Text = "●";
+            this.vk3.AutoSize = true;
+            this.vk3.ForeColor = System.Drawing.Color.Red;
+            this.vk3.Location = new System.Drawing.Point(378, 80);
+            this.vk3.Name = "vk3";
+            this.vk3.Size = new System.Drawing.Size(16, 17);
+            this.vk3.TabIndex = 67;
+            this.vk3.Text = "●";
             // 
-            // label31
+            // vk4
             // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(400, 80);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(16, 17);
-            this.label31.TabIndex = 68;
-            this.label31.Text = "●";
+            this.vk4.AutoSize = true;
+            this.vk4.ForeColor = System.Drawing.Color.Red;
+            this.vk4.Location = new System.Drawing.Point(400, 80);
+            this.vk4.Name = "vk4";
+            this.vk4.Size = new System.Drawing.Size(16, 17);
+            this.vk4.TabIndex = 68;
+            this.vk4.Text = "●";
             // 
-            // label32
+            // vk5
             // 
-            this.label32.AutoSize = true;
-            this.label32.ForeColor = System.Drawing.Color.Red;
-            this.label32.Location = new System.Drawing.Point(424, 80);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(16, 17);
-            this.label32.TabIndex = 69;
-            this.label32.Text = "●";
+            this.vk5.AutoSize = true;
+            this.vk5.ForeColor = System.Drawing.Color.Red;
+            this.vk5.Location = new System.Drawing.Point(424, 80);
+            this.vk5.Name = "vk5";
+            this.vk5.Size = new System.Drawing.Size(16, 17);
+            this.vk5.TabIndex = 69;
+            this.vk5.Text = "●";
             // 
             // label33
             // 
@@ -853,15 +853,15 @@
             this.BackColor = System.Drawing.SystemColors.InfoText;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.label33);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.vk5);
+            this.Controls.Add(this.vk4);
+            this.Controls.Add(this.vk3);
+            this.Controls.Add(this.vk2);
+            this.Controls.Add(this.vk1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label55);
+            this.Controls.Add(this.labelVirheetVieras);
             this.Controls.Add(this.label54);
-            this.Controls.Add(this.label53);
+            this.Controls.Add(this.labelVirheetKoti);
             this.Controls.Add(this.labelPisteVieras);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.labelPisteKoti);
@@ -992,15 +992,15 @@
         private System.Windows.Forms.Label labelPisteKoti;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label labelPisteVieras;
-        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label labelVirheetKoti;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label labelVirheetVieras;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label vk1;
+        private System.Windows.Forms.Label vk2;
+        private System.Windows.Forms.Label vk3;
+        private System.Windows.Forms.Label vk4;
+        private System.Windows.Forms.Label vk5;
         private System.Windows.Forms.Label label33;
     }
 }

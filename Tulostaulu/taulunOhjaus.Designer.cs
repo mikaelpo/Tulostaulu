@@ -173,6 +173,7 @@
             this.textBoxSek = new System.Windows.Forms.TextBox();
             this.button106 = new System.Windows.Forms.Button();
             this.checkBoxPiste = new System.Windows.Forms.CheckBox();
+            this.checkBoxVirhe = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1018,6 +1019,7 @@
             this.button50.TabIndex = 74;
             this.button50.Text = "+";
             this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.button50_Click);
             // 
             // button51
             // 
@@ -1150,6 +1152,7 @@
             this.button62.TabIndex = 86;
             this.button62.Text = "-";
             this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
             // 
             // button63
             // 
@@ -1781,12 +1784,24 @@
             this.checkBoxPiste.UseVisualStyleBackColor = true;
             this.checkBoxPiste.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // checkBoxVirhe
+            // 
+            this.checkBoxVirhe.AutoSize = true;
+            this.checkBoxVirhe.Location = new System.Drawing.Point(775, 145);
+            this.checkBoxVirhe.Name = "checkBoxVirhe";
+            this.checkBoxVirhe.Size = new System.Drawing.Size(278, 38);
+            this.checkBoxVirhe.TabIndex = 148;
+            this.checkBoxVirhe.Text = "Lisää/vähennä virheitä pelaajilta ilman, \r\nettä se vaikuttaa joukkuevirheisiin";
+            this.checkBoxVirhe.UseVisualStyleBackColor = true;
+            this.checkBoxVirhe.CheckedChanged += new System.EventHandler(this.checkBoxVirhe_CheckedChanged_1);
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1771, 878);
+            this.Controls.Add(this.checkBoxVirhe);
             this.Controls.Add(this.checkBoxPiste);
             this.Controls.Add(this.button106);
             this.Controls.Add(this.textBoxSek);
@@ -2091,5 +2106,6 @@
         private System.Windows.Forms.TextBox textBoxSek;
         private System.Windows.Forms.Button button106;
         private System.Windows.Forms.CheckBox checkBoxPiste;
+        private System.Windows.Forms.CheckBox checkBoxVirhe;
     }
 }

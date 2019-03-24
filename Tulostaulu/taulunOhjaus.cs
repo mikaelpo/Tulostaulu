@@ -19,6 +19,7 @@ namespace Tulostaulu
         private string koti;
         private string vieras;
         private bool vainPelaajaPisteet = false;
+        private bool vainPelaajaVirheet = false;
         private tulostauluNaytto t1;
         private oletusasetukset asetukset2 = new oletusasetukset();
 
@@ -620,15 +621,42 @@ namespace Tulostaulu
             if (checkBoxPiste.Checked == true)
             {
                 vainPelaajaPisteet = true;
-                label1.Text = "true";
             }
             if (checkBoxPiste.Checked == false)
             {
-                vainPelaajaPisteet = false;
-                label2.Text = "false";
+                vainPelaajaPisteet = false;              
             }
         }
-       
-        
+        //Virheet testi
+        private void button50_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        //checkBox, jolla katsotaan haluaako käyttäjä lisätä/vähentää virheitä vain pelaajille joukkuevirheitä muuttamatta 
+        private void checkBoxVirhe_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBoxVirhe.Checked == true)
+            {
+                vainPelaajaVirheet = true;
+            }
+            if (checkBoxVirhe.Checked == false)
+            {
+                vainPelaajaVirheet = false;
+            }
+        }
     }
 }

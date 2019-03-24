@@ -12,13 +12,15 @@ namespace Tulostaulu
 {
     public partial class tulostauluNaytto : Form
     {
-
+         
         private string[] lista;
         private string[] lista2;
         private string koti;
         private string vieras;
         private int pisteetKoti = 0;
         private int pisteetVieras = 0;
+        private int pelaajaVirheK1 = 0;
+        private int virheetKoti = 0;
         private int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
             p21, p22, p23, p24 = 0;
         private oletusasetukset at;
@@ -76,8 +78,73 @@ namespace Tulostaulu
             label27.Text = lista2[10];
             label28.Text = lista2[11];
 
+
+            vk1.Visible = false;
+            vk2.Visible = false;
+            vk3.Visible = false;
+            vk4.Visible = false;
+            vk5.Visible = false;
+
         }
 
+        private void lisaaVirheKoti()
+        {
+            virheetKoti++;
+            if (virheetKoti > 5)
+            {
+                virheetKoti = 5;
+            }
+            labelVirheetKoti.Text = virheetKoti.ToString();
+        }
+        private void vahennaVirheKoti()
+        {
+            virheetKoti--;
+            if(virheetKoti < 0)
+            {
+                virheetKoti = 0;
+            }
+            labelVirheetKoti.Text = virheetKoti.ToString();
+        }
+
+        //Virheet
+        public void lisaaVirheKoti(bool vainPelaajaVirhe)
+        {
+            pelaajaVirheK1++;
+            if(pelaajaVirheK1 > 5) { pelaajaVirheK1 = 5; }
+            if (pelaajaVirheK1 == 1) { vk1.Visible = true; }
+            if (pelaajaVirheK1 == 2) { vk2.Visible = true; }
+            if (pelaajaVirheK1 == 3) { vk3.Visible = true; }
+            if (pelaajaVirheK1 == 4) { vk4.Visible = true; }
+            if (pelaajaVirheK1 == 5) { vk5.Visible = true; }
+
+            if(vainPelaajaVirhe == false) { lisaaVirheKoti(); }
+        }
+        public void vahennaVirheKoti(bool vainPelaajaVirhe)
+        {
+            
+            switch (pelaajaVirheK1)
+            {
+                case 1:
+                    vk1.Visible = false;
+                    break;
+                case 2:
+                    vk2.Visible = false;
+                    break;
+                case 3:
+                    vk3.Visible = false;
+                    break;
+                case 4:
+                    vk4.Visible = false;
+                    break;
+                case 5:
+                    vk5.Visible = false;
+                    break;
+            }
+            pelaajaVirheK1--;
+            if (pelaajaVirheK1 < 0) { pelaajaVirheK1 = 0; }
+            if (vainPelaajaVirhe == false) { vahennaVirheKoti(); }
+            
+        }
 
         //Pisteiden lisäystä/poistoa ohjaustaulun kautta
         //Kotijoukkueen pisteiden lisäys ja vähennys
