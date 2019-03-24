@@ -172,6 +172,7 @@
             this.textBoxMin = new System.Windows.Forms.TextBox();
             this.textBoxSek = new System.Windows.Forms.TextBox();
             this.button106 = new System.Windows.Forms.Button();
+            this.checkBoxPiste = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1769,11 +1770,23 @@
             this.button106.UseVisualStyleBackColor = true;
             this.button106.Click += new System.EventHandler(this.button106_Click);
             // 
+            // checkBoxPiste
+            // 
+            this.checkBoxPiste.AutoSize = true;
+            this.checkBoxPiste.Location = new System.Drawing.Point(775, 88);
+            this.checkBoxPiste.Name = "checkBoxPiste";
+            this.checkBoxPiste.Size = new System.Drawing.Size(282, 38);
+            this.checkBoxPiste.TabIndex = 147;
+            this.checkBoxPiste.Text = "Lisää/vähennä pisteitä pelaajalta ilman, \r\nettä se vaikuttaa joukkuepisteisiin";
+            this.checkBoxPiste.UseVisualStyleBackColor = true;
+            this.checkBoxPiste.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1771, 878);
+            this.Controls.Add(this.checkBoxPiste);
             this.Controls.Add(this.button106);
             this.Controls.Add(this.textBoxSek);
             this.Controls.Add(this.textBoxMin);
@@ -2076,5 +2089,6 @@
         private System.Windows.Forms.TextBox textBoxMin;
         private System.Windows.Forms.TextBox textBoxSek;
         private System.Windows.Forms.Button button106;
+        private System.Windows.Forms.CheckBox checkBoxPiste;
     }
 }

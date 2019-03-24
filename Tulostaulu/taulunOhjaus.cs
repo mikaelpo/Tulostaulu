@@ -18,6 +18,7 @@ namespace Tulostaulu
         private string[] lista2;
         private string koti;
         private string vieras;
+        private bool vainPelaajaPisteet = false;
         private tulostauluNaytto t1;
         private oletusasetukset asetukset2 = new oletusasetukset();
 
@@ -613,5 +614,21 @@ namespace Tulostaulu
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
+        //checkBox, jolla katsotaan haluaako käyttäjä lisätä/vähentää pisteitä vain pelaajille joukkuepisteitä muuttamatta 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxPiste.Checked == true)
+            {
+                vainPelaajaPisteet = true;
+                label1.Text = "true";
+            }
+            if (checkBoxPiste.Checked == false)
+            {
+                vainPelaajaPisteet = false;
+                label2.Text = "false";
+            }
+        }
+       
+        
     }
 }
