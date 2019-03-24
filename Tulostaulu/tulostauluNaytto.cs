@@ -111,518 +111,661 @@ namespace Tulostaulu
             labelPisteVieras.Text = pisteetVieras.ToString();
         }
         //Kotijoukkueen pelaajat
-        public void lisaaPisteK1()
+        public void lisaaPisteK1(bool vainPelaaja)
         {
             p1++;
             k1.Text = p1.ToString();
-
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK2()
+        public void lisaaPisteK2(bool vainPelaaja)
         {
             p2++;
             k2.Text = p2.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK3()
+        public void lisaaPisteK3(bool vainPelaaja)
         {
             p3++;
             k3.Text = p3.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK4()
+        public void lisaaPisteK4(bool vainPelaaja)
         {
             p4++;
             k4.Text = p4.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK5()
+        public void lisaaPisteK5(bool vainPelaaja)
         {
             p5++;
             k5.Text = p5.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK6()
+        public void lisaaPisteK6(bool vainPelaaja)
         {
             p6++;
             k6.Text = p6.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK7()
+        public void lisaaPisteK7(bool vainPelaaja)
         {
             p7++;
             k7.Text = p7.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK8()
+        public void lisaaPisteK8(bool vainPelaaja)
         {
             p8++;
             k8.Text = p8.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK9()
+        public void lisaaPisteK9(bool vainPelaaja)
         {
             p9++;
             k9.Text = p9.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK10()
+        public void lisaaPisteK10(bool vainPelaaja)
         {
             p10++;
             k10.Text = p10.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK11()
+        public void lisaaPisteK11(bool vainPelaaja)
         {
             p11++;
             k11.Text = p11.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
-        public void lisaaPisteK12()
+        public void lisaaPisteK12(bool vainPelaaja)
         {
             p12++;
             k12.Text = p12.ToString();
 
-            pisteetKoti++;
-            labelPisteKoti.Text = pisteetKoti.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetKoti++;
+                labelPisteKoti.Text = pisteetKoti.ToString();
+            }
         }
 
         //Poistot
         //Kotijoukkue
-        public void poistaPisteK1()
+        public void poistaPisteK1(bool vainPelaaja)
         {
             p1--;
             if(p1 <= 0) p1 = 0;
             k1.Text = p1.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK2()
+        public void poistaPisteK2(bool vainPelaaja)
         {
             p2--;
             if (p2 <= 0) p2 = 0;
             k2.Text = p2.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK3()
+        public void poistaPisteK3(bool vainPelaaja)
         {
             p3--;
             if (p3 <= 0) p3 = 0;
             k3.Text = p3.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK4()
+        public void poistaPisteK4(bool vainPelaaja)
         {
             p4--;
             if (p4 <= 0) p4 = 0;
             k4.Text = p4.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK5()
+        public void poistaPisteK5(bool vainPelaaja)
         {
             p5--;
             if (p5 <= 0) p5 = 0;
             k5.Text = p5.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK6()
+        public void poistaPisteK6(bool vainPelaaja)
         {
             p6--;
             if (p6 <= 0) p6 = 0;
             k6.Text = p6.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK7()
+        public void poistaPisteK7(bool vainPelaaja)
         {
             p7--;
             if (p7 <= 0) p7 = 0;
             k7.Text = p7.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK8()
+        public void poistaPisteK8(bool vainPelaaja)
         {
             p8--;
             if (p8 <= 0) p8 = 0;
             k8.Text = p8.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK9()
+        public void poistaPisteK9(bool vainPelaaja)
         {
             p9--;
             if (p9 <= 0) p9 = 0;
             k9.Text = p9.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK10()
+        public void poistaPisteK10(bool vainPelaaja)
         {
             p10--;
             if (p10 <= 0) p10 = 0;
             k10.Text = p10.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK11()
+        public void poistaPisteK11(bool vainPelaaja)
         {
             p11--;
             if (p11 <= 0) p11 = 0;
             k11.Text = p11.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
-        public void poistaPisteK12()
+        public void poistaPisteK12(bool vainPelaaja)
         {
             p12--;
             if (p12 <= 0) p12 = 0;
             k12.Text = p12.ToString();
 
-            pisteetKoti--;
-            if (pisteetKoti < 0)
+            if (vainPelaaja == false)
             {
-                pisteetKoti = 0;
+                pisteetKoti--;
+                if (pisteetKoti < 0)
+                {
+                    pisteetKoti = 0;
+                }
+                labelPisteKoti.Text = pisteetKoti.ToString();
             }
-            labelPisteKoti.Text = pisteetKoti.ToString();
         }
 
         //Vierasjoukkueen pisteiden lisäys/poisto
         //Lisäys
-        public void lisaaPisteV1()
+        public void lisaaPisteV1(bool vainPelaaja)
         {
             p13++;
             v1.Text = p13.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV2()
+        public void lisaaPisteV2(bool vainPelaaja)
         {
             p14++;
             v2.Text = p14.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV3()
+        public void lisaaPisteV3(bool vainPelaaja)
         {
             p15++;
             v3.Text = p15.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV4()
+        public void lisaaPisteV4(bool vainPelaaja)
         {
             p16++;
             v4.Text = p16.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV5()
+        public void lisaaPisteV5(bool vainPelaaja)
         {
             p17++;
             v5.Text = p17.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV6()
+        public void lisaaPisteV6(bool vainPelaaja)
         {
             p18++;
             v6.Text = p18.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV7()
+        public void lisaaPisteV7(bool vainPelaaja)
         {
             p19++;
             v7.Text = p19.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV8()
+        public void lisaaPisteV8(bool vainPelaaja)
         {
             p20++;
             v8.Text = p20.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV9()
+        public void lisaaPisteV9(bool vainPelaaja)
         {
             p21++;
             v9.Text = p21.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
 
-        public void lisaaPisteV10()
+        public void lisaaPisteV10(bool vainPelaaja)
         {
             p22++;
             v10.Text = p22.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV11()
+        public void lisaaPisteV11(bool vainPelaaja)
         {
             p23++;
             v11.Text = p23.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
-        public void lisaaPisteV12()
+        public void lisaaPisteV12(bool vainPelaaja)
         {
             p24++;
             v12.Text = p24.ToString();
 
-            pisteetVieras++;
-            labelPisteVieras.Text = pisteetVieras.ToString();
+            if (vainPelaaja == false)
+            {
+                pisteetVieras++;
+                labelPisteVieras.Text = pisteetVieras.ToString();
+            }
         }
 
         //Vierasjoukkueen pisteiden poisto
-        public void poistaPisteV1()
+        public void poistaPisteV1(bool vainPelaaja)
         {
             p13--;
             if (p13 <= 0) p13 = 0;
             v1.Text = p13.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV2()
+        public void poistaPisteV2(bool vainPelaaja)
         {
             p14--;
             if (p14 <= 0) p14 = 0;
             v2.Text = p14.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV3()
+        public void poistaPisteV3(bool vainPelaaja)
         {
             p15--;
             if (p15 <= 0) p15 = 0;
             v3.Text = p15.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV4()
+        public void poistaPisteV4(bool vainPelaaja)
         {
             p16--;
             if (p16 <= 0) p16 = 0;
             v4.Text = p16.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV5()
+        public void poistaPisteV5(bool vainPelaaja)
         {
             p17--;
             if (p17 <= 0) p17 = 0;
             v5.Text = p17.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV6()
+        public void poistaPisteV6(bool vainPelaaja)
         {
             p18--;
             if (p18 <= 0) p18 = 0;
             v6.Text = p18.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV7()
+        public void poistaPisteV7(bool vainPelaaja)
         {
             p19--;
             if (p19 <= 0) p19 = 0;
             v7.Text = p19.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV8()
+        public void poistaPisteV8(bool vainPelaaja)
         {
             p20--;
             if (p20 <= 0) p20 = 0;
             v8.Text = p20.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV9()
+        public void poistaPisteV9(bool vainPelaaja)
         {
             p21--;
             if (p21 <= 0) p21 = 0;
             v9.Text = p21.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV10()
+        public void poistaPisteV10(bool vainPelaaja)
         {
             p22--;
             if (p22 <= 0) p22 = 0;
             v10.Text = p22.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV11()
+        public void poistaPisteV11(bool vainPelaaja)
         {
             p23--;
             if (p23 <= 0) p23 = 0;
             v11.Text = p23.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
-        public void poistaPisteV12()
+        public void poistaPisteV12(bool vainPelaaja)
         {
             p24--;
             if (p24 <= 0) p24 = 0;
             v12.Text = p24.ToString();
 
-            pisteetVieras--;
-            if (pisteetVieras < 0)
+            if (vainPelaaja == false)
             {
-                pisteetVieras = 0;
+                pisteetVieras--;
+                if (pisteetVieras < 0)
+                {
+                    pisteetVieras = 0;
+                }
+                labelPisteVieras.Text = pisteetVieras.ToString();
             }
-            labelPisteVieras.Text = pisteetVieras.ToString();
         }
 
 

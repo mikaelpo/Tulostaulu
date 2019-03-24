@@ -96,7 +96,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK1();
+                t1.lisaaPisteK1(vainPelaajaPisteet);
             }catch(Exception)
             {
                 MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä");
@@ -107,7 +107,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK2();
+                t1.lisaaPisteK2(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -119,7 +119,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK3();
+                t1.lisaaPisteK3(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -131,7 +131,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK4();
+                t1.lisaaPisteK4(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -143,7 +143,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK5();
+                t1.lisaaPisteK5(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -155,7 +155,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK6();
+                t1.lisaaPisteK6(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -167,7 +167,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK7();
+                t1.lisaaPisteK7(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -179,7 +179,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK8();
+                t1.lisaaPisteK8(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -191,7 +191,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK9();
+                t1.lisaaPisteK9(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -203,7 +203,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK10();
+                t1.lisaaPisteK10(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -215,7 +215,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK11();
+                t1.lisaaPisteK11(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -227,7 +227,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteK12();
+                t1.lisaaPisteK12(vainPelaajaPisteet);
             }
             catch (Exception)
             {
@@ -240,7 +240,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK1();
+                t1.poistaPisteK1(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -249,7 +249,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK2();
+                t1.poistaPisteK2(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -258,7 +258,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK3();
+                t1.poistaPisteK3(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -267,7 +267,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK4();
+                t1.poistaPisteK4(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -276,7 +276,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK5();
+                t1.poistaPisteK5(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -285,7 +285,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK6();
+                t1.poistaPisteK6(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -294,7 +294,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK7();
+                t1.poistaPisteK7(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -303,7 +303,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK8();
+                t1.poistaPisteK8(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -312,7 +312,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK9();
+                t1.poistaPisteK9(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -321,7 +321,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK10();
+                t1.poistaPisteK10(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -330,7 +330,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK11();
+                t1.poistaPisteK11(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -339,7 +339,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteK12();
+                t1.poistaPisteK12(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -349,7 +349,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV1();
+                t1.lisaaPisteV1(vainPelaajaPisteet);
             }
             catch (Exception){MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -358,7 +358,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV2();
+                t1.lisaaPisteV2(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -367,7 +367,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV3();
+                t1.lisaaPisteV3(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -376,7 +376,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV4();
+                t1.lisaaPisteV4(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -385,7 +385,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV5();
+                t1.lisaaPisteV5(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -394,7 +394,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV6();
+                t1.lisaaPisteV6(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -403,7 +403,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV7();
+                t1.lisaaPisteV7(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -412,7 +412,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV8();
+                t1.lisaaPisteV8(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -421,7 +421,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV9();
+                t1.lisaaPisteV9(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -430,7 +430,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV10();
+                t1.lisaaPisteV10(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -439,7 +439,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV11();
+                t1.lisaaPisteV11(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -448,7 +448,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaPisteV12();
+                t1.lisaaPisteV12(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen lisäämistä"); }
         }
@@ -458,7 +458,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV1();
+                t1.poistaPisteV1(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -467,7 +467,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV2();
+                t1.poistaPisteV2(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -476,7 +476,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV3();
+                t1.poistaPisteV3(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -485,7 +485,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV4();
+                t1.poistaPisteV4(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -494,7 +494,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV5();
+                t1.poistaPisteV5(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -503,7 +503,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV6();
+                t1.poistaPisteV6(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -512,7 +512,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV7();
+                t1.poistaPisteV7(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -521,7 +521,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV8();
+                t1.poistaPisteV8(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -530,7 +530,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV9();
+                t1.poistaPisteV9(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -539,7 +539,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV10();
+                t1.poistaPisteV10(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -548,7 +548,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV11();
+                t1.poistaPisteV11(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
@@ -557,11 +557,11 @@ namespace Tulostaulu
         {
             try
             {
-                t1.poistaPisteV12();
+                t1.poistaPisteV12(vainPelaajaPisteet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen pisteen vähentämistä"); }
         }
-
+        //Ohjekirjan aukaisu
         private void ohjeetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ohjekirja ohje = new Ohjekirja();
