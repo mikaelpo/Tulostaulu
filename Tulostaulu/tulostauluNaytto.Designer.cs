@@ -89,7 +89,7 @@
             this.label51 = new System.Windows.Forms.Label();
             this.labelPisteVieras = new System.Windows.Forms.Label();
             this.labelVirheetKoti = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
+            this.neljannes = new System.Windows.Forms.Label();
             this.labelVirheetVieras = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.vk1 = new System.Windows.Forms.Label();
@@ -750,20 +750,20 @@
             this.labelVirheetKoti.ForeColor = System.Drawing.Color.Orange;
             this.labelVirheetKoti.Location = new System.Drawing.Point(761, 469);
             this.labelVirheetKoti.Name = "labelVirheetKoti";
-            this.labelVirheetKoti.Size = new System.Drawing.Size(109, 32);
+            this.labelVirheetKoti.Size = new System.Drawing.Size(31, 32);
             this.labelVirheetKoti.TabIndex = 61;
-            this.labelVirheetKoti.Text = "label53";
+            this.labelVirheetKoti.Text = "0";
             // 
-            // label54
+            // neljannes
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.Orange;
-            this.label54.Location = new System.Drawing.Point(876, 469);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(109, 32);
-            this.label54.TabIndex = 62;
-            this.label54.Text = "label54";
+            this.neljannes.AutoSize = true;
+            this.neljannes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neljannes.ForeColor = System.Drawing.Color.Orange;
+            this.neljannes.Location = new System.Drawing.Point(876, 469);
+            this.neljannes.Name = "neljannes";
+            this.neljannes.Size = new System.Drawing.Size(31, 32);
+            this.neljannes.TabIndex = 62;
+            this.neljannes.Text = "0";
             // 
             // labelVirheetVieras
             // 
@@ -772,9 +772,9 @@
             this.labelVirheetVieras.ForeColor = System.Drawing.Color.Orange;
             this.labelVirheetVieras.Location = new System.Drawing.Point(990, 469);
             this.labelVirheetVieras.Name = "labelVirheetVieras";
-            this.labelVirheetVieras.Size = new System.Drawing.Size(109, 32);
+            this.labelVirheetVieras.Size = new System.Drawing.Size(31, 32);
             this.labelVirheetVieras.TabIndex = 63;
-            this.labelVirheetVieras.Text = "label55";
+            this.labelVirheetVieras.Text = "0";
             // 
             // label4
             // 
@@ -884,7 +884,7 @@
             this.Controls.Add(this.vk1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labelVirheetVieras);
-            this.Controls.Add(this.label54);
+            this.Controls.Add(this.neljannes);
             this.Controls.Add(this.labelVirheetKoti);
             this.Controls.Add(this.labelPisteVieras);
             this.Controls.Add(this.label51);
@@ -1017,7 +1017,7 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label labelPisteVieras;
         private System.Windows.Forms.Label labelVirheetKoti;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label neljannes;
         private System.Windows.Forms.Label labelVirheetVieras;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label vk1;
