@@ -78,15 +78,22 @@ namespace Tulostaulu
             label27.Text = lista2[10];
             label28.Text = lista2[11];
 
-
+           
+            // ensimmäinen kotijoukkueen pelaaja
             vk1.Visible = false;
             vk2.Visible = false;
             vk3.Visible = false;
             vk4.Visible = false;
             vk5.Visible = false;
 
+            // toinen kotijoukkueen pelaaja
             vk6.Visible = false;
             vk7.Visible = false;
+           //vk8.Visible = false;
+           //vk9.Visible = false;
+           //vk10.Vsible = false;
+
+            //kolmas kotijoukkueen pelaaja
 
 
 
