@@ -153,6 +153,66 @@
             this.vk58 = new System.Windows.Forms.Label();
             this.vk59 = new System.Windows.Forms.Label();
             this.vk60 = new System.Windows.Forms.Label();
+            this.vv1 = new System.Windows.Forms.Label();
+            this.vv2 = new System.Windows.Forms.Label();
+            this.vv3 = new System.Windows.Forms.Label();
+            this.vv5 = new System.Windows.Forms.Label();
+            this.vv4 = new System.Windows.Forms.Label();
+            this.vv9 = new System.Windows.Forms.Label();
+            this.vv10 = new System.Windows.Forms.Label();
+            this.vv8 = new System.Windows.Forms.Label();
+            this.vv7 = new System.Windows.Forms.Label();
+            this.vv6 = new System.Windows.Forms.Label();
+            this.vv14 = new System.Windows.Forms.Label();
+            this.vv15 = new System.Windows.Forms.Label();
+            this.vv13 = new System.Windows.Forms.Label();
+            this.vv12 = new System.Windows.Forms.Label();
+            this.vv11 = new System.Windows.Forms.Label();
+            this.vv19 = new System.Windows.Forms.Label();
+            this.vv20 = new System.Windows.Forms.Label();
+            this.vv18 = new System.Windows.Forms.Label();
+            this.vv17 = new System.Windows.Forms.Label();
+            this.vv16 = new System.Windows.Forms.Label();
+            this.vv24 = new System.Windows.Forms.Label();
+            this.vv25 = new System.Windows.Forms.Label();
+            this.vv23 = new System.Windows.Forms.Label();
+            this.vv22 = new System.Windows.Forms.Label();
+            this.vv21 = new System.Windows.Forms.Label();
+            this.vv29 = new System.Windows.Forms.Label();
+            this.vv30 = new System.Windows.Forms.Label();
+            this.vv28 = new System.Windows.Forms.Label();
+            this.vv27 = new System.Windows.Forms.Label();
+            this.vv26 = new System.Windows.Forms.Label();
+            this.vv34 = new System.Windows.Forms.Label();
+            this.vv35 = new System.Windows.Forms.Label();
+            this.vv33 = new System.Windows.Forms.Label();
+            this.vv32 = new System.Windows.Forms.Label();
+            this.vv31 = new System.Windows.Forms.Label();
+            this.vv39 = new System.Windows.Forms.Label();
+            this.vv40 = new System.Windows.Forms.Label();
+            this.vv38 = new System.Windows.Forms.Label();
+            this.vv37 = new System.Windows.Forms.Label();
+            this.vv36 = new System.Windows.Forms.Label();
+            this.vv44 = new System.Windows.Forms.Label();
+            this.vv45 = new System.Windows.Forms.Label();
+            this.vv43 = new System.Windows.Forms.Label();
+            this.vv42 = new System.Windows.Forms.Label();
+            this.vv41 = new System.Windows.Forms.Label();
+            this.vv49 = new System.Windows.Forms.Label();
+            this.vv50 = new System.Windows.Forms.Label();
+            this.vv48 = new System.Windows.Forms.Label();
+            this.vv47 = new System.Windows.Forms.Label();
+            this.vv46 = new System.Windows.Forms.Label();
+            this.vv54 = new System.Windows.Forms.Label();
+            this.vv55 = new System.Windows.Forms.Label();
+            this.vv53 = new System.Windows.Forms.Label();
+            this.vv52 = new System.Windows.Forms.Label();
+            this.vv51 = new System.Windows.Forms.Label();
+            this.vv59 = new System.Windows.Forms.Label();
+            this.vv60 = new System.Windows.Forms.Label();
+            this.vv58 = new System.Windows.Forms.Label();
+            this.vv57 = new System.Windows.Forms.Label();
+            this.vv56 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -1451,12 +1511,672 @@
             this.vk60.TabIndex = 125;
             this.vk60.Text = "●";
             // 
+            // vv1
+            // 
+            this.vv1.AutoSize = true;
+            this.vv1.ForeColor = System.Drawing.Color.Red;
+            this.vv1.Location = new System.Drawing.Point(1698, 80);
+            this.vv1.Name = "vv1";
+            this.vv1.Size = new System.Drawing.Size(16, 17);
+            this.vv1.TabIndex = 126;
+            this.vv1.Text = "●";
+            // 
+            // vv2
+            // 
+            this.vv2.AutoSize = true;
+            this.vv2.ForeColor = System.Drawing.Color.Red;
+            this.vv2.Location = new System.Drawing.Point(1720, 80);
+            this.vv2.Name = "vv2";
+            this.vv2.Size = new System.Drawing.Size(16, 17);
+            this.vv2.TabIndex = 127;
+            this.vv2.Text = "●";
+            // 
+            // vv3
+            // 
+            this.vv3.AutoSize = true;
+            this.vv3.ForeColor = System.Drawing.Color.Red;
+            this.vv3.Location = new System.Drawing.Point(1742, 80);
+            this.vv3.Name = "vv3";
+            this.vv3.Size = new System.Drawing.Size(16, 17);
+            this.vv3.TabIndex = 128;
+            this.vv3.Text = "●";
+            // 
+            // vv5
+            // 
+            this.vv5.AutoSize = true;
+            this.vv5.ForeColor = System.Drawing.Color.Red;
+            this.vv5.Location = new System.Drawing.Point(1786, 80);
+            this.vv5.Name = "vv5";
+            this.vv5.Size = new System.Drawing.Size(16, 17);
+            this.vv5.TabIndex = 129;
+            this.vv5.Text = "●";
+            // 
+            // vv4
+            // 
+            this.vv4.AutoSize = true;
+            this.vv4.ForeColor = System.Drawing.Color.Red;
+            this.vv4.Location = new System.Drawing.Point(1764, 80);
+            this.vv4.Name = "vv4";
+            this.vv4.Size = new System.Drawing.Size(16, 17);
+            this.vv4.TabIndex = 130;
+            this.vv4.Text = "●";
+            // 
+            // vv9
+            // 
+            this.vv9.AutoSize = true;
+            this.vv9.ForeColor = System.Drawing.Color.Red;
+            this.vv9.Location = new System.Drawing.Point(1764, 171);
+            this.vv9.Name = "vv9";
+            this.vv9.Size = new System.Drawing.Size(16, 17);
+            this.vv9.TabIndex = 135;
+            this.vv9.Text = "●";
+            // 
+            // vv10
+            // 
+            this.vv10.AutoSize = true;
+            this.vv10.ForeColor = System.Drawing.Color.Red;
+            this.vv10.Location = new System.Drawing.Point(1786, 171);
+            this.vv10.Name = "vv10";
+            this.vv10.Size = new System.Drawing.Size(16, 17);
+            this.vv10.TabIndex = 134;
+            this.vv10.Text = "●";
+            // 
+            // vv8
+            // 
+            this.vv8.AutoSize = true;
+            this.vv8.ForeColor = System.Drawing.Color.Red;
+            this.vv8.Location = new System.Drawing.Point(1742, 171);
+            this.vv8.Name = "vv8";
+            this.vv8.Size = new System.Drawing.Size(16, 17);
+            this.vv8.TabIndex = 133;
+            this.vv8.Text = "●";
+            // 
+            // vv7
+            // 
+            this.vv7.AutoSize = true;
+            this.vv7.ForeColor = System.Drawing.Color.Red;
+            this.vv7.Location = new System.Drawing.Point(1720, 171);
+            this.vv7.Name = "vv7";
+            this.vv7.Size = new System.Drawing.Size(16, 17);
+            this.vv7.TabIndex = 132;
+            this.vv7.Text = "●";
+            // 
+            // vv6
+            // 
+            this.vv6.AutoSize = true;
+            this.vv6.ForeColor = System.Drawing.Color.Red;
+            this.vv6.Location = new System.Drawing.Point(1698, 171);
+            this.vv6.Name = "vv6";
+            this.vv6.Size = new System.Drawing.Size(16, 17);
+            this.vv6.TabIndex = 131;
+            this.vv6.Text = "●";
+            // 
+            // vv14
+            // 
+            this.vv14.AutoSize = true;
+            this.vv14.ForeColor = System.Drawing.Color.Red;
+            this.vv14.Location = new System.Drawing.Point(1764, 255);
+            this.vv14.Name = "vv14";
+            this.vv14.Size = new System.Drawing.Size(16, 17);
+            this.vv14.TabIndex = 140;
+            this.vv14.Text = "●";
+            // 
+            // vv15
+            // 
+            this.vv15.AutoSize = true;
+            this.vv15.ForeColor = System.Drawing.Color.Red;
+            this.vv15.Location = new System.Drawing.Point(1786, 255);
+            this.vv15.Name = "vv15";
+            this.vv15.Size = new System.Drawing.Size(16, 17);
+            this.vv15.TabIndex = 139;
+            this.vv15.Text = "●";
+            // 
+            // vv13
+            // 
+            this.vv13.AutoSize = true;
+            this.vv13.ForeColor = System.Drawing.Color.Red;
+            this.vv13.Location = new System.Drawing.Point(1742, 255);
+            this.vv13.Name = "vv13";
+            this.vv13.Size = new System.Drawing.Size(16, 17);
+            this.vv13.TabIndex = 138;
+            this.vv13.Text = "●";
+            // 
+            // vv12
+            // 
+            this.vv12.AutoSize = true;
+            this.vv12.ForeColor = System.Drawing.Color.Red;
+            this.vv12.Location = new System.Drawing.Point(1720, 255);
+            this.vv12.Name = "vv12";
+            this.vv12.Size = new System.Drawing.Size(16, 17);
+            this.vv12.TabIndex = 137;
+            this.vv12.Text = "●";
+            // 
+            // vv11
+            // 
+            this.vv11.AutoSize = true;
+            this.vv11.ForeColor = System.Drawing.Color.Red;
+            this.vv11.Location = new System.Drawing.Point(1698, 255);
+            this.vv11.Name = "vv11";
+            this.vv11.Size = new System.Drawing.Size(16, 17);
+            this.vv11.TabIndex = 136;
+            this.vv11.Text = "●";
+            // 
+            // vv19
+            // 
+            this.vv19.AutoSize = true;
+            this.vv19.ForeColor = System.Drawing.Color.Red;
+            this.vv19.Location = new System.Drawing.Point(1764, 332);
+            this.vv19.Name = "vv19";
+            this.vv19.Size = new System.Drawing.Size(16, 17);
+            this.vv19.TabIndex = 145;
+            this.vv19.Text = "●";
+            // 
+            // vv20
+            // 
+            this.vv20.AutoSize = true;
+            this.vv20.ForeColor = System.Drawing.Color.Red;
+            this.vv20.Location = new System.Drawing.Point(1786, 332);
+            this.vv20.Name = "vv20";
+            this.vv20.Size = new System.Drawing.Size(16, 17);
+            this.vv20.TabIndex = 144;
+            this.vv20.Text = "●";
+            // 
+            // vv18
+            // 
+            this.vv18.AutoSize = true;
+            this.vv18.ForeColor = System.Drawing.Color.Red;
+            this.vv18.Location = new System.Drawing.Point(1742, 332);
+            this.vv18.Name = "vv18";
+            this.vv18.Size = new System.Drawing.Size(16, 17);
+            this.vv18.TabIndex = 143;
+            this.vv18.Text = "●";
+            // 
+            // vv17
+            // 
+            this.vv17.AutoSize = true;
+            this.vv17.ForeColor = System.Drawing.Color.Red;
+            this.vv17.Location = new System.Drawing.Point(1720, 332);
+            this.vv17.Name = "vv17";
+            this.vv17.Size = new System.Drawing.Size(16, 17);
+            this.vv17.TabIndex = 142;
+            this.vv17.Text = "●";
+            // 
+            // vv16
+            // 
+            this.vv16.AutoSize = true;
+            this.vv16.ForeColor = System.Drawing.Color.Red;
+            this.vv16.Location = new System.Drawing.Point(1698, 332);
+            this.vv16.Name = "vv16";
+            this.vv16.Size = new System.Drawing.Size(16, 17);
+            this.vv16.TabIndex = 141;
+            this.vv16.Text = "●";
+            // 
+            // vv24
+            // 
+            this.vv24.AutoSize = true;
+            this.vv24.ForeColor = System.Drawing.Color.Red;
+            this.vv24.Location = new System.Drawing.Point(1764, 418);
+            this.vv24.Name = "vv24";
+            this.vv24.Size = new System.Drawing.Size(16, 17);
+            this.vv24.TabIndex = 150;
+            this.vv24.Text = "●";
+            // 
+            // vv25
+            // 
+            this.vv25.AutoSize = true;
+            this.vv25.ForeColor = System.Drawing.Color.Red;
+            this.vv25.Location = new System.Drawing.Point(1786, 418);
+            this.vv25.Name = "vv25";
+            this.vv25.Size = new System.Drawing.Size(16, 17);
+            this.vv25.TabIndex = 149;
+            this.vv25.Text = "●";
+            // 
+            // vv23
+            // 
+            this.vv23.AutoSize = true;
+            this.vv23.ForeColor = System.Drawing.Color.Red;
+            this.vv23.Location = new System.Drawing.Point(1742, 418);
+            this.vv23.Name = "vv23";
+            this.vv23.Size = new System.Drawing.Size(16, 17);
+            this.vv23.TabIndex = 148;
+            this.vv23.Text = "●";
+            // 
+            // vv22
+            // 
+            this.vv22.AutoSize = true;
+            this.vv22.ForeColor = System.Drawing.Color.Red;
+            this.vv22.Location = new System.Drawing.Point(1720, 418);
+            this.vv22.Name = "vv22";
+            this.vv22.Size = new System.Drawing.Size(16, 17);
+            this.vv22.TabIndex = 147;
+            this.vv22.Text = "●";
+            // 
+            // vv21
+            // 
+            this.vv21.AutoSize = true;
+            this.vv21.ForeColor = System.Drawing.Color.Red;
+            this.vv21.Location = new System.Drawing.Point(1698, 418);
+            this.vv21.Name = "vv21";
+            this.vv21.Size = new System.Drawing.Size(16, 17);
+            this.vv21.TabIndex = 146;
+            this.vv21.Text = "●";
+            // 
+            // vv29
+            // 
+            this.vv29.AutoSize = true;
+            this.vv29.ForeColor = System.Drawing.Color.Red;
+            this.vv29.Location = new System.Drawing.Point(1764, 484);
+            this.vv29.Name = "vv29";
+            this.vv29.Size = new System.Drawing.Size(16, 17);
+            this.vv29.TabIndex = 155;
+            this.vv29.Text = "●";
+            // 
+            // vv30
+            // 
+            this.vv30.AutoSize = true;
+            this.vv30.ForeColor = System.Drawing.Color.Red;
+            this.vv30.Location = new System.Drawing.Point(1786, 484);
+            this.vv30.Name = "vv30";
+            this.vv30.Size = new System.Drawing.Size(16, 17);
+            this.vv30.TabIndex = 154;
+            this.vv30.Text = "●";
+            // 
+            // vv28
+            // 
+            this.vv28.AutoSize = true;
+            this.vv28.ForeColor = System.Drawing.Color.Red;
+            this.vv28.Location = new System.Drawing.Point(1742, 484);
+            this.vv28.Name = "vv28";
+            this.vv28.Size = new System.Drawing.Size(16, 17);
+            this.vv28.TabIndex = 153;
+            this.vv28.Text = "●";
+            // 
+            // vv27
+            // 
+            this.vv27.AutoSize = true;
+            this.vv27.ForeColor = System.Drawing.Color.Red;
+            this.vv27.Location = new System.Drawing.Point(1720, 484);
+            this.vv27.Name = "vv27";
+            this.vv27.Size = new System.Drawing.Size(16, 17);
+            this.vv27.TabIndex = 152;
+            this.vv27.Text = "●";
+            // 
+            // vv26
+            // 
+            this.vv26.AutoSize = true;
+            this.vv26.ForeColor = System.Drawing.Color.Red;
+            this.vv26.Location = new System.Drawing.Point(1698, 484);
+            this.vv26.Name = "vv26";
+            this.vv26.Size = new System.Drawing.Size(16, 17);
+            this.vv26.TabIndex = 151;
+            this.vv26.Text = "●";
+            // 
+            // vv34
+            // 
+            this.vv34.AutoSize = true;
+            this.vv34.ForeColor = System.Drawing.Color.Red;
+            this.vv34.Location = new System.Drawing.Point(1764, 565);
+            this.vv34.Name = "vv34";
+            this.vv34.Size = new System.Drawing.Size(16, 17);
+            this.vv34.TabIndex = 160;
+            this.vv34.Text = "●";
+            // 
+            // vv35
+            // 
+            this.vv35.AutoSize = true;
+            this.vv35.ForeColor = System.Drawing.Color.Red;
+            this.vv35.Location = new System.Drawing.Point(1786, 565);
+            this.vv35.Name = "vv35";
+            this.vv35.Size = new System.Drawing.Size(16, 17);
+            this.vv35.TabIndex = 159;
+            this.vv35.Text = "●";
+            // 
+            // vv33
+            // 
+            this.vv33.AutoSize = true;
+            this.vv33.ForeColor = System.Drawing.Color.Red;
+            this.vv33.Location = new System.Drawing.Point(1742, 565);
+            this.vv33.Name = "vv33";
+            this.vv33.Size = new System.Drawing.Size(16, 17);
+            this.vv33.TabIndex = 158;
+            this.vv33.Text = "●";
+            // 
+            // vv32
+            // 
+            this.vv32.AutoSize = true;
+            this.vv32.ForeColor = System.Drawing.Color.Red;
+            this.vv32.Location = new System.Drawing.Point(1720, 565);
+            this.vv32.Name = "vv32";
+            this.vv32.Size = new System.Drawing.Size(16, 17);
+            this.vv32.TabIndex = 157;
+            this.vv32.Text = "●";
+            // 
+            // vv31
+            // 
+            this.vv31.AutoSize = true;
+            this.vv31.ForeColor = System.Drawing.Color.Red;
+            this.vv31.Location = new System.Drawing.Point(1698, 565);
+            this.vv31.Name = "vv31";
+            this.vv31.Size = new System.Drawing.Size(16, 17);
+            this.vv31.TabIndex = 156;
+            this.vv31.Text = "●";
+            // 
+            // vv39
+            // 
+            this.vv39.AutoSize = true;
+            this.vv39.ForeColor = System.Drawing.Color.Red;
+            this.vv39.Location = new System.Drawing.Point(1764, 638);
+            this.vv39.Name = "vv39";
+            this.vv39.Size = new System.Drawing.Size(16, 17);
+            this.vv39.TabIndex = 165;
+            this.vv39.Text = "●";
+            // 
+            // vv40
+            // 
+            this.vv40.AutoSize = true;
+            this.vv40.ForeColor = System.Drawing.Color.Red;
+            this.vv40.Location = new System.Drawing.Point(1786, 638);
+            this.vv40.Name = "vv40";
+            this.vv40.Size = new System.Drawing.Size(16, 17);
+            this.vv40.TabIndex = 164;
+            this.vv40.Text = "●";
+            // 
+            // vv38
+            // 
+            this.vv38.AutoSize = true;
+            this.vv38.ForeColor = System.Drawing.Color.Red;
+            this.vv38.Location = new System.Drawing.Point(1742, 638);
+            this.vv38.Name = "vv38";
+            this.vv38.Size = new System.Drawing.Size(16, 17);
+            this.vv38.TabIndex = 163;
+            this.vv38.Text = "●";
+            // 
+            // vv37
+            // 
+            this.vv37.AutoSize = true;
+            this.vv37.ForeColor = System.Drawing.Color.Red;
+            this.vv37.Location = new System.Drawing.Point(1720, 638);
+            this.vv37.Name = "vv37";
+            this.vv37.Size = new System.Drawing.Size(16, 17);
+            this.vv37.TabIndex = 162;
+            this.vv37.Text = "●";
+            // 
+            // vv36
+            // 
+            this.vv36.AutoSize = true;
+            this.vv36.ForeColor = System.Drawing.Color.Red;
+            this.vv36.Location = new System.Drawing.Point(1698, 638);
+            this.vv36.Name = "vv36";
+            this.vv36.Size = new System.Drawing.Size(16, 17);
+            this.vv36.TabIndex = 161;
+            this.vv36.Text = "●";
+            // 
+            // vv44
+            // 
+            this.vv44.AutoSize = true;
+            this.vv44.ForeColor = System.Drawing.Color.Red;
+            this.vv44.Location = new System.Drawing.Point(1764, 714);
+            this.vv44.Name = "vv44";
+            this.vv44.Size = new System.Drawing.Size(16, 17);
+            this.vv44.TabIndex = 170;
+            this.vv44.Text = "●";
+            // 
+            // vv45
+            // 
+            this.vv45.AutoSize = true;
+            this.vv45.ForeColor = System.Drawing.Color.Red;
+            this.vv45.Location = new System.Drawing.Point(1786, 714);
+            this.vv45.Name = "vv45";
+            this.vv45.Size = new System.Drawing.Size(16, 17);
+            this.vv45.TabIndex = 169;
+            this.vv45.Text = "●";
+            // 
+            // vv43
+            // 
+            this.vv43.AutoSize = true;
+            this.vv43.ForeColor = System.Drawing.Color.Red;
+            this.vv43.Location = new System.Drawing.Point(1742, 714);
+            this.vv43.Name = "vv43";
+            this.vv43.Size = new System.Drawing.Size(16, 17);
+            this.vv43.TabIndex = 168;
+            this.vv43.Text = "●";
+            // 
+            // vv42
+            // 
+            this.vv42.AutoSize = true;
+            this.vv42.ForeColor = System.Drawing.Color.Red;
+            this.vv42.Location = new System.Drawing.Point(1720, 714);
+            this.vv42.Name = "vv42";
+            this.vv42.Size = new System.Drawing.Size(16, 17);
+            this.vv42.TabIndex = 167;
+            this.vv42.Text = "●";
+            // 
+            // vv41
+            // 
+            this.vv41.AutoSize = true;
+            this.vv41.ForeColor = System.Drawing.Color.Red;
+            this.vv41.Location = new System.Drawing.Point(1698, 714);
+            this.vv41.Name = "vv41";
+            this.vv41.Size = new System.Drawing.Size(16, 17);
+            this.vv41.TabIndex = 166;
+            this.vv41.Text = "●";
+            // 
+            // vv49
+            // 
+            this.vv49.AutoSize = true;
+            this.vv49.ForeColor = System.Drawing.Color.Red;
+            this.vv49.Location = new System.Drawing.Point(1764, 782);
+            this.vv49.Name = "vv49";
+            this.vv49.Size = new System.Drawing.Size(16, 17);
+            this.vv49.TabIndex = 175;
+            this.vv49.Text = "●";
+            // 
+            // vv50
+            // 
+            this.vv50.AutoSize = true;
+            this.vv50.ForeColor = System.Drawing.Color.Red;
+            this.vv50.Location = new System.Drawing.Point(1786, 782);
+            this.vv50.Name = "vv50";
+            this.vv50.Size = new System.Drawing.Size(16, 17);
+            this.vv50.TabIndex = 174;
+            this.vv50.Text = "●";
+            // 
+            // vv48
+            // 
+            this.vv48.AutoSize = true;
+            this.vv48.ForeColor = System.Drawing.Color.Red;
+            this.vv48.Location = new System.Drawing.Point(1742, 782);
+            this.vv48.Name = "vv48";
+            this.vv48.Size = new System.Drawing.Size(16, 17);
+            this.vv48.TabIndex = 173;
+            this.vv48.Text = "●";
+            // 
+            // vv47
+            // 
+            this.vv47.AutoSize = true;
+            this.vv47.ForeColor = System.Drawing.Color.Red;
+            this.vv47.Location = new System.Drawing.Point(1720, 782);
+            this.vv47.Name = "vv47";
+            this.vv47.Size = new System.Drawing.Size(16, 17);
+            this.vv47.TabIndex = 172;
+            this.vv47.Text = "●";
+            // 
+            // vv46
+            // 
+            this.vv46.AutoSize = true;
+            this.vv46.ForeColor = System.Drawing.Color.Red;
+            this.vv46.Location = new System.Drawing.Point(1698, 782);
+            this.vv46.Name = "vv46";
+            this.vv46.Size = new System.Drawing.Size(16, 17);
+            this.vv46.TabIndex = 171;
+            this.vv46.Text = "●";
+            // 
+            // vv54
+            // 
+            this.vv54.AutoSize = true;
+            this.vv54.ForeColor = System.Drawing.Color.Red;
+            this.vv54.Location = new System.Drawing.Point(1764, 850);
+            this.vv54.Name = "vv54";
+            this.vv54.Size = new System.Drawing.Size(16, 17);
+            this.vv54.TabIndex = 180;
+            this.vv54.Text = "●";
+            // 
+            // vv55
+            // 
+            this.vv55.AutoSize = true;
+            this.vv55.ForeColor = System.Drawing.Color.Red;
+            this.vv55.Location = new System.Drawing.Point(1786, 850);
+            this.vv55.Name = "vv55";
+            this.vv55.Size = new System.Drawing.Size(16, 17);
+            this.vv55.TabIndex = 179;
+            this.vv55.Text = "●";
+            // 
+            // vv53
+            // 
+            this.vv53.AutoSize = true;
+            this.vv53.ForeColor = System.Drawing.Color.Red;
+            this.vv53.Location = new System.Drawing.Point(1742, 850);
+            this.vv53.Name = "vv53";
+            this.vv53.Size = new System.Drawing.Size(16, 17);
+            this.vv53.TabIndex = 178;
+            this.vv53.Text = "●";
+            // 
+            // vv52
+            // 
+            this.vv52.AutoSize = true;
+            this.vv52.ForeColor = System.Drawing.Color.Red;
+            this.vv52.Location = new System.Drawing.Point(1720, 850);
+            this.vv52.Name = "vv52";
+            this.vv52.Size = new System.Drawing.Size(16, 17);
+            this.vv52.TabIndex = 177;
+            this.vv52.Text = "●";
+            // 
+            // vv51
+            // 
+            this.vv51.AutoSize = true;
+            this.vv51.ForeColor = System.Drawing.Color.Red;
+            this.vv51.Location = new System.Drawing.Point(1698, 850);
+            this.vv51.Name = "vv51";
+            this.vv51.Size = new System.Drawing.Size(16, 17);
+            this.vv51.TabIndex = 176;
+            this.vv51.Text = "●";
+            // 
+            // vv59
+            // 
+            this.vv59.AutoSize = true;
+            this.vv59.ForeColor = System.Drawing.Color.Red;
+            this.vv59.Location = new System.Drawing.Point(1764, 929);
+            this.vv59.Name = "vv59";
+            this.vv59.Size = new System.Drawing.Size(16, 17);
+            this.vv59.TabIndex = 185;
+            this.vv59.Text = "●";
+            // 
+            // vv60
+            // 
+            this.vv60.AutoSize = true;
+            this.vv60.ForeColor = System.Drawing.Color.Red;
+            this.vv60.Location = new System.Drawing.Point(1786, 929);
+            this.vv60.Name = "vv60";
+            this.vv60.Size = new System.Drawing.Size(16, 17);
+            this.vv60.TabIndex = 184;
+            this.vv60.Text = "●";
+            // 
+            // vv58
+            // 
+            this.vv58.AutoSize = true;
+            this.vv58.ForeColor = System.Drawing.Color.Red;
+            this.vv58.Location = new System.Drawing.Point(1742, 929);
+            this.vv58.Name = "vv58";
+            this.vv58.Size = new System.Drawing.Size(16, 17);
+            this.vv58.TabIndex = 183;
+            this.vv58.Text = "●";
+            // 
+            // vv57
+            // 
+            this.vv57.AutoSize = true;
+            this.vv57.ForeColor = System.Drawing.Color.Red;
+            this.vv57.Location = new System.Drawing.Point(1720, 929);
+            this.vv57.Name = "vv57";
+            this.vv57.Size = new System.Drawing.Size(16, 17);
+            this.vv57.TabIndex = 182;
+            this.vv57.Text = "●";
+            // 
+            // vv56
+            // 
+            this.vv56.AutoSize = true;
+            this.vv56.ForeColor = System.Drawing.Color.Red;
+            this.vv56.Location = new System.Drawing.Point(1698, 929);
+            this.vv56.Name = "vv56";
+            this.vv56.Size = new System.Drawing.Size(16, 17);
+            this.vv56.TabIndex = 181;
+            this.vv56.Text = "●";
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.vv59);
+            this.Controls.Add(this.vv60);
+            this.Controls.Add(this.vv58);
+            this.Controls.Add(this.vv57);
+            this.Controls.Add(this.vv56);
+            this.Controls.Add(this.vv54);
+            this.Controls.Add(this.vv55);
+            this.Controls.Add(this.vv53);
+            this.Controls.Add(this.vv52);
+            this.Controls.Add(this.vv51);
+            this.Controls.Add(this.vv49);
+            this.Controls.Add(this.vv50);
+            this.Controls.Add(this.vv48);
+            this.Controls.Add(this.vv47);
+            this.Controls.Add(this.vv46);
+            this.Controls.Add(this.vv44);
+            this.Controls.Add(this.vv45);
+            this.Controls.Add(this.vv43);
+            this.Controls.Add(this.vv42);
+            this.Controls.Add(this.vv41);
+            this.Controls.Add(this.vv39);
+            this.Controls.Add(this.vv40);
+            this.Controls.Add(this.vv38);
+            this.Controls.Add(this.vv37);
+            this.Controls.Add(this.vv36);
+            this.Controls.Add(this.vv34);
+            this.Controls.Add(this.vv35);
+            this.Controls.Add(this.vv33);
+            this.Controls.Add(this.vv32);
+            this.Controls.Add(this.vv31);
+            this.Controls.Add(this.vv29);
+            this.Controls.Add(this.vv30);
+            this.Controls.Add(this.vv28);
+            this.Controls.Add(this.vv27);
+            this.Controls.Add(this.vv26);
+            this.Controls.Add(this.vv24);
+            this.Controls.Add(this.vv25);
+            this.Controls.Add(this.vv23);
+            this.Controls.Add(this.vv22);
+            this.Controls.Add(this.vv21);
+            this.Controls.Add(this.vv19);
+            this.Controls.Add(this.vv20);
+            this.Controls.Add(this.vv18);
+            this.Controls.Add(this.vv17);
+            this.Controls.Add(this.vv16);
+            this.Controls.Add(this.vv14);
+            this.Controls.Add(this.vv15);
+            this.Controls.Add(this.vv13);
+            this.Controls.Add(this.vv12);
+            this.Controls.Add(this.vv11);
+            this.Controls.Add(this.vv9);
+            this.Controls.Add(this.vv10);
+            this.Controls.Add(this.vv8);
+            this.Controls.Add(this.vv7);
+            this.Controls.Add(this.vv6);
+            this.Controls.Add(this.vv4);
+            this.Controls.Add(this.vv5);
+            this.Controls.Add(this.vv3);
+            this.Controls.Add(this.vv2);
+            this.Controls.Add(this.vv1);
             this.Controls.Add(this.vk60);
             this.Controls.Add(this.vk59);
             this.Controls.Add(this.vk58);
@@ -1717,5 +2437,65 @@
         private System.Windows.Forms.Label vk58;
         private System.Windows.Forms.Label vk59;
         private System.Windows.Forms.Label vk60;
+        private System.Windows.Forms.Label vv1;
+        private System.Windows.Forms.Label vv2;
+        private System.Windows.Forms.Label vv3;
+        private System.Windows.Forms.Label vv5;
+        private System.Windows.Forms.Label vv4;
+        private System.Windows.Forms.Label vv9;
+        private System.Windows.Forms.Label vv10;
+        private System.Windows.Forms.Label vv8;
+        private System.Windows.Forms.Label vv7;
+        private System.Windows.Forms.Label vv6;
+        private System.Windows.Forms.Label vv14;
+        private System.Windows.Forms.Label vv15;
+        private System.Windows.Forms.Label vv13;
+        private System.Windows.Forms.Label vv12;
+        private System.Windows.Forms.Label vv11;
+        private System.Windows.Forms.Label vv19;
+        private System.Windows.Forms.Label vv20;
+        private System.Windows.Forms.Label vv18;
+        private System.Windows.Forms.Label vv17;
+        private System.Windows.Forms.Label vv16;
+        private System.Windows.Forms.Label vv24;
+        private System.Windows.Forms.Label vv25;
+        private System.Windows.Forms.Label vv23;
+        private System.Windows.Forms.Label vv22;
+        private System.Windows.Forms.Label vv21;
+        private System.Windows.Forms.Label vv29;
+        private System.Windows.Forms.Label vv30;
+        private System.Windows.Forms.Label vv28;
+        private System.Windows.Forms.Label vv27;
+        private System.Windows.Forms.Label vv26;
+        private System.Windows.Forms.Label vv34;
+        private System.Windows.Forms.Label vv35;
+        private System.Windows.Forms.Label vv33;
+        private System.Windows.Forms.Label vv32;
+        private System.Windows.Forms.Label vv31;
+        private System.Windows.Forms.Label vv39;
+        private System.Windows.Forms.Label vv40;
+        private System.Windows.Forms.Label vv38;
+        private System.Windows.Forms.Label vv37;
+        private System.Windows.Forms.Label vv36;
+        private System.Windows.Forms.Label vv44;
+        private System.Windows.Forms.Label vv45;
+        private System.Windows.Forms.Label vv43;
+        private System.Windows.Forms.Label vv42;
+        private System.Windows.Forms.Label vv41;
+        private System.Windows.Forms.Label vv49;
+        private System.Windows.Forms.Label vv50;
+        private System.Windows.Forms.Label vv48;
+        private System.Windows.Forms.Label vv47;
+        private System.Windows.Forms.Label vv46;
+        private System.Windows.Forms.Label vv54;
+        private System.Windows.Forms.Label vv55;
+        private System.Windows.Forms.Label vv53;
+        private System.Windows.Forms.Label vv52;
+        private System.Windows.Forms.Label vv51;
+        private System.Windows.Forms.Label vv59;
+        private System.Windows.Forms.Label vv60;
+        private System.Windows.Forms.Label vv58;
+        private System.Windows.Forms.Label vv57;
+        private System.Windows.Forms.Label vv56;
     }
 }

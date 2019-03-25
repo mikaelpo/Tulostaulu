@@ -163,6 +163,93 @@ namespace Tulostaulu
             vk59.Visible = false;
             vk60.Visible = false;
 
+            //ensimmäinen vierasjoukkueen pelaaja
+            vv1.Visible = false;
+            vv2.Visible = false;
+            vv3.Visible = false;
+            vv4.Visible = false;
+            vv5.Visible = false;
+
+            //toinen vierasjoukkueen pelaaja
+            vv6.Visible = false;
+            vv7.Visible = false;
+            vv8.Visible = false;
+            vv9.Visible = false;
+            vv10.Visible = false;
+
+            //kolmas vierasjoukkueen pelaaja
+            vv11.Visible = false;
+            vv12.Visible = false;
+            vv13.Visible = false;
+            vv14.Visible = false;
+            vv15.Visible = false;
+
+            //neljäs vierasjoukkueen pelaaja
+            vv16.Visible = false;
+            vv17.Visible = false;
+            vv18.Visible = false;
+            vv19.Visible = false;
+            vv20.Visible = false;
+
+            //viides vierasjoukkueen pelaaja
+            vv21.Visible = false;
+            vv22.Visible = false;
+            vv23.Visible = false;
+            vv24.Visible = false;
+            vv25.Visible = false;
+
+            //kuudes vierasjoukkueen pelaaja
+            vv26.Visible = false;
+            vv27.Visible = false;
+            vv28.Visible = false;
+            vv29.Visible = false;
+            vv30.Visible = false;
+
+            //seitsemäs vierasjoukkueen pelaaja
+            vv31.Visible = false;
+            vv32.Visible = false;
+            vv33.Visible = false;
+            vv34.Visible = false;
+            vv35.Visible = false;
+
+            //kahdeksas vierasjoukkueen pelaaja
+            vv36.Visible = false;
+            vv37.Visible = false;
+            vv38.Visible = false;
+            vv39.Visible = false;
+            vv40.Visible = false;
+
+            //yhdeksäs vierasjoukkueen pelaaja
+            vv41.Visible = false;
+            vv42.Visible = false;
+            vv43.Visible = false;
+            vv44.Visible = false;
+            vv45.Visible = false;
+
+            //kymmenes vierasjoukkueen pelaaja
+            vv46.Visible = false;
+            vv47.Visible = false;
+            vv48.Visible = false;
+            vv49.Visible = false;
+            vv50.Visible = false;
+
+            //yhdestoista vierasjoukkueen pelaaja
+            vv51.Visible = false;
+            vv52.Visible = false;
+            vv53.Visible = false;
+            vv54.Visible = false;
+            vv55.Visible = false;
+
+            //kahdestoista vierasjoukkueen pelaaja
+            vv56.Visible = false;
+            vv57.Visible = false;
+            vv58.Visible = false;
+            vv59.Visible = false;
+            vv60.Visible = false;
+
+
+
+
 
 
 
