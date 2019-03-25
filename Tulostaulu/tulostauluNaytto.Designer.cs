@@ -852,7 +852,7 @@
             // 
             this.vk6.AutoSize = true;
             this.vk6.ForeColor = System.Drawing.Color.Red;
-            this.vk6.Location = new System.Drawing.Point(335, 170);
+            this.vk6.Location = new System.Drawing.Point(332, 171);
             this.vk6.Name = "vk6";
             this.vk6.Size = new System.Drawing.Size(16, 17);
             this.vk6.TabIndex = 71;
@@ -862,7 +862,7 @@
             // 
             this.vk7.AutoSize = true;
             this.vk7.ForeColor = System.Drawing.Color.Red;
-            this.vk7.Location = new System.Drawing.Point(358, 170);
+            this.vk7.Location = new System.Drawing.Point(355, 171);
             this.vk7.Name = "vk7";
             this.vk7.Size = new System.Drawing.Size(16, 17);
             this.vk7.TabIndex = 72;
