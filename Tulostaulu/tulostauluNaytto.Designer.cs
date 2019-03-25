@@ -99,6 +99,7 @@
             this.vk5 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.vk6 = new System.Windows.Forms.Label();
+            this.vk7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -857,12 +858,23 @@
             this.vk6.TabIndex = 71;
             this.vk6.Text = "●";
             // 
+            // vk7
+            // 
+            this.vk7.AutoSize = true;
+            this.vk7.ForeColor = System.Drawing.Color.Red;
+            this.vk7.Location = new System.Drawing.Point(358, 170);
+            this.vk7.Name = "vk7";
+            this.vk7.Size = new System.Drawing.Size(16, 17);
+            this.vk7.TabIndex = 72;
+            this.vk7.Text = "●";
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InfoText;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.vk7);
             this.Controls.Add(this.vk6);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.vk5);
@@ -1015,5 +1027,6 @@
         private System.Windows.Forms.Label vk5;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label vk6;
+        private System.Windows.Forms.Label vk7;
     }
 }

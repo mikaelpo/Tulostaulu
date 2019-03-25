@@ -86,6 +86,8 @@ namespace Tulostaulu
             vk5.Visible = false;
 
             vk6.Visible = false;
+            vk7.Visible = false;
+
 
 
         }
