@@ -213,6 +213,8 @@
             this.vv58 = new System.Windows.Forms.Label();
             this.vv57 = new System.Windows.Forms.Label();
             this.vv56 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -2111,6 +2113,16 @@
             this.vv56.TabIndex = 181;
             this.vv56.Text = "●";
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 8000;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2497,5 +2509,7 @@
         private System.Windows.Forms.Label vv58;
         private System.Windows.Forms.Label vv57;
         private System.Windows.Forms.Label vv56;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }

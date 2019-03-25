@@ -31,6 +31,8 @@ namespace Tulostaulu
         int timeMm;
         bool isActive;
 
+        Label vilkku = null;
+
         public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at)
         {
             InitializeComponent();
@@ -246,14 +248,6 @@ namespace Tulostaulu
             vv58.Visible = false;
             vv59.Visible = false;
             vv60.Visible = false;
-
-
-
-
-
-
-
-
         }
 
         private void lisaaVirheKoti()
@@ -275,6 +269,27 @@ namespace Tulostaulu
             labelVirheetKoti.Text = virheetKoti.ToString();
         }
 
+        public void vilkutaLabel(Label l)
+        {
+            timer2.Start();
+            timer3.Start();
+            vilkku = l;
+        }
+        public void timer2_Tick(object sender, EventArgs e)
+        {
+            if (vilkku.ForeColor == Color.Black)
+                vilkku.ForeColor = Color.Red;
+            else
+                vilkku.ForeColor = Color.Black;
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            timer2.Stop();
+            timer3.Stop();
+            vilkku.ForeColor = Color.Red;
+        }
+
         //Virheet
         public void lisaaVirheKoti(bool vainPelaajaVirhe)
         {
@@ -284,7 +299,7 @@ namespace Tulostaulu
             if (pelaajaVirheK1 == 2) { vk2.Visible = true; }
             if (pelaajaVirheK1 == 3) { vk3.Visible = true; }
             if (pelaajaVirheK1 == 4) { vk4.Visible = true; }
-            if (pelaajaVirheK1 == 5) { vk5.Visible = true; }
+            if (pelaajaVirheK1 == 5) { vk5.Visible = true; vilkutaLabel(vk5); }
 
             if(vainPelaajaVirhe == false) { lisaaVirheKoti(); }
         }
@@ -776,6 +791,7 @@ namespace Tulostaulu
             }
         }
 
+       
         public void lisaaPisteV10(bool vainPelaaja)
         {
             p22++;
