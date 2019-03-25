@@ -145,7 +145,7 @@ namespace Tulostaulu
             //kymmenes kotijoukkueen pelaaja
             vk46.Visible = false;
             vk47.Visible = false;
-            vk47.Visible = false;
+            vk48.Visible = false;
             vk49.Visible = false;
             vk50.Visible = false;
 
