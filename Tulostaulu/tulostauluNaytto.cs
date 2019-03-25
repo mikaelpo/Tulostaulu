@@ -89,11 +89,81 @@ namespace Tulostaulu
             // toinen kotijoukkueen pelaaja
             vk6.Visible = false;
             vk7.Visible = false;
-           //vk8.Visible = false;
-           //vk9.Visible = false;
-           //vk10.Vsible = false;
+            vk8.Visible = false;
+            vk9.Visible = false;
+            vk10.Visible = false;
 
             //kolmas kotijoukkueen pelaaja
+            vk11.Visible = false;
+            vk12.Visible = false;
+            vk13.Visible = false;
+            vk14.Visible = false;
+            vk15.Visible = false;
+
+            //neljäs kotijoukkueen pelaaja
+            vk16.Visible = false;
+            vk17.Visible = false;
+            vk18.Visible = false;
+            vk19.Visible = false;
+            vk20.Visible = false;
+
+            //viides kotijoukkueen pelaaja
+            vk21.Visible = false;
+            vk22.Visible = false;
+            vk23.Visible = false;
+            vk24.Visible = false;
+            vk25.Visible = false;
+
+            //kuudes kotijoukkueen pelaaja
+            vk26.Visible = false;
+            vk27.Visible = false;
+            vk28.Visible = false;
+            vk29.Visible = false;
+            vk30.Visible = false;
+
+            // seitsemäs kotijoukkueen pelaaja
+            vk31.Visible = false;
+            vk32.Visible = false;
+            vk33.Visible = false;
+            vk34.Visible = false;
+            vk35.Visible = false;
+
+            //kahdeksas kotijoukkueen pelaaja
+            vk36.Visible = false;
+            vk37.Visible = false;
+            vk38.Visible = false;
+            vk39.Visible = false;
+            vk40.Visible = false;
+
+            //yhdeksäs kotijoukkueen pelaaja
+            vk41.Visible = false;
+            vk42.Visible = false;
+            vk43.Visible = false;
+            vk44.Visible = false;
+            vk45.Visible = false;
+
+            //kymmenes kotijoukkueen pelaaja
+            vk46.Visible = false;
+            vk47.Visible = false;
+            vk47.Visible = false;
+            vk49.Visible = false;
+            vk50.Visible = false;
+
+            //yhdestoista kotijoukkueen pelaaja
+            vk51.Visible = false;
+            vk52.Visible = false;
+            vk53.Visible = false;
+            vk54.Visible = false;
+            vk55.Visible = false;
+
+            //kahdestoista kotijoukkueen pelaaja
+            vk56.Visible = false;
+            vk57.Visible = false;
+            vk58.Visible = false;
+            vk59.Visible = false;
+            vk60.Visible = false;
+
+
 
 
 
