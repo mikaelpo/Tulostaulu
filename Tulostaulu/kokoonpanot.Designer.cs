@@ -47,7 +47,7 @@
             // 
             // buttonK1
             // 
-            this.buttonK1.Location = new System.Drawing.Point(652, 390);
+            this.buttonK1.Location = new System.Drawing.Point(789, 486);
             this.buttonK1.Name = "buttonK1";
             this.buttonK1.Size = new System.Drawing.Size(95, 32);
             this.buttonK1.TabIndex = 0;
@@ -117,7 +117,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(914, 28);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -160,7 +160,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 540);
             this.Controls.Add(this.textBoxK4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonK4);
