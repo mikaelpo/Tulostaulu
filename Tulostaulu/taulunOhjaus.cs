@@ -627,24 +627,7 @@ namespace Tulostaulu
                 vainPelaajaPisteet = false;              
             }
         }
-        //Virheet testi
-        private void button50_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                t1.lisaaVirheKoti(vainPelaajaVirheet);
-            }
-            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
-        }
-
-        private void button62_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                t1.vahennaVirheKoti(vainPelaajaVirheet);
-            }
-            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
-        }
+        
 
         //checkBox, jolla katsotaan haluaako käyttäjä lisätä/vähentää virheitä vain pelaajille joukkuevirheitä muuttamatta 
         private void checkBoxVirhe_CheckedChanged_1(object sender, EventArgs e)
@@ -657,6 +640,225 @@ namespace Tulostaulu
             {
                 vainPelaajaVirheet = false;
             }
+        }
+
+
+        //Virheiden lisäys kotijoukkue
+        private void button50_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti2(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti3(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti4(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti5(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti6(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti7(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti8(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti9(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti10(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button60_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti11(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaVirheKoti12(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
+        }
+
+        //Virheiden vähennys kotijoukkue
+        private void button62_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button63_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti2(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti3(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button65_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti4(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button66_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti5(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button67_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti6(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button68_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti7(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button69_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti8(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button70_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti9(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button71_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti10(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button72_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti11(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        private void button73_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaVirheKoti12(vainPelaajaVirheet);
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
         }
     }
 }
