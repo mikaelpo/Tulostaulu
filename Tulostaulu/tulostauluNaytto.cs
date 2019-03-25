@@ -85,6 +85,9 @@ namespace Tulostaulu
             vk4.Visible = false;
             vk5.Visible = false;
 
+            vk6.Visible = false;
+
+
         }
 
         private void lisaaVirheKoti()

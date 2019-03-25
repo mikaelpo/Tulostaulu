@@ -98,6 +98,7 @@
             this.vk4 = new System.Windows.Forms.Label();
             this.vk5 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.vk6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -846,12 +847,23 @@
             this.label33.TabIndex = 70;
             this.label33.Text = "Fouls";
             // 
+            // vk6
+            // 
+            this.vk6.AutoSize = true;
+            this.vk6.ForeColor = System.Drawing.Color.Red;
+            this.vk6.Location = new System.Drawing.Point(335, 170);
+            this.vk6.Name = "vk6";
+            this.vk6.Size = new System.Drawing.Size(16, 17);
+            this.vk6.TabIndex = 71;
+            this.vk6.Text = "●";
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InfoText;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.vk6);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.vk5);
             this.Controls.Add(this.vk4);
@@ -1002,5 +1014,6 @@
         private System.Windows.Forms.Label vk4;
         private System.Windows.Forms.Label vk5;
         private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label vk6;
     }
 }
