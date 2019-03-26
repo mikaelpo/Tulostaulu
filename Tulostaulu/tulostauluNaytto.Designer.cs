@@ -215,13 +215,19 @@
             this.vv56 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(715, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(744, 63);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(142, 127);
@@ -230,7 +236,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(996, 61);
+            this.pictureBox2.Location = new System.Drawing.Point(1020, 63);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(133, 127);
@@ -242,7 +248,7 @@
             this.k1.AutoSize = true;
             this.k1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k1.ForeColor = System.Drawing.Color.Orange;
-            this.k1.Location = new System.Drawing.Point(524, 63);
+            this.k1.Location = new System.Drawing.Point(567, 68);
             this.k1.Name = "k1";
             this.k1.Size = new System.Drawing.Size(46, 51);
             this.k1.TabIndex = 5;
@@ -253,7 +259,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Orange;
-            this.label1.Location = new System.Drawing.Point(37, 67);
+            this.label1.Location = new System.Drawing.Point(25, 68);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 46);
             this.label1.TabIndex = 6;
@@ -264,7 +270,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Orange;
-            this.label2.Location = new System.Drawing.Point(37, 156);
+            this.label2.Location = new System.Drawing.Point(25, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 46);
             this.label2.TabIndex = 7;
@@ -275,7 +281,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Orange;
-            this.label3.Location = new System.Drawing.Point(37, 245);
+            this.label3.Location = new System.Drawing.Point(25, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 46);
             this.label3.TabIndex = 8;
@@ -286,7 +292,7 @@
             this.k2.AutoSize = true;
             this.k2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k2.ForeColor = System.Drawing.Color.Orange;
-            this.k2.Location = new System.Drawing.Point(524, 152);
+            this.k2.Location = new System.Drawing.Point(567, 143);
             this.k2.Name = "k2";
             this.k2.Size = new System.Drawing.Size(46, 51);
             this.k2.TabIndex = 9;
@@ -297,7 +303,7 @@
             this.k3.AutoSize = true;
             this.k3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k3.ForeColor = System.Drawing.Color.Orange;
-            this.k3.Location = new System.Drawing.Point(524, 241);
+            this.k3.Location = new System.Drawing.Point(567, 218);
             this.k3.Name = "k3";
             this.k3.Size = new System.Drawing.Size(46, 51);
             this.k3.TabIndex = 10;
@@ -308,7 +314,7 @@
             this.labelMm.AutoSize = true;
             this.labelMm.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMm.ForeColor = System.Drawing.Color.Orange;
-            this.labelMm.Location = new System.Drawing.Point(636, 723);
+            this.labelMm.Location = new System.Drawing.Point(666, 723);
             this.labelMm.Name = "labelMm";
             this.labelMm.Size = new System.Drawing.Size(191, 135);
             this.labelMm.TabIndex = 11;
@@ -319,7 +325,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Orange;
-            this.label7.Location = new System.Drawing.Point(796, 710);
+            this.label7.Location = new System.Drawing.Point(826, 710);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 135);
             this.label7.TabIndex = 12;
@@ -330,7 +336,7 @@
             this.labelSs.AutoSize = true;
             this.labelSs.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSs.ForeColor = System.Drawing.Color.Orange;
-            this.labelSs.Location = new System.Drawing.Point(843, 723);
+            this.labelSs.Location = new System.Drawing.Point(873, 723);
             this.labelSs.Name = "labelSs";
             this.labelSs.Size = new System.Drawing.Size(191, 135);
             this.labelSs.TabIndex = 13;
@@ -341,7 +347,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Orange;
-            this.label9.Location = new System.Drawing.Point(1009, 710);
+            this.label9.Location = new System.Drawing.Point(1039, 710);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 135);
             this.label9.TabIndex = 14;
@@ -352,7 +358,7 @@
             this.labelMs.AutoSize = true;
             this.labelMs.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMs.ForeColor = System.Drawing.Color.Orange;
-            this.labelMs.Location = new System.Drawing.Point(1081, 723);
+            this.labelMs.Location = new System.Drawing.Point(1111, 723);
             this.labelMs.Name = "labelMs";
             this.labelMs.Size = new System.Drawing.Size(191, 135);
             this.labelMs.TabIndex = 15;
@@ -368,7 +374,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Orange;
-            this.label6.Location = new System.Drawing.Point(37, 323);
+            this.label6.Location = new System.Drawing.Point(25, 293);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 46);
             this.label6.TabIndex = 16;
@@ -379,7 +385,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Orange;
-            this.label8.Location = new System.Drawing.Point(37, 394);
+            this.label8.Location = new System.Drawing.Point(25, 368);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(126, 46);
             this.label8.TabIndex = 17;
@@ -390,7 +396,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Orange;
-            this.label10.Location = new System.Drawing.Point(37, 469);
+            this.label10.Location = new System.Drawing.Point(25, 443);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(148, 46);
             this.label10.TabIndex = 18;
@@ -401,7 +407,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Orange;
-            this.label11.Location = new System.Drawing.Point(37, 541);
+            this.label11.Location = new System.Drawing.Point(25, 518);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(148, 46);
             this.label11.TabIndex = 19;
@@ -412,7 +418,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Orange;
-            this.label12.Location = new System.Drawing.Point(37, 614);
+            this.label12.Location = new System.Drawing.Point(25, 593);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(148, 46);
             this.label12.TabIndex = 20;
@@ -423,7 +429,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Orange;
-            this.label13.Location = new System.Drawing.Point(37, 688);
+            this.label13.Location = new System.Drawing.Point(25, 668);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(148, 46);
             this.label13.TabIndex = 21;
@@ -434,7 +440,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Orange;
-            this.label14.Location = new System.Drawing.Point(37, 762);
+            this.label14.Location = new System.Drawing.Point(25, 743);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(148, 46);
             this.label14.TabIndex = 22;
@@ -445,7 +451,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Orange;
-            this.label15.Location = new System.Drawing.Point(37, 833);
+            this.label15.Location = new System.Drawing.Point(25, 818);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(148, 46);
             this.label15.TabIndex = 23;
@@ -456,7 +462,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Orange;
-            this.label16.Location = new System.Drawing.Point(37, 905);
+            this.label16.Location = new System.Drawing.Point(25, 893);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(148, 46);
             this.label16.TabIndex = 24;
@@ -467,7 +473,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Orange;
-            this.label17.Location = new System.Drawing.Point(1420, 67);
+            this.label17.Location = new System.Drawing.Point(1381, 68);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(148, 46);
             this.label17.TabIndex = 25;
@@ -478,7 +484,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Orange;
-            this.label18.Location = new System.Drawing.Point(1420, 156);
+            this.label18.Location = new System.Drawing.Point(1381, 157);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(148, 46);
             this.label18.TabIndex = 26;
@@ -489,7 +495,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Orange;
-            this.label19.Location = new System.Drawing.Point(1420, 245);
+            this.label19.Location = new System.Drawing.Point(1381, 246);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(148, 46);
             this.label19.TabIndex = 27;
@@ -500,7 +506,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Orange;
-            this.label20.Location = new System.Drawing.Point(1420, 323);
+            this.label20.Location = new System.Drawing.Point(1381, 324);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(148, 46);
             this.label20.TabIndex = 28;
@@ -511,7 +517,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Orange;
-            this.label21.Location = new System.Drawing.Point(1420, 394);
+            this.label21.Location = new System.Drawing.Point(1381, 395);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(148, 46);
             this.label21.TabIndex = 29;
@@ -522,7 +528,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Orange;
-            this.label22.Location = new System.Drawing.Point(1420, 469);
+            this.label22.Location = new System.Drawing.Point(1381, 470);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(148, 46);
             this.label22.TabIndex = 30;
@@ -533,7 +539,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Orange;
-            this.label23.Location = new System.Drawing.Point(1420, 541);
+            this.label23.Location = new System.Drawing.Point(1381, 542);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(148, 46);
             this.label23.TabIndex = 31;
@@ -544,7 +550,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Orange;
-            this.label24.Location = new System.Drawing.Point(1420, 614);
+            this.label24.Location = new System.Drawing.Point(1381, 615);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(148, 46);
             this.label24.TabIndex = 32;
@@ -555,7 +561,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Orange;
-            this.label25.Location = new System.Drawing.Point(1420, 690);
+            this.label25.Location = new System.Drawing.Point(1381, 691);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(148, 46);
             this.label25.TabIndex = 33;
@@ -566,7 +572,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Orange;
-            this.label26.Location = new System.Drawing.Point(1420, 763);
+            this.label26.Location = new System.Drawing.Point(1381, 759);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(148, 46);
             this.label26.TabIndex = 34;
@@ -577,7 +583,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Orange;
-            this.label27.Location = new System.Drawing.Point(1420, 826);
+            this.label27.Location = new System.Drawing.Point(1381, 822);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(148, 46);
             this.label27.TabIndex = 35;
@@ -588,7 +594,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Orange;
-            this.label28.Location = new System.Drawing.Point(1420, 905);
+            this.label28.Location = new System.Drawing.Point(1381, 901);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(148, 46);
             this.label28.TabIndex = 36;
@@ -599,7 +605,7 @@
             this.k4.AutoSize = true;
             this.k4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k4.ForeColor = System.Drawing.Color.Orange;
-            this.k4.Location = new System.Drawing.Point(524, 319);
+            this.k4.Location = new System.Drawing.Point(567, 293);
             this.k4.Name = "k4";
             this.k4.Size = new System.Drawing.Size(46, 51);
             this.k4.TabIndex = 37;
@@ -610,7 +616,7 @@
             this.k5.AutoSize = true;
             this.k5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k5.ForeColor = System.Drawing.Color.Orange;
-            this.k5.Location = new System.Drawing.Point(524, 390);
+            this.k5.Location = new System.Drawing.Point(567, 368);
             this.k5.Name = "k5";
             this.k5.Size = new System.Drawing.Size(46, 51);
             this.k5.TabIndex = 38;
@@ -621,7 +627,7 @@
             this.k6.AutoSize = true;
             this.k6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k6.ForeColor = System.Drawing.Color.Orange;
-            this.k6.Location = new System.Drawing.Point(524, 465);
+            this.k6.Location = new System.Drawing.Point(567, 443);
             this.k6.Name = "k6";
             this.k6.Size = new System.Drawing.Size(46, 51);
             this.k6.TabIndex = 39;
@@ -632,7 +638,7 @@
             this.k7.AutoSize = true;
             this.k7.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k7.ForeColor = System.Drawing.Color.Orange;
-            this.k7.Location = new System.Drawing.Point(524, 537);
+            this.k7.Location = new System.Drawing.Point(567, 518);
             this.k7.Name = "k7";
             this.k7.Size = new System.Drawing.Size(46, 51);
             this.k7.TabIndex = 40;
@@ -643,7 +649,7 @@
             this.k8.AutoSize = true;
             this.k8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k8.ForeColor = System.Drawing.Color.Orange;
-            this.k8.Location = new System.Drawing.Point(524, 610);
+            this.k8.Location = new System.Drawing.Point(567, 593);
             this.k8.Name = "k8";
             this.k8.Size = new System.Drawing.Size(46, 51);
             this.k8.TabIndex = 41;
@@ -654,7 +660,7 @@
             this.k9.AutoSize = true;
             this.k9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k9.ForeColor = System.Drawing.Color.Orange;
-            this.k9.Location = new System.Drawing.Point(524, 684);
+            this.k9.Location = new System.Drawing.Point(567, 668);
             this.k9.Name = "k9";
             this.k9.Size = new System.Drawing.Size(46, 51);
             this.k9.TabIndex = 42;
@@ -665,7 +671,7 @@
             this.k10.AutoSize = true;
             this.k10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k10.ForeColor = System.Drawing.Color.Orange;
-            this.k10.Location = new System.Drawing.Point(524, 756);
+            this.k10.Location = new System.Drawing.Point(567, 743);
             this.k10.Name = "k10";
             this.k10.Size = new System.Drawing.Size(46, 51);
             this.k10.TabIndex = 43;
@@ -676,7 +682,7 @@
             this.k11.AutoSize = true;
             this.k11.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k11.ForeColor = System.Drawing.Color.Orange;
-            this.k11.Location = new System.Drawing.Point(524, 829);
+            this.k11.Location = new System.Drawing.Point(567, 818);
             this.k11.Name = "k11";
             this.k11.Size = new System.Drawing.Size(46, 51);
             this.k11.TabIndex = 44;
@@ -687,7 +693,7 @@
             this.k12.AutoSize = true;
             this.k12.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.k12.ForeColor = System.Drawing.Color.Orange;
-            this.k12.Location = new System.Drawing.Point(524, 901);
+            this.k12.Location = new System.Drawing.Point(567, 893);
             this.k12.Name = "k12";
             this.k12.Size = new System.Drawing.Size(46, 51);
             this.k12.TabIndex = 45;
@@ -830,7 +836,7 @@
             this.labelPisteKoti.AutoSize = true;
             this.labelPisteKoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPisteKoti.ForeColor = System.Drawing.Color.Orange;
-            this.labelPisteKoti.Location = new System.Drawing.Point(678, 245);
+            this.labelPisteKoti.Location = new System.Drawing.Point(721, 245);
             this.labelPisteKoti.Name = "labelPisteKoti";
             this.labelPisteKoti.Size = new System.Drawing.Size(124, 135);
             this.labelPisteKoti.TabIndex = 58;
@@ -841,7 +847,7 @@
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.ForeColor = System.Drawing.Color.Orange;
-            this.label51.Location = new System.Drawing.Point(859, 236);
+            this.label51.Location = new System.Drawing.Point(902, 236);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(97, 135);
             this.label51.TabIndex = 59;
@@ -852,7 +858,7 @@
             this.labelPisteVieras.AutoSize = true;
             this.labelPisteVieras.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPisteVieras.ForeColor = System.Drawing.Color.Orange;
-            this.labelPisteVieras.Location = new System.Drawing.Point(1009, 241);
+            this.labelPisteVieras.Location = new System.Drawing.Point(1052, 241);
             this.labelPisteVieras.Name = "labelPisteVieras";
             this.labelPisteVieras.Size = new System.Drawing.Size(124, 135);
             this.labelPisteVieras.TabIndex = 60;
@@ -863,7 +869,7 @@
             this.labelVirheetKoti.AutoSize = true;
             this.labelVirheetKoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVirheetKoti.ForeColor = System.Drawing.Color.Orange;
-            this.labelVirheetKoti.Location = new System.Drawing.Point(761, 469);
+            this.labelVirheetKoti.Location = new System.Drawing.Point(804, 465);
             this.labelVirheetKoti.Name = "labelVirheetKoti";
             this.labelVirheetKoti.Size = new System.Drawing.Size(31, 32);
             this.labelVirheetKoti.TabIndex = 61;
@@ -874,7 +880,7 @@
             this.neljannes.AutoSize = true;
             this.neljannes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.neljannes.ForeColor = System.Drawing.Color.Orange;
-            this.neljannes.Location = new System.Drawing.Point(876, 469);
+            this.neljannes.Location = new System.Drawing.Point(919, 465);
             this.neljannes.Name = "neljannes";
             this.neljannes.Size = new System.Drawing.Size(31, 32);
             this.neljannes.TabIndex = 62;
@@ -885,7 +891,7 @@
             this.labelVirheetVieras.AutoSize = true;
             this.labelVirheetVieras.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelVirheetVieras.ForeColor = System.Drawing.Color.Orange;
-            this.labelVirheetVieras.Location = new System.Drawing.Point(990, 469);
+            this.labelVirheetVieras.Location = new System.Drawing.Point(1033, 465);
             this.labelVirheetVieras.Name = "labelVirheetVieras";
             this.labelVirheetVieras.Size = new System.Drawing.Size(31, 32);
             this.labelVirheetVieras.TabIndex = 63;
@@ -894,19 +900,19 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Orange;
-            this.label4.Location = new System.Drawing.Point(43, 9);
+            this.label4.Location = new System.Drawing.Point(25, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 24);
+            this.label4.Size = new System.Drawing.Size(79, 44);
             this.label4.TabIndex = 64;
             this.label4.Text = "No.";
             // 
             // vk1
             // 
             this.vk1.AutoSize = true;
-            this.vk1.ForeColor = System.Drawing.Color.Red;
-            this.vk1.Location = new System.Drawing.Point(332, 80);
+            this.vk1.ForeColor = System.Drawing.Color.LightPink;
+            this.vk1.Location = new System.Drawing.Point(352, 92);
             this.vk1.Name = "vk1";
             this.vk1.Size = new System.Drawing.Size(16, 17);
             this.vk1.TabIndex = 65;
@@ -915,8 +921,8 @@
             // vk2
             // 
             this.vk2.AutoSize = true;
-            this.vk2.ForeColor = System.Drawing.Color.Red;
-            this.vk2.Location = new System.Drawing.Point(355, 80);
+            this.vk2.ForeColor = System.Drawing.Color.LightPink;
+            this.vk2.Location = new System.Drawing.Point(375, 92);
             this.vk2.Name = "vk2";
             this.vk2.Size = new System.Drawing.Size(16, 17);
             this.vk2.TabIndex = 66;
@@ -925,8 +931,8 @@
             // vk3
             // 
             this.vk3.AutoSize = true;
-            this.vk3.ForeColor = System.Drawing.Color.Red;
-            this.vk3.Location = new System.Drawing.Point(378, 80);
+            this.vk3.ForeColor = System.Drawing.Color.LightPink;
+            this.vk3.Location = new System.Drawing.Point(398, 92);
             this.vk3.Name = "vk3";
             this.vk3.Size = new System.Drawing.Size(16, 17);
             this.vk3.TabIndex = 67;
@@ -935,8 +941,8 @@
             // vk4
             // 
             this.vk4.AutoSize = true;
-            this.vk4.ForeColor = System.Drawing.Color.Red;
-            this.vk4.Location = new System.Drawing.Point(400, 80);
+            this.vk4.ForeColor = System.Drawing.Color.LightPink;
+            this.vk4.Location = new System.Drawing.Point(421, 92);
             this.vk4.Name = "vk4";
             this.vk4.Size = new System.Drawing.Size(16, 17);
             this.vk4.TabIndex = 68;
@@ -946,7 +952,7 @@
             // 
             this.vk5.AutoSize = true;
             this.vk5.ForeColor = System.Drawing.Color.Red;
-            this.vk5.Location = new System.Drawing.Point(424, 80);
+            this.vk5.Location = new System.Drawing.Point(444, 92);
             this.vk5.Name = "vk5";
             this.vk5.Size = new System.Drawing.Size(16, 17);
             this.vk5.TabIndex = 69;
@@ -955,19 +961,19 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.Orange;
             this.label33.Location = new System.Drawing.Point(353, 9);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(60, 25);
+            this.label33.Size = new System.Drawing.Size(113, 44);
             this.label33.TabIndex = 70;
             this.label33.Text = "Fouls";
             // 
             // vk6
             // 
             this.vk6.AutoSize = true;
-            this.vk6.ForeColor = System.Drawing.Color.Red;
-            this.vk6.Location = new System.Drawing.Point(332, 171);
+            this.vk6.ForeColor = System.Drawing.Color.LightPink;
+            this.vk6.Location = new System.Drawing.Point(352, 167);
             this.vk6.Name = "vk6";
             this.vk6.Size = new System.Drawing.Size(16, 17);
             this.vk6.TabIndex = 71;
@@ -976,8 +982,8 @@
             // vk7
             // 
             this.vk7.AutoSize = true;
-            this.vk7.ForeColor = System.Drawing.Color.Red;
-            this.vk7.Location = new System.Drawing.Point(355, 171);
+            this.vk7.ForeColor = System.Drawing.Color.LightPink;
+            this.vk7.Location = new System.Drawing.Point(375, 167);
             this.vk7.Name = "vk7";
             this.vk7.Size = new System.Drawing.Size(16, 17);
             this.vk7.TabIndex = 72;
@@ -986,8 +992,8 @@
             // vk8
             // 
             this.vk8.AutoSize = true;
-            this.vk8.ForeColor = System.Drawing.Color.Red;
-            this.vk8.Location = new System.Drawing.Point(377, 171);
+            this.vk8.ForeColor = System.Drawing.Color.LightPink;
+            this.vk8.Location = new System.Drawing.Point(398, 167);
             this.vk8.Name = "vk8";
             this.vk8.Size = new System.Drawing.Size(16, 17);
             this.vk8.TabIndex = 73;
@@ -996,8 +1002,8 @@
             // vk9
             // 
             this.vk9.AutoSize = true;
-            this.vk9.ForeColor = System.Drawing.Color.Red;
-            this.vk9.Location = new System.Drawing.Point(400, 171);
+            this.vk9.ForeColor = System.Drawing.Color.LightPink;
+            this.vk9.Location = new System.Drawing.Point(421, 167);
             this.vk9.Name = "vk9";
             this.vk9.Size = new System.Drawing.Size(16, 17);
             this.vk9.TabIndex = 74;
@@ -1007,7 +1013,7 @@
             // 
             this.vk10.AutoSize = true;
             this.vk10.ForeColor = System.Drawing.Color.Red;
-            this.vk10.Location = new System.Drawing.Point(423, 171);
+            this.vk10.Location = new System.Drawing.Point(444, 167);
             this.vk10.Name = "vk10";
             this.vk10.Size = new System.Drawing.Size(16, 17);
             this.vk10.TabIndex = 75;
@@ -1016,8 +1022,8 @@
             // vk11
             // 
             this.vk11.AutoSize = true;
-            this.vk11.ForeColor = System.Drawing.Color.Red;
-            this.vk11.Location = new System.Drawing.Point(335, 255);
+            this.vk11.ForeColor = System.Drawing.Color.LightPink;
+            this.vk11.Location = new System.Drawing.Point(352, 242);
             this.vk11.Name = "vk11";
             this.vk11.Size = new System.Drawing.Size(16, 17);
             this.vk11.TabIndex = 76;
@@ -1026,8 +1032,8 @@
             // vk12
             // 
             this.vk12.AutoSize = true;
-            this.vk12.ForeColor = System.Drawing.Color.Red;
-            this.vk12.Location = new System.Drawing.Point(358, 255);
+            this.vk12.ForeColor = System.Drawing.Color.LightPink;
+            this.vk12.Location = new System.Drawing.Point(375, 242);
             this.vk12.Name = "vk12";
             this.vk12.Size = new System.Drawing.Size(16, 17);
             this.vk12.TabIndex = 77;
@@ -1036,8 +1042,8 @@
             // vk13
             // 
             this.vk13.AutoSize = true;
-            this.vk13.ForeColor = System.Drawing.Color.Red;
-            this.vk13.Location = new System.Drawing.Point(380, 255);
+            this.vk13.ForeColor = System.Drawing.Color.LightPink;
+            this.vk13.Location = new System.Drawing.Point(398, 242);
             this.vk13.Name = "vk13";
             this.vk13.Size = new System.Drawing.Size(16, 17);
             this.vk13.TabIndex = 78;
@@ -1046,8 +1052,8 @@
             // vk14
             // 
             this.vk14.AutoSize = true;
-            this.vk14.ForeColor = System.Drawing.Color.Red;
-            this.vk14.Location = new System.Drawing.Point(400, 255);
+            this.vk14.ForeColor = System.Drawing.Color.LightPink;
+            this.vk14.Location = new System.Drawing.Point(421, 242);
             this.vk14.Name = "vk14";
             this.vk14.Size = new System.Drawing.Size(16, 17);
             this.vk14.TabIndex = 79;
@@ -1057,7 +1063,7 @@
             // 
             this.vk15.AutoSize = true;
             this.vk15.ForeColor = System.Drawing.Color.Red;
-            this.vk15.Location = new System.Drawing.Point(422, 255);
+            this.vk15.Location = new System.Drawing.Point(444, 242);
             this.vk15.Name = "vk15";
             this.vk15.Size = new System.Drawing.Size(16, 17);
             this.vk15.TabIndex = 80;
@@ -1066,8 +1072,8 @@
             // vk16
             // 
             this.vk16.AutoSize = true;
-            this.vk16.ForeColor = System.Drawing.Color.Red;
-            this.vk16.Location = new System.Drawing.Point(332, 332);
+            this.vk16.ForeColor = System.Drawing.Color.LightPink;
+            this.vk16.Location = new System.Drawing.Point(352, 316);
             this.vk16.Name = "vk16";
             this.vk16.Size = new System.Drawing.Size(16, 17);
             this.vk16.TabIndex = 81;
@@ -1076,8 +1082,8 @@
             // vk17
             // 
             this.vk17.AutoSize = true;
-            this.vk17.ForeColor = System.Drawing.Color.Red;
-            this.vk17.Location = new System.Drawing.Point(355, 333);
+            this.vk17.ForeColor = System.Drawing.Color.LightPink;
+            this.vk17.Location = new System.Drawing.Point(375, 317);
             this.vk17.Name = "vk17";
             this.vk17.Size = new System.Drawing.Size(16, 17);
             this.vk17.TabIndex = 82;
@@ -1086,8 +1092,8 @@
             // vk18
             // 
             this.vk18.AutoSize = true;
-            this.vk18.ForeColor = System.Drawing.Color.Red;
-            this.vk18.Location = new System.Drawing.Point(378, 333);
+            this.vk18.ForeColor = System.Drawing.Color.LightPink;
+            this.vk18.Location = new System.Drawing.Point(398, 317);
             this.vk18.Name = "vk18";
             this.vk18.Size = new System.Drawing.Size(16, 17);
             this.vk18.TabIndex = 83;
@@ -1096,8 +1102,8 @@
             // vk19
             // 
             this.vk19.AutoSize = true;
-            this.vk19.ForeColor = System.Drawing.Color.Red;
-            this.vk19.Location = new System.Drawing.Point(400, 333);
+            this.vk19.ForeColor = System.Drawing.Color.LightPink;
+            this.vk19.Location = new System.Drawing.Point(421, 317);
             this.vk19.Name = "vk19";
             this.vk19.Size = new System.Drawing.Size(16, 17);
             this.vk19.TabIndex = 84;
@@ -1107,7 +1113,7 @@
             // 
             this.vk20.AutoSize = true;
             this.vk20.ForeColor = System.Drawing.Color.Red;
-            this.vk20.Location = new System.Drawing.Point(424, 333);
+            this.vk20.Location = new System.Drawing.Point(444, 317);
             this.vk20.Name = "vk20";
             this.vk20.Size = new System.Drawing.Size(16, 17);
             this.vk20.TabIndex = 85;
@@ -1116,8 +1122,8 @@
             // vk21
             // 
             this.vk21.AutoSize = true;
-            this.vk21.ForeColor = System.Drawing.Color.Red;
-            this.vk21.Location = new System.Drawing.Point(332, 403);
+            this.vk21.ForeColor = System.Drawing.Color.LightPink;
+            this.vk21.Location = new System.Drawing.Point(352, 392);
             this.vk21.Name = "vk21";
             this.vk21.Size = new System.Drawing.Size(16, 17);
             this.vk21.TabIndex = 86;
@@ -1126,8 +1132,8 @@
             // vk22
             // 
             this.vk22.AutoSize = true;
-            this.vk22.ForeColor = System.Drawing.Color.Red;
-            this.vk22.Location = new System.Drawing.Point(355, 403);
+            this.vk22.ForeColor = System.Drawing.Color.LightPink;
+            this.vk22.Location = new System.Drawing.Point(375, 392);
             this.vk22.Name = "vk22";
             this.vk22.Size = new System.Drawing.Size(16, 17);
             this.vk22.TabIndex = 87;
@@ -1136,8 +1142,8 @@
             // vk23
             // 
             this.vk23.AutoSize = true;
-            this.vk23.ForeColor = System.Drawing.Color.Red;
-            this.vk23.Location = new System.Drawing.Point(378, 403);
+            this.vk23.ForeColor = System.Drawing.Color.LightPink;
+            this.vk23.Location = new System.Drawing.Point(398, 392);
             this.vk23.Name = "vk23";
             this.vk23.Size = new System.Drawing.Size(16, 17);
             this.vk23.TabIndex = 88;
@@ -1147,7 +1153,7 @@
             // 
             this.vk25.AutoSize = true;
             this.vk25.ForeColor = System.Drawing.Color.Red;
-            this.vk25.Location = new System.Drawing.Point(424, 403);
+            this.vk25.Location = new System.Drawing.Point(444, 392);
             this.vk25.Name = "vk25";
             this.vk25.Size = new System.Drawing.Size(16, 17);
             this.vk25.TabIndex = 89;
@@ -1156,8 +1162,8 @@
             // vk24
             // 
             this.vk24.AutoSize = true;
-            this.vk24.ForeColor = System.Drawing.Color.Red;
-            this.vk24.Location = new System.Drawing.Point(397, 403);
+            this.vk24.ForeColor = System.Drawing.Color.LightPink;
+            this.vk24.Location = new System.Drawing.Point(421, 392);
             this.vk24.Name = "vk24";
             this.vk24.Size = new System.Drawing.Size(16, 17);
             this.vk24.TabIndex = 90;
@@ -1166,8 +1172,8 @@
             // vk26
             // 
             this.vk26.AutoSize = true;
-            this.vk26.ForeColor = System.Drawing.Color.Red;
-            this.vk26.Location = new System.Drawing.Point(332, 478);
+            this.vk26.ForeColor = System.Drawing.Color.LightPink;
+            this.vk26.Location = new System.Drawing.Point(352, 467);
             this.vk26.Name = "vk26";
             this.vk26.Size = new System.Drawing.Size(16, 17);
             this.vk26.TabIndex = 91;
@@ -1176,8 +1182,8 @@
             // vk27
             // 
             this.vk27.AutoSize = true;
-            this.vk27.ForeColor = System.Drawing.Color.Red;
-            this.vk27.Location = new System.Drawing.Point(355, 478);
+            this.vk27.ForeColor = System.Drawing.Color.LightPink;
+            this.vk27.Location = new System.Drawing.Point(375, 467);
             this.vk27.Name = "vk27";
             this.vk27.Size = new System.Drawing.Size(16, 17);
             this.vk27.TabIndex = 92;
@@ -1186,8 +1192,8 @@
             // vk28
             // 
             this.vk28.AutoSize = true;
-            this.vk28.ForeColor = System.Drawing.Color.Red;
-            this.vk28.Location = new System.Drawing.Point(377, 478);
+            this.vk28.ForeColor = System.Drawing.Color.LightPink;
+            this.vk28.Location = new System.Drawing.Point(398, 467);
             this.vk28.Name = "vk28";
             this.vk28.Size = new System.Drawing.Size(16, 17);
             this.vk28.TabIndex = 93;
@@ -1196,8 +1202,8 @@
             // vk29
             // 
             this.vk29.AutoSize = true;
-            this.vk29.ForeColor = System.Drawing.Color.Red;
-            this.vk29.Location = new System.Drawing.Point(400, 478);
+            this.vk29.ForeColor = System.Drawing.Color.LightPink;
+            this.vk29.Location = new System.Drawing.Point(421, 467);
             this.vk29.Name = "vk29";
             this.vk29.Size = new System.Drawing.Size(16, 17);
             this.vk29.TabIndex = 94;
@@ -1207,7 +1213,7 @@
             // 
             this.vk30.AutoSize = true;
             this.vk30.ForeColor = System.Drawing.Color.Red;
-            this.vk30.Location = new System.Drawing.Point(424, 478);
+            this.vk30.Location = new System.Drawing.Point(444, 467);
             this.vk30.Name = "vk30";
             this.vk30.Size = new System.Drawing.Size(16, 17);
             this.vk30.TabIndex = 95;
@@ -1216,8 +1222,8 @@
             // vk31
             // 
             this.vk31.AutoSize = true;
-            this.vk31.ForeColor = System.Drawing.Color.Red;
-            this.vk31.Location = new System.Drawing.Point(332, 550);
+            this.vk31.ForeColor = System.Drawing.Color.LightPink;
+            this.vk31.Location = new System.Drawing.Point(352, 542);
             this.vk31.Name = "vk31";
             this.vk31.Size = new System.Drawing.Size(16, 17);
             this.vk31.TabIndex = 96;
@@ -1226,8 +1232,8 @@
             // vk32
             // 
             this.vk32.AutoSize = true;
-            this.vk32.ForeColor = System.Drawing.Color.Red;
-            this.vk32.Location = new System.Drawing.Point(358, 550);
+            this.vk32.ForeColor = System.Drawing.Color.LightPink;
+            this.vk32.Location = new System.Drawing.Point(375, 542);
             this.vk32.Name = "vk32";
             this.vk32.Size = new System.Drawing.Size(16, 17);
             this.vk32.TabIndex = 97;
@@ -1236,8 +1242,8 @@
             // vk33
             // 
             this.vk33.AutoSize = true;
-            this.vk33.ForeColor = System.Drawing.Color.Red;
-            this.vk33.Location = new System.Drawing.Point(380, 550);
+            this.vk33.ForeColor = System.Drawing.Color.LightPink;
+            this.vk33.Location = new System.Drawing.Point(398, 542);
             this.vk33.Name = "vk33";
             this.vk33.Size = new System.Drawing.Size(16, 17);
             this.vk33.TabIndex = 98;
@@ -1246,8 +1252,8 @@
             // vk34
             // 
             this.vk34.AutoSize = true;
-            this.vk34.ForeColor = System.Drawing.Color.Red;
-            this.vk34.Location = new System.Drawing.Point(400, 550);
+            this.vk34.ForeColor = System.Drawing.Color.LightPink;
+            this.vk34.Location = new System.Drawing.Point(421, 542);
             this.vk34.Name = "vk34";
             this.vk34.Size = new System.Drawing.Size(16, 17);
             this.vk34.TabIndex = 99;
@@ -1257,7 +1263,7 @@
             // 
             this.vk35.AutoSize = true;
             this.vk35.ForeColor = System.Drawing.Color.Red;
-            this.vk35.Location = new System.Drawing.Point(424, 550);
+            this.vk35.Location = new System.Drawing.Point(444, 542);
             this.vk35.Name = "vk35";
             this.vk35.Size = new System.Drawing.Size(16, 17);
             this.vk35.TabIndex = 100;
@@ -1266,8 +1272,8 @@
             // vk36
             // 
             this.vk36.AutoSize = true;
-            this.vk36.ForeColor = System.Drawing.Color.Red;
-            this.vk36.Location = new System.Drawing.Point(332, 623);
+            this.vk36.ForeColor = System.Drawing.Color.LightPink;
+            this.vk36.Location = new System.Drawing.Point(352, 617);
             this.vk36.Name = "vk36";
             this.vk36.Size = new System.Drawing.Size(16, 17);
             this.vk36.TabIndex = 101;
@@ -1276,8 +1282,8 @@
             // vk37
             // 
             this.vk37.AutoSize = true;
-            this.vk37.ForeColor = System.Drawing.Color.Red;
-            this.vk37.Location = new System.Drawing.Point(355, 623);
+            this.vk37.ForeColor = System.Drawing.Color.LightPink;
+            this.vk37.Location = new System.Drawing.Point(375, 617);
             this.vk37.Name = "vk37";
             this.vk37.Size = new System.Drawing.Size(16, 17);
             this.vk37.TabIndex = 102;
@@ -1286,8 +1292,8 @@
             // vk38
             // 
             this.vk38.AutoSize = true;
-            this.vk38.ForeColor = System.Drawing.Color.Red;
-            this.vk38.Location = new System.Drawing.Point(378, 623);
+            this.vk38.ForeColor = System.Drawing.Color.LightPink;
+            this.vk38.Location = new System.Drawing.Point(398, 617);
             this.vk38.Name = "vk38";
             this.vk38.Size = new System.Drawing.Size(16, 17);
             this.vk38.TabIndex = 103;
@@ -1296,8 +1302,8 @@
             // vk39
             // 
             this.vk39.AutoSize = true;
-            this.vk39.ForeColor = System.Drawing.Color.Red;
-            this.vk39.Location = new System.Drawing.Point(400, 623);
+            this.vk39.ForeColor = System.Drawing.Color.LightPink;
+            this.vk39.Location = new System.Drawing.Point(421, 617);
             this.vk39.Name = "vk39";
             this.vk39.Size = new System.Drawing.Size(16, 17);
             this.vk39.TabIndex = 104;
@@ -1307,7 +1313,7 @@
             // 
             this.vk40.AutoSize = true;
             this.vk40.ForeColor = System.Drawing.Color.Red;
-            this.vk40.Location = new System.Drawing.Point(427, 623);
+            this.vk40.Location = new System.Drawing.Point(444, 617);
             this.vk40.Name = "vk40";
             this.vk40.Size = new System.Drawing.Size(16, 17);
             this.vk40.TabIndex = 105;
@@ -1316,8 +1322,8 @@
             // vk41
             // 
             this.vk41.AutoSize = true;
-            this.vk41.ForeColor = System.Drawing.Color.Red;
-            this.vk41.Location = new System.Drawing.Point(335, 688);
+            this.vk41.ForeColor = System.Drawing.Color.LightPink;
+            this.vk41.Location = new System.Drawing.Point(352, 692);
             this.vk41.Name = "vk41";
             this.vk41.Size = new System.Drawing.Size(16, 17);
             this.vk41.TabIndex = 106;
@@ -1326,8 +1332,8 @@
             // vk42
             // 
             this.vk42.AutoSize = true;
-            this.vk42.ForeColor = System.Drawing.Color.Red;
-            this.vk42.Location = new System.Drawing.Point(358, 688);
+            this.vk42.ForeColor = System.Drawing.Color.LightPink;
+            this.vk42.Location = new System.Drawing.Point(375, 692);
             this.vk42.Name = "vk42";
             this.vk42.Size = new System.Drawing.Size(16, 17);
             this.vk42.TabIndex = 107;
@@ -1336,8 +1342,8 @@
             // vk43
             // 
             this.vk43.AutoSize = true;
-            this.vk43.ForeColor = System.Drawing.Color.Red;
-            this.vk43.Location = new System.Drawing.Point(377, 688);
+            this.vk43.ForeColor = System.Drawing.Color.LightPink;
+            this.vk43.Location = new System.Drawing.Point(398, 692);
             this.vk43.Name = "vk43";
             this.vk43.Size = new System.Drawing.Size(16, 17);
             this.vk43.TabIndex = 108;
@@ -1346,8 +1352,8 @@
             // vk44
             // 
             this.vk44.AutoSize = true;
-            this.vk44.ForeColor = System.Drawing.Color.Red;
-            this.vk44.Location = new System.Drawing.Point(397, 688);
+            this.vk44.ForeColor = System.Drawing.Color.LightPink;
+            this.vk44.Location = new System.Drawing.Point(421, 692);
             this.vk44.Name = "vk44";
             this.vk44.Size = new System.Drawing.Size(16, 17);
             this.vk44.TabIndex = 109;
@@ -1357,7 +1363,7 @@
             // 
             this.vk45.AutoSize = true;
             this.vk45.ForeColor = System.Drawing.Color.Red;
-            this.vk45.Location = new System.Drawing.Point(427, 688);
+            this.vk45.Location = new System.Drawing.Point(444, 692);
             this.vk45.Name = "vk45";
             this.vk45.Size = new System.Drawing.Size(16, 17);
             this.vk45.TabIndex = 110;
@@ -1366,8 +1372,8 @@
             // vk46
             // 
             this.vk46.AutoSize = true;
-            this.vk46.ForeColor = System.Drawing.Color.Red;
-            this.vk46.Location = new System.Drawing.Point(335, 773);
+            this.vk46.ForeColor = System.Drawing.Color.LightPink;
+            this.vk46.Location = new System.Drawing.Point(352, 767);
             this.vk46.Name = "vk46";
             this.vk46.Size = new System.Drawing.Size(16, 17);
             this.vk46.TabIndex = 111;
@@ -1376,8 +1382,8 @@
             // vk47
             // 
             this.vk47.AutoSize = true;
-            this.vk47.ForeColor = System.Drawing.Color.Red;
-            this.vk47.Location = new System.Drawing.Point(355, 773);
+            this.vk47.ForeColor = System.Drawing.Color.LightPink;
+            this.vk47.Location = new System.Drawing.Point(375, 767);
             this.vk47.Name = "vk47";
             this.vk47.Size = new System.Drawing.Size(16, 17);
             this.vk47.TabIndex = 112;
@@ -1386,8 +1392,8 @@
             // vk48
             // 
             this.vk48.AutoSize = true;
-            this.vk48.ForeColor = System.Drawing.Color.Red;
-            this.vk48.Location = new System.Drawing.Point(377, 773);
+            this.vk48.ForeColor = System.Drawing.Color.LightPink;
+            this.vk48.Location = new System.Drawing.Point(398, 767);
             this.vk48.Name = "vk48";
             this.vk48.Size = new System.Drawing.Size(16, 17);
             this.vk48.TabIndex = 113;
@@ -1396,8 +1402,8 @@
             // vk49
             // 
             this.vk49.AutoSize = true;
-            this.vk49.ForeColor = System.Drawing.Color.Red;
-            this.vk49.Location = new System.Drawing.Point(400, 774);
+            this.vk49.ForeColor = System.Drawing.Color.LightPink;
+            this.vk49.Location = new System.Drawing.Point(421, 768);
             this.vk49.Name = "vk49";
             this.vk49.Size = new System.Drawing.Size(16, 17);
             this.vk49.TabIndex = 114;
@@ -1407,7 +1413,7 @@
             // 
             this.vk50.AutoSize = true;
             this.vk50.ForeColor = System.Drawing.Color.Red;
-            this.vk50.Location = new System.Drawing.Point(427, 773);
+            this.vk50.Location = new System.Drawing.Point(444, 767);
             this.vk50.Name = "vk50";
             this.vk50.Size = new System.Drawing.Size(16, 17);
             this.vk50.TabIndex = 115;
@@ -1416,8 +1422,8 @@
             // vk51
             // 
             this.vk51.AutoSize = true;
-            this.vk51.ForeColor = System.Drawing.Color.Red;
-            this.vk51.Location = new System.Drawing.Point(336, 853);
+            this.vk51.ForeColor = System.Drawing.Color.LightPink;
+            this.vk51.Location = new System.Drawing.Point(352, 842);
             this.vk51.Name = "vk51";
             this.vk51.Size = new System.Drawing.Size(16, 17);
             this.vk51.TabIndex = 116;
@@ -1426,8 +1432,8 @@
             // vk52
             // 
             this.vk52.AutoSize = true;
-            this.vk52.ForeColor = System.Drawing.Color.Red;
-            this.vk52.Location = new System.Drawing.Point(358, 853);
+            this.vk52.ForeColor = System.Drawing.Color.LightPink;
+            this.vk52.Location = new System.Drawing.Point(375, 842);
             this.vk52.Name = "vk52";
             this.vk52.Size = new System.Drawing.Size(16, 17);
             this.vk52.TabIndex = 117;
@@ -1436,8 +1442,8 @@
             // vk53
             // 
             this.vk53.AutoSize = true;
-            this.vk53.ForeColor = System.Drawing.Color.Red;
-            this.vk53.Location = new System.Drawing.Point(377, 853);
+            this.vk53.ForeColor = System.Drawing.Color.LightPink;
+            this.vk53.Location = new System.Drawing.Point(398, 842);
             this.vk53.Name = "vk53";
             this.vk53.Size = new System.Drawing.Size(16, 17);
             this.vk53.TabIndex = 118;
@@ -1446,8 +1452,8 @@
             // vk54
             // 
             this.vk54.AutoSize = true;
-            this.vk54.ForeColor = System.Drawing.Color.Red;
-            this.vk54.Location = new System.Drawing.Point(403, 853);
+            this.vk54.ForeColor = System.Drawing.Color.LightPink;
+            this.vk54.Location = new System.Drawing.Point(421, 842);
             this.vk54.Name = "vk54";
             this.vk54.Size = new System.Drawing.Size(16, 17);
             this.vk54.TabIndex = 119;
@@ -1457,7 +1463,7 @@
             // 
             this.vk55.AutoSize = true;
             this.vk55.ForeColor = System.Drawing.Color.Red;
-            this.vk55.Location = new System.Drawing.Point(427, 853);
+            this.vk55.Location = new System.Drawing.Point(444, 842);
             this.vk55.Name = "vk55";
             this.vk55.Size = new System.Drawing.Size(16, 17);
             this.vk55.TabIndex = 120;
@@ -1466,8 +1472,8 @@
             // vk56
             // 
             this.vk56.AutoSize = true;
-            this.vk56.ForeColor = System.Drawing.Color.Red;
-            this.vk56.Location = new System.Drawing.Point(332, 928);
+            this.vk56.ForeColor = System.Drawing.Color.LightPink;
+            this.vk56.Location = new System.Drawing.Point(352, 917);
             this.vk56.Name = "vk56";
             this.vk56.Size = new System.Drawing.Size(16, 17);
             this.vk56.TabIndex = 121;
@@ -1476,8 +1482,8 @@
             // vk57
             // 
             this.vk57.AutoSize = true;
-            this.vk57.ForeColor = System.Drawing.Color.Red;
-            this.vk57.Location = new System.Drawing.Point(355, 928);
+            this.vk57.ForeColor = System.Drawing.Color.LightPink;
+            this.vk57.Location = new System.Drawing.Point(375, 917);
             this.vk57.Name = "vk57";
             this.vk57.Size = new System.Drawing.Size(16, 17);
             this.vk57.TabIndex = 122;
@@ -1486,8 +1492,8 @@
             // vk58
             // 
             this.vk58.AutoSize = true;
-            this.vk58.ForeColor = System.Drawing.Color.Red;
-            this.vk58.Location = new System.Drawing.Point(378, 928);
+            this.vk58.ForeColor = System.Drawing.Color.LightPink;
+            this.vk58.Location = new System.Drawing.Point(398, 917);
             this.vk58.Name = "vk58";
             this.vk58.Size = new System.Drawing.Size(16, 17);
             this.vk58.TabIndex = 123;
@@ -1496,8 +1502,8 @@
             // vk59
             // 
             this.vk59.AutoSize = true;
-            this.vk59.ForeColor = System.Drawing.Color.Red;
-            this.vk59.Location = new System.Drawing.Point(403, 928);
+            this.vk59.ForeColor = System.Drawing.Color.LightPink;
+            this.vk59.Location = new System.Drawing.Point(421, 917);
             this.vk59.Name = "vk59";
             this.vk59.Size = new System.Drawing.Size(16, 17);
             this.vk59.TabIndex = 124;
@@ -1507,7 +1513,7 @@
             // 
             this.vk60.AutoSize = true;
             this.vk60.ForeColor = System.Drawing.Color.Red;
-            this.vk60.Location = new System.Drawing.Point(427, 928);
+            this.vk60.Location = new System.Drawing.Point(444, 917);
             this.vk60.Name = "vk60";
             this.vk60.Size = new System.Drawing.Size(16, 17);
             this.vk60.TabIndex = 125;
@@ -1516,7 +1522,7 @@
             // vv1
             // 
             this.vv1.AutoSize = true;
-            this.vv1.ForeColor = System.Drawing.Color.Red;
+            this.vv1.ForeColor = System.Drawing.Color.LightPink;
             this.vv1.Location = new System.Drawing.Point(1698, 80);
             this.vv1.Name = "vv1";
             this.vv1.Size = new System.Drawing.Size(16, 17);
@@ -1526,7 +1532,7 @@
             // vv2
             // 
             this.vv2.AutoSize = true;
-            this.vv2.ForeColor = System.Drawing.Color.Red;
+            this.vv2.ForeColor = System.Drawing.Color.LightPink;
             this.vv2.Location = new System.Drawing.Point(1720, 80);
             this.vv2.Name = "vv2";
             this.vv2.Size = new System.Drawing.Size(16, 17);
@@ -1536,7 +1542,7 @@
             // vv3
             // 
             this.vv3.AutoSize = true;
-            this.vv3.ForeColor = System.Drawing.Color.Red;
+            this.vv3.ForeColor = System.Drawing.Color.LightPink;
             this.vv3.Location = new System.Drawing.Point(1742, 80);
             this.vv3.Name = "vv3";
             this.vv3.Size = new System.Drawing.Size(16, 17);
@@ -1556,7 +1562,7 @@
             // vv4
             // 
             this.vv4.AutoSize = true;
-            this.vv4.ForeColor = System.Drawing.Color.Red;
+            this.vv4.ForeColor = System.Drawing.Color.LightPink;
             this.vv4.Location = new System.Drawing.Point(1764, 80);
             this.vv4.Name = "vv4";
             this.vv4.Size = new System.Drawing.Size(16, 17);
@@ -1566,7 +1572,7 @@
             // vv9
             // 
             this.vv9.AutoSize = true;
-            this.vv9.ForeColor = System.Drawing.Color.Red;
+            this.vv9.ForeColor = System.Drawing.Color.LightPink;
             this.vv9.Location = new System.Drawing.Point(1764, 171);
             this.vv9.Name = "vv9";
             this.vv9.Size = new System.Drawing.Size(16, 17);
@@ -1586,7 +1592,7 @@
             // vv8
             // 
             this.vv8.AutoSize = true;
-            this.vv8.ForeColor = System.Drawing.Color.Red;
+            this.vv8.ForeColor = System.Drawing.Color.LightPink;
             this.vv8.Location = new System.Drawing.Point(1742, 171);
             this.vv8.Name = "vv8";
             this.vv8.Size = new System.Drawing.Size(16, 17);
@@ -1596,7 +1602,7 @@
             // vv7
             // 
             this.vv7.AutoSize = true;
-            this.vv7.ForeColor = System.Drawing.Color.Red;
+            this.vv7.ForeColor = System.Drawing.Color.LightPink;
             this.vv7.Location = new System.Drawing.Point(1720, 171);
             this.vv7.Name = "vv7";
             this.vv7.Size = new System.Drawing.Size(16, 17);
@@ -1606,7 +1612,7 @@
             // vv6
             // 
             this.vv6.AutoSize = true;
-            this.vv6.ForeColor = System.Drawing.Color.Red;
+            this.vv6.ForeColor = System.Drawing.Color.LightPink;
             this.vv6.Location = new System.Drawing.Point(1698, 171);
             this.vv6.Name = "vv6";
             this.vv6.Size = new System.Drawing.Size(16, 17);
@@ -1616,7 +1622,7 @@
             // vv14
             // 
             this.vv14.AutoSize = true;
-            this.vv14.ForeColor = System.Drawing.Color.Red;
+            this.vv14.ForeColor = System.Drawing.Color.LightPink;
             this.vv14.Location = new System.Drawing.Point(1764, 255);
             this.vv14.Name = "vv14";
             this.vv14.Size = new System.Drawing.Size(16, 17);
@@ -1636,7 +1642,7 @@
             // vv13
             // 
             this.vv13.AutoSize = true;
-            this.vv13.ForeColor = System.Drawing.Color.Red;
+            this.vv13.ForeColor = System.Drawing.Color.LightPink;
             this.vv13.Location = new System.Drawing.Point(1742, 255);
             this.vv13.Name = "vv13";
             this.vv13.Size = new System.Drawing.Size(16, 17);
@@ -1646,7 +1652,7 @@
             // vv12
             // 
             this.vv12.AutoSize = true;
-            this.vv12.ForeColor = System.Drawing.Color.Red;
+            this.vv12.ForeColor = System.Drawing.Color.LightPink;
             this.vv12.Location = new System.Drawing.Point(1720, 255);
             this.vv12.Name = "vv12";
             this.vv12.Size = new System.Drawing.Size(16, 17);
@@ -1656,7 +1662,7 @@
             // vv11
             // 
             this.vv11.AutoSize = true;
-            this.vv11.ForeColor = System.Drawing.Color.Red;
+            this.vv11.ForeColor = System.Drawing.Color.LightPink;
             this.vv11.Location = new System.Drawing.Point(1698, 255);
             this.vv11.Name = "vv11";
             this.vv11.Size = new System.Drawing.Size(16, 17);
@@ -1666,7 +1672,7 @@
             // vv19
             // 
             this.vv19.AutoSize = true;
-            this.vv19.ForeColor = System.Drawing.Color.Red;
+            this.vv19.ForeColor = System.Drawing.Color.LightPink;
             this.vv19.Location = new System.Drawing.Point(1764, 332);
             this.vv19.Name = "vv19";
             this.vv19.Size = new System.Drawing.Size(16, 17);
@@ -1686,7 +1692,7 @@
             // vv18
             // 
             this.vv18.AutoSize = true;
-            this.vv18.ForeColor = System.Drawing.Color.Red;
+            this.vv18.ForeColor = System.Drawing.Color.LightPink;
             this.vv18.Location = new System.Drawing.Point(1742, 332);
             this.vv18.Name = "vv18";
             this.vv18.Size = new System.Drawing.Size(16, 17);
@@ -1696,7 +1702,7 @@
             // vv17
             // 
             this.vv17.AutoSize = true;
-            this.vv17.ForeColor = System.Drawing.Color.Red;
+            this.vv17.ForeColor = System.Drawing.Color.LightPink;
             this.vv17.Location = new System.Drawing.Point(1720, 332);
             this.vv17.Name = "vv17";
             this.vv17.Size = new System.Drawing.Size(16, 17);
@@ -1706,7 +1712,7 @@
             // vv16
             // 
             this.vv16.AutoSize = true;
-            this.vv16.ForeColor = System.Drawing.Color.Red;
+            this.vv16.ForeColor = System.Drawing.Color.LightPink;
             this.vv16.Location = new System.Drawing.Point(1698, 332);
             this.vv16.Name = "vv16";
             this.vv16.Size = new System.Drawing.Size(16, 17);
@@ -1716,7 +1722,7 @@
             // vv24
             // 
             this.vv24.AutoSize = true;
-            this.vv24.ForeColor = System.Drawing.Color.Red;
+            this.vv24.ForeColor = System.Drawing.Color.LightPink;
             this.vv24.Location = new System.Drawing.Point(1764, 418);
             this.vv24.Name = "vv24";
             this.vv24.Size = new System.Drawing.Size(16, 17);
@@ -1736,7 +1742,7 @@
             // vv23
             // 
             this.vv23.AutoSize = true;
-            this.vv23.ForeColor = System.Drawing.Color.Red;
+            this.vv23.ForeColor = System.Drawing.Color.LightPink;
             this.vv23.Location = new System.Drawing.Point(1742, 418);
             this.vv23.Name = "vv23";
             this.vv23.Size = new System.Drawing.Size(16, 17);
@@ -1746,7 +1752,7 @@
             // vv22
             // 
             this.vv22.AutoSize = true;
-            this.vv22.ForeColor = System.Drawing.Color.Red;
+            this.vv22.ForeColor = System.Drawing.Color.LightPink;
             this.vv22.Location = new System.Drawing.Point(1720, 418);
             this.vv22.Name = "vv22";
             this.vv22.Size = new System.Drawing.Size(16, 17);
@@ -1756,7 +1762,7 @@
             // vv21
             // 
             this.vv21.AutoSize = true;
-            this.vv21.ForeColor = System.Drawing.Color.Red;
+            this.vv21.ForeColor = System.Drawing.Color.LightPink;
             this.vv21.Location = new System.Drawing.Point(1698, 418);
             this.vv21.Name = "vv21";
             this.vv21.Size = new System.Drawing.Size(16, 17);
@@ -1766,7 +1772,7 @@
             // vv29
             // 
             this.vv29.AutoSize = true;
-            this.vv29.ForeColor = System.Drawing.Color.Red;
+            this.vv29.ForeColor = System.Drawing.Color.LightPink;
             this.vv29.Location = new System.Drawing.Point(1764, 484);
             this.vv29.Name = "vv29";
             this.vv29.Size = new System.Drawing.Size(16, 17);
@@ -1786,7 +1792,7 @@
             // vv28
             // 
             this.vv28.AutoSize = true;
-            this.vv28.ForeColor = System.Drawing.Color.Red;
+            this.vv28.ForeColor = System.Drawing.Color.LightPink;
             this.vv28.Location = new System.Drawing.Point(1742, 484);
             this.vv28.Name = "vv28";
             this.vv28.Size = new System.Drawing.Size(16, 17);
@@ -1796,7 +1802,7 @@
             // vv27
             // 
             this.vv27.AutoSize = true;
-            this.vv27.ForeColor = System.Drawing.Color.Red;
+            this.vv27.ForeColor = System.Drawing.Color.LightPink;
             this.vv27.Location = new System.Drawing.Point(1720, 484);
             this.vv27.Name = "vv27";
             this.vv27.Size = new System.Drawing.Size(16, 17);
@@ -1806,7 +1812,7 @@
             // vv26
             // 
             this.vv26.AutoSize = true;
-            this.vv26.ForeColor = System.Drawing.Color.Red;
+            this.vv26.ForeColor = System.Drawing.Color.LightPink;
             this.vv26.Location = new System.Drawing.Point(1698, 484);
             this.vv26.Name = "vv26";
             this.vv26.Size = new System.Drawing.Size(16, 17);
@@ -1816,7 +1822,7 @@
             // vv34
             // 
             this.vv34.AutoSize = true;
-            this.vv34.ForeColor = System.Drawing.Color.Red;
+            this.vv34.ForeColor = System.Drawing.Color.LightPink;
             this.vv34.Location = new System.Drawing.Point(1764, 565);
             this.vv34.Name = "vv34";
             this.vv34.Size = new System.Drawing.Size(16, 17);
@@ -1836,7 +1842,7 @@
             // vv33
             // 
             this.vv33.AutoSize = true;
-            this.vv33.ForeColor = System.Drawing.Color.Red;
+            this.vv33.ForeColor = System.Drawing.Color.LightPink;
             this.vv33.Location = new System.Drawing.Point(1742, 565);
             this.vv33.Name = "vv33";
             this.vv33.Size = new System.Drawing.Size(16, 17);
@@ -1846,7 +1852,7 @@
             // vv32
             // 
             this.vv32.AutoSize = true;
-            this.vv32.ForeColor = System.Drawing.Color.Red;
+            this.vv32.ForeColor = System.Drawing.Color.LightPink;
             this.vv32.Location = new System.Drawing.Point(1720, 565);
             this.vv32.Name = "vv32";
             this.vv32.Size = new System.Drawing.Size(16, 17);
@@ -1856,7 +1862,7 @@
             // vv31
             // 
             this.vv31.AutoSize = true;
-            this.vv31.ForeColor = System.Drawing.Color.Red;
+            this.vv31.ForeColor = System.Drawing.Color.LightPink;
             this.vv31.Location = new System.Drawing.Point(1698, 565);
             this.vv31.Name = "vv31";
             this.vv31.Size = new System.Drawing.Size(16, 17);
@@ -1866,7 +1872,7 @@
             // vv39
             // 
             this.vv39.AutoSize = true;
-            this.vv39.ForeColor = System.Drawing.Color.Red;
+            this.vv39.ForeColor = System.Drawing.Color.LightPink;
             this.vv39.Location = new System.Drawing.Point(1764, 638);
             this.vv39.Name = "vv39";
             this.vv39.Size = new System.Drawing.Size(16, 17);
@@ -1886,7 +1892,7 @@
             // vv38
             // 
             this.vv38.AutoSize = true;
-            this.vv38.ForeColor = System.Drawing.Color.Red;
+            this.vv38.ForeColor = System.Drawing.Color.LightPink;
             this.vv38.Location = new System.Drawing.Point(1742, 638);
             this.vv38.Name = "vv38";
             this.vv38.Size = new System.Drawing.Size(16, 17);
@@ -1896,7 +1902,7 @@
             // vv37
             // 
             this.vv37.AutoSize = true;
-            this.vv37.ForeColor = System.Drawing.Color.Red;
+            this.vv37.ForeColor = System.Drawing.Color.LightPink;
             this.vv37.Location = new System.Drawing.Point(1720, 638);
             this.vv37.Name = "vv37";
             this.vv37.Size = new System.Drawing.Size(16, 17);
@@ -1906,7 +1912,7 @@
             // vv36
             // 
             this.vv36.AutoSize = true;
-            this.vv36.ForeColor = System.Drawing.Color.Red;
+            this.vv36.ForeColor = System.Drawing.Color.LightPink;
             this.vv36.Location = new System.Drawing.Point(1698, 638);
             this.vv36.Name = "vv36";
             this.vv36.Size = new System.Drawing.Size(16, 17);
@@ -1916,7 +1922,7 @@
             // vv44
             // 
             this.vv44.AutoSize = true;
-            this.vv44.ForeColor = System.Drawing.Color.Red;
+            this.vv44.ForeColor = System.Drawing.Color.LightPink;
             this.vv44.Location = new System.Drawing.Point(1764, 714);
             this.vv44.Name = "vv44";
             this.vv44.Size = new System.Drawing.Size(16, 17);
@@ -1936,7 +1942,7 @@
             // vv43
             // 
             this.vv43.AutoSize = true;
-            this.vv43.ForeColor = System.Drawing.Color.Red;
+            this.vv43.ForeColor = System.Drawing.Color.LightPink;
             this.vv43.Location = new System.Drawing.Point(1742, 714);
             this.vv43.Name = "vv43";
             this.vv43.Size = new System.Drawing.Size(16, 17);
@@ -1946,7 +1952,7 @@
             // vv42
             // 
             this.vv42.AutoSize = true;
-            this.vv42.ForeColor = System.Drawing.Color.Red;
+            this.vv42.ForeColor = System.Drawing.Color.LightPink;
             this.vv42.Location = new System.Drawing.Point(1720, 714);
             this.vv42.Name = "vv42";
             this.vv42.Size = new System.Drawing.Size(16, 17);
@@ -1956,7 +1962,7 @@
             // vv41
             // 
             this.vv41.AutoSize = true;
-            this.vv41.ForeColor = System.Drawing.Color.Red;
+            this.vv41.ForeColor = System.Drawing.Color.LightPink;
             this.vv41.Location = new System.Drawing.Point(1698, 714);
             this.vv41.Name = "vv41";
             this.vv41.Size = new System.Drawing.Size(16, 17);
@@ -1966,7 +1972,7 @@
             // vv49
             // 
             this.vv49.AutoSize = true;
-            this.vv49.ForeColor = System.Drawing.Color.Red;
+            this.vv49.ForeColor = System.Drawing.Color.LightPink;
             this.vv49.Location = new System.Drawing.Point(1764, 782);
             this.vv49.Name = "vv49";
             this.vv49.Size = new System.Drawing.Size(16, 17);
@@ -1986,7 +1992,7 @@
             // vv48
             // 
             this.vv48.AutoSize = true;
-            this.vv48.ForeColor = System.Drawing.Color.Red;
+            this.vv48.ForeColor = System.Drawing.Color.LightPink;
             this.vv48.Location = new System.Drawing.Point(1742, 782);
             this.vv48.Name = "vv48";
             this.vv48.Size = new System.Drawing.Size(16, 17);
@@ -1996,7 +2002,7 @@
             // vv47
             // 
             this.vv47.AutoSize = true;
-            this.vv47.ForeColor = System.Drawing.Color.Red;
+            this.vv47.ForeColor = System.Drawing.Color.LightPink;
             this.vv47.Location = new System.Drawing.Point(1720, 782);
             this.vv47.Name = "vv47";
             this.vv47.Size = new System.Drawing.Size(16, 17);
@@ -2006,7 +2012,7 @@
             // vv46
             // 
             this.vv46.AutoSize = true;
-            this.vv46.ForeColor = System.Drawing.Color.Red;
+            this.vv46.ForeColor = System.Drawing.Color.LightPink;
             this.vv46.Location = new System.Drawing.Point(1698, 782);
             this.vv46.Name = "vv46";
             this.vv46.Size = new System.Drawing.Size(16, 17);
@@ -2016,7 +2022,7 @@
             // vv54
             // 
             this.vv54.AutoSize = true;
-            this.vv54.ForeColor = System.Drawing.Color.Red;
+            this.vv54.ForeColor = System.Drawing.Color.LightPink;
             this.vv54.Location = new System.Drawing.Point(1764, 850);
             this.vv54.Name = "vv54";
             this.vv54.Size = new System.Drawing.Size(16, 17);
@@ -2036,7 +2042,7 @@
             // vv53
             // 
             this.vv53.AutoSize = true;
-            this.vv53.ForeColor = System.Drawing.Color.Red;
+            this.vv53.ForeColor = System.Drawing.Color.LightPink;
             this.vv53.Location = new System.Drawing.Point(1742, 850);
             this.vv53.Name = "vv53";
             this.vv53.Size = new System.Drawing.Size(16, 17);
@@ -2046,7 +2052,7 @@
             // vv52
             // 
             this.vv52.AutoSize = true;
-            this.vv52.ForeColor = System.Drawing.Color.Red;
+            this.vv52.ForeColor = System.Drawing.Color.LightPink;
             this.vv52.Location = new System.Drawing.Point(1720, 850);
             this.vv52.Name = "vv52";
             this.vv52.Size = new System.Drawing.Size(16, 17);
@@ -2056,7 +2062,7 @@
             // vv51
             // 
             this.vv51.AutoSize = true;
-            this.vv51.ForeColor = System.Drawing.Color.Red;
+            this.vv51.ForeColor = System.Drawing.Color.LightPink;
             this.vv51.Location = new System.Drawing.Point(1698, 850);
             this.vv51.Name = "vv51";
             this.vv51.Size = new System.Drawing.Size(16, 17);
@@ -2066,7 +2072,7 @@
             // vv59
             // 
             this.vv59.AutoSize = true;
-            this.vv59.ForeColor = System.Drawing.Color.Red;
+            this.vv59.ForeColor = System.Drawing.Color.LightPink;
             this.vv59.Location = new System.Drawing.Point(1764, 929);
             this.vv59.Name = "vv59";
             this.vv59.Size = new System.Drawing.Size(16, 17);
@@ -2086,7 +2092,7 @@
             // vv58
             // 
             this.vv58.AutoSize = true;
-            this.vv58.ForeColor = System.Drawing.Color.Red;
+            this.vv58.ForeColor = System.Drawing.Color.LightPink;
             this.vv58.Location = new System.Drawing.Point(1742, 929);
             this.vv58.Name = "vv58";
             this.vv58.Size = new System.Drawing.Size(16, 17);
@@ -2096,7 +2102,7 @@
             // vv57
             // 
             this.vv57.AutoSize = true;
-            this.vv57.ForeColor = System.Drawing.Color.Red;
+            this.vv57.ForeColor = System.Drawing.Color.LightPink;
             this.vv57.Location = new System.Drawing.Point(1720, 929);
             this.vv57.Name = "vv57";
             this.vv57.Size = new System.Drawing.Size(16, 17);
@@ -2106,7 +2112,7 @@
             // vv56
             // 
             this.vv56.AutoSize = true;
-            this.vv56.ForeColor = System.Drawing.Color.Red;
+            this.vv56.ForeColor = System.Drawing.Color.LightPink;
             this.vv56.Location = new System.Drawing.Point(1698, 929);
             this.vv56.Name = "vv56";
             this.vv56.Size = new System.Drawing.Size(16, 17);
@@ -2123,12 +2129,84 @@
             this.timer3.Interval = 8000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Orange;
+            this.label5.Location = new System.Drawing.Point(1422, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 32);
+            this.label5.TabIndex = 186;
+            this.label5.Text = "No.";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Orange;
+            this.label29.Location = new System.Drawing.Point(1695, 13);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(85, 32);
+            this.label29.TabIndex = 187;
+            this.label29.Text = "Fouls";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Orange;
+            this.label30.Location = new System.Drawing.Point(1844, 13);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(64, 32);
+            this.label30.TabIndex = 188;
+            this.label30.Text = "Pts.";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Orange;
+            this.label31.Location = new System.Drawing.Point(1540, 13);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(96, 32);
+            this.label31.TabIndex = 189;
+            this.label31.Text = "Player";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.Orange;
+            this.label32.Location = new System.Drawing.Point(173, 9);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(128, 44);
+            this.label32.TabIndex = 190;
+            this.label32.Text = "Player";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Orange;
+            this.label34.Location = new System.Drawing.Point(527, 9);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(86, 44);
+            this.label34.TabIndex = 191;
+            this.label34.Text = "Pts.";
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.vv59);
             this.Controls.Add(this.vv60);
             this.Controls.Add(this.vv58);
@@ -2511,5 +2589,11 @@
         private System.Windows.Forms.Label vv56;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label34;
     }
 }
