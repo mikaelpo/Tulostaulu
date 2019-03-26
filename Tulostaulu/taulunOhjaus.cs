@@ -648,7 +648,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.lisaaVirheKoti(vainPelaajaVirheet);
+                t1.lisaaVirheKoti1(vainPelaajaVirheet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
         }
@@ -757,7 +757,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.vahennaVirheKoti(vainPelaajaVirheet);
+                t1.vahennaVirheKoti1(vainPelaajaVirheet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
         }
@@ -1076,6 +1076,27 @@ namespace Tulostaulu
                 t1.vahennaVirheVieras12(vainPelaajaVirheet);
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+        //Vierasjoukkueen virheen lisäys
+        private void button101_Click(object sender, EventArgs e)
+        {
+            t1.lisaaVirheVieras();
+        }
+        //Vierasjoukkueen virheen poisto
+        private void button100_Click(object sender, EventArgs e)
+        {
+            t1.vahennaVirheVieras();
+        }
+        //Kotijoukkueen virheen lisäys
+        private void button103_Click(object sender, EventArgs e)
+        {
+            t1.lisaaVirheKoti();           
+        }
+        //Kotijoukkueen virheen poisto
+        private void button102_Click(object sender, EventArgs e)
+        {
+            t1.vahennaVirheKoti();          
         }
     }
 }

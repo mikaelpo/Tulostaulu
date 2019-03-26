@@ -254,7 +254,7 @@ namespace Tulostaulu
             vv60.Visible = false;
         }
         //Lisätään virhe kotijoukkueelle
-        private void lisaaVirheKoti()
+        public void lisaaVirheKoti()
         {
             virheetKoti++;
             if (virheetKoti > 5)
@@ -264,7 +264,7 @@ namespace Tulostaulu
             labelVirheetKoti.Text = virheetKoti.ToString();
         }
         //Vähennetään Virhe kotijoukkueelta
-        private void vahennaVirheKoti()
+        public void vahennaVirheKoti()
         {
             virheetKoti--;
             if(virheetKoti < 0)
@@ -275,7 +275,7 @@ namespace Tulostaulu
         }
 
         //Lisätään virhe kotijoukkueelle
-        private void lisaaVirheVieras()
+        public void lisaaVirheVieras()
         {
             virheetVieras++;
             if (virheetVieras > 5)
@@ -285,7 +285,7 @@ namespace Tulostaulu
             labelVirheetVieras.Text = virheetVieras.ToString();
         }
         //Vähennetään Virhe kotijoukkueelta
-        private void vahennaVirheVieras()
+        public void vahennaVirheVieras()
         {
             virheetVieras--;
             if (virheetVieras < 0)
@@ -407,14 +407,14 @@ namespace Tulostaulu
         }
         //Virheet
         //Kotipelaaja 1
-        public void lisaaVirheKoti(bool vainPelaajaVirhe)
+        public void lisaaVirheKoti1(bool vainPelaajaVirhe)
         {
             int i = 0;
             pelaajaVirheK1++;
             i = lisaaVirheKotiPelaaja(pelaajaVirheK1, vk1, vk2, vk3, vk4, vk5, vainPelaajaVirhe);
             pelaajaVirheK1 = i;
         }
-        public void vahennaVirheKoti(bool vainPelaajaVirhe)
+        public void vahennaVirheKoti1(bool vainPelaajaVirhe)
         {
             int i = 0;
             i = vahennaVirheKotiPelaaja(pelaajaVirheK1, vk1, vk2, vk3, vk4, vk5, vainPelaajaVirhe);
