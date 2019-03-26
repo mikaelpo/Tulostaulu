@@ -19,10 +19,12 @@ namespace Tulostaulu
         private string vieras;
         private int pisteetKoti = 0;
         private int pisteetVieras = 0;
+        private bool onkoTimeritKaytossa = false;
         private int pelaajaVirheK1, pelaajaVirheK2, pelaajaVirheK3, pelaajaVirheK4, pelaajaVirheK5, pelaajaVirheK6, pelaajaVirheK7, pelaajaVirheK8, pelaajaVirheK9
             , pelaajaVirheK10 , pelaajaVirheK11 , pelaajaVirheK12 , pelaajaVirheV1 , pelaajaVirheV2 , pelaajaVirheV3 , pelaajaVirheV4 , pelaajaVirheV5 , pelaajaVirheV6 
             , pelaajaVirheV7 , pelaajaVirheV8 , pelaajaVirheV9 , pelaajaVirheV10 , pelaajaVirheV11 , pelaajaVirheV12 = 0;
         private int virheetKoti = 0;
+        private int virheetVieras = 0;
         private int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
             p21, p22, p23, p24 = 0;
         private oletusasetukset at;
@@ -271,9 +273,33 @@ namespace Tulostaulu
             }
             labelVirheetKoti.Text = virheetKoti.ToString();
         }
+
+        //Lisätään virhe kotijoukkueelle
+        private void lisaaVirheVieras()
+        {
+            virheetVieras++;
+            if (virheetVieras > 5)
+            {
+                virheetVieras = 5;
+            }
+            labelVirheetVieras.Text = virheetVieras.ToString();
+        }
+        //Vähennetään Virhe kotijoukkueelta
+        private void vahennaVirheVieras()
+        {
+            virheetVieras--;
+            if (virheetVieras < 0)
+            {
+                virheetVieras = 0;
+            }
+            labelVirheetVieras.Text = virheetVieras.ToString();
+        }
+
+
         //Vilkutetaan virhe-labelia timer2 ja timer3 avulla
         public void vilkutaLabel(Label l)
         {
+            onkoTimeritKaytossa = true;
             timer2.Start();
             timer3.Start();
             vilkku = l;
@@ -292,47 +318,11 @@ namespace Tulostaulu
             timer2.Stop();
             timer3.Stop();
             vilkku.ForeColor = Color.Red;
+            onkoTimeritKaytossa = false;
         }
 
-        //Virheet
-        //Kotipelaaja 1
-        public void lisaaVirheKoti(bool vainPelaajaVirhe)
-        {
-            pelaajaVirheK1++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK1, vk1, vk2, vk3, vk4, vk5, vainPelaajaVirhe);
-            /*pelaajaVirheK1++;
-            if(pelaajaVirheK1 > 5) { pelaajaVirheK1 = 5; }
-            if (pelaajaVirheK1 == 1) { vk1.Visible = true; }
-            if (pelaajaVirheK1 == 2) { vk2.Visible = true; }
-            if (pelaajaVirheK1 == 3) { vk3.Visible = true; }
-            if (pelaajaVirheK1 == 4) { vk4.Visible = true; }
-            if (pelaajaVirheK1 == 5) { vk5.Visible = true; vilkutaLabel(vk5); }
-
-            if(vainPelaajaVirhe == false) { lisaaVirheKoti(); }*/
-        }
-        public void vahennaVirheKoti(bool vainPelaajaVirhe)
-        {
-            int i = 0;
-            i = vahennaVirheKotiPelaaja(pelaajaVirheK1, vk1, vk2, vk3, vk4, vk5, vainPelaajaVirhe);
-            pelaajaVirheK1 = i;
-            /*switch (pelaajaVirheK1)
-            {
-                case 1: vk1.Visible = false;
-                    break;
-                case 2: vk2.Visible = false;
-                    break;
-                case 3: vk3.Visible = false;
-                    break;
-                case 4: vk4.Visible = false;
-                    break;
-                case 5: vk5.Visible = false;
-                    break;
-            }
-            pelaajaVirheK1--;
-            if (pelaajaVirheK1 < 0) { pelaajaVirheK1 = 0; }
-            if (vainPelaajaVirhe == false) { vahennaVirheKoti(); }   */
-        }
-
+        
+        //Kotijoukkueen pelaajien virheen lisäystä
         public int lisaaVirheKotiPelaaja(int i, Label a, Label b, Label c, Label d, Label f, bool vainPelaajaVirhe)
         {
             
@@ -341,13 +331,13 @@ namespace Tulostaulu
             if (i == 2) { b.Visible = true; }
             if (i == 3) { c.Visible = true; }
             if (i == 4) { d.Visible = true; }
-            if (i == 5) { f.Visible = true; vilkutaLabel(f); }
+            if (i == 5) { f.Visible = true; if (onkoTimeritKaytossa == false) { vilkutaLabel(f); }  }
 
             if (vainPelaajaVirhe == false) { lisaaVirheKoti(); }
             return i;
         }
 
-
+        //Kotijoukkueen pelaajien virheen vähennystä
         public int vahennaVirheKotiPelaaja(int i, Label a, Label b, Label c, Label d, Label f, bool vainPelaajaVirhe)
         {
             switch (i)
@@ -371,14 +361,73 @@ namespace Tulostaulu
             i--;
             if (i < 0) { i = 0; }
             if (vainPelaajaVirhe == false) { vahennaVirheKoti(); }
+            return i;          
+        }
+
+        //Vierasjoukkueen pelaajien virheen lisäystä
+        public int lisaaVirheVierasPelaaja(int i, Label a, Label b, Label c, Label d, Label f, bool vainPelaajaVirhe)
+        {
+
+            if (i > 5) { i = 5; }
+            if (i == 1) { a.Visible = true; }
+            if (i == 2) { b.Visible = true; }
+            if (i == 3) { c.Visible = true; }
+            if (i == 4) { d.Visible = true; }
+            if (i == 5) { f.Visible = true; if (onkoTimeritKaytossa == false) { vilkutaLabel(f); } }
+
+            if (vainPelaajaVirhe == false) { lisaaVirheVieras(); }
             return i;
+        }
+
+        //Vierasjoukkueen pelaajien virheen vähennystä
+        public int vahennaVirheVierasPelaaja(int i, Label a, Label b, Label c, Label d, Label f, bool vainPelaajaVirhe)
+        {
+            switch (i)
+            {
+                case 1:
+                    a.Visible = false;
+                    break;
+                case 2:
+                    b.Visible = false;
+                    break;
+                case 3:
+                    c.Visible = false;
+                    break;
+                case 4:
+                    d.Visible = false;
+                    break;
+                case 5:
+                    f.Visible = false;
+                    break;
+            }
+            i--;
+            if (i < 0) { i = 0; }
+            if (vainPelaajaVirhe == false) { vahennaVirheVieras(); }
+            return i;
+        }
+        //Virheet
+        //Kotipelaaja 1
+        public void lisaaVirheKoti(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheK1++;
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK1, vk1, vk2, vk3, vk4, vk5, vainPelaajaVirhe);
+            pelaajaVirheK1 = i;
+        }
+        public void vahennaVirheKoti(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheKotiPelaaja(pelaajaVirheK1, vk1, vk2, vk3, vk4, vk5, vainPelaajaVirhe);
+            pelaajaVirheK1 = i;
+
         }
         //Kotipelaaja 2
         public void lisaaVirheKoti2(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK2++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK2, vk6, vk7, vk8, vk9, vk10, vainPelaajaVirhe);
-            
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK2, vk6, vk7, vk8, vk9, vk10, vainPelaajaVirhe);
+            pelaajaVirheK2 = i;
         }       
         public void vahennaVirheKoti2(bool vainPelaajaVirhe)
         {
@@ -390,9 +439,10 @@ namespace Tulostaulu
         //Kotipelaaja 3
         public void lisaaVirheKoti3(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK3++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK3, vk11, vk12, vk13, vk14, vk15, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK3, vk11, vk12, vk13, vk14, vk15, vainPelaajaVirhe);
+            pelaajaVirheK3 = i;
         }
         public void vahennaVirheKoti3(bool vainPelaajaVirhe)
         {
@@ -404,9 +454,10 @@ namespace Tulostaulu
         //Kotipelaaja 4
         public void lisaaVirheKoti4(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK4++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK4, vk16, vk17, vk18, vk19, vk20, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK4, vk16, vk17, vk18, vk19, vk20, vainPelaajaVirhe);
+            pelaajaVirheK4 = i;
         }
         public void vahennaVirheKoti4(bool vainPelaajaVirhe)
         {
@@ -418,9 +469,10 @@ namespace Tulostaulu
         //Kotipelaaja 5
         public void lisaaVirheKoti5(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK5++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK5, vk21, vk22, vk23, vk24, vk25, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK5, vk21, vk22, vk23, vk24, vk25, vainPelaajaVirhe);
+            pelaajaVirheK5 = i;
         }
         public void vahennaVirheKoti5(bool vainPelaajaVirhe)
         {
@@ -432,9 +484,10 @@ namespace Tulostaulu
         //Kotipelaaja 6
         public void lisaaVirheKoti6(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK6++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK6, vk26, vk27, vk28, vk29, vk30, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK6, vk26, vk27, vk28, vk29, vk30, vainPelaajaVirhe);
+            pelaajaVirheK6 = i;
         }
         public void vahennaVirheKoti6(bool vainPelaajaVirhe)
         {
@@ -446,9 +499,10 @@ namespace Tulostaulu
         //Kotipelaaja 7
         public void lisaaVirheKoti7(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK7++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK7, vk31, vk32, vk33, vk34, vk35, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK7, vk31, vk32, vk33, vk34, vk35, vainPelaajaVirhe);
+            pelaajaVirheK7 = i;
         }
         public void vahennaVirheKoti7(bool vainPelaajaVirhe)
         {
@@ -460,9 +514,10 @@ namespace Tulostaulu
         //Kotipelaaja 8
         public void lisaaVirheKoti8(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK8++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK8, vk36, vk37, vk38, vk39, vk40, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK8, vk36, vk37, vk38, vk39, vk40, vainPelaajaVirhe);
+            pelaajaVirheK8 = i;
         }
         public void vahennaVirheKoti8(bool vainPelaajaVirhe)
         {
@@ -474,9 +529,10 @@ namespace Tulostaulu
         //Kotipelaaja 9
         public void lisaaVirheKoti9(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK9++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK9, vk41, vk42, vk43, vk44, vk45, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK9, vk41, vk42, vk43, vk44, vk45, vainPelaajaVirhe);
+            pelaajaVirheK9 = i;
         }
         public void vahennaVirheKoti9(bool vainPelaajaVirhe)
         {
@@ -488,9 +544,10 @@ namespace Tulostaulu
         //Kotipelaaja 10
         public void lisaaVirheKoti10(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK10++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK10, vk46, vk47, vk48, vk49, vk50, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK10, vk46, vk47, vk48, vk49, vk50, vainPelaajaVirhe);
+            pelaajaVirheK10 = i;
         }
         public void vahennaVirheKoti10(bool vainPelaajaVirhe)
         {
@@ -502,9 +559,10 @@ namespace Tulostaulu
         //Kotipelaaja 11
         public void lisaaVirheKoti11(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK11++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK11, vk51, vk52, vk53, vk54, vk55, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK11, vk51, vk52, vk53, vk54, vk55, vainPelaajaVirhe);
+            pelaajaVirheK11 = i;
         }
         public void vahennaVirheKoti11(bool vainPelaajaVirhe)
         {
@@ -516,9 +574,10 @@ namespace Tulostaulu
         //Kotipelaaja 12
         public void lisaaVirheKoti12(bool vainPelaajaVirhe)
         {
+            int i = 0;
             pelaajaVirheK12++;
-            lisaaVirheKotiPelaaja(pelaajaVirheK12, vk56, vk57, vk58, vk59, vk60, vainPelaajaVirhe);
-
+            i = lisaaVirheKotiPelaaja(pelaajaVirheK12, vk56, vk57, vk58, vk59, vk60, vainPelaajaVirhe);
+            pelaajaVirheK12 = i;
         }
         public void vahennaVirheKoti12(bool vainPelaajaVirhe)
         {
@@ -526,6 +585,188 @@ namespace Tulostaulu
             i = vahennaVirheKotiPelaaja(pelaajaVirheK12, vk56, vk57, vk58, vk59, vk60, vainPelaajaVirhe);
             pelaajaVirheK12 = i;
         }
+
+        //Virheet vierasjoukkueen pelaajat
+        //Pelaaja 1
+        public void lisaaVirheVieras1(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV1++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV1, vv1, vv2, vv3, vv4, vv5, vainPelaajaVirhe);
+            pelaajaVirheV1 = i;
+        }
+        public void vahennaVirheVieras1(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV1, vv1, vv2, vv3, vv4, vv5, vainPelaajaVirhe);
+            pelaajaVirheV1 = i;
+        }
+
+        //Pelaaja 2
+        public void lisaaVirheVieras2(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV2++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV2, vv6, vv7, vv8, vv9, vv10, vainPelaajaVirhe);
+            pelaajaVirheV2 = i;
+        }
+        public void vahennaVirheVieras2(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV2, vv6, vv7, vv8, vv9, vv10, vainPelaajaVirhe);
+            pelaajaVirheV2 = i;
+        }
+
+        //Pelaaja 3
+        public void lisaaVirheVieras3(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV3++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV3, vv11, vv12, vv13, vv14, vv15, vainPelaajaVirhe);
+            pelaajaVirheV3 = i;
+        }
+        public void vahennaVirheVieras3(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV3, vv11, vv12, vv13, vv14, vv15, vainPelaajaVirhe);
+            pelaajaVirheV3 = i;
+        }
+
+        //Pelaaja 4
+        public void lisaaVirheVieras4(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV4++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV4, vv16, vv17, vv18, vv19, vv20, vainPelaajaVirhe);
+            pelaajaVirheV4 = i;
+        }
+        public void vahennaVirheVieras4(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV4, vv16, vv17, vv18, vv19, vv20, vainPelaajaVirhe);
+            pelaajaVirheV4 = i;
+        }
+
+        //Pelaaja 5
+        public void lisaaVirheVieras5(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV5++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV5, vv21, vv22, vv23, vv24, vv25, vainPelaajaVirhe);
+            pelaajaVirheV5 = i;
+        }
+        public void vahennaVirheVieras5(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV5, vv21, vv22, vv23, vv24, vv25, vainPelaajaVirhe);
+            pelaajaVirheV5 = i;
+        }
+
+        //Pelaaja 6
+        public void lisaaVirheVieras6(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV6++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV6, vv26, vv27, vv28, vv29, vv30, vainPelaajaVirhe);
+            pelaajaVirheV6 = i;
+        }
+        public void vahennaVirheVieras6(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV6, vv26, vv27, vv28, vv29, vv30, vainPelaajaVirhe);
+            pelaajaVirheV6 = i;
+        }
+
+        //Pelaaja 7
+        public void lisaaVirheVieras7(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV7++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV7, vv31, vv32, vv33, vv34, vv35, vainPelaajaVirhe);
+            pelaajaVirheV7 = i;
+        }
+        public void vahennaVirheVieras7(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV7, vv31, vv32, vv33, vv34, vv35, vainPelaajaVirhe);
+            pelaajaVirheV7 = i;
+        }
+
+        //Pelaaja 8
+        public void lisaaVirheVieras8(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV8++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV8, vv36, vv37, vv38, vv39, vv40, vainPelaajaVirhe);
+            pelaajaVirheV8 = i;
+        }
+        public void vahennaVirheVieras8(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV8, vv36, vv37, vv38, vv39, vv40, vainPelaajaVirhe);
+            pelaajaVirheV8 = i;
+        }
+
+        //Pelaaja 9
+        public void lisaaVirheVieras9(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV9++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV9, vv41, vv42, vv43, vv44, vv45, vainPelaajaVirhe);
+            pelaajaVirheV9 = i;
+        }
+        public void vahennaVirheVieras9(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV9, vv41, vv42, vv43, vv44, vv45, vainPelaajaVirhe);
+            pelaajaVirheV9 = i;
+        }
+    
+        //Pelaaja 10
+        public void lisaaVirheVieras10(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV10++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV10, vv46, vv47, vv48, vv49, vv50, vainPelaajaVirhe);
+            pelaajaVirheV10 = i;
+        }
+        public void vahennaVirheVieras10(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV10, vv46, vv47, vv48, vv49, vv50, vainPelaajaVirhe);
+            pelaajaVirheV10 = i;
+        }
+
+        //Pelaaja 11
+        public void lisaaVirheVieras11(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV11++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV11, vv51, vv52, vv53, vv54, vv55, vainPelaajaVirhe);
+            pelaajaVirheV11 = i;
+        }
+        public void vahennaVirheVieras11(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV11, vv51, vv52, vv53, vv54, vv55, vainPelaajaVirhe);
+            pelaajaVirheV11 = i;
+        }
+
+        //Pelaaja 12
+        public void lisaaVirheVieras12(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            pelaajaVirheV12++;
+            i = lisaaVirheVierasPelaaja(pelaajaVirheV12, vv56, vv57, vv58, vv59, vv60, vainPelaajaVirhe);
+            pelaajaVirheV12 = i;
+        }
+        public void vahennaVirheVieras12(bool vainPelaajaVirhe)
+        {
+            int i = 0;
+            i = vahennaVirheVierasPelaaja(pelaajaVirheV12, vv56, vv57, vv58, vv59, vv60, vainPelaajaVirhe);
+            pelaajaVirheV12 = i;
+        }
+
 
 
         //Pisteiden lisäystä/poistoa ohjaustaulun kautta
