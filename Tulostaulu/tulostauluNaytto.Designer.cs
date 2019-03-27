@@ -221,6 +221,12 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.ak1 = new System.Windows.Forms.Label();
+            this.ak2 = new System.Windows.Forms.Label();
+            this.ak3 = new System.Windows.Forms.Label();
+            this.av3 = new System.Windows.Forms.Label();
+            this.av2 = new System.Windows.Forms.Label();
+            this.av1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -2196,12 +2202,84 @@
             this.label34.TabIndex = 191;
             this.label34.Text = "Pts.";
             // 
+            // ak1
+            // 
+            this.ak1.AutoSize = true;
+            this.ak1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ak1.ForeColor = System.Drawing.Color.Red;
+            this.ak1.Location = new System.Drawing.Point(789, 470);
+            this.ak1.Name = "ak1";
+            this.ak1.Size = new System.Drawing.Size(23, 29);
+            this.ak1.TabIndex = 192;
+            this.ak1.Text = "*";
+            // 
+            // ak2
+            // 
+            this.ak2.AutoSize = true;
+            this.ak2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ak2.ForeColor = System.Drawing.Color.Red;
+            this.ak2.Location = new System.Drawing.Point(818, 470);
+            this.ak2.Name = "ak2";
+            this.ak2.Size = new System.Drawing.Size(23, 29);
+            this.ak2.TabIndex = 193;
+            this.ak2.Text = "*";
+            // 
+            // ak3
+            // 
+            this.ak3.AutoSize = true;
+            this.ak3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ak3.ForeColor = System.Drawing.Color.Red;
+            this.ak3.Location = new System.Drawing.Point(843, 470);
+            this.ak3.Name = "ak3";
+            this.ak3.Size = new System.Drawing.Size(23, 29);
+            this.ak3.TabIndex = 194;
+            this.ak3.Text = "*";
+            // 
+            // av3
+            // 
+            this.av3.AutoSize = true;
+            this.av3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.av3.ForeColor = System.Drawing.Color.Red;
+            this.av3.Location = new System.Drawing.Point(1182, 470);
+            this.av3.Name = "av3";
+            this.av3.Size = new System.Drawing.Size(23, 29);
+            this.av3.TabIndex = 195;
+            this.av3.Text = "*";
+            // 
+            // av2
+            // 
+            this.av2.AutoSize = true;
+            this.av2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.av2.ForeColor = System.Drawing.Color.Red;
+            this.av2.Location = new System.Drawing.Point(1153, 470);
+            this.av2.Name = "av2";
+            this.av2.Size = new System.Drawing.Size(23, 29);
+            this.av2.TabIndex = 196;
+            this.av2.Text = "*";
+            // 
+            // av1
+            // 
+            this.av1.AutoSize = true;
+            this.av1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.av1.ForeColor = System.Drawing.Color.Red;
+            this.av1.Location = new System.Drawing.Point(1124, 470);
+            this.av1.Name = "av1";
+            this.av1.Size = new System.Drawing.Size(23, 29);
+            this.av1.TabIndex = 197;
+            this.av1.Text = "*";
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.av1);
+            this.Controls.Add(this.av2);
+            this.Controls.Add(this.av3);
+            this.Controls.Add(this.ak3);
+            this.Controls.Add(this.ak2);
+            this.Controls.Add(this.ak1);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
@@ -2596,5 +2674,11 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label ak1;
+        private System.Windows.Forms.Label ak2;
+        private System.Windows.Forms.Label ak3;
+        private System.Windows.Forms.Label av3;
+        private System.Windows.Forms.Label av2;
+        private System.Windows.Forms.Label av1;
     }
 }
