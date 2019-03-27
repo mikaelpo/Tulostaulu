@@ -910,6 +910,12 @@ namespace Tulostaulu
                 labelPisteKoti.Text = pisteetKoti.ToString();
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void lisaaPisteK11(bool vainPelaaja)
         {
             p11++;
