@@ -174,6 +174,12 @@
             this.button106 = new System.Windows.Forms.Button();
             this.checkBoxPiste = new System.Windows.Forms.CheckBox();
             this.checkBoxVirhe = new System.Windows.Forms.CheckBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.button107 = new System.Windows.Forms.Button();
+            this.button108 = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
+            this.button109 = new System.Windows.Forms.Button();
+            this.button110 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1845,6 +1851,70 @@
             this.checkBoxVirhe.UseVisualStyleBackColor = true;
             this.checkBoxVirhe.CheckedChanged += new System.EventHandler(this.checkBoxVirhe_CheckedChanged_1);
             // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(460, 841);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(123, 32);
+            this.label35.TabIndex = 149;
+            this.label35.Text = "Aikalisä";
+            // 
+            // button107
+            // 
+            this.button107.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button107.ForeColor = System.Drawing.Color.Red;
+            this.button107.Location = new System.Drawing.Point(409, 888);
+            this.button107.Name = "button107";
+            this.button107.Size = new System.Drawing.Size(107, 35);
+            this.button107.TabIndex = 150;
+            this.button107.Text = "-";
+            this.button107.UseVisualStyleBackColor = true;
+            // 
+            // button108
+            // 
+            this.button108.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button108.ForeColor = System.Drawing.Color.Green;
+            this.button108.Location = new System.Drawing.Point(531, 888);
+            this.button108.Name = "button108";
+            this.button108.Size = new System.Drawing.Size(107, 35);
+            this.button108.TabIndex = 151;
+            this.button108.Text = "+";
+            this.button108.UseVisualStyleBackColor = true;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(1390, 851);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(123, 32);
+            this.label36.TabIndex = 152;
+            this.label36.Text = "Aikalisä";
+            // 
+            // button109
+            // 
+            this.button109.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button109.ForeColor = System.Drawing.Color.Red;
+            this.button109.Location = new System.Drawing.Point(1332, 893);
+            this.button109.Name = "button109";
+            this.button109.Size = new System.Drawing.Size(107, 35);
+            this.button109.TabIndex = 153;
+            this.button109.Text = "-";
+            this.button109.UseVisualStyleBackColor = true;
+            // 
+            // button110
+            // 
+            this.button110.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button110.ForeColor = System.Drawing.Color.Green;
+            this.button110.Location = new System.Drawing.Point(1458, 894);
+            this.button110.Name = "button110";
+            this.button110.Size = new System.Drawing.Size(107, 35);
+            this.button110.TabIndex = 154;
+            this.button110.Text = "+";
+            this.button110.UseVisualStyleBackColor = true;
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1852,6 +1922,12 @@
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.button110);
+            this.Controls.Add(this.button109);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.button108);
+            this.Controls.Add(this.button107);
+            this.Controls.Add(this.label35);
             this.Controls.Add(this.checkBoxVirhe);
             this.Controls.Add(this.checkBoxPiste);
             this.Controls.Add(this.button106);
@@ -2159,5 +2235,11 @@
         private System.Windows.Forms.Button button106;
         private System.Windows.Forms.CheckBox checkBoxPiste;
         private System.Windows.Forms.CheckBox checkBoxVirhe;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button button107;
+        private System.Windows.Forms.Button button108;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button button109;
+        private System.Windows.Forms.Button button110;
     }
 }
