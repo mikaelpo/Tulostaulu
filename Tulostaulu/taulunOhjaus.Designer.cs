@@ -1871,6 +1871,7 @@
             this.button107.TabIndex = 150;
             this.button107.Text = "-";
             this.button107.UseVisualStyleBackColor = true;
+            this.button107.Click += new System.EventHandler(this.button107_Click);
             // 
             // button108
             // 
@@ -1882,6 +1883,7 @@
             this.button108.TabIndex = 151;
             this.button108.Text = "+";
             this.button108.UseVisualStyleBackColor = true;
+            this.button108.Click += new System.EventHandler(this.button108_Click);
             // 
             // label36
             // 
@@ -1903,6 +1905,7 @@
             this.button109.TabIndex = 153;
             this.button109.Text = "-";
             this.button109.UseVisualStyleBackColor = true;
+            this.button109.Click += new System.EventHandler(this.button109_Click);
             // 
             // button110
             // 
@@ -1914,6 +1917,7 @@
             this.button110.TabIndex = 154;
             this.button110.Text = "+";
             this.button110.UseVisualStyleBackColor = true;
+            this.button110.Click += new System.EventHandler(this.button110_Click);
             // 
             // taulunOhjaus
             // 

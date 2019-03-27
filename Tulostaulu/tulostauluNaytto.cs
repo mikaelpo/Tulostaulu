@@ -27,6 +27,7 @@ namespace Tulostaulu
         private int virheetVieras = 0;
         private int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
             p21, p22, p23, p24 = 0;
+        private int aikalisaKoti, aikalisaVieras = 0;
         private oletusasetukset at;
 
         //ajastimen muuttujat
@@ -34,6 +35,10 @@ namespace Tulostaulu
         int timeSs;
         int timeMm;
         bool isActive;
+
+        //Aikalisä ajastin
+        int timeAikalisaSek;
+        bool aikalisaKaynnissa = false;
 
         Label vilkku = null;
 
@@ -50,6 +55,7 @@ namespace Tulostaulu
 
         private void tulostauluNaytto_Load(object sender, EventArgs e)
         {
+            timeAikalisaSek = at.getAikalisa();
             resetTime();
             isActive = false;
             //Kotijoukkueen kuva
@@ -84,7 +90,8 @@ namespace Tulostaulu
             label27.Text = lista2[10];
             label28.Text = lista2[11];
 
-           
+            labelAikalisaKello.Text = timeAikalisaSek.ToString();
+            labelAikalisaKello.Visible = false;
             // ensimmäinen kotijoukkueen pelaaja
             vk1.Visible = false;
             vk2.Visible = false;
@@ -252,6 +259,72 @@ namespace Tulostaulu
             vv58.Visible = false;
             vv59.Visible = false;
             vv60.Visible = false;
+
+            //Aikalisät
+            ak1.Visible = false;
+            ak2.Visible = false;
+            ak3.Visible = false;
+            av1.Visible = false;
+            av2.Visible = false;
+            av3.Visible = false;
+        }
+        //Lisätään aikalisä kotijoukkueelle
+        public void lisaaAikalisaKoti()
+        {
+            aikalisaKoti++;
+            if (aikalisaKoti > 3) { aikalisaKoti = 3; }
+            if (aikalisaKoti == 1) { ak1.Visible = true; }
+            if (aikalisaKoti == 2) { ak2.Visible = true; }
+            if (aikalisaKoti == 3) { ak3.Visible = true; }
+            kaynnistaAikalisa();
+        }
+        //Vähennetään aikalisä kotijoukkueelta
+        public void vahennaAikalisaKoti()
+        {
+            switch (aikalisaKoti)
+            {
+                case 1:
+                    ak1.Visible = false;
+                    break;
+                case 2:
+                    ak2.Visible = false;
+                    break;
+                case 3:
+                    ak3.Visible = false;
+                    break;
+            }
+            aikalisaKoti--;
+            if (aikalisaKoti < 0) { aikalisaKoti = 0; }
+            piilotaAikalisaKello();
+        }
+        //Lisätään aikalisä vierasjoukkueelle
+        public void lisaaAikalisaVieras()
+        {
+            aikalisaVieras++;
+            if (aikalisaVieras > 3) { aikalisaVieras = 3; }
+            if (aikalisaVieras == 1) { av1.Visible = true; }
+            if (aikalisaVieras == 2) { av2.Visible = true; }
+            if (aikalisaVieras == 3) { av3.Visible = true; }
+            kaynnistaAikalisa();
+        }
+        //Vahennetään aikalisä vierasjoukkueelta
+        public void vahennaAikalisaVieras()
+        {
+            switch (aikalisaVieras)
+            {
+                case 1:
+                    av1.Visible = false;
+                    break;
+                case 2:
+                    av2.Visible = false;
+                    break;
+                case 3:
+                    av3.Visible = false;
+                    break;
+            }
+            aikalisaVieras--;
+            if (aikalisaVieras < 0) { aikalisaVieras = 0; }
+            piilotaAikalisaKello();
         }
         //Lisätään virhe kotijoukkueelle
         public void lisaaVirheKoti()
@@ -910,11 +983,7 @@ namespace Tulostaulu
                 labelPisteKoti.Text = pisteetKoti.ToString();
             }
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         public void lisaaPisteK11(bool vainPelaaja)
         {
@@ -1552,6 +1621,52 @@ namespace Tulostaulu
             at.setNeljanneksenpituus(minuutti);
             at.setNeljanneksenpituusSekunnit(sekunti);
             resetTime();
+        }
+
+        //Aikalisän kello
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            if (aikalisaKaynnissa)
+            {
+                timeAikalisaSek--;
+            }
+            if(timeAikalisaSek == 10)
+            {
+                //soitaSummeri();
+            }
+            if(timeAikalisaSek == 0)
+            {
+                //soitaSummeri();
+                timer4.Stop();
+                aikalisaKaynnissa = false;
+                labelAikalisaKello.Visible = false;
+                resetAikalisaKello();
+            }
+            aikalisaTaululle();
+        }
+
+        private void aikalisaTaululle()
+        {
+            labelAikalisaKello.Text = String.Format("{0:00}", timeAikalisaSek);
+        }
+
+        private void kaynnistaAikalisa()
+        {
+            aikalisaKaynnissa = true;
+            labelAikalisaKello.Visible = true;
+            timer4.Start();
+            resetAikalisaKello();
+        }
+
+        public void resetAikalisaKello()
+        {
+            timeAikalisaSek = at.getAikalisa();
+            labelAikalisaKello.Text = timeAikalisaSek.ToString();
+        }
+
+        public void piilotaAikalisaKello()
+        {
+            labelAikalisaKello.Visible = false;
         }
 
     }

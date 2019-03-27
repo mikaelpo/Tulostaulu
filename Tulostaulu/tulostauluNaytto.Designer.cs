@@ -227,6 +227,8 @@
             this.av3 = new System.Windows.Forms.Label();
             this.av2 = new System.Windows.Forms.Label();
             this.av1 = new System.Windows.Forms.Label();
+            this.labelAikalisaKello = new System.Windows.Forms.Label();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -239,7 +241,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(146, 137);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -2268,12 +2269,29 @@
             this.av1.TabIndex = 197;
             this.av1.Text = "*";
             // 
+            // labelAikalisaKello
+            // 
+            this.labelAikalisaKello.AutoSize = true;
+            this.labelAikalisaKello.BackColor = System.Drawing.Color.Black;
+            this.labelAikalisaKello.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelAikalisaKello.Location = new System.Drawing.Point(994, 702);
+            this.labelAikalisaKello.Name = "labelAikalisaKello";
+            this.labelAikalisaKello.Size = new System.Drawing.Size(24, 17);
+            this.labelAikalisaKello.TabIndex = 198;
+            this.labelAikalisaKello.Text = "00";
+            // 
+            // timer4
+            // 
+            this.timer4.Interval = 1000;
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.labelAikalisaKello);
             this.Controls.Add(this.av1);
             this.Controls.Add(this.av2);
             this.Controls.Add(this.av3);
@@ -2680,5 +2698,7 @@
         private System.Windows.Forms.Label av3;
         private System.Windows.Forms.Label av2;
         private System.Windows.Forms.Label av1;
+        private System.Windows.Forms.Label labelAikalisaKello;
+        private System.Windows.Forms.Timer timer4;
     }
 }

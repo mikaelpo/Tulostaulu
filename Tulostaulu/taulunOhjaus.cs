@@ -969,7 +969,7 @@ namespace Tulostaulu
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
             
         }
-        //Vierasjoukkueen pelaajien vieheiden vähentäminen
+        //Vierasjoukkueen pelaajien virheiden vähentäminen
         private void button86_Click(object sender, EventArgs e)
         {
             try
@@ -1081,22 +1081,78 @@ namespace Tulostaulu
         //Vierasjoukkueen virheen lisäys
         private void button101_Click(object sender, EventArgs e)
         {
-            t1.lisaaVirheVieras();
+            try
+            {
+                t1.lisaaVirheVieras();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
         }
         //Vierasjoukkueen virheen poisto
         private void button100_Click(object sender, EventArgs e)
         {
-            t1.vahennaVirheVieras();
+            try
+            {
+                t1.vahennaVirheVieras();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
         }
         //Kotijoukkueen virheen lisäys
         private void button103_Click(object sender, EventArgs e)
         {
-            t1.lisaaVirheKoti();           
+            try
+            {
+                t1.lisaaVirheKoti();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen lisäämistä"); }
         }
         //Kotijoukkueen virheen poisto
         private void button102_Click(object sender, EventArgs e)
         {
-            t1.vahennaVirheKoti();          
+            try
+            {
+                t1.vahennaVirheKoti();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen virheen vähentämistä"); }
+        }
+
+
+
+        //KOtijoukkueen aikalisän lisäys ja vähennys
+        private void button108_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaAikalisaKoti();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen aikalisän lisäystä"); }
+        }
+
+        private void button107_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaAikalisaKoti();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen aikalisän vähentämistä"); }
+        }
+
+       //Vierasjoukkueen aikalisän lisäys ja vähennys
+        private void button110_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.lisaaAikalisaVieras();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen aikalisän lisäystä"); }
+        }
+
+        private void button109_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.vahennaAikalisaVieras();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen aikalisän vähentämistä"); }
         }
     }
 }
