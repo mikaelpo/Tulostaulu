@@ -844,7 +844,7 @@
             this.labelPisteKoti.AutoSize = true;
             this.labelPisteKoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPisteKoti.ForeColor = System.Drawing.Color.Orange;
-            this.labelPisteKoti.Location = new System.Drawing.Point(766, 242);
+            this.labelPisteKoti.Location = new System.Drawing.Point(717, 242);
             this.labelPisteKoti.Name = "labelPisteKoti";
             this.labelPisteKoti.Size = new System.Drawing.Size(124, 135);
             this.labelPisteKoti.TabIndex = 58;
@@ -866,7 +866,7 @@
             this.labelPisteVieras.AutoSize = true;
             this.labelPisteVieras.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPisteVieras.ForeColor = System.Drawing.Color.Orange;
-            this.labelPisteVieras.Location = new System.Drawing.Point(1107, 242);
+            this.labelPisteVieras.Location = new System.Drawing.Point(1059, 242);
             this.labelPisteVieras.Name = "labelPisteVieras";
             this.labelPisteVieras.Size = new System.Drawing.Size(124, 135);
             this.labelPisteVieras.TabIndex = 60;
@@ -876,7 +876,7 @@
             // 
             this.labelVirheetKoti.AutoSize = true;
             this.labelVirheetKoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVirheetKoti.ForeColor = System.Drawing.Color.Red;
+            this.labelVirheetKoti.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelVirheetKoti.Location = new System.Drawing.Point(771, 499);
             this.labelVirheetKoti.Name = "labelVirheetKoti";
             this.labelVirheetKoti.Size = new System.Drawing.Size(124, 135);
@@ -898,7 +898,7 @@
             // 
             this.labelVirheetVieras.AutoSize = true;
             this.labelVirheetVieras.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVirheetVieras.ForeColor = System.Drawing.Color.Red;
+            this.labelVirheetVieras.ForeColor = System.Drawing.Color.OrangeRed;
             this.labelVirheetVieras.Location = new System.Drawing.Point(1107, 499);
             this.labelVirheetVieras.Name = "labelVirheetVieras";
             this.labelVirheetVieras.Size = new System.Drawing.Size(124, 135);
@@ -2273,10 +2273,11 @@
             // 
             this.labelAikalisaKello.AutoSize = true;
             this.labelAikalisaKello.BackColor = System.Drawing.Color.Black;
+            this.labelAikalisaKello.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAikalisaKello.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelAikalisaKello.Location = new System.Drawing.Point(994, 702);
+            this.labelAikalisaKello.Location = new System.Drawing.Point(956, 703);
             this.labelAikalisaKello.Name = "labelAikalisaKello";
-            this.labelAikalisaKello.Size = new System.Drawing.Size(24, 17);
+            this.labelAikalisaKello.Size = new System.Drawing.Size(127, 91);
             this.labelAikalisaKello.TabIndex = 198;
             this.labelAikalisaKello.Text = "00";
             // 
