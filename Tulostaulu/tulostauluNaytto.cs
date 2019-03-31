@@ -55,6 +55,10 @@ namespace Tulostaulu
 
         private void tulostauluNaytto_Load(object sender, EventArgs e)
         {
+            //Kellon millisekunti labelit
+            label9.Visible = false;
+            labelMs.Visible = false;
+
             timeAikalisaSek = at.getAikalisa();
             resetTime();
             isActive = false;
@@ -1598,10 +1602,16 @@ namespace Tulostaulu
                     timeMm--;
                     timeSs = 59;
                 }
+                if (timeMm == 1 && timeSs == 0 && timeMs == 0)
+                {
+                    labelMs.Visible = true;
+                    label9.Visible = true;
+                }
                 if (timeMm == 0 && timeSs == 0 && timeMs == 0)
                 {
-                    isActive = false;
-                    k3.Text = "Peli loppui";
+                    isActive = false;                   
+                   // labelMs.Visible = false;
+                   // label9.Visible = false;
                 }
                     
             }
@@ -1611,7 +1621,7 @@ namespace Tulostaulu
         //Ajan piirtäminen labeleihin
         private void drawTime()
         {
-            labelMs.Text = String.Format("{0:00}", timeMs);
+            labelMs.Text = String.Format("{0}", timeMs);
             labelSs.Text = String.Format("{0:00}", timeSs);
             labelMm.Text = String.Format("{0:00}", timeMm);
         }
@@ -1620,6 +1630,21 @@ namespace Tulostaulu
         {
             at.setNeljanneksenpituus(minuutti);
             at.setNeljanneksenpituusSekunnit(sekunti);
+            if(minuutti == 0 && sekunti <= 60)
+            {
+                labelMs.Visible = true;
+                label9.Visible = true;
+            }
+            else if (minuutti == 1 && sekunti == 0)
+            {
+                labelMs.Visible = true;
+                label9.Visible = true;
+            }
+            if (minuutti >= 1 && sekunti >= 1)
+            {
+                labelMs.Visible = false;
+                label9.Visible = false;
+            }
             resetTime();
         }
 
