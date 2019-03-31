@@ -1625,7 +1625,7 @@ namespace Tulostaulu
             labelSs.Text = String.Format("{0:00}", timeSs);
             labelMm.Text = String.Format("{0:00}", timeMm);
         }
-
+        //Pelikellon muuttaminen ohjaustaulun kautta
         public void muutaKello(int minuutti, int sekunti)
         {
             at.setNeljanneksenpituus(minuutti);
