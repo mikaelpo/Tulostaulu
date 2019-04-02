@@ -85,7 +85,7 @@ namespace Tulostaulu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            t1 = new tulostauluNaytto(lista, lista2, koti, vieras, asetukset2);
+            t1 = new tulostauluNaytto(lista, lista2, koti, vieras, asetukset2, this);
             t1.Show();
         }
 
@@ -1174,7 +1174,7 @@ namespace Tulostaulu
         
         
         //Hyökkäyskellon toiminta
-        private void timer1_Tick(object sender, EventArgs e)
+        public void timer1Tick()
         {
             if (peliKelloKaynnissa)
             {
@@ -1216,11 +1216,31 @@ namespace Tulostaulu
         private void button111_Click(object sender, EventArgs e)
         {
             timeHyokkaysSs = asetukset2.getHyokkaysaika1();
+            if(timeHyokkaysSs <= 5)
+            {
+                labelHMS.Visible = true;
+                labelHK2.Visible = true;
+            }
+            if(timeHyokkaysSs > 5)
+            {
+                labelHMS.Visible = false;
+                labelHK2.Visible = false;
+            }
         }
 
         private void button112_Click(object sender, EventArgs e)
         {
             timeHyokkaysSs = asetukset2.getHyokkausaika2();
+            if (timeHyokkaysSs <= 5)
+            {
+                labelHMS.Visible = true;
+                labelHK2.Visible = true;
+            }
+            if (timeHyokkaysSs > 5)
+            {
+                labelHMS.Visible = false;
+                labelHK2.Visible = false;
+            }
         }
 
         private void button113_Click(object sender, EventArgs e)
@@ -1228,12 +1248,12 @@ namespace Tulostaulu
 
         }
 
-        private void kaynnistaHyokkaysKello()
+        public void kaynnistaHyokkaysKello()
         {
             peliKelloKaynnissa = true;
         }
 
-        private void sammutaHyokkaysKello()
+        public void sammutaHyokkaysKello()
         {
             peliKelloKaynnissa = false;
         }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -186,7 +185,6 @@
             this.labelHSS = new System.Windows.Forms.Label();
             this.labelHK2 = new System.Windows.Forms.Label();
             this.labelHMS = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button111 = new System.Windows.Forms.Button();
             this.button112 = new System.Windows.Forms.Button();
             this.button113 = new System.Windows.Forms.Button();
@@ -1933,7 +1931,7 @@
             // 
             this.labelHMM.AutoSize = true;
             this.labelHMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHMM.Location = new System.Drawing.Point(850, 688);
+            this.labelHMM.Location = new System.Drawing.Point(843, 688);
             this.labelHMM.Name = "labelHMM";
             this.labelHMM.Size = new System.Drawing.Size(55, 39);
             this.labelHMM.TabIndex = 155;
@@ -1942,7 +1940,7 @@
             // labelHK1
             // 
             this.labelHK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHK1.Location = new System.Drawing.Point(911, 686);
+            this.labelHK1.Location = new System.Drawing.Point(904, 688);
             this.labelHK1.Name = "labelHK1";
             this.labelHK1.Size = new System.Drawing.Size(18, 39);
             this.labelHK1.TabIndex = 156;
@@ -1977,10 +1975,6 @@
             this.labelHMS.Size = new System.Drawing.Size(55, 39);
             this.labelHMS.TabIndex = 159;
             this.labelHMS.Text = "00";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // button111
             // 
@@ -2351,7 +2345,6 @@
         private System.Windows.Forms.Label labelHSS;
         private System.Windows.Forms.Label labelHK2;
         private System.Windows.Forms.Label labelHMS;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button111;
         private System.Windows.Forms.Button button112;
         private System.Windows.Forms.Button button113;

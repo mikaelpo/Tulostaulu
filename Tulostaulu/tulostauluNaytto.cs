@@ -29,6 +29,7 @@ namespace Tulostaulu
             p21, p22, p23, p24 = 0;
         private int aikalisaKoti, aikalisaVieras = 0;
         private oletusasetukset at;
+        private taulunOhjaus to;
 
         //ajastimen muuttujat
         int timeMs;
@@ -42,7 +43,7 @@ namespace Tulostaulu
 
         Label vilkku = null;
 
-        public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at)
+        public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at, taulunOhjaus to)
         {
             InitializeComponent();
             this.lista2 = listaVieras;
@@ -50,6 +51,7 @@ namespace Tulostaulu
             this.koti = kotiKuva;
             this.vieras = vierasKuva;
             this.at = at;
+            this.to = to;
 
         }
 
@@ -1589,7 +1591,8 @@ namespace Tulostaulu
         {
             if (isActive)
             {
-
+                to.kaynnistaHyokkaysKello();
+                to.timer1Tick();
                 timeMs--;
 
                 if (timeMs == -1)
@@ -1614,6 +1617,10 @@ namespace Tulostaulu
                    // label9.Visible = false;
                 }
                     
+            }
+            else
+            {
+                to.sammutaHyokkaysKello();
             }
 
             drawTime();
