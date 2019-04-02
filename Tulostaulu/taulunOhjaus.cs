@@ -79,7 +79,7 @@ namespace Tulostaulu
 
             timeHyokkaysSs = asetukset2.getHyokkaysaika1();
 
-            timer1.Start();
+            
 
         }
 
