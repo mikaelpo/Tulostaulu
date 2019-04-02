@@ -23,6 +23,12 @@ namespace Tulostaulu
         private tulostauluNaytto t1;
         private oletusasetukset asetukset2 = new oletusasetukset();
 
+        //Kellon muuttujat
+        private int timeHyokkaysMm;
+        private int timeHyokkaysSs;
+        private int timeHyokkaysMs;
+        private bool peliKelloKaynnissa = false;
+        
 
 
         public taulunOhjaus(string[] lista, string[] lista2, string kotiKuva, string vierasKuva, oletusasetukset asetukset)
@@ -67,6 +73,14 @@ namespace Tulostaulu
             textBoxMin.Text = asetukset2.getNeljanneksenpituus().ToString();
             textBoxSek.Text = asetukset2.getNeljanneksenpituusSekunnit().ToString();
 
+            //Hyökkäyskellon millisekuntilabelit pois näkyvistä
+            labelHMS.Visible = false;
+            labelHK2.Visible = false;
+
+            timeHyokkaysSs = asetukset2.getHyokkaysaika1();
+
+            timer1.Start();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,10 +95,12 @@ namespace Tulostaulu
             if (e.KeyCode == Keys.D1)
             {
                 t1.kelloStart();
+                kaynnistaHyokkaysKello();
             }
             if (e.KeyCode == Keys.D2)
             {
                 t1.kelloPause();
+                sammutaHyokkaysKello();
             }
             if (e.KeyCode == Keys.D3)
             {
@@ -1153,6 +1169,73 @@ namespace Tulostaulu
                 t1.vahennaAikalisaVieras();
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen aikalisän vähentämistä"); }
+        }
+
+        
+        
+        //Hyökkäyskellon toiminta
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (peliKelloKaynnissa)
+            {
+                timeHyokkaysMs--;
+
+                if (timeHyokkaysMs == -1)
+                {
+                    timeHyokkaysSs--;
+                    timeHyokkaysMs = 9;
+                }
+                if (timeHyokkaysSs == -1)
+                {
+                    timeHyokkaysMm--;
+                    timeHyokkaysSs = 59;
+                }
+                if (timeHyokkaysMm == 0 && timeHyokkaysSs == 5 && timeHyokkaysMs == 0)
+                {
+                    labelHMS.Visible = true;
+                    labelHK2.Visible = true;
+                }
+                if (timeHyokkaysMm == 0 && timeHyokkaysSs == 0 && timeHyokkaysMs == 0)
+                {
+                    peliKelloKaynnissa = false;
+                    // labelMs.Visible = false;
+                    // label9.Visible = false;
+                }
+            }
+         
+            drawTime();
+        }
+
+        private void drawTime()
+        {
+            labelHMS.Text = String.Format("{0}", timeHyokkaysMs);
+            labelHSS.Text = String.Format("{0:00}", timeHyokkaysSs);
+            labelHMM.Text = String.Format("{0:00}", timeHyokkaysMm);
+        }
+
+        private void button111_Click(object sender, EventArgs e)
+        {
+            timeHyokkaysSs = asetukset2.getHyokkaysaika1();
+        }
+
+        private void button112_Click(object sender, EventArgs e)
+        {
+            timeHyokkaysSs = asetukset2.getHyokkausaika2();
+        }
+
+        private void button113_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kaynnistaHyokkaysKello()
+        {
+            peliKelloKaynnissa = true;
+        }
+
+        private void sammutaHyokkaysKello()
+        {
+            peliKelloKaynnissa = false;
         }
     }
 }

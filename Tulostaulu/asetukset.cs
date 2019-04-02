@@ -60,7 +60,7 @@ namespace Tulostaulu
                 a1.setAikalisa(Convert.ToInt32(textBox6.Text));
                 a1.setAikalisienlukumaara(Convert.ToInt32(textBox8.Text));
                 a1.setHyokkaysaika1(Convert.ToInt32(textBox9.Text));
-                a1.setHyokkaysaika1(Convert.ToInt32(textBox10.Text));
+                a1.setHyokkaysaika2(Convert.ToInt32(textBox10.Text));
                 a1.setVirheet(Convert.ToInt32(textBox11.Text));
                 a1.setPelikellonsummeri(Convert.ToInt32(textBox13.Text));
                 a1.setHeittokellonsummeri(Convert.ToInt32(textBox12.Text));

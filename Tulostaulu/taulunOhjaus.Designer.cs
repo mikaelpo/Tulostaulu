@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -180,6 +181,15 @@
             this.label36 = new System.Windows.Forms.Label();
             this.button109 = new System.Windows.Forms.Button();
             this.button110 = new System.Windows.Forms.Button();
+            this.labelHMM = new System.Windows.Forms.Label();
+            this.labelHK1 = new System.Windows.Forms.Label();
+            this.labelHSS = new System.Windows.Forms.Label();
+            this.labelHK2 = new System.Windows.Forms.Label();
+            this.labelHMS = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button111 = new System.Windows.Forms.Button();
+            this.button112 = new System.Windows.Forms.Button();
+            this.button113 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1919,6 +1929,89 @@
             this.button110.UseVisualStyleBackColor = true;
             this.button110.Click += new System.EventHandler(this.button110_Click);
             // 
+            // labelHMM
+            // 
+            this.labelHMM.AutoSize = true;
+            this.labelHMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHMM.Location = new System.Drawing.Point(850, 688);
+            this.labelHMM.Name = "labelHMM";
+            this.labelHMM.Size = new System.Drawing.Size(55, 39);
+            this.labelHMM.TabIndex = 155;
+            this.labelHMM.Text = "00";
+            // 
+            // labelHK1
+            // 
+            this.labelHK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHK1.Location = new System.Drawing.Point(911, 686);
+            this.labelHK1.Name = "labelHK1";
+            this.labelHK1.Size = new System.Drawing.Size(18, 39);
+            this.labelHK1.TabIndex = 156;
+            this.labelHK1.Text = ":";
+            // 
+            // labelHSS
+            // 
+            this.labelHSS.AutoSize = true;
+            this.labelHSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHSS.Location = new System.Drawing.Point(935, 688);
+            this.labelHSS.Name = "labelHSS";
+            this.labelHSS.Size = new System.Drawing.Size(55, 39);
+            this.labelHSS.TabIndex = 157;
+            this.labelHSS.Text = "00";
+            // 
+            // labelHK2
+            // 
+            this.labelHK2.AutoSize = true;
+            this.labelHK2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHK2.Location = new System.Drawing.Point(991, 686);
+            this.labelHK2.Name = "labelHK2";
+            this.labelHK2.Size = new System.Drawing.Size(26, 39);
+            this.labelHK2.TabIndex = 158;
+            this.labelHK2.Text = ":";
+            // 
+            // labelHMS
+            // 
+            this.labelHMS.AutoSize = true;
+            this.labelHMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHMS.Location = new System.Drawing.Point(1014, 688);
+            this.labelHMS.Name = "labelHMS";
+            this.labelHMS.Size = new System.Drawing.Size(55, 39);
+            this.labelHMS.TabIndex = 159;
+            this.labelHMS.Text = "00";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button111
+            // 
+            this.button111.Location = new System.Drawing.Point(843, 634);
+            this.button111.Name = "button111";
+            this.button111.Size = new System.Drawing.Size(93, 23);
+            this.button111.TabIndex = 160;
+            this.button111.Text = "Hyökkäys 1";
+            this.button111.UseVisualStyleBackColor = true;
+            this.button111.Click += new System.EventHandler(this.button111_Click);
+            // 
+            // button112
+            // 
+            this.button112.Location = new System.Drawing.Point(942, 634);
+            this.button112.Name = "button112";
+            this.button112.Size = new System.Drawing.Size(96, 23);
+            this.button112.TabIndex = 161;
+            this.button112.Text = "Hyökkäys 2";
+            this.button112.UseVisualStyleBackColor = true;
+            this.button112.Click += new System.EventHandler(this.button112_Click);
+            // 
+            // button113
+            // 
+            this.button113.Location = new System.Drawing.Point(1044, 634);
+            this.button113.Name = "button113";
+            this.button113.Size = new System.Drawing.Size(96, 23);
+            this.button113.TabIndex = 162;
+            this.button113.Text = "piilota";
+            this.button113.UseVisualStyleBackColor = true;
+            this.button113.Click += new System.EventHandler(this.button113_Click);
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1926,6 +2019,14 @@
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.button113);
+            this.Controls.Add(this.button112);
+            this.Controls.Add(this.button111);
+            this.Controls.Add(this.labelHMS);
+            this.Controls.Add(this.labelHK2);
+            this.Controls.Add(this.labelHSS);
+            this.Controls.Add(this.labelHK1);
+            this.Controls.Add(this.labelHMM);
             this.Controls.Add(this.button110);
             this.Controls.Add(this.button109);
             this.Controls.Add(this.label36);
@@ -2245,5 +2346,14 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button button109;
         private System.Windows.Forms.Button button110;
+        private System.Windows.Forms.Label labelHMM;
+        private System.Windows.Forms.Label labelHK1;
+        private System.Windows.Forms.Label labelHSS;
+        private System.Windows.Forms.Label labelHK2;
+        private System.Windows.Forms.Label labelHMS;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button111;
+        private System.Windows.Forms.Button button112;
+        private System.Windows.Forms.Button button113;
     }
 }

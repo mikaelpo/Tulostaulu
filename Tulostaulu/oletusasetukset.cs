@@ -182,7 +182,7 @@ namespace Tulostaulu
             return this.hyokkaysaika2;
         }
 
-        public void setHyokkausaika2(int hyokkaysaika2){
+        public void setHyokkaysaika2(int hyokkaysaika2){
             this.hyokkaysaika2 = hyokkaysaika2;
         }
 
