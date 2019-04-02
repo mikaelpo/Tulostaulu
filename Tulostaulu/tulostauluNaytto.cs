@@ -62,8 +62,11 @@ namespace Tulostaulu
             labelMs.Visible = false;
 
             timeAikalisaSek = at.getAikalisa();
-            resetTime();
+
+            //Pelikello
+            resetTime();          
             isActive = false;
+
             //Kotijoukkueen kuva
             pictureBox1.Image = new Bitmap(@koti);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -71,30 +74,32 @@ namespace Tulostaulu
             pictureBox2.Image = new Bitmap(@vieras);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             //Pelaajat
-            label1.Text = lista[0];
-            label2.Text = lista[1];
-            label3.Text = lista[2];
-            label6.Text = lista[3];
-            label8.Text = lista[4];
-            label10.Text = lista[5];
-            label11.Text = lista[6];
-            label12.Text = lista[7];
-            label13.Text = lista[8];
-            label14.Text = lista[9];
-            label15.Text = lista[10];
-            label16.Text = lista[11];
-            label17.Text = lista2[0];
-            label18.Text = lista2[1];
-            label19.Text = lista2[2];
-            label20.Text = lista2[3];
-            label21.Text = lista2[4];
-            label22.Text = lista2[5];
-            label23.Text = lista2[6];
-            label24.Text = lista2[7];
-            label25.Text = lista2[8];
-            label26.Text = lista2[9];
-            label27.Text = lista2[10];
-            label28.Text = lista2[11];
+            
+                label1.Text = lista[0];
+                label2.Text = lista[1];
+                label3.Text = lista[2];
+                label6.Text = lista[3];
+                label8.Text = lista[4];
+                label10.Text = lista[5];
+                label11.Text = lista[6];
+                label12.Text = lista[7];
+                label13.Text = lista[8];
+                label14.Text = lista[9];
+                label15.Text = lista[10];
+                label16.Text = lista[11];
+                label17.Text = lista2[0];
+                label18.Text = lista2[1];
+                label19.Text = lista2[2];
+                label20.Text = lista2[3];
+                label21.Text = lista2[4];
+                label22.Text = lista2[5];
+                label23.Text = lista2[6];
+                label24.Text = lista2[7];
+                label25.Text = lista2[8];
+                label26.Text = lista2[9];
+                label27.Text = lista2[10];
+                label28.Text = lista2[11];
+            
 
             labelAikalisaKello.Text = timeAikalisaSek.ToString();
             labelAikalisaKello.Visible = false;
@@ -1563,14 +1568,19 @@ namespace Tulostaulu
         public void kelloStart()
         {
             isActive = true;
+            
+            
         }
         public void kelloPause()
         {
             isActive = false;
+            
+
         }
         public void kelloReset()
         {
-            isActive = false;
+            isActive = false; 
+            
             resetTime();
         }
         //Kellon resetointi
@@ -1579,6 +1589,7 @@ namespace Tulostaulu
             timeMs = 0;
             timeSs = at.getNeljanneksenpituusSekunnit();
             timeMm = at.getNeljanneksenpituus();
+            to.hyokkaysKelloReset();
         }
 
         public void setTime(int aika)

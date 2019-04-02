@@ -28,6 +28,8 @@ namespace Tulostaulu
         private int timeHyokkaysSs;
         private int timeHyokkaysMs;
         private bool peliKelloKaynnissa = false;
+        private bool hyokkaysKelloNakyvissa = true;
+        private bool hyokkaysKellonMsNakyvissa = false;
         
 
 
@@ -45,31 +47,32 @@ namespace Tulostaulu
 
         private void taulunOhjaus_Load(object sender, EventArgs e)
         {
-            label1.Text = lista[0];
-            label2.Text = lista[1];
-            label3.Text = lista[2];
-            label5.Text = lista[3];
-            label6.Text = lista[4];
-            label7.Text = lista[5];
-            label8.Text = lista[6];
-            label9.Text = lista[7];
-            label10.Text = lista[8];
-            label11.Text = lista[9];
-            label12.Text = lista[10];
-            label13.Text = lista[11];
-            label14.Text = lista2[0];
-            label15.Text = lista2[1];
-            label16.Text = lista2[2];
-            label17.Text = lista2[3];
-            label18.Text = lista2[4];
-            label19.Text = lista2[5];
-            label20.Text = lista2[6];
-            label21.Text = lista2[7];
-            label22.Text = lista2[8];
-            label23.Text = lista2[9];
-            label24.Text = lista2[10];
-            label25.Text = lista2[11];
-
+            
+                label1.Text = lista[0];
+                label2.Text = lista[1];
+                label3.Text = lista[2];
+                label5.Text = lista[3];
+                label6.Text = lista[4];
+                label7.Text = lista[5];
+                label8.Text = lista[6];
+                label9.Text = lista[7];
+                label10.Text = lista[8];
+                label11.Text = lista[9];
+                label12.Text = lista[10];
+                label13.Text = lista[11];
+                label14.Text = lista2[0];
+                label15.Text = lista2[1];
+                label16.Text = lista2[2];
+                label17.Text = lista2[3];
+                label18.Text = lista2[4];
+                label19.Text = lista2[5];
+                label20.Text = lista2[6];
+                label21.Text = lista2[7];
+                label22.Text = lista2[8];
+                label23.Text = lista2[9];
+                label24.Text = lista2[10];
+                label25.Text = lista2[11];
+            
             textBoxMin.Text = asetukset2.getNeljanneksenpituus().ToString();
             textBoxSek.Text = asetukset2.getNeljanneksenpituusSekunnit().ToString();
 
@@ -94,13 +97,11 @@ namespace Tulostaulu
         {
             if (e.KeyCode == Keys.D1)
             {
-                t1.kelloStart();
-                kaynnistaHyokkaysKello();
+                t1.kelloStart();                 
             }
             if (e.KeyCode == Keys.D2)
             {
-                t1.kelloPause();
-                sammutaHyokkaysKello();
+                t1.kelloPause();             
             }
             if (e.KeyCode == Keys.D3)
             {
@@ -1194,6 +1195,7 @@ namespace Tulostaulu
                 {
                     labelHMS.Visible = true;
                     labelHK2.Visible = true;
+                    hyokkaysKellonMsNakyvissa = true;
                 }
                 if (timeHyokkaysMm == 0 && timeHyokkaysSs == 0 && timeHyokkaysMs == 0)
                 {
@@ -1216,21 +1218,80 @@ namespace Tulostaulu
         private void button111_Click(object sender, EventArgs e)
         {
             timeHyokkaysSs = asetukset2.getHyokkaysaika1();
-            if(timeHyokkaysSs <= 5)
+            labelHSS.Text = asetukset2.getHyokkaysaika1().ToString(); 
+            if (timeHyokkaysSs <= 5)
             {
                 labelHMS.Visible = true;
                 labelHK2.Visible = true;
+                hyokkaysKellonMsNakyvissa = true;
             }
             if(timeHyokkaysSs > 5)
             {
                 labelHMS.Visible = false;
                 labelHK2.Visible = false;
+                hyokkaysKellonMsNakyvissa = false;
             }
         }
 
         private void button112_Click(object sender, EventArgs e)
         {
             timeHyokkaysSs = asetukset2.getHyokkausaika2();
+            labelHSS.Text = asetukset2.getHyokkausaika2().ToString();
+            if (timeHyokkaysSs <= 5)
+            {
+                labelHMS.Visible = true;
+                labelHK2.Visible = true;
+                hyokkaysKellonMsNakyvissa = true;
+            }
+            if (timeHyokkaysSs > 5)
+            {
+                labelHMS.Visible = false;
+                labelHK2.Visible = false;
+                hyokkaysKellonMsNakyvissa = false;
+            }
+        }
+
+        private void button113_Click(object sender, EventArgs e)
+        {
+            if(hyokkaysKelloNakyvissa == true)
+            {
+                 
+                hyokkaysKelloNakyvissa = false;
+                labelHMM.Visible = false;
+                labelHK1.Visible = false;
+                labelHSS.Visible = false;              
+                labelHMS.Visible = false;
+                labelHK2.Visible = false;
+            }
+            else
+            {
+                
+                hyokkaysKelloNakyvissa = true;
+                labelHMM.Visible = true;
+                labelHK1.Visible = true;
+                labelHSS.Visible = true;
+                if (hyokkaysKellonMsNakyvissa)
+                {
+                    labelHMS.Visible = true;
+                    labelHK2.Visible = true;
+                }
+            }
+        }
+
+        public void kaynnistaHyokkaysKello()
+        {
+            peliKelloKaynnissa = true;
+        }
+        public void sammutaHyokkaysKello()
+        {
+            peliKelloKaynnissa = false;
+        }
+        public void hyokkaysKelloReset()
+        {
+            peliKelloKaynnissa = false;
+            timeHyokkaysMs = 0;
+            timeHyokkaysSs = asetukset2.getHyokkaysaika1();
+            labelHSS.Text = asetukset2.getHyokkaysaika1().ToString();
             if (timeHyokkaysSs <= 5)
             {
                 labelHMS.Visible = true;
@@ -1243,19 +1304,6 @@ namespace Tulostaulu
             }
         }
 
-        private void button113_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        public void kaynnistaHyokkaysKello()
-        {
-            peliKelloKaynnissa = true;
-        }
-
-        public void sammutaHyokkaysKello()
-        {
-            peliKelloKaynnissa = false;
-        }
     }
 }

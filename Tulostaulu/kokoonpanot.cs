@@ -22,8 +22,8 @@ namespace Tulostaulu
             this.asetukset = asetukset;
         }
 
-        string[] pelaajatKoti = new string[11];
-        string[] pelaajatVieras = new string[11];
+        string[] pelaajatKoti = new string[100];
+        string[] pelaajatVieras = new string[100];
         string kotijoukkueKuva;
         string vierasjoukkueKuva;
 
@@ -53,7 +53,7 @@ namespace Tulostaulu
                 
             }*/
 
-            if (pelaajatKoti.Length > 12)
+            /*if (pelaajatKoti.Length > 12)
             {
                 MessageBox.Show("Liikaa pelaajia kotipelaajien tiedostossa, hae uusi tiedosto");
                 Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);
@@ -62,7 +62,7 @@ namespace Tulostaulu
             {
                 MessageBox.Show("Liikaa pelaajia vieraspelaajien tiedostossa, hae uusi tiedosto");
                 Array.Clear(pelaajatKoti, 0, pelaajatKoti.Length);
-            }
+            }*/
             /*else if(pelaajatKoti.Length < 24)
             {
                 MessageBox.Show("Liian vähän pelaajia, hae uusi tiedosto");
@@ -133,6 +133,11 @@ namespace Tulostaulu
                 textBoxK4.Text = openFileDialog1.FileName;
                 pelaajatVieras = System.IO.File.ReadAllLines(@openFileDialog1.FileName);
             }
+        }
+
+        private void kokoonpanot_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

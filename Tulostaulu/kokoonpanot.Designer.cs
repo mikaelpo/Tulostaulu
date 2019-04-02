@@ -174,6 +174,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "kokoonpanot";
             this.Text = "Kokoonpanot";
+            this.Load += new System.EventHandler(this.kokoonpanot_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

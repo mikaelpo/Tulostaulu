@@ -1942,7 +1942,7 @@
             this.labelHK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHK1.Location = new System.Drawing.Point(904, 688);
             this.labelHK1.Name = "labelHK1";
-            this.labelHK1.Size = new System.Drawing.Size(18, 39);
+            this.labelHK1.Size = new System.Drawing.Size(25, 39);
             this.labelHK1.TabIndex = 156;
             this.labelHK1.Text = ":";
             // 
