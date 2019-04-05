@@ -33,8 +33,8 @@ namespace Tulostaulu
         private oletusasetukset at;
         private taulunOhjaus to;
 
-        private int neljanneksenPituusMin;
-        private int neljanneksenPituusSek;
+        private int neljanneksenPituusMin = 0;
+        private int neljanneksenPituusSek = 0;
         private int neljannes = 0;
 
         //ajastimen muuttujat
@@ -44,8 +44,8 @@ namespace Tulostaulu
         bool isActive;
 
         bool odotusKelloKayntiin;
-        int odotusKelloMin;
-        int odotusKelloSek;
+        int odotusKelloMin = 0;
+        int odotusKelloSek = 0;
 
         //Aikalisä ajastin
         int timeAikalisaSek;
@@ -123,6 +123,86 @@ namespace Tulostaulu
 
             labelAikalisaKello.Text = timeAikalisaSek.ToString();
             labelAikalisaKello.Visible = false;
+            nollaaKaikki();
+        }
+        public void nollaaAikalisat()
+        {
+            aikalisaKoti = 0;
+            aikalisaVieras = 0;
+        }
+        public void nollaaJoukkueVirheet()
+        {
+            virheetKoti = 0;
+            virheetVieras = 0;
+        }
+        public void nollaaKaikki()
+        {
+            pisteetKoti = 0;
+            labelPisteKoti.Text = pisteetKoti.ToString();
+            pisteetVieras = 0;
+            labelPisteVieras.Text = pisteetVieras.ToString();
+        
+            pelaajaVirheK1 = 0;
+            pelaajaVirheK2 = 0;
+            pelaajaVirheK3 = 0;
+            pelaajaVirheK4 = 0;
+            pelaajaVirheK5 = 0;
+            pelaajaVirheK6 = 0;
+            pelaajaVirheK7 = 0;
+            pelaajaVirheK8 = 0;
+            pelaajaVirheK9 = 0;
+            pelaajaVirheK10 = 0;
+            pelaajaVirheK11 = 0;
+            pelaajaVirheK12 = 0;
+            pelaajaVirheV1 = 0;
+            pelaajaVirheV2 = 0;
+            pelaajaVirheV3 = 0;
+            pelaajaVirheV4 = 0;
+            pelaajaVirheV5 = 0;
+            pelaajaVirheV6 = 0;
+            pelaajaVirheV7 = 0;
+            pelaajaVirheV8 = 0;
+            pelaajaVirheV9 = 0;
+            pelaajaVirheV10 = 0;
+            pelaajaVirheV11 = 0;
+            pelaajaVirheV12 = 0;
+
+            virheetKoti = 0;
+            labelVirheetKoti.Text = virheetKoti.ToString();
+            virheetVieras = 0;
+            labelVirheetVieras.Text = virheetVieras.ToString();
+
+
+            // TODO 
+            //pelaajien pisteet pois näkyvistä 
+            p1 = 0;
+            p2 = 0;
+            p3 = 0;
+            p4 = 0;
+            p5 = 0;
+            p6 = 0;
+            p7 = 0;
+            p8 = 0;
+            p9 = 0;
+            p10 = 0;
+            p11 = 0;
+            p12 = 0;
+            p13 = 0;
+            p14 = 0;
+            p15 = 0;
+            p16 = 0;
+            p17 = 0;
+            p18 = 0;
+            p19 = 0;
+            p20 = 0;
+            p21 = 0;
+            p22 = 0;
+            p23 = 0;
+            p24 = 0;
+
+            aikalisaKoti = 0;
+            aikalisaVieras = 0;
+
             // ensimmäinen kotijoukkueen pelaaja
             vk1.Visible = false;
             vk2.Visible = false;
@@ -299,6 +379,9 @@ namespace Tulostaulu
             av2.Visible = false;
             av3.Visible = false;
         }
+
+
+
         //Lisätään aikalisä kotijoukkueelle
         public void lisaaAikalisaKoti()
         {
@@ -1566,30 +1649,10 @@ namespace Tulostaulu
         }
 
 
-        //Kellon toiminta nuolten kautta -> Ylänuoli = Start, Alanuoli = Pause, Vasen nuoli = Reset
-        /*private void tulostauluNaytto_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Up)
-            {
-                isActive = true;
-                
-            }
-            if (e.KeyCode == Keys.Down)
-            {
-                isActive = false;
-            }
-            if (e.KeyCode == Keys.Left)
-            {
-                isActive = false;
-                resetTime();
-            }
-        }*/
-
+        //Pelikellon toiminta
         public void kelloStart()
         {
-            isActive = true;
-            
-            
+            isActive = true;                     
         }
         public void kelloPause()
         {
@@ -1619,6 +1682,16 @@ namespace Tulostaulu
                 timeSs = odotusKelloSek;
                 timeMm = odotusKelloMin;              
             }
+        }
+        //Laitetaan taululle neljänneksen määritelty pituus kun tauko loppuu. Kutsutaan timer_tickistä
+        public void resetTimeNeljannes()
+        {
+            timeMs = 0;
+            timeSs = neljanneksenPituusSek;
+            timeMm = neljanneksenPituusMin;
+
+            at.setNeljanneksenpituus(neljanneksenPituusMin);
+            at.setNeljanneksenpituus(neljanneksenPituusSek);
         }
 
         public void setTime(int aika)
@@ -1661,7 +1734,7 @@ namespace Tulostaulu
                         // labelMs.Visible = false;                      
                         // label9.Visible = false;
                         // soitaSummeri();
-                        // ehdotaTaukoa();
+                        ehdotaTauko();
                     }
                 }
                 else if (odotusKelloKayntiin == true)
@@ -1672,14 +1745,20 @@ namespace Tulostaulu
                         labelMs.Visible = false;
                         label9.Visible = false;
                         //soitaSummeri();
-                        //nollaaKaikki();
+                        
                         uusiNeljannes();
                         odotusKelloKayntiin = false;
-                        resetTime();
+                        resetTimeNeljannes();
                         
                     }
                 }
-                    
+
+                if (timeMm < 0)
+                {
+                    resetTime();
+                }
+
+
             }
             else
             {
@@ -1696,8 +1775,9 @@ namespace Tulostaulu
             labelMm.Text = String.Format("{0:00}", timeMm);
         }
         //Pelikellon muuttaminen ohjaustaulun kautta
-        public void muutaKello(int minuutti, int sekunti)
+        public void muutaKello(int minuutti, int sekunti, bool onkoTauko)
         {
+            if (onkoTauko == true) { odotusKelloKayntiin = true; }
             if (odotusKelloKayntiin == true)
             {
                 odotusKelloMin = minuutti;
@@ -1726,6 +1806,25 @@ namespace Tulostaulu
             }
             resetTime();
         }
+
+        //Taukojen kellot
+        public void kaynnistaLyhytTauko(bool onkoTauko)
+        {
+            //odotusKelloKayntiin = true;
+            
+            this.muutaKello(at.getLyhyttauko(), at.getLyhyttaukoSekunnit(), onkoTauko);
+            isActive = true;
+        }
+
+        public void kaynnistaPitkaTauko(bool onkoTauko)
+        {
+            //odotusKelloKayntiin = true;
+            
+            this.muutaKello(at.getPitkatauko(), at.getPitkataukoSekunnit(), onkoTauko);
+            isActive = true;
+        }
+
+
 
         //Aikalisän kello
         private void timer4_Tick(object sender, EventArgs e)
@@ -1780,24 +1879,48 @@ namespace Tulostaulu
                 case 0:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
+                    nollaaKaikki();
                     break;
                 case 1:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
+              
                     break;
                 case 2:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
+                    //nollaa joukkuevirheet mutta jätä aikalisät
+                    nollaaJoukkueVirheet();
                     break;
                 case 3:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
+                    //nollaa jokkuevirheet ja aikalisät
+                    nollaaJoukkueVirheet();
+                    nollaaAikalisat();
                     break;
                 case 4:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
+                    nollaaAikalisat();
                     break;
             }
+        }
+
+        public void ehdotaTauko()
+        {
+            int lyhytTauko = 1;
+            int pitkaTauko = 2;
+
+            if(neljannes != 2) 
+            {
+                to.taukoEhdotus(lyhytTauko);
+            }
+            else if (neljannes == 2)
+            {
+                to.taukoEhdotus(pitkaTauko);
+            }
+            
         }
     }
 }

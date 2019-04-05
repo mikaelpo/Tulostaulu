@@ -120,7 +120,7 @@ namespace Tulostaulu
 
         public int getLyhyttaukoSekunnit()
         {
-            return this.lyhytTauko;
+            return this.lyhytTaukoSekunnit;
         }
 
         public void setLyhyttaukoSekunnit(int lyhytTaukoSekunnit)
@@ -128,7 +128,7 @@ namespace Tulostaulu
             this.lyhytTaukoSekunnit = lyhytTaukoSekunnit;
         }
 
-        public int gePitkatauko() {
+        public int getPitkatauko() {
             return this.pitkaTauko;
         }
 
@@ -136,7 +136,7 @@ namespace Tulostaulu
             this.pitkaTauko = pitkaTauko;
         }
 
-        public int gePitkataukoSekunnit()
+        public int getPitkataukoSekunnit()
         {
             return this.pitkaTaukoSekunnit;
         }

@@ -32,6 +32,7 @@ namespace Tulostaulu
         private bool hyokkaysKellonMsNakyvissa = false;
 
         private bool odotusKelloKayntiin = false;
+        private bool onkoTauko = false;
         
 
 
@@ -602,7 +603,16 @@ namespace Tulostaulu
         {
             try
             {
-                t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text));
+                if (onkoTauko)
+                {
+                    t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text), onkoTauko);
+                    onkoTauko = false;
+                }
+                else
+                {
+                    t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text), onkoTauko);
+                }
+
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen ajan muuttamista"); }
         }
@@ -1316,6 +1326,35 @@ namespace Tulostaulu
             }
         }
 
+        //Mikä tauko valitaan kun neljännes loppuu
+        public void taukoEhdotus(int mikaTauko)
+        {
+            onkoTauko = true;
+            if (mikaTauko == 1)
+            {
+                DialogResult dialogResult = MessageBox.Show("Haluatko pitää lyhyen tauon?", "Huomautus", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    t1.kaynnistaLyhytTauko(onkoTauko);
+                }
+                else if (dialogResult == DialogResult.No)
+                {                    
+                    MessageBox.Show("Laita aika, jonka haluat odottaa ennen pelin alkamista ohjaustauluun ja paina sen jälkeen 'muuta aikaa', sitten käynnistä kello");
+                }
+            }
+            else if(mikaTauko == 2)
+            {
+                DialogResult dialogResult = MessageBox.Show("Haluatko pitää pitkän tauon?", "Huomautus", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    t1.kaynnistaPitkaTauko(onkoTauko);
+                }
+                else if (dialogResult == DialogResult.No)
+                {                   
+                    MessageBox.Show("Laita aika, jonka haluat odottaa ennen pelin alkamista ohjaustauluun ja paina sen jälkeen 'muuta aikaa', sitten käynnistä kello");
+                }
+            }
+        }
 
     }
 }
