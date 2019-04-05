@@ -20,6 +20,7 @@ namespace Tulostaulu
         private int pisteetKoti = 0;
         private int pisteetVieras = 0;
         private bool onkoTimeritKaytossa = false;
+
         private int pelaajaVirheK1, pelaajaVirheK2, pelaajaVirheK3, pelaajaVirheK4, pelaajaVirheK5, pelaajaVirheK6, pelaajaVirheK7, pelaajaVirheK8, pelaajaVirheK9
             , pelaajaVirheK10 , pelaajaVirheK11 , pelaajaVirheK12 , pelaajaVirheV1 , pelaajaVirheV2 , pelaajaVirheV3 , pelaajaVirheV4 , pelaajaVirheV5 , pelaajaVirheV6 
             , pelaajaVirheV7 , pelaajaVirheV8 , pelaajaVirheV9 , pelaajaVirheV10 , pelaajaVirheV11 , pelaajaVirheV12 = 0;
@@ -28,8 +29,13 @@ namespace Tulostaulu
         private int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
             p21, p22, p23, p24 = 0;
         private int aikalisaKoti, aikalisaVieras = 0;
+
         private oletusasetukset at;
         private taulunOhjaus to;
+
+        private int neljanneksenPituusMin;
+        private int neljanneksenPituusSek;
+        private int neljannes = 0;
 
         //ajastimen muuttujat
         int timeMs;
@@ -37,13 +43,17 @@ namespace Tulostaulu
         int timeMm;
         bool isActive;
 
+        bool odotusKelloKayntiin;
+        int odotusKelloMin;
+        int odotusKelloSek;
+
         //Aikalisä ajastin
         int timeAikalisaSek;
         bool aikalisaKaynnissa = false;
 
         Label vilkku = null;
 
-        public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at, taulunOhjaus to)
+        public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at, taulunOhjaus to, bool odotusKelloKayntiin)
         {
             InitializeComponent();
             this.lista2 = listaVieras;
@@ -52,6 +62,7 @@ namespace Tulostaulu
             this.vieras = vierasKuva;
             this.at = at;
             this.to = to;
+            this.odotusKelloKayntiin = odotusKelloKayntiin;
 
         }
 
@@ -64,8 +75,16 @@ namespace Tulostaulu
             timeAikalisaSek = at.getAikalisa();
 
             //Pelikello
-            resetTime();          
             isActive = false;
+            if (odotusKelloKayntiin)
+            {
+                neljanneksenPituusMin = at.getNeljanneksenpituus();
+                neljanneksenPituusSek = at.getNeljanneksenpituusSekunnit();
+            }
+            else
+            {
+                resetTime();             
+            }
 
             //Kotijoukkueen kuva
             pictureBox1.Image = new Bitmap(@koti);
@@ -1586,10 +1605,19 @@ namespace Tulostaulu
         //Kellon resetointi
         private void resetTime()
         {
-            timeMs = 0;
-            timeSs = at.getNeljanneksenpituusSekunnit();
-            timeMm = at.getNeljanneksenpituus();
-            to.hyokkaysKelloReset();
+            if (odotusKelloKayntiin == false)
+            {
+                timeMs = 0;
+                timeSs = at.getNeljanneksenpituusSekunnit();
+                timeMm = at.getNeljanneksenpituus();
+                to.hyokkaysKelloReset();
+            }
+            else if(odotusKelloKayntiin == true)
+            {
+                timeMs = 0;
+                timeSs = odotusKelloSek;
+                timeMm = odotusKelloMin;              
+            }
         }
 
         public void setTime(int aika)
@@ -1602,8 +1630,11 @@ namespace Tulostaulu
         {
             if (isActive)
             {
-                to.kaynnistaHyokkaysKello();
-                to.timer1Tick();
+                if (odotusKelloKayntiin == false)
+                {
+                    to.kaynnistaHyokkaysKello();
+                    to.timer1Tick();
+                }
                 timeMs--;
 
                 if (timeMs == -1)
@@ -1621,11 +1652,30 @@ namespace Tulostaulu
                     labelMs.Visible = true;
                     label9.Visible = true;
                 }
-                if (timeMm == 0 && timeSs == 0 && timeMs == 0)
+                if (odotusKelloKayntiin == false)
                 {
-                    isActive = false;                   
-                   // labelMs.Visible = false;
-                   // label9.Visible = false;
+                    if (timeMm == 0 && timeSs == 0 && timeMs == 0)
+                    {
+                        isActive = false;
+                        // labelMs.Visible = false;                      
+                        // label9.Visible = false;
+                        // soitaSummeri();
+                    }
+                }
+                else if (odotusKelloKayntiin == true)
+                {
+                    if (timeMm == 0 && timeSs == 0 && timeMs == 0)
+                    {
+                        isActive = false;
+                        labelMs.Visible = false;
+                        label9.Visible = false;
+                        //soitaSummeri();
+                        //nollaaKaikki();
+                        uusiNeljannes();
+                        odotusKelloKayntiin = false;
+                        resetTime();
+                        
+                    }
                 }
                     
             }
@@ -1646,8 +1696,17 @@ namespace Tulostaulu
         //Pelikellon muuttaminen ohjaustaulun kautta
         public void muutaKello(int minuutti, int sekunti)
         {
-            at.setNeljanneksenpituus(minuutti);
-            at.setNeljanneksenpituusSekunnit(sekunti);
+            if (odotusKelloKayntiin == true)
+            {
+                odotusKelloMin = minuutti;
+                odotusKelloSek = sekunti;
+            }
+            else if(odotusKelloKayntiin == false)
+            {
+                at.setNeljanneksenpituus(minuutti);
+                at.setNeljanneksenpituusSekunnit(sekunti);
+            }
+
             if(minuutti == 0 && sekunti <= 60)
             {
                 labelMs.Visible = true;
@@ -1712,5 +1771,31 @@ namespace Tulostaulu
             labelAikalisaKello.Visible = false;
         }
 
+        public void uusiNeljannes()
+        {
+            switch (neljannes)
+            {
+                case 0:
+                    neljannes++;
+                    labelNeljannes.Text = neljannes.ToString();
+                    break;
+                case 1:
+                    neljannes++;
+                    labelNeljannes.Text = neljannes.ToString();
+                    break;
+                case 2:
+                    neljannes++;
+                    labelNeljannes.Text = neljannes.ToString();
+                    break;
+                case 3:
+                    neljannes++;
+                    labelNeljannes.Text = neljannes.ToString();
+                    break;
+                case 4:
+                    neljannes++;
+                    labelNeljannes.Text = neljannes.ToString();
+                    break;
+            }
+        }
     }
 }

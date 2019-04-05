@@ -30,6 +30,8 @@ namespace Tulostaulu
         private bool peliKelloKaynnissa = false;
         private bool hyokkaysKelloNakyvissa = true;
         private bool hyokkaysKellonMsNakyvissa = false;
+
+        private bool odotusKelloKayntiin = false;
         
 
 
@@ -88,7 +90,16 @@ namespace Tulostaulu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            t1 = new tulostauluNaytto(lista, lista2, koti, vieras, asetukset2, this);
+            DialogResult dialogResult = MessageBox.Show("Haluatko käynnistää odotuskellon?", "Huomautus", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                odotusKelloKayntiin = true;
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                odotusKelloKayntiin = false;
+            }
+            t1 = new tulostauluNaytto(lista, lista2, koti, vieras, asetukset2, this, odotusKelloKayntiin);
             t1.Show();
         }
 

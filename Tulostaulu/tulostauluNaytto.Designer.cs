@@ -89,7 +89,7 @@
             this.label51 = new System.Windows.Forms.Label();
             this.labelPisteVieras = new System.Windows.Forms.Label();
             this.labelVirheetKoti = new System.Windows.Forms.Label();
-            this.neljannes = new System.Windows.Forms.Label();
+            this.labelNeljannes = new System.Windows.Forms.Label();
             this.labelVirheetVieras = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.vk1 = new System.Windows.Forms.Label();
@@ -883,16 +883,16 @@
             this.labelVirheetKoti.TabIndex = 61;
             this.labelVirheetKoti.Text = "0";
             // 
-            // neljannes
+            // labelNeljannes
             // 
-            this.neljannes.AutoSize = true;
-            this.neljannes.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neljannes.ForeColor = System.Drawing.Color.Orange;
-            this.neljannes.Location = new System.Drawing.Point(949, 499);
-            this.neljannes.Name = "neljannes";
-            this.neljannes.Size = new System.Drawing.Size(124, 135);
-            this.neljannes.TabIndex = 62;
-            this.neljannes.Text = "0";
+            this.labelNeljannes.AutoSize = true;
+            this.labelNeljannes.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNeljannes.ForeColor = System.Drawing.Color.Orange;
+            this.labelNeljannes.Location = new System.Drawing.Point(949, 499);
+            this.labelNeljannes.Name = "labelNeljannes";
+            this.labelNeljannes.Size = new System.Drawing.Size(124, 135);
+            this.labelNeljannes.TabIndex = 62;
+            this.labelNeljannes.Text = "0";
             // 
             // labelVirheetVieras
             // 
@@ -2428,7 +2428,7 @@
             this.Controls.Add(this.vk1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labelVirheetVieras);
-            this.Controls.Add(this.neljannes);
+            this.Controls.Add(this.labelNeljannes);
             this.Controls.Add(this.labelVirheetKoti);
             this.Controls.Add(this.labelPisteVieras);
             this.Controls.Add(this.label51);
@@ -2561,7 +2561,7 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label labelPisteVieras;
         private System.Windows.Forms.Label labelVirheetKoti;
-        private System.Windows.Forms.Label neljannes;
+        private System.Windows.Forms.Label labelNeljannes;
         private System.Windows.Forms.Label labelVirheetVieras;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label vk1;
