@@ -1661,6 +1661,7 @@ namespace Tulostaulu
                         // labelMs.Visible = false;                      
                         // label9.Visible = false;
                         // soitaSummeri();
+                        // ehdotaTaukoa();
                     }
                 }
                 else if (odotusKelloKayntiin == true)
