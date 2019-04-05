@@ -83,7 +83,8 @@ namespace Tulostaulu
             }
             else
             {
-                resetTime();             
+                resetTime();
+                uusiNeljannes();
             }
 
             //Kotijoukkueen kuva

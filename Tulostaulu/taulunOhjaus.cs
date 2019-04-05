@@ -94,6 +94,7 @@ namespace Tulostaulu
             if (dialogResult == DialogResult.Yes)
             {
                 odotusKelloKayntiin = true;
+                MessageBox.Show("Laita aika, jonka haluat odottaa ennen pelin alkamista ohjaustauluun ja paina sen jälkeen 'muuta aika', sitten käynnistä kello");
             }
             else if (dialogResult == DialogResult.No)
             {
