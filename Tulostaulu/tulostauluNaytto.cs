@@ -123,24 +123,95 @@ namespace Tulostaulu
 
             labelAikalisaKello.Text = timeAikalisaSek.ToString();
             labelAikalisaKello.Visible = false;
-            nollaaKaikki();
+
+            nollaaAikalisat();
+            nollaaPisteet();
+            nollaaVirheet();
         }
         public void nollaaAikalisat()
         {
             aikalisaKoti = 0;
             aikalisaVieras = 0;
+
+            //Aikalisät
+            ak1.Visible = false;
+            ak2.Visible = false;
+            ak3.Visible = false;
+            av1.Visible = false;
+            av2.Visible = false;
+            av3.Visible = false;
         }
-        public void nollaaJoukkueVirheet()
+        
+        public void nollaaPisteet()
         {
-            virheetKoti = 0;
-            virheetVieras = 0;
-        }
-        public void nollaaKaikki()
-        {
+            
             pisteetKoti = 0;
             labelPisteKoti.Text = pisteetKoti.ToString();
             pisteetVieras = 0;
             labelPisteVieras.Text = pisteetVieras.ToString();
+            
+            p1 = 0;
+            p2 = 0;
+            p3 = 0;
+            p4 = 0;
+            p5 = 0;
+            p6 = 0;
+            p7 = 0;
+            p8 = 0;
+            p9 = 0;
+            p10 = 0;
+            p11 = 0;
+            p12 = 0;
+            p13 = 0;
+            p14 = 0;
+            p15 = 0;
+            p16 = 0;
+            p17 = 0;
+            p18 = 0;
+            p19 = 0;
+            p20 = 0;
+            p21 = 0;
+            p22 = 0;
+            p23 = 0;
+            p24 = 0;
+            //pelaajien pisteet pois näkyvistä 
+            k1.Text = p1.ToString();
+            k2.Text = p2.ToString();
+            k3.Text = p3.ToString();
+            k4.Text = p4.ToString();
+            k5.Text = p5.ToString();
+            k6.Text = p6.ToString();
+            k7.Text = p7.ToString();
+            k8.Text = p8.ToString();
+            k9.Text = p9.ToString();
+            k10.Text = p10.ToString();
+            k11.Text = p11.ToString();
+            k12.Text = p12.ToString();
+
+            v1.Text = p13.ToString();
+            v2.Text = p14.ToString();
+            v3.Text = p15.ToString();
+            v4.Text = p16.ToString();
+            v5.Text = p17.ToString();
+            v6.Text = p18.ToString();
+            v7.Text = p19.ToString();
+            v8.Text = p20.ToString();
+            v9.Text = p21.ToString();
+            v10.Text = p22.ToString();
+            v11.Text = p23.ToString();
+            v12.Text = p24.ToString();
+        }
+
+        public void nollaaJoukkueVirheet()
+        {
+            virheetKoti = 0;
+            labelVirheetKoti.Text = virheetKoti.ToString();
+            virheetVieras = 0;
+            labelVirheetVieras.Text = virheetVieras.ToString();
+        }
+        public void nollaaVirheet()
+        {
+            
         
             pelaajaVirheK1 = 0;
             pelaajaVirheK2 = 0;
@@ -170,38 +241,7 @@ namespace Tulostaulu
             virheetKoti = 0;
             labelVirheetKoti.Text = virheetKoti.ToString();
             virheetVieras = 0;
-            labelVirheetVieras.Text = virheetVieras.ToString();
-
-
-            // TODO 
-            //pelaajien pisteet pois näkyvistä 
-            p1 = 0;
-            p2 = 0;
-            p3 = 0;
-            p4 = 0;
-            p5 = 0;
-            p6 = 0;
-            p7 = 0;
-            p8 = 0;
-            p9 = 0;
-            p10 = 0;
-            p11 = 0;
-            p12 = 0;
-            p13 = 0;
-            p14 = 0;
-            p15 = 0;
-            p16 = 0;
-            p17 = 0;
-            p18 = 0;
-            p19 = 0;
-            p20 = 0;
-            p21 = 0;
-            p22 = 0;
-            p23 = 0;
-            p24 = 0;
-
-            aikalisaKoti = 0;
-            aikalisaVieras = 0;
+            labelVirheetVieras.Text = virheetVieras.ToString();          
 
             // ensimmäinen kotijoukkueen pelaaja
             vk1.Visible = false;
@@ -369,15 +409,7 @@ namespace Tulostaulu
             vv57.Visible = false;
             vv58.Visible = false;
             vv59.Visible = false;
-            vv60.Visible = false;
-
-            //Aikalisät
-            ak1.Visible = false;
-            ak2.Visible = false;
-            ak3.Visible = false;
-            av1.Visible = false;
-            av2.Visible = false;
-            av3.Visible = false;
+            vv60.Visible = false;            
         }
 
 
@@ -1879,7 +1911,9 @@ namespace Tulostaulu
                 case 0:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
-                    nollaaKaikki();
+                    nollaaAikalisat();
+                    nollaaPisteet();
+                    nollaaVirheet();
                     break;
                 case 1:
                     neljannes++;

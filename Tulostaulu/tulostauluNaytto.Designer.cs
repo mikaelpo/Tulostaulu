@@ -229,8 +229,10 @@
             this.av1 = new System.Windows.Forms.Label();
             this.labelAikalisaKello = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -2286,12 +2288,21 @@
             this.timer4.Interval = 1000;
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(10, 1031);
+            this.pictureBox3.TabIndex = 199;
+            this.pictureBox3.TabStop = false;
+            // 
             // tulostauluNaytto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.labelAikalisaKello);
             this.Controls.Add(this.av1);
             this.Controls.Add(this.av2);
@@ -2495,6 +2506,7 @@
             this.Load += new System.EventHandler(this.tulostauluNaytto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2701,5 +2713,6 @@
         private System.Windows.Forms.Label av1;
         private System.Windows.Forms.Label labelAikalisaKello;
         private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
