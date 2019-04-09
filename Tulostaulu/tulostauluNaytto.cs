@@ -83,6 +83,8 @@ namespace Tulostaulu
             }
             else
             {
+                neljanneksenPituusMin = at.getNeljanneksenpituus();
+                neljanneksenPituusSek = at.getNeljanneksenpituusSekunnit();
                 resetTime();
                 uusiNeljannes();
             }
@@ -1726,6 +1728,13 @@ namespace Tulostaulu
             at.setNeljanneksenpituus(neljanneksenPituusSek);
         }
 
+        public void resetTimeJatkoAika()
+        {
+            timeMs = 0;
+            timeMm = at.getJatkoajanpituus();
+            timeSs = at.getJatkoajanpituusSekunnit(); 
+        }
+
         public void setTime(int aika)
         {
             timeMm = aika;
@@ -1778,10 +1787,11 @@ namespace Tulostaulu
                         labelMs.Visible = false;
                         label9.Visible = false;
                         //soitaSummeri();
-                        
+
+                        resetTimeNeljannes();
                         uusiNeljannes();
                         odotusKelloKayntiin = false;
-                        resetTimeNeljannes();
+                        
                         
                     }
                 }
@@ -1919,25 +1929,57 @@ namespace Tulostaulu
                 case 1:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
-              
-                    break;
-                case 2:
-                    neljannes++;
-                    labelNeljannes.Text = neljannes.ToString();
                     //nollaa joukkuevirheet mutta jätä aikalisät
                     nollaaJoukkueVirheet();
                     break;
-                case 3:
+                case 2:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
                     //nollaa jokkuevirheet ja aikalisät
                     nollaaJoukkueVirheet();
                     nollaaAikalisat();
                     break;
-                case 4:
+                case 3:
                     neljannes++;
                     labelNeljannes.Text = neljannes.ToString();
+                    nollaaJoukkueVirheet();
+                    break;
+                //Jatkoajat
+                case 4:
+                    neljannes++;
+                    labelNeljannes.Text = "E1";
                     nollaaAikalisat();
+                    resetTimeJatkoAika();
+                    break;
+                case 5:
+                    neljannes++;
+                    labelNeljannes.Text = "E2";
+                    resetTimeJatkoAika();
+                    break;
+                case 6:
+                    neljannes++;
+                    labelNeljannes.Text = "E3";
+                    resetTimeJatkoAika();
+                    break;
+                case 7:
+                    neljannes++;
+                    labelNeljannes.Text = "E4";
+                    resetTimeJatkoAika();
+                    break;
+                case 8:
+                    neljannes++;
+                    labelNeljannes.Text = "E5";
+                    resetTimeJatkoAika();
+                    break;
+                case 9:
+                    neljannes++;
+                    labelNeljannes.Text = "E6";
+                    resetTimeJatkoAika();
+                    break;
+                case 10:
+                    neljannes++;
+                    labelNeljannes.Text = "E7";
+                    resetTimeJatkoAika();
                     break;
             }
         }
