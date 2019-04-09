@@ -620,7 +620,7 @@ namespace Tulostaulu
 
             }
             catch (NullReferenceException) { MessageBox.Show("Avaa tulostaulunäyttö ennen ajan muuttamista"); }
-            catch (FormatException) { MessageBox.Show("Syötemerkit eivät ole kokonaislukuja, korjaa merkit ja kokeile uudelleen"); }
+            catch (FormatException) { MessageBox.Show("Syötemerkit eivät ole kokonaislukuja. Korjaa merkit ja kokeile uudelleen"); }
         }
 
         //Joukkueiden pisteiden lisäys ja vähennys
@@ -1356,22 +1356,26 @@ namespace Tulostaulu
         //Muutetaan hyökkäyskellon aikaa textboxin kautta
         private void buttonMuutaHaika_Click(object sender, EventArgs e)
         {
-            hyokkaysAikaNollassa = false;
-            timeHyokkaysSs = Convert.ToInt32(textBoxHaika.Text);
-            if (timeHyokkaysSs <= 5)
+            try
             {
-                labelHMS.Visible = true;
-                labelHK2.Visible = true;
-                hyokkaysKellonMsNakyvissa = true;
-            }
-            if (timeHyokkaysSs > 5)
-            {
-                labelHMS.Visible = false;
-                labelHK2.Visible = false;
-                hyokkaysKellonMsNakyvissa = false;
-            }
-            labelHSS.Text = timeHyokkaysSs.ToString();
-            
+                
+                timeHyokkaysSs = Convert.ToInt32(textBoxHaika.Text);
+                hyokkaysAikaNollassa = false;
+                if (timeHyokkaysSs <= 5)
+                {
+                    labelHMS.Visible = true;
+                    labelHK2.Visible = true;
+                    hyokkaysKellonMsNakyvissa = true;
+                }
+                if (timeHyokkaysSs > 5)
+                {
+                    labelHMS.Visible = false;
+                    labelHK2.Visible = false;
+                    hyokkaysKellonMsNakyvissa = false;
+                }
+                labelHSS.Text = timeHyokkaysSs.ToString();
+            }catch (FormatException) { MessageBox.Show("Syötemerkit eivät ole kokonaislukuja. Korjaa merkit ja kokeile uudelleen"); }
+
         } 
 
         //Mikä tauko valitaan kun neljännes loppuu
