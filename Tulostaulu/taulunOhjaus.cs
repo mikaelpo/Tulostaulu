@@ -109,18 +109,22 @@ namespace Tulostaulu
         //Kellon ohjaus näppäimistöltä tulostaululla
         private void taulunOhjaus_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.D1)
+            try
             {
-                t1.kelloStart();                 
+                if (e.KeyCode == Keys.D1)
+                {
+                    t1.kelloStart();
+                }
+                if (e.KeyCode == Keys.D2)
+                {
+                    t1.kelloPause();
+                }
+                if (e.KeyCode == Keys.D3)
+                {
+                    t1.kelloReset();
+                }
             }
-            if (e.KeyCode == Keys.D2)
-            {
-                t1.kelloPause();             
-            }
-            if (e.KeyCode == Keys.D3)
-            {
-                t1.kelloReset();
-            }
+            catch (NullReferenceException) { MessageBox.Show("Avaa tulostaulunäyttö ennen ajan aloittamista, pysäyttämistä tai resetointia"); }
         }
 
         //Kotijoukkuueen pisteiden lisäys
@@ -615,7 +619,8 @@ namespace Tulostaulu
                 }
 
             }
-            catch (Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen ajan muuttamista"); }
+            catch (NullReferenceException) { MessageBox.Show("Avaa tulostaulunäyttö ennen ajan muuttamista"); }
+            catch (FormatException) { MessageBox.Show("Syötemerkit eivät ole kokonaislukuja, korjaa merkit ja kokeile uudelleen"); }
         }
 
         //Joukkueiden pisteiden lisäys ja vähennys
