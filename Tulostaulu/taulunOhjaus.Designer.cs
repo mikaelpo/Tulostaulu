@@ -188,6 +188,9 @@
             this.button111 = new System.Windows.Forms.Button();
             this.button112 = new System.Windows.Forms.Button();
             this.button113 = new System.Windows.Forms.Button();
+            this.textBoxHaika = new System.Windows.Forms.TextBox();
+            this.buttonMuutaHaika = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1978,9 +1981,9 @@
             // 
             // button111
             // 
-            this.button111.Location = new System.Drawing.Point(843, 634);
+            this.button111.Location = new System.Drawing.Point(804, 634);
             this.button111.Name = "button111";
-            this.button111.Size = new System.Drawing.Size(93, 23);
+            this.button111.Size = new System.Drawing.Size(112, 23);
             this.button111.TabIndex = 160;
             this.button111.Text = "Hyökkäys 1";
             this.button111.UseVisualStyleBackColor = true;
@@ -1988,9 +1991,9 @@
             // 
             // button112
             // 
-            this.button112.Location = new System.Drawing.Point(942, 634);
+            this.button112.Location = new System.Drawing.Point(932, 634);
             this.button112.Name = "button112";
-            this.button112.Size = new System.Drawing.Size(96, 23);
+            this.button112.Size = new System.Drawing.Size(112, 23);
             this.button112.TabIndex = 161;
             this.button112.Text = "Hyökkäys 2";
             this.button112.UseVisualStyleBackColor = true;
@@ -1998,13 +2001,39 @@
             // 
             // button113
             // 
-            this.button113.Location = new System.Drawing.Point(1044, 634);
+            this.button113.Location = new System.Drawing.Point(1059, 634);
             this.button113.Name = "button113";
-            this.button113.Size = new System.Drawing.Size(96, 23);
+            this.button113.Size = new System.Drawing.Size(112, 23);
             this.button113.TabIndex = 162;
             this.button113.Text = "piilota";
             this.button113.UseVisualStyleBackColor = true;
             this.button113.Click += new System.EventHandler(this.button113_Click);
+            // 
+            // textBoxHaika
+            // 
+            this.textBoxHaika.Location = new System.Drawing.Point(850, 769);
+            this.textBoxHaika.Name = "textBoxHaika";
+            this.textBoxHaika.Size = new System.Drawing.Size(55, 22);
+            this.textBoxHaika.TabIndex = 163;
+            // 
+            // buttonMuutaHaika
+            // 
+            this.buttonMuutaHaika.Location = new System.Drawing.Point(963, 766);
+            this.buttonMuutaHaika.Name = "buttonMuutaHaika";
+            this.buttonMuutaHaika.Size = new System.Drawing.Size(152, 28);
+            this.buttonMuutaHaika.TabIndex = 164;
+            this.buttonMuutaHaika.Text = "Muuta hyökkäysaikaa";
+            this.buttonMuutaHaika.UseVisualStyleBackColor = true;
+            this.buttonMuutaHaika.Click += new System.EventHandler(this.buttonMuutaHaika_Click);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(908, 772);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(32, 17);
+            this.label37.TabIndex = 165;
+            this.label37.Text = "Sek";
             // 
             // taulunOhjaus
             // 
@@ -2013,6 +2042,9 @@
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.buttonMuutaHaika);
+            this.Controls.Add(this.textBoxHaika);
             this.Controls.Add(this.button113);
             this.Controls.Add(this.button112);
             this.Controls.Add(this.button111);
@@ -2348,5 +2380,8 @@
         private System.Windows.Forms.Button button111;
         private System.Windows.Forms.Button button112;
         private System.Windows.Forms.Button button113;
+        private System.Windows.Forms.TextBox textBoxHaika;
+        private System.Windows.Forms.Button buttonMuutaHaika;
+        private System.Windows.Forms.Label label37;
     }
 }

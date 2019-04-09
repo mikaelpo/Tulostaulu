@@ -69,7 +69,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.työkalutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ohjeetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button4 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -465,17 +464,6 @@
             this.ohjeetToolStripMenuItem.Text = "Ohjeet";
             this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(596, 484);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 32);
-            this.button4.TabIndex = 42;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -562,7 +550,6 @@
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
@@ -656,7 +643,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem työkalutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox14;

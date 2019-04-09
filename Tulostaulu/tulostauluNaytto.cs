@@ -1736,13 +1736,14 @@ namespace Tulostaulu
         {
             if (isActive)
             {
+                
                 if (odotusKelloKayntiin == false)
-                {
+                {                   
                     to.kaynnistaHyokkaysKello();
-                    to.timer1Tick();
+                    to.timer1Tick();                  
                 }
-                timeMs--;
 
+                timeMs--;
                 if (timeMs == -1)
                 {
                     timeSs--;
@@ -1903,7 +1904,7 @@ namespace Tulostaulu
         {
             labelAikalisaKello.Visible = false;
         }
-
+        //Neljänneksen muuttaminen
         public void uusiNeljannes()
         {
             switch (neljannes)

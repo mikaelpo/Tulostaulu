@@ -33,6 +33,7 @@ namespace Tulostaulu
 
         private bool odotusKelloKayntiin = false;
         private bool onkoTauko = false;
+        private bool hyokkaysAikaNollassa = false;
         
 
 
@@ -1221,9 +1222,18 @@ namespace Tulostaulu
                 }
                 if (timeHyokkaysMm == 0 && timeHyokkaysSs == 0 && timeHyokkaysMs == 0)
                 {
-                    peliKelloKaynnissa = false;
+                    hyokkaysAikaNollassa = true;
+                    //peliKelloKaynnissa = false;
                     // labelMs.Visible = false;
                     // label9.Visible = false;
+                }
+                if (timeHyokkaysMm < 0)
+                {
+                    timeHyokkaysMm = 0;
+                   //labelHMM.Text = 0.ToString();
+                    //labelHMS.Text = 0.ToString();
+                    //labelHSS.Text = 0.ToString();
+                    //hyokkaysKelloReset();
                 }
             }
          
@@ -1232,13 +1242,23 @@ namespace Tulostaulu
 
         private void drawTime()
         {
-            labelHMS.Text = String.Format("{0}", timeHyokkaysMs);
-            labelHSS.Text = String.Format("{0:00}", timeHyokkaysSs);
-            labelHMM.Text = String.Format("{0:00}", timeHyokkaysMm);
+            if (hyokkaysAikaNollassa == false)
+            {
+                labelHMS.Text = String.Format("{0}", timeHyokkaysMs);
+                labelHSS.Text = String.Format("{0:00}", timeHyokkaysSs);
+                labelHMM.Text = String.Format("{0:00}", timeHyokkaysMm);
+            }
+            else if(hyokkaysAikaNollassa == true)
+            {
+                labelHMS.Text = String.Format("{0}", 0);
+                labelHSS.Text = String.Format("{0:00}", 0);
+                labelHMM.Text = String.Format("{0:00}", 0);
+            }
         }
-
+        //Hyökkäysaika 1
         private void button111_Click(object sender, EventArgs e)
         {
+            hyokkaysAikaNollassa = false;
             timeHyokkaysSs = asetukset2.getHyokkaysaika1();
             labelHSS.Text = asetukset2.getHyokkaysaika1().ToString(); 
             if (timeHyokkaysSs <= 5)
@@ -1254,9 +1274,10 @@ namespace Tulostaulu
                 hyokkaysKellonMsNakyvissa = false;
             }
         }
-
+        //Hyökkäysaika 2
         private void button112_Click(object sender, EventArgs e)
         {
+            hyokkaysAikaNollassa = false;
             timeHyokkaysSs = asetukset2.getHyokkausaika2();
             labelHSS.Text = asetukset2.getHyokkausaika2().ToString();
             if (timeHyokkaysSs <= 5)
@@ -1272,7 +1293,7 @@ namespace Tulostaulu
                 hyokkaysKellonMsNakyvissa = false;
             }
         }
-
+        //Hyökkäysajan piilottaminen
         private void button113_Click(object sender, EventArgs e)
         {
             if(hyokkaysKelloNakyvissa == true)
@@ -1302,7 +1323,7 @@ namespace Tulostaulu
 
         public void kaynnistaHyokkaysKello()
         {
-            peliKelloKaynnissa = true;
+            peliKelloKaynnissa = true;           
         }
         public void sammutaHyokkaysKello()
         {
@@ -1310,8 +1331,10 @@ namespace Tulostaulu
         }
         public void hyokkaysKelloReset()
         {
+            hyokkaysAikaNollassa = false;
             peliKelloKaynnissa = false;
             timeHyokkaysMs = 0;
+            labelHMS.Text = timeHyokkaysMs.ToString();
             timeHyokkaysSs = asetukset2.getHyokkaysaika1();
             labelHSS.Text = asetukset2.getHyokkaysaika1().ToString();
             if (timeHyokkaysSs <= 5)
@@ -1325,6 +1348,26 @@ namespace Tulostaulu
                 labelHK2.Visible = false;
             }
         }
+        //Muutetaan hyökkäyskellon aikaa textboxin kautta
+        private void buttonMuutaHaika_Click(object sender, EventArgs e)
+        {
+            hyokkaysAikaNollassa = false;
+            timeHyokkaysSs = Convert.ToInt32(textBoxHaika.Text);
+            if (timeHyokkaysSs <= 5)
+            {
+                labelHMS.Visible = true;
+                labelHK2.Visible = true;
+                hyokkaysKellonMsNakyvissa = true;
+            }
+            if (timeHyokkaysSs > 5)
+            {
+                labelHMS.Visible = false;
+                labelHK2.Visible = false;
+                hyokkaysKellonMsNakyvissa = false;
+            }
+            labelHSS.Text = timeHyokkaysSs.ToString();
+            
+        } 
 
         //Mikä tauko valitaan kun neljännes loppuu
         public void taukoEhdotus(int mikaTauko)
@@ -1356,5 +1399,6 @@ namespace Tulostaulu
             }
         }
 
+        
     }
 }
