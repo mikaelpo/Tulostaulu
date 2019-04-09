@@ -1999,5 +1999,25 @@ namespace Tulostaulu
             }
             
         }
+
+        //Laitetaan tulostaulunäyttö kokonäytölle
+        bool onkoKokoNaytto = false;
+        public void kokonaytto()
+        {
+            if (onkoKokoNaytto)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                this.TopMost = false;
+                onkoKokoNaytto = false;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.TopMost = true;
+                onkoKokoNaytto = true;
+            }
+        }
     }
 }

@@ -191,6 +191,7 @@
             this.textBoxHaika = new System.Windows.Forms.TextBox();
             this.buttonMuutaHaika = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
+            this.button114 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -200,7 +201,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 66);
             this.button1.TabIndex = 0;
-            this.button1.Text = "näytä näyttö";
+            this.button1.Text = "Näytä tulostaulunäyttö";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -2035,6 +2036,16 @@
             this.label37.TabIndex = 165;
             this.label37.Text = "Sek";
             // 
+            // button114
+            // 
+            this.button114.Location = new System.Drawing.Point(16, 964);
+            this.button114.Name = "button114";
+            this.button114.Size = new System.Drawing.Size(161, 79);
+            this.button114.TabIndex = 166;
+            this.button114.Text = "Tulostaulunäyttö kokonäytölle/ pois kokonäytöltä";
+            this.button114.UseVisualStyleBackColor = true;
+            this.button114.Click += new System.EventHandler(this.button114_Click);
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2042,6 +2053,7 @@
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.button114);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.buttonMuutaHaika);
             this.Controls.Add(this.textBoxHaika);
@@ -2383,5 +2395,6 @@
         private System.Windows.Forms.TextBox textBoxHaika;
         private System.Windows.Forms.Button buttonMuutaHaika;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Button button114;
     }
 }

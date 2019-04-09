@@ -1408,6 +1408,9 @@ namespace Tulostaulu
             }
         }
 
-        
+        private void button114_Click(object sender, EventArgs e)
+        {
+            t1.kokonaytto();
+        }
     }
 }
