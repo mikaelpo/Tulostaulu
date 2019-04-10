@@ -1410,7 +1410,10 @@ namespace Tulostaulu
 
         private void button114_Click(object sender, EventArgs e)
         {
-            t1.kokonaytto();
+            try
+            {
+                t1.kokonaytto();
+            }catch(Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen kokonäytölle laittamista"); }
         }
     }
 }
