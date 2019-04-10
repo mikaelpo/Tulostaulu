@@ -229,18 +229,19 @@
             this.av1 = new System.Windows.Forms.Label();
             this.labelAikalisaKello = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxViivaVasen = new System.Windows.Forms.PictureBox();
+            this.pictureBoxViivaOikea = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxViivaYla = new System.Windows.Forms.PictureBox();
+            this.pictureBoxViivaAla = new System.Windows.Forms.PictureBox();
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaVasen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaOikea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaYla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaAla)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -2296,21 +2297,23 @@
             this.timer4.Interval = 1000;
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
-            // pictureBox3
+            // pictureBoxViivaVasen
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(9, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(10, 1031);
-            this.pictureBox3.TabIndex = 199;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxViivaVasen.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxViivaVasen.Location = new System.Drawing.Point(9, 12);
+            this.pictureBoxViivaVasen.Name = "pictureBoxViivaVasen";
+            this.pictureBoxViivaVasen.Size = new System.Drawing.Size(10, 1031);
+            this.pictureBoxViivaVasen.TabIndex = 199;
+            this.pictureBoxViivaVasen.TabStop = false;
             // 
-            // pictureBox4
+            // pictureBoxViivaOikea
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(1902, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(10, 1032);
-            this.pictureBox4.TabIndex = 200;
-            this.pictureBox4.TabStop = false;
+            this.pictureBoxViivaOikea.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxViivaOikea.Location = new System.Drawing.Point(1902, 12);
+            this.pictureBoxViivaOikea.Name = "pictureBoxViivaOikea";
+            this.pictureBoxViivaOikea.Size = new System.Drawing.Size(10, 1032);
+            this.pictureBoxViivaOikea.TabIndex = 200;
+            this.pictureBoxViivaOikea.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -2320,21 +2323,28 @@
             this.pictureBox5.TabIndex = 201;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
+            // pictureBoxViivaYla
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1903, 10);
-            this.pictureBox6.TabIndex = 202;
-            this.pictureBox6.TabStop = false;
+            this.pictureBoxViivaYla.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxViivaYla.Location = new System.Drawing.Point(9, 10);
+            this.pictureBoxViivaYla.Name = "pictureBoxViivaYla";
+            this.pictureBoxViivaYla.Size = new System.Drawing.Size(1903, 10);
+            this.pictureBoxViivaYla.TabIndex = 202;
+            this.pictureBoxViivaYla.TabStop = false;
             // 
-            // pictureBox7
+            // pictureBoxViivaAla
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(9, 1034);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(1903, 10);
-            this.pictureBox7.TabIndex = 203;
-            this.pictureBox7.TabStop = false;
+            this.pictureBoxViivaAla.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxViivaAla.Location = new System.Drawing.Point(9, 1034);
+            this.pictureBoxViivaAla.Name = "pictureBoxViivaAla";
+            this.pictureBoxViivaAla.Size = new System.Drawing.Size(1903, 10);
+            this.pictureBoxViivaAla.TabIndex = 203;
+            this.pictureBoxViivaAla.TabStop = false;
+            // 
+            // timer5
+            // 
+            this.timer5.Interval = 2000;
+            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
             // tulostauluNaytto
             // 
@@ -2342,11 +2352,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBoxViivaAla);
+            this.Controls.Add(this.pictureBoxViivaYla);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBoxViivaOikea);
+            this.Controls.Add(this.pictureBoxViivaVasen);
             this.Controls.Add(this.labelAikalisaKello);
             this.Controls.Add(this.av1);
             this.Controls.Add(this.av2);
@@ -2550,11 +2560,11 @@
             this.Load += new System.EventHandler(this.tulostauluNaytto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaVasen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaOikea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaYla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViivaAla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2761,10 +2771,11 @@
         private System.Windows.Forms.Label av1;
         private System.Windows.Forms.Label labelAikalisaKello;
         private System.Windows.Forms.Timer timer4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBoxViivaVasen;
+        private System.Windows.Forms.PictureBox pictureBoxViivaOikea;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBoxViivaYla;
+        private System.Windows.Forms.PictureBox pictureBoxViivaAla;
+        private System.Windows.Forms.Timer timer5;
     }
 }

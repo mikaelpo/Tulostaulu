@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Tulostaulu
 {
@@ -53,6 +54,10 @@ namespace Tulostaulu
 
         Label vilkku = null;
 
+        //Summeri 
+        SoundPlayer summeri1 = new SoundPlayer(Tulostaulu.Properties.Resources.Buzzer);
+        SoundPlayer summeri2 = new SoundPlayer(Tulostaulu.Properties.Resources.Air_Horn);
+
         public tulostauluNaytto(string[] listaKoti, string[] listaVieras, string kotiKuva, string vierasKuva, oletusasetukset at, taulunOhjaus to, bool odotusKelloKayntiin)
         {
             InitializeComponent();
@@ -68,6 +73,13 @@ namespace Tulostaulu
 
         private void tulostauluNaytto_Load(object sender, EventArgs e)
         {
+
+            //Punaiset reunukset pois näkyvistä
+            pictureBoxViivaAla.Visible = false;
+            pictureBoxViivaOikea.Visible = false;
+            pictureBoxViivaVasen.Visible = false;
+            pictureBoxViivaYla.Visible = false;
+
             //Kellon millisekunti labelit
             label9.Visible = false;
             labelMs.Visible = false;
@@ -1351,6 +1363,8 @@ namespace Tulostaulu
             }
         }
 
+        
+
         //Vierasjoukkueen pisteiden lisäys/poisto
         //Lisäys
         public void lisaaPisteV1(bool vainPelaaja)
@@ -1775,7 +1789,7 @@ namespace Tulostaulu
                         isActive = false;
                         // labelMs.Visible = false;                      
                         // label9.Visible = false;
-                        // soitaSummeri();
+                        soitaSummeri1JaReunat();
                         ehdotaTauko();
                     }
                 }
@@ -1786,7 +1800,7 @@ namespace Tulostaulu
                         isActive = false;
                         labelMs.Visible = false;
                         label9.Visible = false;
-                        //soitaSummeri();
+                        soitaSummeri1();
 
                         resetTimeNeljannes();
                         uusiNeljannes();
@@ -1875,19 +1889,21 @@ namespace Tulostaulu
             if (aikalisaKaynnissa)
             {
                 timeAikalisaSek--;
+
+                if (timeAikalisaSek == 10)
+                {
+                    soitaSummeri1();
+                }
+                if (timeAikalisaSek == 0)
+                {
+                    soitaSummeri1();
+                    timer4.Stop();
+                    aikalisaKaynnissa = false;
+                    labelAikalisaKello.Visible = false;
+                    resetAikalisaKello();
+                }
             }
-            if(timeAikalisaSek == 10)
-            {
-                //soitaSummeri();
-            }
-            if(timeAikalisaSek == 0)
-            {
-                //soitaSummeri();
-                timer4.Stop();
-                aikalisaKaynnissa = false;
-                labelAikalisaKello.Visible = false;
-                resetAikalisaKello();
-            }
+            
             aikalisaTaululle();
         }
 
@@ -1925,6 +1941,7 @@ namespace Tulostaulu
                     nollaaAikalisat();
                     nollaaPisteet();
                     nollaaVirheet();
+                    
                     break;
                 case 1:
                     neljannes++;
@@ -2019,5 +2036,36 @@ namespace Tulostaulu
                 onkoKokoNaytto = true;
             }
         }
+
+        //Summerin toiminta
+        public void soitaSummeri1()
+        {
+            summeri1.Play();
+        }
+        public void soitaSummeri1JaReunat()
+        {
+            pictureBoxViivaAla.Visible = true;
+            pictureBoxViivaOikea.Visible = true;
+            pictureBoxViivaVasen.Visible = true;
+            pictureBoxViivaYla.Visible = true;
+
+            summeri1.Play();
+            timer5.Start();   
+        }
+        //Näytetään tulostaulun ympärillä punainen kehä timer5 tickin ajan
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            pictureBoxViivaAla.Visible = false;
+            pictureBoxViivaOikea.Visible = false;
+            pictureBoxViivaVasen.Visible = false;
+            pictureBoxViivaYla.Visible = false;
+            timer5.Stop();
+        }
+
+        public void soitaSummeri2()
+        {
+            summeri2.Play();
+        }
+
     }
 }

@@ -59,5 +59,23 @@ namespace Tulostaulu.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Air_Horn {
+            get {
+                return ResourceManager.GetStream("Air_Horn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Buzzer {
+            get {
+                return ResourceManager.GetStream("Buzzer", resourceCulture);
+            }
+        }
     }
 }

@@ -1231,6 +1231,7 @@ namespace Tulostaulu
                     //peliKelloKaynnissa = false;
                     // labelMs.Visible = false;
                     // label9.Visible = false;
+                    t1.soitaSummeri2();
                 }
                 if (timeHyokkaysMm < 0)
                 {
@@ -1414,6 +1415,15 @@ namespace Tulostaulu
             {
                 t1.kokonaytto();
             }catch(Exception) { MessageBox.Show("Avaa tulostaulunäyttö ennen kokonäytölle laittamista"); }
+        }
+
+        private void buttonSummeri_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                t1.soitaSummeri1();
+            }
+            catch (Exception) { MessageBox.Show("Avaa tulostaulu ennen summerin soittamista"); }
         }
     }
 }

@@ -192,6 +192,7 @@
             this.buttonMuutaHaika = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
             this.button114 = new System.Windows.Forms.Button();
+            this.buttonSummeri = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2046,6 +2047,16 @@
             this.button114.UseVisualStyleBackColor = true;
             this.button114.Click += new System.EventHandler(this.button114_Click);
             // 
+            // buttonSummeri
+            // 
+            this.buttonSummeri.Location = new System.Drawing.Point(882, 862);
+            this.buttonSummeri.Name = "buttonSummeri";
+            this.buttonSummeri.Size = new System.Drawing.Size(228, 66);
+            this.buttonSummeri.TabIndex = 167;
+            this.buttonSummeri.Text = "Soita summeria";
+            this.buttonSummeri.UseVisualStyleBackColor = true;
+            this.buttonSummeri.Click += new System.EventHandler(this.buttonSummeri_Click);
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2053,6 +2064,7 @@
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.buttonSummeri);
             this.Controls.Add(this.button114);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.buttonMuutaHaika);
@@ -2396,5 +2408,6 @@
         private System.Windows.Forms.Button buttonMuutaHaika;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button button114;
+        private System.Windows.Forms.Button buttonSummeri;
     }
 }
