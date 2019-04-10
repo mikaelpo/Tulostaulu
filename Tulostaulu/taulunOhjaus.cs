@@ -1231,7 +1231,7 @@ namespace Tulostaulu
                     //peliKelloKaynnissa = false;
                     // labelMs.Visible = false;
                     // label9.Visible = false;
-                    t1.soitaSummeri2();
+                    t1.soitaSummeri1();
                 }
                 if (timeHyokkaysMm < 0)
                 {
@@ -1421,7 +1421,7 @@ namespace Tulostaulu
         {
             try
             {
-                t1.soitaSummeri1();
+                t1.soitaSummeri2();
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulu ennen summerin soittamista"); }
         }

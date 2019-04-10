@@ -1789,7 +1789,7 @@ namespace Tulostaulu
                         isActive = false;
                         // labelMs.Visible = false;                      
                         // label9.Visible = false;
-                        soitaSummeri1JaReunat();
+                        soitaSummeri2JaReunat();
                         ehdotaTauko();
                     }
                 }
@@ -1800,7 +1800,7 @@ namespace Tulostaulu
                         isActive = false;
                         labelMs.Visible = false;
                         label9.Visible = false;
-                        soitaSummeri1();
+                        soitaSummeri2();
 
                         resetTimeNeljannes();
                         uusiNeljannes();
@@ -1892,11 +1892,11 @@ namespace Tulostaulu
 
                 if (timeAikalisaSek == 10)
                 {
-                    soitaSummeri1();
+                    soitaSummeri2();
                 }
                 if (timeAikalisaSek == 0)
                 {
-                    soitaSummeri1();
+                    soitaSummeri2();
                     timer4.Stop();
                     aikalisaKaynnissa = false;
                     labelAikalisaKello.Visible = false;
@@ -2042,14 +2042,14 @@ namespace Tulostaulu
         {
             summeri1.Play();
         }
-        public void soitaSummeri1JaReunat()
+        public void soitaSummeri2JaReunat()
         {
             pictureBoxViivaAla.Visible = true;
             pictureBoxViivaOikea.Visible = true;
             pictureBoxViivaVasen.Visible = true;
             pictureBoxViivaYla.Visible = true;
 
-            summeri1.Play();
+            summeri2.Play();
             timer5.Start();   
         }
         //Näytetään tulostaulun ympärillä punainen kehä timer5 tickin ajan
