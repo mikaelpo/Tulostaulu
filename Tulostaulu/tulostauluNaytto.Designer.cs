@@ -2302,16 +2302,16 @@
             this.pictureBoxViivaVasen.BackColor = System.Drawing.Color.Red;
             this.pictureBoxViivaVasen.Location = new System.Drawing.Point(79, 3);
             this.pictureBoxViivaVasen.Name = "pictureBoxViivaVasen";
-            this.pictureBoxViivaVasen.Size = new System.Drawing.Size(10, 1031);
+            this.pictureBoxViivaVasen.Size = new System.Drawing.Size(10, 1000);
             this.pictureBoxViivaVasen.TabIndex = 199;
             this.pictureBoxViivaVasen.TabStop = false;
             // 
             // pictureBoxViivaOikea
             // 
             this.pictureBoxViivaOikea.BackColor = System.Drawing.Color.Red;
-            this.pictureBoxViivaOikea.Location = new System.Drawing.Point(1940, 8);
+            this.pictureBoxViivaOikea.Location = new System.Drawing.Point(1970, 8);
             this.pictureBoxViivaOikea.Name = "pictureBoxViivaOikea";
-            this.pictureBoxViivaOikea.Size = new System.Drawing.Size(10, 1032);
+            this.pictureBoxViivaOikea.Size = new System.Drawing.Size(10, 1000);
             this.pictureBoxViivaOikea.TabIndex = 200;
             this.pictureBoxViivaOikea.TabStop = false;
             // 
@@ -2335,7 +2335,7 @@
             // pictureBoxViivaAla
             // 
             this.pictureBoxViivaAla.BackColor = System.Drawing.Color.Red;
-            this.pictureBoxViivaAla.Location = new System.Drawing.Point(9, 1034);
+            this.pictureBoxViivaAla.Location = new System.Drawing.Point(79, 1000);
             this.pictureBoxViivaAla.Name = "pictureBoxViivaAla";
             this.pictureBoxViivaAla.Size = new System.Drawing.Size(1903, 10);
             this.pictureBoxViivaAla.TabIndex = 203;
