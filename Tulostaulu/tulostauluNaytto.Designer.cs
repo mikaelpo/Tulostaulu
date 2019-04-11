@@ -844,7 +844,7 @@
             this.v12.AutoSize = true;
             this.v12.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.v12.ForeColor = System.Drawing.Color.Orange;
-            this.v12.Location = new System.Drawing.Point(1836, 917);
+            this.v12.Location = new System.Drawing.Point(1897, 917);
             this.v12.Name = "v12";
             this.v12.Size = new System.Drawing.Size(46, 51);
             this.v12.TabIndex = 57;
@@ -2309,7 +2309,7 @@
             // pictureBoxViivaOikea
             // 
             this.pictureBoxViivaOikea.BackColor = System.Drawing.Color.Red;
-            this.pictureBoxViivaOikea.Location = new System.Drawing.Point(1878, 8);
+            this.pictureBoxViivaOikea.Location = new System.Drawing.Point(1920, 8);
             this.pictureBoxViivaOikea.Name = "pictureBoxViivaOikea";
             this.pictureBoxViivaOikea.Size = new System.Drawing.Size(10, 1032);
             this.pictureBoxViivaOikea.TabIndex = 200;

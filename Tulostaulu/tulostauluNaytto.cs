@@ -1389,6 +1389,9 @@ namespace Tulostaulu
                 labelPisteVieras.Text = pisteetVieras.ToString();
             }
         }
+
+        
+
         public void lisaaPisteV3(bool vainPelaaja)
         {
             p15++;
