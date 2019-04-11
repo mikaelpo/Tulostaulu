@@ -610,11 +610,19 @@ namespace Tulostaulu
             {
                 if (onkoTauko)
                 {
+                    if (String.IsNullOrEmpty(textBoxMin.Text))
+                    {
+                        textBoxMin.Text = 0.ToString();
+                    }
                     t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text), onkoTauko);
                     onkoTauko = false;
                 }
                 else
                 {
+                    if (String.IsNullOrEmpty(textBoxMin.Text))
+                    {
+                        textBoxMin.Text = 0.ToString();
+                    }
                     t1.muutaKello(Convert.ToInt32(textBoxMin.Text), Convert.ToInt32(textBoxSek.Text), onkoTauko);
                 }
 
