@@ -2309,7 +2309,7 @@
             // pictureBoxViivaOikea
             // 
             this.pictureBoxViivaOikea.BackColor = System.Drawing.Color.Red;
-            this.pictureBoxViivaOikea.Location = new System.Drawing.Point(1920, 8);
+            this.pictureBoxViivaOikea.Location = new System.Drawing.Point(1940, 8);
             this.pictureBoxViivaOikea.Name = "pictureBoxViivaOikea";
             this.pictureBoxViivaOikea.Size = new System.Drawing.Size(10, 1032);
             this.pictureBoxViivaOikea.TabIndex = 200;
@@ -2351,7 +2351,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.ClientSize = new System.Drawing.Size(1922, 1033);
             this.Controls.Add(this.pictureBoxViivaAla);
             this.Controls.Add(this.pictureBoxViivaYla);
             this.Controls.Add(this.pictureBox5);
