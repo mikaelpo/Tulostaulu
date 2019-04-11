@@ -193,6 +193,7 @@
             this.label37 = new System.Windows.Forms.Label();
             this.button114 = new System.Windows.Forms.Button();
             this.buttonSummeri = new System.Windows.Forms.Button();
+            this.ohjeetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1617,6 +1618,8 @@
             // 
             // ohjeetToolStripMenuItem
             // 
+            this.ohjeetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ohjeetToolStripMenuItem1});
             this.ohjeetToolStripMenuItem.Name = "ohjeetToolStripMenuItem";
             this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.ohjeetToolStripMenuItem.Text = "Ohjeet";
@@ -2057,6 +2060,13 @@
             this.buttonSummeri.UseVisualStyleBackColor = true;
             this.buttonSummeri.Click += new System.EventHandler(this.buttonSummeri_Click);
             // 
+            // ohjeetToolStripMenuItem1
+            // 
+            this.ohjeetToolStripMenuItem1.Name = "ohjeetToolStripMenuItem1";
+            this.ohjeetToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.ohjeetToolStripMenuItem1.Text = "Ohjeet";
+            this.ohjeetToolStripMenuItem1.Click += new System.EventHandler(this.ohjeetToolStripMenuItem1_Click);
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2409,5 +2419,6 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button button114;
         private System.Windows.Forms.Button buttonSummeri;
+        private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem1;
     }
 }

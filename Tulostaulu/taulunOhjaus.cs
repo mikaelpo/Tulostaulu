@@ -1425,5 +1425,11 @@ namespace Tulostaulu
             }
             catch (Exception) { MessageBox.Show("Avaa tulostaulu ennen summerin soittamista"); }
         }
+
+        private void ohjeetToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Ohjekirja o = new Ohjekirja();
+            o.Show();
+        }
     }
 }
