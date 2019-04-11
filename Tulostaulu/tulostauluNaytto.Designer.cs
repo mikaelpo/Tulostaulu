@@ -899,7 +899,7 @@
             this.labelNeljannes.AutoSize = true;
             this.labelNeljannes.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNeljannes.ForeColor = System.Drawing.Color.Orange;
-            this.labelNeljannes.Location = new System.Drawing.Point(983, 495);
+            this.labelNeljannes.Location = new System.Drawing.Point(953, 495);
             this.labelNeljannes.Name = "labelNeljannes";
             this.labelNeljannes.Size = new System.Drawing.Size(124, 135);
             this.labelNeljannes.TabIndex = 62;
