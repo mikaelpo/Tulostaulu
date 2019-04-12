@@ -72,7 +72,7 @@ namespace Tulostaulu
             // ohjeetToolStripMenuItem
             // 
             this.ohjeetToolStripMenuItem.Name = "ohjeetToolStripMenuItem";
-            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.ohjeetToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.ohjeetToolStripMenuItem.Text = "Ohjeet";
             this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
             // 
@@ -91,7 +91,7 @@ namespace Tulostaulu
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Tulostauluohjelma";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

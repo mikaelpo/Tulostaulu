@@ -37,10 +37,10 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(823, 467);
+            this.textBox1.Size = new System.Drawing.Size(780, 467);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Tähän ohjeet\r\n\r\nVoi kirjoittaa kun menee tämän textboxin properties osaan.\r\nSielt" +
-    "ä Text kohta, jonka voi laajentaa ja teksti sinne.\r\n";
+    "ä Text kohta, jonka voi laajentaa ja teksti sinne.";
             // 
             // Ohjekirja
             // 

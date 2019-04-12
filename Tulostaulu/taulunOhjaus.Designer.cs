@@ -151,6 +151,7 @@
             this.button97 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ohjeetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ohjeetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -193,7 +194,6 @@
             this.label37 = new System.Windows.Forms.Label();
             this.button114 = new System.Windows.Forms.Button();
             this.buttonSummeri = new System.Windows.Forms.Button();
-            this.ohjeetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1625,6 +1625,13 @@
             this.ohjeetToolStripMenuItem.Text = "Ohjeet";
             this.ohjeetToolStripMenuItem.Click += new System.EventHandler(this.ohjeetToolStripMenuItem_Click);
             // 
+            // ohjeetToolStripMenuItem1
+            // 
+            this.ohjeetToolStripMenuItem1.Name = "ohjeetToolStripMenuItem1";
+            this.ohjeetToolStripMenuItem1.Size = new System.Drawing.Size(128, 26);
+            this.ohjeetToolStripMenuItem1.Text = "Ohjeet";
+            this.ohjeetToolStripMenuItem1.Click += new System.EventHandler(this.ohjeetToolStripMenuItem1_Click);
+            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -2060,13 +2067,6 @@
             this.buttonSummeri.UseVisualStyleBackColor = true;
             this.buttonSummeri.Click += new System.EventHandler(this.buttonSummeri_Click);
             // 
-            // ohjeetToolStripMenuItem1
-            // 
-            this.ohjeetToolStripMenuItem1.Name = "ohjeetToolStripMenuItem1";
-            this.ohjeetToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
-            this.ohjeetToolStripMenuItem1.Text = "Ohjeet";
-            this.ohjeetToolStripMenuItem1.Click += new System.EventHandler(this.ohjeetToolStripMenuItem1_Click);
-            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2241,7 +2241,7 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "taulunOhjaus";
-            this.Text = "Taulun_ohjaus";
+            this.Text = "Tulostaulun ohjausnäyttö";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.taulunOhjaus_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.taulunOhjaus_KeyDown);
