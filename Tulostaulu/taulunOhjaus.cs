@@ -34,7 +34,8 @@ namespace Tulostaulu
         private bool odotusKelloKayntiin = false;
         private bool onkoTauko = false;
         private bool hyokkaysAikaNollassa = false;
-        
+        bool soitetaankoKello = true;
+
 
 
         public taulunOhjaus(string[] lista, string[] lista2, string kotiKuva, string vierasKuva, oletusasetukset asetukset)
@@ -1236,18 +1237,15 @@ namespace Tulostaulu
                 if (timeHyokkaysMm == 0 && timeHyokkaysSs == 0 && timeHyokkaysMs == 0)
                 {
                     hyokkaysAikaNollassa = true;
-                    //peliKelloKaynnissa = false;
-                    // labelMs.Visible = false;
-                    // label9.Visible = false;
-                    t1.soitaSummeri1();
+                    if (soitetaankoKello)
+                    {
+                        t1.soitaSummeri1();
+                    }
                 }
                 if (timeHyokkaysMm < 0)
                 {
                     timeHyokkaysMm = 0;
-                   //labelHMM.Text = 0.ToString();
-                    //labelHMS.Text = 0.ToString();
-                    //labelHSS.Text = 0.ToString();
-                    //hyokkaysKelloReset();
+                  
                 }
             }
          
@@ -1310,9 +1308,10 @@ namespace Tulostaulu
         //Hyökkäysajan piilottaminen
         private void button113_Click(object sender, EventArgs e)
         {
+            
             if(hyokkaysKelloNakyvissa == true)
             {
-                 
+                soitetaankoKello = false;
                 hyokkaysKelloNakyvissa = false;
                 labelHMM.Visible = false;
                 labelHK1.Visible = false;
@@ -1322,7 +1321,7 @@ namespace Tulostaulu
             }
             else
             {
-                
+                soitetaankoKello = true;
                 hyokkaysKelloNakyvissa = true;
                 labelHMM.Visible = true;
                 labelHK1.Visible = true;
