@@ -1668,9 +1668,9 @@
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(257, 106);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(247, 32);
+            this.label29.Size = new System.Drawing.Size(255, 32);
             this.label29.TabIndex = 128;
-            this.label29.Text = " PelaajienPisteet";
+            this.label29.Text = " Pelaajien Pisteet";
             // 
             // label4
             // 

@@ -426,10 +426,26 @@ namespace Tulostaulu
             vv60.Visible = false;            
         }
 
+        //Lisätään yksi aikalisä taululle jos aikalisiä ei ole käytetty viimeisen neljänneksen viimeiseen kahteen minuuttiin mennessä
+        public void lisaaAikalisaKotiAutomaattinen()
+        {
+            aikalisaKoti++;
+            if (aikalisaKoti > 3) { aikalisaKoti = 3; }
+            if (aikalisaKoti == 1) { ak1.Visible = true; }
+            if (aikalisaKoti == 2) { ak2.Visible = true; }
+            if (aikalisaKoti == 3) { ak3.Visible = true; }
+        }
+        public void lisaaAikalisaVierasAutomaattinen()
+        {
+            aikalisaVieras++;
+            if (aikalisaVieras > 3) { aikalisaVieras = 3; }
+            if (aikalisaVieras == 1) { av1.Visible = true; }
+            if (aikalisaVieras == 2) { av2.Visible = true; }
+            if (aikalisaVieras == 3) { av3.Visible = true; }
+        }
 
-
-        //Lisätään aikalisä kotijoukkueelle
-        public void lisaaAikalisaKoti()
+            //Lisätään aikalisä kotijoukkueelle
+            public void lisaaAikalisaKoti()
         {
             aikalisaKoti++;
             if (aikalisaKoti > 3) { aikalisaKoti = 3; }
@@ -456,6 +472,8 @@ namespace Tulostaulu
             aikalisaKoti--;
             if (aikalisaKoti < 0) { aikalisaKoti = 0; }
             piilotaAikalisaKello();
+            aikalisaKaynnissa = false;
+            timer4.Stop();
         }
         //Lisätään aikalisä vierasjoukkueelle
         public void lisaaAikalisaVieras()
@@ -485,6 +503,8 @@ namespace Tulostaulu
             aikalisaVieras--;
             if (aikalisaVieras < 0) { aikalisaVieras = 0; }
             piilotaAikalisaKello();
+            aikalisaKaynnissa = false;
+            timer4.Stop();
         }
         //Lisätään virhe kotijoukkueelle
         public void lisaaVirheKoti()
@@ -1811,6 +1831,16 @@ namespace Tulostaulu
                         
                         
                     }
+                }
+
+                if(neljannes == 4 && timeMm == 2 && timeSs == 0 && timeMs == 0 && aikalisaKoti == 0)
+                {
+                    lisaaAikalisaKotiAutomaattinen();
+                }
+
+                if (neljannes == 4 && timeMm == 2 && timeSs == 0 && timeMs == 0 && aikalisaVieras == 0)
+                {
+                    lisaaAikalisaVierasAutomaattinen();
                 }
 
                 if (timeMm < 0)
