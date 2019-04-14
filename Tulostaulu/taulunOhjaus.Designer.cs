@@ -194,7 +194,13 @@
             this.label37 = new System.Windows.Forms.Label();
             this.button114 = new System.Windows.Forms.Button();
             this.buttonSummeri = new System.Windows.Forms.Button();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -1812,7 +1818,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(896, 377);
+            this.label33.Location = new System.Drawing.Point(71, 83);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(51, 25);
             this.label33.TabIndex = 141;
@@ -1822,7 +1828,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(1002, 377);
+            this.label34.Location = new System.Drawing.Point(195, 83);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(56, 25);
             this.label34.TabIndex = 142;
@@ -1830,21 +1836,21 @@
             // 
             // textBoxMin
             // 
-            this.textBoxMin.Location = new System.Drawing.Point(882, 417);
+            this.textBoxMin.Location = new System.Drawing.Point(64, 120);
             this.textBoxMin.Name = "textBoxMin";
             this.textBoxMin.Size = new System.Drawing.Size(81, 22);
             this.textBoxMin.TabIndex = 143;
             // 
             // textBoxSek
             // 
-            this.textBoxSek.Location = new System.Drawing.Point(988, 417);
+            this.textBoxSek.Location = new System.Drawing.Point(185, 120);
             this.textBoxSek.Name = "textBoxSek";
             this.textBoxSek.Size = new System.Drawing.Size(81, 22);
             this.textBoxSek.TabIndex = 144;
             // 
             // button106
             // 
-            this.button106.Location = new System.Drawing.Point(911, 462);
+            this.button106.Location = new System.Drawing.Point(93, 162);
             this.button106.Name = "button106";
             this.button106.Size = new System.Drawing.Size(133, 38);
             this.button106.TabIndex = 145;
@@ -1855,7 +1861,7 @@
             // checkBoxPiste
             // 
             this.checkBoxPiste.AutoSize = true;
-            this.checkBoxPiste.Location = new System.Drawing.Point(837, 259);
+            this.checkBoxPiste.Location = new System.Drawing.Point(850, 162);
             this.checkBoxPiste.Name = "checkBoxPiste";
             this.checkBoxPiste.Size = new System.Drawing.Size(282, 38);
             this.checkBoxPiste.TabIndex = 147;
@@ -1866,7 +1872,7 @@
             // checkBoxVirhe
             // 
             this.checkBoxVirhe.AutoSize = true;
-            this.checkBoxVirhe.Location = new System.Drawing.Point(837, 316);
+            this.checkBoxVirhe.Location = new System.Drawing.Point(850, 219);
             this.checkBoxVirhe.Name = "checkBoxVirhe";
             this.checkBoxVirhe.Size = new System.Drawing.Size(278, 38);
             this.checkBoxVirhe.TabIndex = 148;
@@ -1946,7 +1952,7 @@
             // 
             this.labelHMM.AutoSize = true;
             this.labelHMM.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHMM.Location = new System.Drawing.Point(843, 688);
+            this.labelHMM.Location = new System.Drawing.Point(90, 105);
             this.labelHMM.Name = "labelHMM";
             this.labelHMM.Size = new System.Drawing.Size(55, 39);
             this.labelHMM.TabIndex = 155;
@@ -1955,7 +1961,7 @@
             // labelHK1
             // 
             this.labelHK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHK1.Location = new System.Drawing.Point(904, 688);
+            this.labelHK1.Location = new System.Drawing.Point(151, 105);
             this.labelHK1.Name = "labelHK1";
             this.labelHK1.Size = new System.Drawing.Size(25, 39);
             this.labelHK1.TabIndex = 156;
@@ -1965,7 +1971,7 @@
             // 
             this.labelHSS.AutoSize = true;
             this.labelHSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHSS.Location = new System.Drawing.Point(935, 688);
+            this.labelHSS.Location = new System.Drawing.Point(182, 105);
             this.labelHSS.Name = "labelHSS";
             this.labelHSS.Size = new System.Drawing.Size(55, 39);
             this.labelHSS.TabIndex = 157;
@@ -1975,7 +1981,7 @@
             // 
             this.labelHK2.AutoSize = true;
             this.labelHK2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHK2.Location = new System.Drawing.Point(991, 686);
+            this.labelHK2.Location = new System.Drawing.Point(239, 105);
             this.labelHK2.Name = "labelHK2";
             this.labelHK2.Size = new System.Drawing.Size(26, 39);
             this.labelHK2.TabIndex = 158;
@@ -1985,7 +1991,7 @@
             // 
             this.labelHMS.AutoSize = true;
             this.labelHMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHMS.Location = new System.Drawing.Point(1014, 688);
+            this.labelHMS.Location = new System.Drawing.Point(271, 105);
             this.labelHMS.Name = "labelHMS";
             this.labelHMS.Size = new System.Drawing.Size(55, 39);
             this.labelHMS.TabIndex = 159;
@@ -1993,7 +1999,7 @@
             // 
             // button111
             // 
-            this.button111.Location = new System.Drawing.Point(804, 634);
+            this.button111.Location = new System.Drawing.Point(19, 55);
             this.button111.Name = "button111";
             this.button111.Size = new System.Drawing.Size(112, 23);
             this.button111.TabIndex = 160;
@@ -2003,7 +2009,7 @@
             // 
             // button112
             // 
-            this.button112.Location = new System.Drawing.Point(932, 634);
+            this.button112.Location = new System.Drawing.Point(153, 55);
             this.button112.Name = "button112";
             this.button112.Size = new System.Drawing.Size(112, 23);
             this.button112.TabIndex = 161;
@@ -2013,7 +2019,7 @@
             // 
             // button113
             // 
-            this.button113.Location = new System.Drawing.Point(1059, 634);
+            this.button113.Location = new System.Drawing.Point(280, 55);
             this.button113.Name = "button113";
             this.button113.Size = new System.Drawing.Size(112, 23);
             this.button113.TabIndex = 162;
@@ -2023,14 +2029,14 @@
             // 
             // textBoxHaika
             // 
-            this.textBoxHaika.Location = new System.Drawing.Point(850, 769);
+            this.textBoxHaika.Location = new System.Drawing.Point(76, 177);
             this.textBoxHaika.Name = "textBoxHaika";
             this.textBoxHaika.Size = new System.Drawing.Size(55, 22);
             this.textBoxHaika.TabIndex = 163;
             // 
             // buttonMuutaHaika
             // 
-            this.buttonMuutaHaika.Location = new System.Drawing.Point(963, 766);
+            this.buttonMuutaHaika.Location = new System.Drawing.Point(189, 174);
             this.buttonMuutaHaika.Name = "buttonMuutaHaika";
             this.buttonMuutaHaika.Size = new System.Drawing.Size(152, 28);
             this.buttonMuutaHaika.TabIndex = 164;
@@ -2041,7 +2047,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(908, 772);
+            this.label37.Location = new System.Drawing.Point(134, 180);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(32, 17);
             this.label37.TabIndex = 165;
@@ -2067,6 +2073,60 @@
             this.buttonSummeri.UseVisualStyleBackColor = true;
             this.buttonSummeri.Click += new System.EventHandler(this.buttonSummeri_Click);
             // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(133, 35);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(66, 26);
+            this.label38.TabIndex = 168;
+            this.label38.Text = "Kello";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(110, 8);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(165, 26);
+            this.label39.TabIndex = 169;
+            this.label39.Text = "Hyökkäyskello";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.label38);
+            this.panel1.Controls.Add(this.label33);
+            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.textBoxMin);
+            this.panel1.Controls.Add(this.textBoxSek);
+            this.panel1.Controls.Add(this.button106);
+            this.panel1.Location = new System.Drawing.Point(818, 285);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(326, 233);
+            this.panel1.TabIndex = 170;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel2.Controls.Add(this.label39);
+            this.panel2.Controls.Add(this.button111);
+            this.panel2.Controls.Add(this.button112);
+            this.panel2.Controls.Add(this.button113);
+            this.panel2.Controls.Add(this.label37);
+            this.panel2.Controls.Add(this.labelHSS);
+            this.panel2.Controls.Add(this.buttonMuutaHaika);
+            this.panel2.Controls.Add(this.labelHMM);
+            this.panel2.Controls.Add(this.textBoxHaika);
+            this.panel2.Controls.Add(this.labelHK1);
+            this.panel2.Controls.Add(this.labelHMS);
+            this.panel2.Controls.Add(this.labelHK2);
+            this.panel2.Location = new System.Drawing.Point(779, 553);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(405, 258);
+            this.panel2.TabIndex = 171;
+            // 
             // taulunOhjaus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2074,19 +2134,10 @@
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonSummeri);
             this.Controls.Add(this.button114);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.buttonMuutaHaika);
-            this.Controls.Add(this.textBoxHaika);
-            this.Controls.Add(this.button113);
-            this.Controls.Add(this.button112);
-            this.Controls.Add(this.button111);
-            this.Controls.Add(this.labelHMS);
-            this.Controls.Add(this.labelHK2);
-            this.Controls.Add(this.labelHSS);
-            this.Controls.Add(this.labelHK1);
-            this.Controls.Add(this.labelHMM);
             this.Controls.Add(this.button110);
             this.Controls.Add(this.button109);
             this.Controls.Add(this.label36);
@@ -2095,11 +2146,6 @@
             this.Controls.Add(this.label35);
             this.Controls.Add(this.checkBoxVirhe);
             this.Controls.Add(this.checkBoxPiste);
-            this.Controls.Add(this.button106);
-            this.Controls.Add(this.textBoxSek);
-            this.Controls.Add(this.textBoxMin);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.label33);
             this.Controls.Add(this.button104);
             this.Controls.Add(this.button105);
             this.Controls.Add(this.button102);
@@ -2247,6 +2293,10 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.taulunOhjaus_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2420,5 +2470,9 @@
         private System.Windows.Forms.Button button114;
         private System.Windows.Forms.Button buttonSummeri;
         private System.Windows.Forms.ToolStripMenuItem ohjeetToolStripMenuItem1;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
