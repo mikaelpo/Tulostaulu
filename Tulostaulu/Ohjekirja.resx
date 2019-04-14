@@ -117,4 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Taulunohjauksessa tulisi alkuun painaa ”näytä tulostaulunäyttö” näppäintä. 
+Tätä painamalla tulee huomautus, että ”haluatko käynnistää odotuskellon” jos käynnistät, tulee jatko-ohjeet, miten saat määritettyä odotusajan, mutta jos painat ”ei” niin taululle tulee jo ensimmäinen neljännes, eikä pysty enää määrittämään alkulämmittelyjen aikaa. 
+Kun tulostaulu on avattu, niin pystytään aloittamaan pelin toiminnot. 
+Pelaajien pisteet toimivat + tai - näppäimiä painamalla, + näppäin lisää yhden pisteen pelaajalle ja samalla joukkueelle, ja - näppäin vähentää yhden pisteen niin pelaajalta kuin hänen joukkueeltaan. 
+Pelaajien virheet näppäimet toimivat täysin samalla tavalla kuin pelaajien pisteet näppäimet. 
+”Lisää/vähennä pisteitä pelaajalta ilman, että se vaikuttaa joukkuepisteisiin” tämä kun rastitetaan, niin pystytään muuttamaan joukkueen sisällä pisteiden tekijöitä tarvitsematta säätää joukkueenpisteitä. 
+”Lisää/vähennä virheitä pelaajalta ilman, että se vaikuttaa joukkuevirheisiin” toimii täysin samalla tavalla kuin ”Lisää/vähennä pisteitä pelaajalta ilman, että se vaikuttaa joukkuepisteisiin”
+”Muuta aikaa” näppäintä painamalla voidaan muuttaa peliaika yllä olevassa tekstikentässä näkyväksi ajaksi.
+”Hyökkäys 1” näppäin aloittaa 24s hyökkäysajan.
+”Hyökkäys 2” näppäin aloittaa 14s hyökkäysajan. 
+”Piilota” piilotta hyökkäysajan.
+”Joukkuepisteet” näppäimillä + ja - voidaan lisätä tai vähentää joukkueen pisteitä yksitellen. 
+”Joukkuevirheet” näppäimillä + ja - voidaan lisätä tai vähentää joukkueen virheitä yksitellen. 
+”Aikalisä” näppäimellä + voidaan aloittaa joukkueen 60s aikalisä.  joukkueen aikalisä niin painetaan -.
+Hyökkäysajan alapuolella näkyy ”Sek” tekstikenttä ja ”Muuta” näppäin, niin tällä voidaan manuaalisesti muokata hyökkäysaikaa. Tekstikenttään syötetään haluttu aika ja ”Muuta” näppäintä painamalla se varmistetaan.
+Pelikelloa käytetään näppäimillä ”1”, ”2” ja ”3”. Näppäimellä ”1” pelikello käynnistyy, näppäimellä ”2” pelikello pysähtyy ja näppäimellä ”3” se nollaantuu. 
+Jotta näkyisi summerin soidessa punaiset reunat pitäisi painaa näppäintä ”Tulostaulunäyttö kokonäytölle/ pois kokonäytöltä”.
+</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>”Hae kotijoukkueen pelaajat” näppäintä painamalla pääset etsimään tietokoneeltasi tekstitiedoston, missä pelaajat pitäisi olla listattu allekkain. Samalla rivillä on vain pelaajan numero ja sukunimi. Jos ei ole 12 pelaajaa kokoonpanossa, riville laitetaan ”-” merkki puuttuvan pelaajan merkiksi. 
+”Hae vierasjoukkueen pelaajat” toimii samalla tavalla kuin hae kotijoukkueen pelaajat näppäin.
+”Kotijoukkueen kuva” näppäintä painamalla pääset etsimään tietokoneeltasi kuvaa. Toimivia kuvamuotoja ovat ainakin .jpg ja .png. Kuvan koolla ei pitäisi olla väliä, koska ne venytetään.
+Kun olet saanut molempien joukkueiden kuvat ja kokoonpanot paina ”seuraava” näppäintä ja pääset taulunohjaus ikkunaan. 
+</value>
+  </data>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>Neljänneksien pituuden määritys minuuteissa(min) ja sekunneissa(s)
+Neljänneksien määrä 
+Jatkoajan pituus minuuteissa ja sekunneissa.
+Kellon käyntisuunta
+Lyhyt tauko, joka tulee 1,3,4 neljänneksen ja jatkoajan jälkeen. Säätäminen minuuteissa ja sekunneissa.
+Pitkä tauko, joka tulee 2.neljänneksen jälkeen. Säätäminen minuuteissa ja sekunneissa.
+Aikalisä - sekunneissa.
+Aikalisien lukumäärä.
+Hyökkäysaika 1 - sekunneissa
+Hyökkäysaika 2 - sekunneissa
+Virheet 5 säädetty jo maksimiksi.
+Pelikellon summeri (kesto 2s) 
+Heittokellon summeri (kesto 2s)
+Oletusasetukset näppäin säätää nämä kaikki asetukset Suomen koripalloliigan oletusasetuksille.
+Seuraava näppäimellä pääset valitsemaan kokoonpanoja.
+</value>
+  </data>
 </root>
